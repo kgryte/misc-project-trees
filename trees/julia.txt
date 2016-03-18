@@ -1,0 +1,709 @@
+|-base
+|---dates
+|---docs
+|-----helpdb
+|---fft
+|---grisu
+|---libgit2
+|---linalg
+|---markdown
+|-----Common
+|-----GitHub
+|-----IPython
+|-----Julia
+|-----parse
+|-----render
+|-------terminal
+|---pkg
+|-----resolve
+|---sparse
+|---special
+|---strings
+|---unicode
+|-contrib
+|---mac
+|-----app
+|---vagrant
+|---windows
+|-deps
+|---checksums
+|-----Rmath-julia-0.1.tar.gz
+|-----SuiteSparse-4.4.5.tar.gz
+|-----arpack-ng-3.2.0-testA.mtx
+|-----arpack-ng-3.2.0.tar.gz
+|-----cfe-3.3.src.tar.gz
+|-----cfe-3.7.0.src.tar.xz
+|-----cfe-3.7.1.src.tar.xz
+|-----compiler-rt-3.3.src.tar.gz
+|-----compiler-rt-3.7.0.src.tar.xz
+|-----compiler-rt-3.7.1.src.tar.xz
+|-----dsfmt-2.2.3.tar.gz
+|-----fftw-3.3.4.tar.gz
+|-----git-1.8.5.6.tar.gz
+|-----gmp-6.1.0.tar.bz2
+|-----i686-4.9.2-release-win32-sjlj-rt_v4-rev3.7z
+|-----lapack-3.5.0.tgz
+|-----libcxx-3.3.src.tar.gz
+|-----libgit2-e8feafe32007ebd16a61820c70abd221655d053c.tar.gz
+|-----libosxunwind-0.0.3.tar.gz
+|-----libunwind-1.1-julia2.tar.gz
+|-----libuv-07730c4bd595b4d45a498a8ee0bcd53878ff7c10.tar.gz
+|-----lldb-3.3.src.tar.gz
+|-----lldb-3.7.0.src.tar.xz
+|-----llvm-3.7.0.src.tar.xz
+|-----llvm-3.7.1-i686-w64-mingw32-juliadeps-r04.7z
+|-----llvm-3.7.1-x86_64-w64-mingw32-juliadeps-r04.7z
+|-----llvm-3.7.1.src.tar.xz
+|-----mpfr-3.1.3.tar.bz2
+|-----openblas-53e849f4fcae4363a64576de00e982722c7304f9.tar.gz
+|-----openlibm-3ee2a6e6a9fc68cbf2ab00f830b9059215e40b06.tar.gz
+|-----openspecfun-381db9bc865e51de67be9dcaa1610a6f90029c72.tar.gz
+|-----patchelf-0.8.tar.gz
+|-----pcre2-10.21.tar.bz2
+|-----utf8proc-85789180158ac7fff85b9f008828d6ac44f072ea.tar.gz
+|-----virtualenv-15.0.0.tar.gz
+|-----x86_64-4.9.2-release-win32-seh-rt_v4-rev3.7z
+|---valgrind
+|-doc
+|---devdocs
+|---images
+|---man
+|---manual
+|---stdlib
+|-etc
+|-examples
+|---clustermanager
+|-----0mq
+|-----simple
+|-src
+|---flisp
+|---support
+|-test
+|---dates
+|---linalg
+|---netload
+|---perf
+|-----array
+|-----blas
+|-----cat
+|-----kernel
+|-------laplace
+|-----lapack
+|-----micro
+|-------benchmarks
+|-------bin
+|-------java
+|---------src
+|-----------main
+|-------------java
+|-------scala
+|---------src
+|-----------main
+|-------------scala
+|-----shootout
+|-----simd
+|-----sort
+|-----sparse
+|-----spell
+|-----threads
+|-------laplace3d
+|-------lbm3d
+|-------stockcorr
+|---sparsedir
+|---strings
+|---unicode
+|-ui
+
+
+CONTRIBUTING.md      Makefile    Windows.inc    etc
+DEBUGGER.md    NEWS.md        appveyor.yml      examples
+DISTRIBUTING.md      README.arm.md     base        src
+LICENSE.md     README.md      contrib        test
+Make.inc    README.windows.md deps        ui
+Make.powerpc      VERSION        doc
+
+./base:
+Dates.jl    env.jl         loading.jl     reducedim.jl
+Enums.jl    errno.jl    lock.jl        reflection.jl
+LineEdit.jl    error.jl    locks.jl    refpointer.jl
+Makefile    essentials.jl     managers.jl    regex.jl
+REPL.jl        exports.jl     mapiterator.jl    replutil.jl
+REPLCompletions.jl   expr.jl        markdown    require.jl
+Terminals.jl      fastmath.jl    math.jl        rounding.jl
+abstractarray.jl  fft         meta.jl        serialize.jl
+abstractarraymath.jl file.jl        methodshow.jl     set.jl
+array.jl    filesystem.jl     mmap.jl        sharedarray.jl
+arraymath.jl      float.jl    mpfr.jl        shell.jl
+ascii.jl    float16.jl     multi.jl    show.jl
+atomics.jl     floatfuncs.jl     multidimensional.jl  simdloop.jl
+base.jl        functors.jl    multimedia.jl     socket.jl
+base64.jl      generator.jl      nofloat_hashing.jl   sort.jl
+bitarray.jl    gmp.jl         nullable.jl    sparse
+bool.jl        grisu       number.jl      sparse.jl
+boot.jl        grisu.jl    operators.jl      special
+broadcast.jl      hashing.jl     options.jl     stacktraces.jl
+c.jl        hashing2.jl    ordering.jl    stat.jl
+cartesian.jl      i18n.jl        osutils.jl     statistics.jl
+channels.jl    inference.jl      parse.jl    stream.jl
+char.jl        initdefs.jl    path.jl        string.jl
+checked.jl     int.jl         pcre.jl        strings
+client.jl      interactiveutil.jl   pkg         subarray.jl
+collections.jl    intfuncs.jl    pkg.jl         sysimg.jl
+combinatorics.jl  intset.jl      pointer.jl     sysinfo.jl
+complex.jl     io.jl       poll.jl        task.jl
+coreimg.jl     iobuffer.jl    precompile.jl     test.jl
+dSFMT.jl    iostream.jl    primes.jl      threadcall.jl
+datafmt.jl     irrationals.jl    printf.jl      threadingconstructs.jl
+dates       iterator.jl    process.jl     threads.jl
+deepcopy.jl    latex_symbols.jl  profile.jl     tuple.jl
+deprecated.jl     libc.jl        promotion.jl      unicode
+dft.jl         libdl.jl    quadgk.jl      unicode.jl
+dict.jl        libgit2        random.jl      util.jl
+docs        libgit2.jl     range.jl    version.jl
+dsp.jl         linalg         rational.jl    version_git.sh
+emoji_symbols.jl  linalg.jl      reduce.jl      workerpool.jl
+
+./base/dates:
+accessors.jl   arithmetic.jl  io.jl    query.jl types.jl
+adjusters.jl   conversions.jl periods.jl  ranges.jl
+
+./base/docs:
+Docs.jl     bindings.jl helpdb      utils.jl
+basedocs.jl bootstrap.jl   helpdb.jl
+
+./base/docs/helpdb:
+Base.jl     Dates.jl
+
+./base/fft:
+FFTW.jl  dct.jl
+
+./base/grisu:
+bignum.jl      fastfixed.jl      fastshortest.jl
+bignums.jl     fastprecision.jl  float.jl
+
+./base/libgit2:
+blob.jl     consts.jl   merge.jl remote.jl   strarray.jl utils.jl
+callbacks.jl   diff.jl     oid.jl      repository.jl  tag.jl      walker.jl
+commit.jl   error.jl rebase.jl   signature.jl   tree.jl
+config.jl   index.jl reference.jl   status.jl   types.jl
+
+./base/linalg:
+arnoldi.jl     dense.jl    lapack.jl      special.jl
+arpack.jl      diagonal.jl    ldlt.jl        svd.jl
+bidiag.jl      eigen.jl    lq.jl       symmetric.jl
+bitarray.jl    exceptions.jl     lu.jl       triangular.jl
+blas.jl        factorization.jl  matmul.jl      tridiag.jl
+bunchkaufman.jl      generic.jl     qr.jl       uniformscaling.jl
+cholesky.jl    givens.jl      schur.jl
+
+./base/markdown:
+Common      IPython     Markdown.jl render
+GitHub      Julia    parse
+
+./base/markdown/Common:
+Common.jl   block.jl inline.jl
+
+./base/markdown/GitHub:
+GitHub.jl   table.jl
+
+./base/markdown/IPython:
+IPython.jl
+
+./base/markdown/Julia:
+Julia.jl interp.jl
+
+./base/markdown/parse:
+config.jl   parse.jl util.jl
+
+./base/markdown/render:
+html.jl     latex.jl plain.jl rich.jl     rst.jl      terminal
+
+./base/markdown/render/terminal:
+formatting.jl  render.jl
+
+./base/pkg:
+cache.jl entry.jl query.jl reqs.jl     resolve.jl  write.jl
+dir.jl      git.jl      read.jl     resolve     types.jl
+
+./base/pkg/resolve:
+fieldvalue.jl     interface.jl      maxsum.jl      versionweight.jl
+
+./base/sparse:
+abstractsparse.jl csparse.jl     sparsevector.jl      umfpack_h.jl
+cholmod.jl     linalg.jl      spqr.jl
+cholmod_h.jl      sparsematrix.jl      umfpack.jl
+
+./base/special:
+bessel.jl   erf.jl      gamma.jl log.jl      trig.jl
+
+./base/strings:
+basic.jl io.jl    search.jl   types.jl util.jl
+
+./base/unicode:
+UnicodeError.jl   types.jl utf32.jl utf8proc.jl
+checkstring.jl utf16.jl utf8.jl
+
+./contrib:
+BBEditTextWrangler-julia.plist      julia-mode-tests.el
+Julia_Notepad++.xml        julia-mode.el
+Notepad++_2_Julia.ahk         julia.appdata.xml
+README.ackrc.txt        julia.desktop
+README.ctags.txt        julia.hrc
+README.md            julia.lang
+ackrc             julia.svg
+add_license_to_files.jl       julia.xml
+build_sysimg.jl            mac
+check-whitespace.sh        prepare_release.sh
+commit-name.sh          relative_path.sh
+ctags             repackage_system_suitesparse4.make
+debug_bootstrap.gdb        stringreplace.c
+filterArgs.sh           travis_fastfail.sh
+fixup-libgfortran.sh       vagrant
+fixup-libstdc++.sh         valgrind-julia.supp
+install.sh           windows
+julia-config.jl
+
+./contrib/mac:
+app      juliarc.jl  mac-gtk.sh  macports.make
+
+./contrib/mac/app:
+Makefile       julia.icns        script
+README            run-install-name-tool-change.sh
+
+./contrib/vagrant:
+README.md   Vagrantfile
+
+./contrib/windows:
+7zS.sfx        Vagrantfile    julia.ico      msys_build.sh
+7zSFX-config.txt  build-installer.nsi  julia.rc    winrpm.sh
+7zSFX-manifest.xml   get_toolchain.sh  juliarc.jl
+
+./deps:
+Makefile       instcombine-llvm-3.3.patch llvm-3.7.1_2.patch
+NATIVE.cmake         int128-vector.llvm-3.3.patch  llvm-3.7.1_3.patch
+SuiteSparse_wrapper.c      jlchecksum        llvm-D14260.patch
+Versions.make        jldownload        llvm-ver.make
+arpack-tests-blasint.patch libdSFMT.def         openblas-win64.patch
+checksums         libgit2-require-openssl.patch openblas.version
+compiler-rt-3.7.1.patch    libgit2.version         openlibm.version
+dSFMT.c.patch        libuv.version        openspecfun.version
+dSFMT.h.patch        lldb-3.7.1.patch     osx-10.10.llvm-3.3.patch
+find_python2         llvm-3.3.patch       utf8proc.version
+gfortblas.alias         llvm-3.7.0.patch     valgrind
+gfortblas.c       llvm-3.7.1.patch     win64-int128.llvm-3.3.patch
+
+./deps/checksums:
+Rmath-julia-0.1.tar.gz
+SuiteSparse-4.4.5.tar.gz
+arpack-ng-3.2.0-testA.mtx
+arpack-ng-3.2.0.tar.gz
+cfe-3.3.src.tar.gz
+cfe-3.7.0.src.tar.xz
+cfe-3.7.1.src.tar.xz
+compiler-rt-3.3.src.tar.gz
+compiler-rt-3.7.0.src.tar.xz
+compiler-rt-3.7.1.src.tar.xz
+dsfmt-2.2.3.tar.gz
+fftw-3.3.4.tar.gz
+git-1.8.5.6.tar.gz
+gmp-6.1.0.tar.bz2
+i686-4.9.2-release-win32-sjlj-rt_v4-rev3.7z
+lapack-3.5.0.tgz
+libcxx-3.3.src.tar.gz
+libgit2-e8feafe32007ebd16a61820c70abd221655d053c.tar.gz
+libosxunwind-0.0.3.tar.gz
+libunwind-1.1-julia2.tar.gz
+libuv-07730c4bd595b4d45a498a8ee0bcd53878ff7c10.tar.gz
+lldb-3.3.src.tar.gz
+lldb-3.7.0.src.tar.xz
+llvm-3.7.0.src.tar.xz
+llvm-3.7.1-i686-w64-mingw32-juliadeps-r04.7z
+llvm-3.7.1-x86_64-w64-mingw32-juliadeps-r04.7z
+llvm-3.7.1.src.tar.xz
+mpfr-3.1.3.tar.bz2
+openblas-53e849f4fcae4363a64576de00e982722c7304f9.tar.gz
+openlibm-3ee2a6e6a9fc68cbf2ab00f830b9059215e40b06.tar.gz
+openspecfun-381db9bc865e51de67be9dcaa1610a6f90029c72.tar.gz
+patchelf-0.8.tar.gz
+pcre2-10.21.tar.bz2
+utf8proc-85789180158ac7fff85b9f008828d6ac44f072ea.tar.gz
+virtualenv-15.0.0.tar.gz
+x86_64-4.9.2-release-win32-seh-rt_v4-rev3.7z
+
+./deps/checksums/Rmath-julia-0.1.tar.gz:
+md5   sha512
+
+./deps/checksums/SuiteSparse-4.4.5.tar.gz:
+md5   sha512
+
+./deps/checksums/arpack-ng-3.2.0-testA.mtx:
+md5   sha512
+
+./deps/checksums/arpack-ng-3.2.0.tar.gz:
+md5   sha512
+
+./deps/checksums/cfe-3.3.src.tar.gz:
+md5   sha512
+
+./deps/checksums/cfe-3.7.0.src.tar.xz:
+md5   sha512
+
+./deps/checksums/cfe-3.7.1.src.tar.xz:
+md5   sha512
+
+./deps/checksums/compiler-rt-3.3.src.tar.gz:
+md5   sha512
+
+./deps/checksums/compiler-rt-3.7.0.src.tar.xz:
+md5   sha512
+
+./deps/checksums/compiler-rt-3.7.1.src.tar.xz:
+md5   sha512
+
+./deps/checksums/dsfmt-2.2.3.tar.gz:
+md5   sha512
+
+./deps/checksums/fftw-3.3.4.tar.gz:
+md5   sha512
+
+./deps/checksums/git-1.8.5.6.tar.gz:
+md5   sha512
+
+./deps/checksums/gmp-6.1.0.tar.bz2:
+md5   sha512
+
+./deps/checksums/i686-4.9.2-release-win32-sjlj-rt_v4-rev3.7z:
+md5   sha512
+
+./deps/checksums/lapack-3.5.0.tgz:
+md5   sha512
+
+./deps/checksums/libcxx-3.3.src.tar.gz:
+md5   sha512
+
+./deps/checksums/libgit2-e8feafe32007ebd16a61820c70abd221655d053c.tar.gz:
+md5   sha512
+
+./deps/checksums/libosxunwind-0.0.3.tar.gz:
+md5   sha512
+
+./deps/checksums/libunwind-1.1-julia2.tar.gz:
+md5   sha512
+
+./deps/checksums/libuv-07730c4bd595b4d45a498a8ee0bcd53878ff7c10.tar.gz:
+md5   sha512
+
+./deps/checksums/lldb-3.3.src.tar.gz:
+md5   sha512
+
+./deps/checksums/lldb-3.7.0.src.tar.xz:
+md5   sha512
+
+./deps/checksums/llvm-3.7.0.src.tar.xz:
+md5   sha512
+
+./deps/checksums/llvm-3.7.1-i686-w64-mingw32-juliadeps-r04.7z:
+md5   sha512
+
+./deps/checksums/llvm-3.7.1-x86_64-w64-mingw32-juliadeps-r04.7z:
+md5   sha512
+
+./deps/checksums/llvm-3.7.1.src.tar.xz:
+md5   sha512
+
+./deps/checksums/mpfr-3.1.3.tar.bz2:
+md5   sha512
+
+./deps/checksums/openblas-53e849f4fcae4363a64576de00e982722c7304f9.tar.gz:
+md5   sha512
+
+./deps/checksums/openlibm-3ee2a6e6a9fc68cbf2ab00f830b9059215e40b06.tar.gz:
+md5   sha512
+
+./deps/checksums/openspecfun-381db9bc865e51de67be9dcaa1610a6f90029c72.tar.gz:
+md5   sha512
+
+./deps/checksums/patchelf-0.8.tar.gz:
+md5   sha512
+
+./deps/checksums/pcre2-10.21.tar.bz2:
+md5   sha512
+
+./deps/checksums/utf8proc-85789180158ac7fff85b9f008828d6ac44f072ea.tar.gz:
+md5   sha512
+
+./deps/checksums/virtualenv-15.0.0.tar.gz:
+md5   sha512
+
+./deps/checksums/x86_64-4.9.2-release-win32-seh-rt_v4-rev3.7z:
+md5   sha512
+
+./deps/valgrind:
+valgrind.h
+
+./doc:
+DocCheck.jl    conf.py        index.rst      requirements.txt
+Makefile    devdocs        latex.rst      stdlib
+NEWS-update.jl    genstdlib.jl      man         tabcomplete.jl
+README.md      images         manual
+
+./doc/devdocs:
+C.rst       debuggingtips.rst meta.rst    sysimg.rst
+ast.rst        eval.rst    object.rst     types.rst
+backtraces.rst    functions.rst     promote-op.rst    valgrind.rst
+boundscheck.rst      init.rst    reflection.rst
+callconv.rst      julia.rst      stdio.rst
+cartesian.rst     llvm.rst    subarrays.rst
+
+./doc/images:
+github_metadata_develbranch.png  github_metadata_pullrequest.png  jltypes.svg
+github_metadata_fork.png   jltypes.ai        travis-icon.png
+
+./doc/man:
+julia.1
+
+./doc/manual:
+arrays.rst           metaprogramming.rst
+calling-c-and-fortran-code.rst      methods.rst
+complex-and-rational-numbers.rst modules.rst
+constructors.rst        networking-and-streams.rst
+control-flow.rst        noteworthy-differences.rst
+conversion-and-promotion.rst     packages.rst
+dates.rst            parallel-computing.rst
+documentation.rst       performance-tips.rst
+embedding.rst           profile.rst
+faq.rst              running-external-programs.rst
+functions.rst           stacktraces.rst
+getting-started.rst        strings.rst
+handling-operating-system-variation.rst   style-guide.rst
+index.rst            types.rst
+integers-and-floating-point-numbers.rst   unicode-input-table.rst
+interacting-with-julia.rst    unicode-input.rst
+interfaces.rst          variables-and-scoping.rst
+introduction.rst        variables.rst
+linear-algebra.rst         workflow-tips.rst
+mathematical-operations.rst
+
+./doc/stdlib:
+arrays.rst  constants.rst  io-network.rst math.rst profile.rst strings.rst
+base.rst dates.rst   libc.rst numbers.rst punctuation.rst   test.rst
+c.rst    file.rst libdl.rst   parallel.rst   sort.rst
+collections.rst   index.rst   linalg.rst  pkg.rst     stacktraces.rst
+
+./etc:
+juliarc.jl
+
+./examples:
+Makefile dictchannel.jl juliatypes.jl  modint.jl   quine.jl typetree.jl
+bubblesort.jl  embedding.c lru.jl      ndgrid.jl   staged.jl   wordcount.jl
+clustermanager hpl.jl      lru_test.jl queens.jl   time.jl
+
+./examples/clustermanager:
+0mq   simple
+
+./examples/clustermanager/0mq:
+README      ZMQCM.jl broker.jl   head.jl     worker.jl
+
+./examples/clustermanager/simple:
+README      UnixDomainCM.jl   head.jl     test_simple.jl
+
+./src:
+APInt-C.cpp    ccalltest.c    intrinsics.h      runtime_ccall.cpp
+APInt-C.h      cgutils.cpp    jitlayers.cpp     runtime_intrinsics.c
+Makefile    codegen.cpp    jl_uv.c        signal-handling.c
+Windows.mk     codegen_internal.h   jlapi.c        signals-mach.c
+abi_aarch64.cpp      common_symbols1.inc  jlfrontend.scm    signals-unix.c
+abi_arm.cpp    common_symbols2.inc  jltypes.c      signals-win.c
+abi_llvm.cpp      debuginfo.cpp     julia-parser.scm  simplevector.c
+abi_win32.cpp     disasm.cpp     julia-syntax.scm  stackwalk.c
+abi_win64.cpp     dlload.c    julia.expmap      support
+abi_x86.cpp    dump.c         julia.h        sys.c
+abi_x86_64.cpp    fenv_constants.h  julia_internal.h  table.c
+alloc.c        file_constants.h  julia_threads.h      task.c
+anticodegen.c     flisp       llvm-gcroot.cpp      threadgroup.c
+array.c        gc-debug.c     llvm-simdloop.cpp threadgroup.h
+ast.c       gc.c        llvm-version.h    threading.c
+ast.scm        gen_sysimg_symtab.jl macroexpand.scm      threading.h
+bin2hex.scm    gf.c        match.scm      toplevel.c
+builtin_proto.h      init.c         mk_julia_flisp_boot.scm utils.scm
+builtins.c     interpreter.c     module.c    uv_constants.h
+ccall.cpp      intrinsics.cpp    options.h
+
+./src/flisp:
+Makefile    cvalues.c      flmain.c    read.c
+Windows.mk     equal.c        iostream.c     string.c
+aliases.scm    equalhash.c    julia_extensions.c   system.lsp
+bootstrap.sh      equalhash.h    mkboot0.lsp    table.c
+builtins.c     flisp.boot     mkboot1.lsp    types.c
+color.lsp      flisp.c        opcodes.h      unittest.lsp
+compiler.lsp      flisp.h        print.c
+
+./src/support:
+END.h       arraylist.c    htable.h    strptime.c
+ENTRY.amd64.h     arraylist.h    htable.inc     strtod.c
+ENTRY.i387.h      asprintf.c     int2str.c      strtod.h
+Makefile    bitvector.c    ios.c       timefuncs.c
+MurmurHash3.c     bitvector.h    ios.h       timefuncs.h
+MurmurHash3.h     dirname.c      libsupport.h      tzfile.h
+Windows.mk     dirpath.h      libsupportinit.c  utf8.c
+_longjmp.win32.S  dtypes.h    operators.c    utf8.h
+_longjmp.win64.S  hashing.c      platform.h     utils.h
+_setjmp.win32.S      hashing.h      ptrhash.c      wsasocketpair.c
+_setjmp.win64.S      htable.c    ptrhash.h
+
+./test:
+Makefile    fastmath.jl    mmap.jl        runtests.jl
+TestHelpers.jl    fft.jl         mod2pi.jl      serialize.jl
+abstractarray.jl  file.jl        mpfr.jl        sets.jl
+arrayops.jl    float16.jl     netload        show.jl
+backtrace.jl      floatapprox.jl    nullable.jl    simdloop.jl
+base64.jl      floatfuncs.jl     numbers.jl     socket.jl
+bigint.jl      functional.jl     operators.jl      sorting.jl
+bitarray.jl    functors.jl    parallel.jl    sparse.jl
+blas.jl        goto.jl        parallel_exec.jl  sparsedir
+boundscheck.jl    grisu.jl    parse.jl    spawn.jl
+broadcast.jl      hashing.jl     path.jl        stacktraces.jl
+ccall.jl    i18n.jl        perf        staged.jl
+char.jl        inference.jl      pkg.jl         statistics.jl
+checked.jl     inline.jl      pollfd.jl      string.jl
+choosetests.jl    int.jl         printf.jl      strings
+cmdlineargs.jl    intfuncs.jl    priorityqueue.jl  subarray.jl
+combinatorics.jl  intset.jl      profile.jl     sysinfo.jl
+compile.jl     iobuffer.jl    random.jl      test.jl
+complex.jl     keywordargs.jl    ranges.jl      test_sourcepath.jl
+copy.jl        libdl.jl    read.jl        testdefs.jl
+core.jl        libgit2-online.jl reduce.jl      threads.jl
+datafmt.jl     libgit2.jl     reducedim.jl      topology.jl
+dates       linalg         reflection.jl     triplequote.jl
+dates.jl    lineedit.jl    regex.jl    tuple.jl
+dict.jl        llvmcall.jl    remote.jl      unicode
+docs.jl        loading.jl     repl.jl        unicode.jl
+dsp.jl         markdown.jl    replcompletions.jl   version.jl
+enums.jl    math.jl        replutil.jl    workspace.jl
+euler.jl    meta.jl        resolve.jl
+examples.jl    misc.jl        rounding.jl
+
+./test/dates:
+accessors.jl   arithmetic.jl  io.jl    query.jl types.jl
+adjusters.jl   conversions.jl periods.jl  ranges.jl
+
+./test/linalg:
+arnoldi.jl     eigen.jl    matmul.jl      symmetric.jl
+bidiag.jl      generic.jl     pinv.jl        triangular.jl
+bunchkaufman.jl      givens.jl      qr.jl       tridiag.jl
+cholesky.jl    lapack.jl      schur.jl    uniformscaling.jl
+dense.jl    lq.jl       special.jl
+diagonal.jl    lu.jl       svd.jl
+
+./test/netload:
+memtest.jl  nettest.jl
+
+./test/perf:
+Makefile blas     lapack      perfgeneric.jl shootout sparse
+README.md   cat      micro    perfutil.jl simd     spell
+array    kernel      perfcomp.jl report.jl   sort     threads
+
+./test/perf/array:
+indexing.jl perf.jl
+
+./test/perf/blas:
+level1.jl   level2.jl   level3.jl   perf.jl
+
+./test/perf/cat:
+perf.jl
+
+./test/perf/kernel:
+actor_centrality.jl  gk.m        json.jl        simplex.jl
+bench_eu.jl    go_benchmark.c    laplace        stockcorr.jl
+bench_eu.m     go_benchmark.jl      laplace.jl     stockcorr.m
+getdivgrad.jl     imdb-1.tsv     perf.jl        ziggurat.jl
+gk.jl       indexing.jl    raytracer.jl
+
+./test/perf/kernel/laplace:
+c_laplace.c          laplace.m
+c_laplace_parallel_update.c      laplace2.py
+c_laplace_parallel_update_pointer.c laplace_for_update1.f90
+cilk_laplace.c          laplace_for_update2.f90
+for_laplace.f90
+
+./test/perf/lapack:
+eig.jl         factorizations.jl perf.jl
+
+./test/perf/micro:
+Makefile java     perf.do     perf.jl     perf.m      scala
+benchmarks  perf.R      perf.f90 perf.js     perf.nb
+bin      perf.c      perf.go     perf.lua perf.py
+
+./test/perf/micro/benchmarks:
+
+./test/perf/micro/bin:
+collect.pl  table.pl
+
+./test/perf/micro/java:
+pom.xml     setup.sh src
+
+./test/perf/micro/java/src:
+main
+
+./test/perf/micro/java/src/main:
+java
+
+./test/perf/micro/java/src/main/java:
+Complex.java   PerfBLAS.java  PerfPure.java
+
+./test/perf/micro/scala:
+build.sbt   src
+
+./test/perf/micro/scala/src:
+main
+
+./test/perf/micro/scala/src/main:
+scala
+
+./test/perf/micro/scala/src/main/scala:
+perf.scala
+
+./test/perf/shootout:
+Makefile    fasta.jl    nbody.jl    regex_dna.jl
+README         k_nucleotide.jl      nbody_vec.jl      revcomp.jl
+binary_trees.jl      mandelbrot.jl     perf.jl        spectralnorm.jl
+fannkuch.jl    meteor_contest.jl pidigits.jl
+
+./test/perf/simd:
+axpy.jl     inner.jl perf.jl     seismic_fdtd.jl   sum_reduce.jl
+
+./test/perf/sort:
+perf.jl
+
+./test/perf/sparse:
+fem.jl         getindex.jl    perf.jl
+fem.m       getindex_skinny.jl
+
+./test/perf/spell:
+perf.jl
+
+./test/perf/threads:
+laplace3d   lbm3d    stockcorr
+
+./test/perf/threads/laplace3d:
+README         laplace3d.jl      laplace3d_vec.m
+laplace3d.c    laplace3d_devec.m
+
+./test/perf/threads/lbm3d:
+README      circshift.jl   lbm3d.jl lbm3d.m
+
+./test/perf/threads/stockcorr:
+pstockcorr.jl     stockcorr_devec.m stockcorr_vec.m
+
+./test/sparsedir:
+cholmod.jl  sparse.jl   sparsevector.jl   spqr.jl     umfpack.jl
+
+./test/strings:
+basic.jl io.jl    search.jl   types.jl util.jl
+
+./test/unicode:
+UnicodeError.jl   types.jl utf32.jl utf8proc.jl
+checkstring.jl utf16.jl utf8.jl
+
+./ui:
+Makefile getopt.c getopt.h repl.c

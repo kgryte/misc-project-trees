@@ -1,0 +1,621 @@
+|-benchmarks
+|---benchmarks
+|-branding
+|---icons
+|-doc
+|---cdoc
+|---f2py
+|-----ex1
+|-----f2python9-final
+|-------src
+|---------examples
+|-----multiarray
+|---neps
+|---newdtype_example
+|-----floatint
+|---release
+|---scipy-sphinx-theme
+|---source
+|-----_static
+|-----_templates
+|-------autosummary
+|-----dev
+|-------gitwash
+|-------governance
+|-----f2py
+|-----neps
+|-----reference
+|-------figures
+|-----user
+|---sphinxext
+|-numpy
+|---_build_utils
+|-----src
+|---compat
+|-----tests
+|---core
+|-----code_generators
+|-----include
+|-------numpy
+|-----src
+|-------multiarray
+|-------npymath
+|-------npysort
+|-------private
+|-------umath
+|-----tests
+|-------data
+|---distutils
+|-----command
+|-----fcompiler
+|-----mingw
+|-----tests
+|---doc
+|---f2py
+|-----src
+|-------test
+|-----tests
+|-------src
+|---------array_from_pyobj
+|---------assumed_shape
+|---------kind
+|---------mixed
+|---------regression
+|---------size
+|---fft
+|-----tests
+|---lib
+|-----tests
+|-------data
+|---linalg
+|-----lapack_lite
+|-----tests
+|---ma
+|-----tests
+|---matrixlib
+|-----tests
+|---polynomial
+|-----tests
+|---random
+|-----mtrand
+|-----tests
+|---testing
+|-----tests
+|---tests
+|-tools
+|---allocation_tracking
+|---c_coverage
+|---numpy-macosx-installer
+|-----art
+|---swig
+|-----test
+|---win32build
+|-----cpucaps
+|-----cpuid
+|-----misc
+|-------msvcrt90
+|-----nsis_script
+
+
+
+CONTRIBUTING.md      THANKS.txt     numpy       tools
+INSTALL.rst.txt      appveyor.yml      pavement.py    tox.ini
+LICENSE.txt    benchmarks     runtests.py
+MANIFEST.in    branding    setup.py
+README.md      doc         site.cfg.example
+
+./benchmarks:
+README.rst  asv.conf.json  benchmarks
+
+./benchmarks/benchmarks:
+__init__.py    bench_function_base.py  bench_linalg.py      bench_ufunc.py
+bench_app.py      bench_indexing.py bench_random.py      common.py
+bench_core.py     bench_io.py    bench_reduce.py
+
+./branding:
+icons
+
+./branding/icons:
+numpylogo.svg     numpylogoicon.svg
+
+./doc:
+CAPI.rst.txt         Py3K.rst.txt         records.rst.txt
+C_STYLE_GUIDE.rst.txt      TESTS.rst.txt        release
+DISTUTILS.rst.txt    cdoc           scipy-sphinx-theme
+EXAMPLE_DOCSTRING.rst.txt  example.py        source
+HOWTO_BUILD_DOCS.rst.txt   f2py           sphinxext
+HOWTO_DOCUMENT.rst.txt     neps           summarize.py
+HOWTO_RELEASE.rst.txt      newdtype_example     ufuncs.rst.txt
+Makefile       postprocess.py
+
+./doc/cdoc:
+Doxyfile Makefile README      numpyfilter.py
+
+./doc/f2py:
+BUGS.txt    TESTING.txt    f2py.1         oldnews.html
+FAQ.txt        THANKS.txt     f2py2e.tex     options.tex
+HISTORY.txt    TODO.txt    f2python9-final      pyforttest.pyf
+Makefile    apps.tex    fortranobject.tex pytest.py
+OLDNEWS.txt    bugs.tex    hello.f        python9.tex
+README.txt     collectinput.py      index.html     signaturefile.tex
+Release-1.x.txt      commands.tex      intro.tex      simple.f
+Release-2.x.txt      default.css    multiarray     simple_session.dat
+Release-3.x.txt      docutils.conf     multiarrays.txt      using_F_compiler.txt
+Release-4.x.txt      ex1         notes.tex      win32_notes.txt
+
+./doc/f2py/ex1:
+arr.f       foo.f       foobar.f90     runme
+bar.f       foobar-smart.f90  foobarmodule.tex
+
+./doc/f2py/f2python9-final:
+README.txt     flow.jpg    mk_pdf.sh      src
+aerostructure.jpg mk_html.sh     mk_ps.sh    structure.jpg
+
+./doc/f2py/f2python9-final/src:
+examples
+
+./doc/f2py/f2python9-final/src/examples:
+exp1.f      exp1mess.txt   exp1session.txt   foo.pyf     foom.pyf
+
+./doc/f2py/multiarray:
+array_from_pyobj.c      fortran_array_from_pyobj.txt  transpose.txt
+bar.c          fun.pyf
+foo.f          run.pyf
+
+./doc/neps:
+datetime-proposal.rst         new-iterator-ufunc.rst
+datetime-proposal3.rst        newbugtracker.rst
+deferred-ufunc-evaluation.rst    npy-format.rst
+generalized-ufuncs.rst        return-of-revenge-of-matmul-pep.rst
+groupby_additions.rst         structured_array_extensions.rst
+math_config_clean.rst         ufunc-overrides.rst
+missing-data.rst        warnfix.rst
+
+./doc/newdtype_example:
+example.py  floatint floatint.c  setup.py
+
+./doc/newdtype_example/floatint:
+__init__.py
+
+./doc/release:
+1.10.0-notes.rst  1.12.0-notes.rst  1.6.2-notes.rst      1.8.2-notes.rst
+1.10.1-notes.rst  1.3.0-notes.rst      1.7.0-notes.rst      1.9.0-notes.rst
+1.10.2-notes.rst  1.4.0-notes.rst      1.7.1-notes.rst      1.9.1-notes.rst
+1.10.3-notes.rst  1.5.0-notes.rst      1.7.2-notes.rst      1.9.2-notes.rst
+1.10.4-notes.rst  1.6.0-notes.rst      1.8.0-notes.rst      time_based_proposal.rst
+1.11.0-notes.rst  1.6.1-notes.rst      1.8.1-notes.rst
+
+./doc/scipy-sphinx-theme:
+
+./doc/source:
+_static     bugs.rst dev      license.rst release.rst
+_templates  conf.py     f2py     neps     user
+about.rst   contents.rst   glossary.rst   reference
+
+./doc/source/_static:
+
+./doc/source/_templates:
+autosummary    indexcontent.html indexsidebar.html layout.html
+
+./doc/source/_templates/autosummary:
+class.rst
+
+./doc/source/dev:
+development_environment.rst   gitwash_links.txt    index.rst
+gitwash           governance
+
+./doc/source/dev/gitwash:
+configure_git.rst    following_latest.rst    git_links.inc
+development_setup.rst      forking_button.png      git_resources.rst
+development_workflow.rst   git_development.rst     index.rst
+dot2_dot3.rst        git_intro.rst        pull_button.png
+
+./doc/source/dev/governance:
+governance.rst index.rst   people.rst
+
+./doc/source/f2py:
+advanced.rst      common.f    ftype.f        setup_example.py
+allocarr.f90      common_session.dat   ftype_session.dat signature-file.rst
+allocarr_session.dat compile_session.dat  getting-started.rst  spam.pyf
+array.f        distutils.rst     index.rst      spam_session.dat
+array_session.dat extcallback.f     moddata.f90    string.f
+calculate.f    extcallback_session.dat moddata_session.dat  string_session.dat
+calculate_session.dat   fib1.f         python-usage.rst  usage.rst
+callback.f     fib1.pyf    run_main_session.dat var.pyf
+callback2.pyf     fib2.pyf    scalar.f    var_session.dat
+callback_session.dat fib3.f         scalar_session.dat
+
+./doc/source/neps:
+datetime-proposal.rst      index.rst         npy-format.rst
+datetime-proposal3.rst     math_config_clean.rst      structured_array_extensions.rst
+deferred-ufunc-evaluation.rst missing-data.rst     ufunc-overrides.rst
+generalized-ufuncs.rst     new-iterator-ufunc.rst     warnfix.rst
+groupby_additions.rst      newbugtracker.rst
+
+./doc/source/reference:
+arrays.classes.rst         routines.fft.rst
+arrays.datetime.rst        routines.financial.rst
+arrays.dtypes.rst       routines.functional.rst
+arrays.indexing.rst        routines.help.rst
+arrays.interface.rst       routines.indexing.rst
+arrays.ndarray.rst         routines.io.rst
+arrays.nditer.rst       routines.linalg.rst
+arrays.rst           routines.logic.rst
+arrays.scalars.rst         routines.ma.rst
+c-api.array.rst            routines.math.rst
+c-api.config.rst        routines.matlib.rst
+c-api.coremath.rst         routines.numarray.rst
+c-api.deprecations.rst        routines.oldnumeric.rst
+c-api.dtype.rst            routines.other.rst
+c-api.generalized-ufuncs.rst     routines.padding.rst
+c-api.iterator.rst         routines.polynomials.chebyshev.rst
+c-api.rst            routines.polynomials.classes.rst
+c-api.types-and-structures.rst      routines.polynomials.hermite.rst
+c-api.ufunc.rst            routines.polynomials.hermite_e.rst
+distutils.rst           routines.polynomials.laguerre.rst
+figures              routines.polynomials.legendre.rst
+index.rst            routines.polynomials.package.rst
+internals.code-explanations.rst     routines.polynomials.poly1d.rst
+internals.rst           routines.polynomials.polynomial.rst
+maskedarray.baseclass.rst     routines.polynomials.rst
+maskedarray.generic.rst       routines.random.rst
+maskedarray.rst            routines.rst
+routines.array-creation.rst      routines.set.rst
+routines.array-manipulation.rst     routines.sort.rst
+routines.bitwise.rst       routines.statistics.rst
+routines.char.rst       routines.testing.rst
+routines.ctypeslib.rst        routines.window.rst
+routines.datetime.rst         swig.interface-file.rst
+routines.dtype.rst         swig.rst
+routines.dual.rst       swig.testing.rst
+routines.emath.rst         ufuncs.rst
+routines.err.rst
+
+./doc/source/reference/figures:
+dtype-hierarchy.dia  dtype-hierarchy.png  threefundamental.pdf
+dtype-hierarchy.pdf  threefundamental.fig threefundamental.png
+
+./doc/source/user:
+basics.broadcasting.rst    basics.subclassing.rst     index.rst
+basics.byteswapping.rst    basics.types.rst     install.rst
+basics.creation.rst     building.rst         misc.rst
+basics.indexing.rst     c-info.beyond-basics.rst   numpy-for-matlab-users.rst
+basics.io.genfromtxt.rst   c-info.how-to-extend.rst   quickstart.rst
+basics.io.rst        c-info.python-as-glue.rst  setting-up.rst
+basics.rec.rst       c-info.rst        whatisnumpy.rst
+basics.rst        c-info.ufunc-tutorial.rst
+
+./doc/sphinxext:
+
+./numpy:
+__init__.py    core        fft         polynomial
+_build_utils      ctypeslib.py      lib         random
+_distributor_init.py distutils      linalg         setup.py
+_import_tools.py  doc         ma       testing
+add_newdocs.py    dual.py        matlib.py      tests
+compat         f2py        matrixlib
+
+./numpy/_build_utils:
+README         apple_accelerate.py  src
+__init__.py    common.py
+
+./numpy/_build_utils/src:
+apple_sgemv_fix.c
+
+./numpy/compat:
+__init__.py _inspect.py py3k.py     setup.py tests
+
+./numpy/compat/tests:
+test_compat.py
+
+./numpy/core:
+__init__.py    defchararray.py      machar.py      records.py
+_internal.py      fromnumeric.py    memmap.py      setup.py
+_methods.py    function_base.py  mlib.ini.in    setup_common.py
+arrayprint.py     getlimits.py      npymath.ini.in    shape_base.py
+code_generators      include        numeric.py     src
+cversions.py      info.py        numerictypes.py      tests
+
+./numpy/core/code_generators:
+__init__.py    genapi.py      generate_ufunc_api.py   numpy_api.py
+cversions.txt     generate_numpy_api.py   generate_umath.py ufunc_docstrings.py
+
+./numpy/core/include:
+numpy
+
+./numpy/core/include/numpy:
+_neighborhood_iterator_imp.h  npy_1_7_deprecated_api.h   npy_os.h
+_numpyconfig.h.in    npy_3kcompat.h       numpyconfig.h
+arrayobject.h        npy_common.h         old_defines.h
+arrayscalars.h       npy_cpu.h         oldnumeric.h
+halffloat.h       npy_endian.h         ufuncobject.h
+ndarrayobject.h         npy_interrupt.h         utils.h
+ndarraytypes.h       npy_math.h
+noprefix.h        npy_no_deprecated_api.h
+
+./numpy/core/src:
+dummymodule.c  multiarray  npymath     npysort     private     umath
+
+./numpy/core/src/multiarray:
+_datetime.h       datetime.c        nditer_constr.c
+alloc.c           datetime_busday.c    nditer_impl.h
+alloc.h           datetime_busday.h    nditer_pywrap.c
+array_assign.c       datetime_busdaycal.c    nditer_pywrap.h
+array_assign.h       datetime_busdaycal.h    nditer_templ.c.src
+array_assign_array.c    datetime_strings.c      number.c
+array_assign_scalar.c      datetime_strings.h      number.h
+arrayobject.c        descriptor.c         numpymemoryview.c
+arrayobject.h        descriptor.h         numpymemoryview.h
+arraytypes.c.src     dtype_transfer.c     numpyos.c
+arraytypes.h         einsum.c.src         numpyos.h
+buffer.c       flagsobject.c        python_xerbla.c
+buffer.h       getset.c       refcount.c
+calculation.c        getset.h       refcount.h
+calculation.h        hashdescr.c       scalarapi.c
+cblasfuncs.c         hashdescr.h       scalartypes.c.src
+cblasfuncs.h         item_selection.c     scalartypes.h
+common.c       item_selection.h     sequence.c
+common.h       iterators.c       sequence.h
+compiled_base.c         iterators.h       shape.c
+compiled_base.h         lowlevel_strided_loops.c.src  shape.h
+conversion_utils.c      mapping.c         ucsnarrow.c
+conversion_utils.h      mapping.h         ucsnarrow.h
+convert.c         methods.c         usertypes.c
+convert.h         methods.h         usertypes.h
+convert_datatype.c      multiarray_tests.c.src     vdot.c
+convert_datatype.h      multiarraymodule.c      vdot.h
+ctors.c           multiarraymodule.h
+ctors.h           nditer_api.c
+
+./numpy/core/src/npymath:
+_signbit.c     ieee754.c.src     npy_math_common.h npy_math_private.h
+halffloat.c    npy_math.c.src    npy_math_complex.c.src
+
+./numpy/core/src/npysort:
+binsearch.c.src      mergesort.c.src      quicksort.c.src
+heapsort.c.src    npysort_common.h  selection.c.src
+
+./numpy/core/src/private:
+lowlevel_strided_loops.h   npy_config.h         npy_pycompat.h
+mem_overlap.c        npy_extint128.h         npy_sort.h
+mem_overlap.h        npy_fpmath.h         templ_common.h.src
+npy_binsearch.h.src     npy_import.h         ufunc_override.h
+npy_cblas.h       npy_partition.h.src
+
+./numpy/core/src/umath:
+funcs.inc.src        scalarmath.c.src     ufunc_type_resolution.c
+loops.c.src       simd.inc.src         ufunc_type_resolution.h
+loops.h.src       struct_ufunc_test.c.src    umath_tests.c.src
+operand_flag_tests.c.src   test_rational.c.src     umathmodule.c
+reduction.c       ufunc_object.c
+reduction.h       ufunc_object.h
+
+./numpy/core/tests:
+data        test_errstate.py  test_machar.py    test_regression.py
+test_abc.py    test_extint128.py test_mem_overlap.py  test_scalarinherit.py
+test_api.py    test_function_base.py   test_memmap.py    test_scalarmath.py
+test_arrayprint.py   test_getlimits.py test_multiarray.py   test_scalarprint.py
+test_datetime.py  test_half.py      test_nditer.py    test_shape_base.py
+test_defchararray.py test_indexerrors.py  test_numeric.py      test_ufunc.py
+test_deprecations.py test_indexing.py  test_numerictypes.py test_umath.py
+test_dtype.py     test_item_selection.py  test_print.py     test_umath_complex.py
+test_einsum.py    test_longdouble.py   test_records.py      test_unicode.py
+
+./numpy/core/tests/data:
+astype_copy.pkl      recarray_from_file.fits
+
+./numpy/distutils:
+__init__.py    environment.py    line_endings.py      numpy_distribution.py
+__version__.py    exec_command.py      log.py         pathccompiler.py
+ccompiler.py      extension.py      mingw       setup.py
+command        fcompiler      mingw32ccompiler.py  system_info.py
+compat.py      from_template.py  misc_util.py      tests
+conv_template.py  info.py        msvc9compiler.py  unixccompiler.py
+core.py        intelccompiler.py msvccompiler.py
+cpuinfo.py     lib2def.py     npy_pkg_config.py
+
+./numpy/distutils/command:
+__init__.py    build_ext.py      config_compiler.py   install_data.py
+autodist.py    build_py.py    develop.py     install_headers.py
+bdist_rpm.py      build_scripts.py  egg_info.py    sdist.py
+build.py    build_src.py      install.py
+build_clib.py     config.py      install_clib.py
+
+./numpy/distutils/fcompiler:
+__init__.py g95.py      ibm.py      mips.py     pathf95.py  vast.py
+absoft.py   gnu.py      intel.py nag.py      pg.py
+compaq.py   hpux.py     lahey.py none.py     sun.py
+
+./numpy/distutils/mingw:
+gfortran_vs2003_hack.c
+
+./numpy/distutils/tests:
+test_exec_command.py test_fcompiler_intel.py test_npy_pkg_config.py
+test_fcompiler_gnu.py   test_misc_util.py test_system_info.py
+
+./numpy/doc:
+__init__.py    constants.py      internals.py      ufuncs.py
+basics.py      creation.py    misc.py
+broadcasting.py      glossary.py    structured_arrays.py
+byteswapping.py      indexing.py    subclassing.py
+
+./numpy/f2py:
+__init__.py capi_maps.py   crackfortran.py   f90mod_rules.py   setup.cfg   use_rules.py
+__main__.py cb_rules.py diagnose.py func2subr.py   setup.py
+__version__.py cfuncs.py   f2py2e.py   info.py     src
+auxfuncs.py common_rules.py   f2py_testing.py   rules.py tests
+
+./numpy/f2py/src:
+fortranobject.c   fortranobject.h   test
+
+./numpy/f2py/src/test:
+Makefile bar.f    foo.f    foo90.f90   foomodule.c wrap.f
+
+./numpy/f2py/tests:
+src            test_mixed.py        test_return_logical.py
+test_array_from_pyobj.py   test_regression.py      test_return_real.py
+test_assumed_shape.py      test_return_character.py   test_size.py
+test_callback.py     test_return_complex.py     util.py
+test_kind.py         test_return_integer.py
+
+./numpy/f2py/tests/src:
+array_from_pyobj  kind        regression
+assumed_shape     mixed       size
+
+./numpy/f2py/tests/src/array_from_pyobj:
+wrapmodule.c
+
+./numpy/f2py/tests/src/assumed_shape:
+foo_free.f90   foo_mod.f90 foo_use.f90 precision.f90
+
+./numpy/f2py/tests/src/kind:
+foo.f90
+
+./numpy/f2py/tests/src/mixed:
+foo.f    foo_fixed.f90  foo_free.f90
+
+./numpy/f2py/tests/src/regression:
+inout.f90
+
+./numpy/f2py/tests/src/size:
+foo.f90
+
+./numpy/fft:
+__init__.py    fftpack.py     info.py
+fftpack.c      fftpack_litemodule.c setup.py
+fftpack.h      helper.py      tests
+
+./numpy/fft/tests:
+test_fftpack.py   test_helper.py
+
+./numpy/lib:
+__init__.py    financial.py      polynomial.py     twodim_base.py
+_datasource.py    format.py      recfunctions.py      type_check.py
+_iotools.py    function_base.py  scimath.py     ufunclike.py
+_version.py    index_tricks.py      setup.py    user_array.py
+arraypad.py    info.py        shape_base.py     utils.py
+arraysetops.py    nanfunctions.py      stride_tricks.py
+arrayterator.py      npyio.py    tests
+
+./numpy/lib/tests:
+data        test_arrayterator.py test_nanfunctions.py test_stride_tricks.py
+test__datasource.py  test_financial.py test_packbits.py  test_twodim_base.py
+test__iotools.py  test_format.py    test_polynomial.py   test_type_check.py
+test__version.py  test_function_base.py   test_recfunctions.py test_ufunclike.py
+test_arraypad.py  test_index_tricks.py test_regression.py   test_utils.py
+test_arraysetops.py  test_io.py     test_shape_base.py
+
+./numpy/lib/tests/data:
+py2-objarr.npy    py3-objarr.npy    python3.npy
+py2-objarr.npz    py3-objarr.npz    win64python2.npy
+
+./numpy/linalg:
+__init__.py    lapack_lite    linalg.py      tests
+info.py        lapack_litemodule.c  setup.py    umath_linalg.c.src
+
+./numpy/linalg/lapack_lite:
+README         dlamch.c    f2c_lite.c     python_xerbla.c
+blas_lite.c    dlapack_lite.c    fortran.py     wrapped_routines
+clapack_scrub.py  f2c.h       make_lite.py      zlapack_lite.c
+
+./numpy/linalg/tests:
+test_build.py     test_deprecations.py test_linalg.py    test_regression.py
+
+./numpy/ma:
+API_CHANGES.txt      bench.py    setup.py    version.py
+LICENSE        core.py        tests
+README.txt     extras.py      testutils.py
+__init__.py    mrecords.py    timer_comparison.py
+
+./numpy/ma/tests:
+test_core.py      test_mrecords.py  test_regression.py
+test_extras.py    test_old_ma.py    test_subclassing.py
+
+./numpy/matrixlib:
+__init__.py defmatrix.py   setup.py tests
+
+./numpy/matrixlib/tests:
+test_defmatrix.py test_multiarray.py   test_numeric.py      test_regression.py
+
+./numpy/polynomial:
+__init__.py chebyshev.py   hermite_e.py   legendre.py polyutils.py   tests
+_polybase.py   hermite.py  laguerre.py polynomial.py  setup.py
+
+./numpy/polynomial/tests:
+test_chebyshev.py test_hermite_e.py test_polynomial.py
+test_classes.py      test_laguerre.py  test_polyutils.py
+test_hermite.py      test_legendre.py  test_printing.py
+
+./numpy/random:
+__init__.py info.py     mtrand      setup.py tests
+
+./numpy/random/mtrand:
+Python.pxi     generate_mtrand_c.py mt_compat.h    numpy.pxd
+distributions.c      initarray.c    mtrand.pyx     randomkit.c
+distributions.h      initarray.h    mtrand_py_helper.h   randomkit.h
+
+./numpy/random/tests:
+test_random.py    test_regression.py
+
+./numpy/testing:
+__init__.py       nosetester.py        tests
+decorators.py        print_coercion_tables.py   utils.py
+noseclasses.py       setup.py
+
+./numpy/testing/tests:
+test_decorators.py   test_doctesting.py   test_utils.py
+
+./numpy/tests:
+test_ctypeslib.py test_matlib.py    test_numpy_version.py   test_scripts.py
+
+./tools:
+allocation_tracking  cythonize.py      swig        travis-upload-wheel.sh
+c_coverage     numpy-macosx-installer  test-installed-numpy.py win32build
+commitstats.py    replace_old_macros.sed  travis-test.sh
+
+./tools/allocation_tracking:
+alloc_hook.pyx    setup.py    sorttable.js      track_allocations.py
+
+./tools/c_coverage:
+HOWTO_C_COVERAGE.txt c_coverage_collect.sh   c_coverage_report.py
+
+./tools/numpy-macosx-installer:
+README.txt     art         dmgbackground.png new-create-dmg
+
+./tools/numpy-macosx-installer/art:
+dmgbackground.png dmgbackground.svg
+
+./tools/swig:
+Makefile README      numpy.i     pyfragments.swg   test
+
+./tools/swig/test:
+Array.i        Flat.cxx    SuperTensor.cxx      testArray.py
+Array1.cxx     Flat.h         SuperTensor.h     testFarray.py
+Array1.h    Flat.i         SuperTensor.i     testFlat.py
+Array2.cxx     Fortran.cxx    Tensor.cxx     testFortran.py
+Array2.h    Fortran.h      Tensor.h    testMatrix.py
+ArrayZ.cxx     Fortran.i      Tensor.i    testSuperTensor.py
+ArrayZ.h    Makefile    Vector.cxx     testTensor.py
+Farray.cxx     Matrix.cxx     Vector.h    testVector.py
+Farray.h    Matrix.h    Vector.i
+Farray.i    Matrix.i    setup.py
+
+./tools/win32build:
+README.txt     cpucaps        misc
+build-cpucaps.py  cpuid       nsis_scripts
+build.py    doall.py    prepare_bootstrap.py
+
+./tools/win32build/cpucaps:
+SConstruct  cpucaps_main.c cpucaps_main.h
+
+./tools/win32build/cpuid:
+SConstruct  cpuid.c     cpuid.h     test.c
+
+./tools/win32build/misc:
+msvcrt90 x86analysis.py
+
+./tools/win32build/misc/msvcrt90:
+msvcrt.def.in  yop.sh
+
+./tools/win32build/nsis_scripts:
+numpy-superinstaller.nsi.in

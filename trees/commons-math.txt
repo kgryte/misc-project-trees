@@ -1,0 +1,782 @@
+|-doc
+|---development
+|---release
+|-siteMods
+|-src
+|---changes
+|---main
+|-----assembly
+|-----java
+|-------org
+|---------apache
+|-----------commons
+|-------------math4
+|---------------analysis
+|-----------------differentiation
+|-----------------function
+|-----------------integration
+|-------------------gauss
+|-----------------interpolation
+|-----------------polynomials
+|-----------------solvers
+|---------------complex
+|---------------dfp
+|---------------distribution
+|-----------------fitting
+|---------------exception
+|-----------------util
+|---------------filter
+|---------------fitting
+|-----------------leastsquares
+|---------------fraction
+|---------------genetics
+|---------------geometry
+|-----------------enclosing
+|-----------------euclidean
+|-------------------oned
+|-------------------threed
+|-------------------twod
+|---------------------hull
+|-----------------hull
+|-----------------partitioning
+|-----------------spherical
+|-------------------oned
+|-------------------twod
+|---------------linear
+|---------------ml
+|-----------------clustering
+|-------------------evaluation
+|-----------------distance
+|-----------------neuralnet
+|-------------------oned
+|-------------------sofm
+|---------------------util
+|-------------------twod
+|---------------------util
+|---------------ode
+|-----------------events
+|-----------------nonstiff
+|-----------------sampling
+|---------------optim
+|-----------------linear
+|-----------------nonlinear
+|-------------------scalar
+|---------------------gradient
+|---------------------noderiv
+|-----------------univariate
+|---------------primes
+|---------------random
+|---------------special
+|---------------stat
+|-----------------correlation
+|-----------------descriptive
+|-------------------moment
+|-------------------rank
+|-------------------summary
+|-----------------inference
+|-----------------interval
+|-----------------ranking
+|-----------------regression
+|---------------transform
+|---------------util
+|-----resources
+|-------assets
+|---------org
+|-----------apache
+|-------------commons
+|---------------math4
+|-----------------exception
+|-------------------util
+|-----------------random
+|---media
+|---site
+|-----apt
+|-------userguide
+|-----design
+|-----resources
+|-------images
+|---------userguide
+|-------style
+|-----xdoc
+|-------userguide
+|---test
+|-----R
+|-----java
+|-------org
+|---------apache
+|-----------commons
+|-------------math4
+|---------------analysis
+|-----------------differentiation
+|-----------------function
+|-----------------integration
+|-------------------gauss
+|-----------------interpolation
+|-----------------polynomials
+|-----------------solvers
+|---------------complex
+|---------------dfp
+|---------------distribution
+|-----------------fitting
+|---------------exception
+|-----------------util
+|---------------filter
+|---------------fitting
+|-----------------leastsquares
+|---------------fraction
+|---------------genetics
+|---------------geometry
+|-----------------enclosing
+|-----------------euclidean
+|-------------------oned
+|-------------------threed
+|-------------------twod
+|---------------------hull
+|-----------------partitioning
+|-----------------spherical
+|-------------------oned
+|-------------------twod
+|---------------linear
+|---------------ml
+|-----------------clustering
+|-------------------evaluation
+|-----------------distance
+|-----------------neuralnet
+|-------------------oned
+|-------------------sofm
+|---------------------util
+|-------------------twod
+|---------------------util
+|---------------ode
+|-----------------events
+|-----------------nonstiff
+|-----------------sampling
+|---------------optim
+|-----------------linear
+|-----------------nonlinear
+|-------------------scalar
+|---------------------gradient
+|---------------------noderiv
+|-----------------univariate
+|---------------primes
+|---------------random
+|---------------special
+|---------------stat
+|-----------------correlation
+|-----------------data
+|-----------------descriptive
+|-------------------moment
+|-------------------rank
+|-------------------summary
+|-----------------inference
+|-----------------interval
+|-----------------ranking
+|-----------------regression
+|---------------transform
+|---------------util
+|-----maxima
+|-------special
+|---------RealFunctionValidation
+|---------reference
+|-----resources
+|-------org
+|---------apache
+|-----------commons
+|-------------math4
+|---------------distribution
+|---------------fitting
+|-----------------leastsquares
+|---------------geometry
+|-----------------euclidean
+|-------------------threed
+|---------------linear
+|---------------optim
+|-----------------nonlinear
+|-------------------vector
+|---------------------jacobian
+|---------------optimization
+|-----------------general
+|---------------random
+|---------------stat
+|-----------------data
+|---userguide
+|-----java
+|-------org
+|---------apache
+|-----------commons
+|-------------math4
+|---------------userguide
+|-----------------clustering
+|-----------------filter
+|-----------------genetics
+|-----------------geometry
+|-----------------sofm
+|-----resources   
+
+
+
+Field.java     distribution      geometry    primes
+FieldElement.java exception      linear         random
+RealFieldElement.java   filter         ml       special
+analysis    fitting        ode         stat
+complex        fraction    optim       transform
+dfp         genetics    package-info.java util
+
+./src/main/java/org/apache/commons/math4/analysis:
+BivariateFunction.java        UnivariateMatrixFunction.java
+FunctionUtils.java         UnivariateVectorFunction.java
+MultivariateFunction.java     differentiation
+MultivariateMatrixFunction.java     function
+MultivariateVectorFunction.java     integration
+ParametricUnivariateFunction.java   interpolation
+RealFieldUnivariateFunction.java package-info.java
+TrivariateFunction.java       polynomials
+UnivariateFunction.java       solvers
+
+./src/main/java/org/apache/commons/math4/analysis/differentiation:
+DSCompiler.java               UnivariateDifferentiableFunction.java
+DerivativeStructure.java         UnivariateDifferentiableMatrixFunction.java
+FiniteDifferencesDifferentiator.java      UnivariateDifferentiableVectorFunction.java
+GradientFunction.java            UnivariateFunctionDifferentiator.java
+JacobianFunction.java            UnivariateMatrixFunctionDifferentiator.java
+MultivariateDifferentiableFunction.java      UnivariateVectorFunctionDifferentiator.java
+MultivariateDifferentiableVectorFunction.java   package-info.java
+SparseGradient.java
+
+./src/main/java/org/apache/commons/math4/analysis/function:
+Abs.java    Cos.java    Log1p.java     Sin.java
+Acos.java      Cosh.java      Logistic.java     Sinc.java
+Acosh.java     Divide.java    Logit.java     Sinh.java
+Add.java    Exp.java    Max.java    Sqrt.java
+Asin.java      Expm1.java     Min.java    StepFunction.java
+Asinh.java     Floor.java     Minus.java     Subtract.java
+Atan.java      Gaussian.java     Multiply.java     Tan.java
+Atan2.java     HarmonicOscillator.java Pow.java    Tanh.java
+Atanh.java     Identity.java     Power.java     Ulp.java
+Cbrt.java      Inverse.java      Rint.java      package-info.java
+Ceil.java      Log.java    Sigmoid.java
+Constant.java     Log10.java     Signum.java
+
+./src/main/java/org/apache/commons/math4/analysis/integration:
+BaseAbstractUnivariateIntegrator.java  TrapezoidIntegrator.java
+IterativeLegendreGaussIntegrator.java  UnivariateIntegrator.java
+MidPointIntegrator.java       gauss
+RombergIntegrator.java        package-info.java
+SimpsonIntegrator.java
+
+./src/main/java/org/apache/commons/math4/analysis/integration/gauss:
+BaseRuleFactory.java       LegendreHighPrecisionRuleFactory.java
+GaussIntegrator.java       LegendreRuleFactory.java
+GaussIntegratorFactory.java      SymmetricGaussIntegrator.java
+HermiteRuleFactory.java       package-info.java
+
+./src/main/java/org/apache/commons/math4/analysis/interpolation:
+AkimaSplineInterpolator.java
+BicubicInterpolatingFunction.java
+BicubicInterpolator.java
+BivariateGridInterpolator.java
+DividedDifferenceInterpolator.java
+FieldHermiteInterpolator.java
+HermiteInterpolator.java
+InterpolatingMicrosphere.java
+InterpolatingMicrosphere2D.java
+LinearInterpolator.java
+LoessInterpolator.java
+MicrosphereProjectionInterpolator.java
+MultivariateInterpolator.java
+NevilleInterpolator.java
+PiecewiseBicubicSplineInterpolatingFunction.java
+PiecewiseBicubicSplineInterpolator.java
+SplineInterpolator.java
+TricubicInterpolatingFunction.java
+TricubicInterpolator.java
+TrivariateGridInterpolator.java
+UnivariateInterpolator.java
+UnivariatePeriodicInterpolator.java
+package-info.java
+
+./src/main/java/org/apache/commons/math4/analysis/polynomials:
+PolynomialFunction.java       PolynomialSplineFunction.java
+PolynomialFunctionLagrangeForm.java PolynomialsUtils.java
+PolynomialFunctionNewtonForm.java   package-info.java
+
+./src/main/java/org/apache/commons/math4/analysis/solvers:
+AbstractPolynomialSolver.java       LaguerreSolver.java
+AbstractUnivariateDifferentiableSolver.java  MullerSolver.java
+AbstractUnivariateSolver.java       MullerSolver2.java
+AllowedSolution.java          NewtonRaphsonSolver.java
+BaseAbstractUnivariateSolver.java      PegasusSolver.java
+BaseSecantSolver.java            PolynomialSolver.java
+BaseUnivariateSolver.java        RegulaFalsiSolver.java
+BisectionSolver.java          RiddersSolver.java
+BracketedRealFieldUnivariateSolver.java      SecantSolver.java
+BracketedUnivariateSolver.java         UnivariateDifferentiableSolver.java
+BracketingNthOrderBrentSolver.java     UnivariateSolver.java
+BrentSolver.java           UnivariateSolverUtils.java
+FieldBracketingNthOrderBrentSolver.java      package-info.java
+IllinoisSolver.java
+
+./src/main/java/org/apache/commons/math4/complex:
+Complex.java      ComplexFormat.java   Quaternion.java      package-info.java
+ComplexField.java ComplexUtils.java RootsOfUnity.java
+
+./src/main/java/org/apache/commons/math4/dfp:
+Dfp.java    DfpField.java     package-info.java
+DfpDec.java    DfpMath.java
+
+./src/main/java/org/apache/commons/math4/distribution:
+AbstractIntegerDistribution.java    LogisticDistribution.java
+AbstractMultivariateRealDistribution.java MixtureMultivariateNormalDistribution.java
+AbstractRealDistribution.java       MixtureMultivariateRealDistribution.java
+BetaDistribution.java            MultivariateNormalDistribution.java
+BinomialDistribution.java        MultivariateRealDistribution.java
+CauchyDistribution.java          NakagamiDistribution.java
+ChiSquaredDistribution.java         NormalDistribution.java
+ConstantRealDistribution.java       ParetoDistribution.java
+EnumeratedDistribution.java         PascalDistribution.java
+EnumeratedIntegerDistribution.java     PoissonDistribution.java
+EnumeratedRealDistribution.java        RealDistribution.java
+ExponentialDistribution.java        SaddlePointExpansion.java
+FDistribution.java            TDistribution.java
+GammaDistribution.java           TriangularDistribution.java
+GeometricDistribution.java       UniformIntegerDistribution.java
+GumbelDistribution.java          UniformRealDistribution.java
+HypergeometricDistribution.java        WeibullDistribution.java
+IntegerDistribution.java         ZipfDistribution.java
+LaplaceDistribution.java         fitting
+LevyDistribution.java            package-info.java
+LogNormalDistribution.java
+
+./src/main/java/org/apache/commons/math4/distribution/fitting:
+MultivariateNormalMixtureExpectationMaximization.java
+package-info.java
+
+./src/main/java/org/apache/commons/math4/exception:
+ConvergenceException.java     NonMonotonicSequenceException.java
+DimensionMismatchException.java     NotANumberException.java
+InsufficientDataException.java      NotFiniteNumberException.java
+MathArithmeticException.java     NotPositiveException.java
+MathIllegalArgumentException.java   NotStrictlyPositiveException.java
+MathIllegalNumberException.java     NullArgumentException.java
+MathIllegalStateException.java      NumberIsTooLargeException.java
+MathInternalError.java        NumberIsTooSmallException.java
+MathParseException.java       OutOfRangeException.java
+MathRuntimeException.java     TooManyEvaluationsException.java
+MathUnsupportedOperationException.java TooManyIterationsException.java
+MaxCountExceededException.java      ZeroException.java
+MultiDimensionMismatchException.java   package-info.java
+NoBracketingException.java    util
+NoDataException.java
+
+./src/main/java/org/apache/commons/math4/exception/util:
+ArgUtils.java        ExceptionContextProvider.java package-info.java
+DummyLocalizable.java      Localizable.java
+ExceptionContext.java      LocalizedFormats.java
+
+./src/main/java/org/apache/commons/math4/filter:
+DefaultMeasurementModel.java  KalmanFilter.java    ProcessModel.java
+DefaultProcessModel.java   MeasurementModel.java      package-info.java
+
+./src/main/java/org/apache/commons/math4/fitting:
+AbstractCurveFitter.java   PolynomialCurveFitter.java WeightedObservedPoints.java
+GaussianCurveFitter.java   SimpleCurveFitter.java     leastsquares
+HarmonicCurveFitter.java   WeightedObservedPoint.java package-info.java
+
+./src/main/java/org/apache/commons/math4/fitting/leastsquares:
+AbstractEvaluation.java       LeastSquaresProblem.java
+DenseWeightedEvaluation.java     LevenbergMarquardtOptimizer.java
+EvaluationRmsChecker.java     MultivariateJacobianFunction.java
+GaussNewtonOptimizer.java     OptimumImpl.java
+LeastSquaresAdapter.java      ParameterValidator.java
+LeastSquaresBuilder.java      ValueAndJacobianFunction.java
+LeastSquaresFactory.java      package-info.java
+LeastSquaresOptimizer.java
+
+./src/main/java/org/apache/commons/math4/fraction:
+AbstractFormat.java        FractionField.java
+BigFraction.java        FractionFormat.java
+BigFractionField.java         ProperBigFractionFormat.java
+BigFractionFormat.java        ProperFractionFormat.java
+Fraction.java           package-info.java
+FractionConversionException.java
+
+./src/main/java/org/apache/commons/math4/genetics:
+AbstractListChromosome.java      MutationPolicy.java
+BinaryChromosome.java         NPointCrossover.java
+BinaryMutation.java        OnePointCrossover.java
+Chromosome.java            OrderedCrossover.java
+ChromosomePair.java        PermutationChromosome.java
+CrossoverPolicy.java       Population.java
+CycleCrossover.java        RandomKey.java
+ElitisticListPopulation.java     RandomKeyMutation.java
+Fitness.java            SelectionPolicy.java
+FixedElapsedTime.java         StoppingCondition.java
+FixedGenerationCount.java     TournamentSelection.java
+GeneticAlgorithm.java         UniformCrossover.java
+InvalidRepresentationException.java package-info.java
+ListPopulation.java
+
+./src/main/java/org/apache/commons/math4/geometry:
+Point.java     VectorFormat.java hull        spherical
+Space.java     enclosing      package-info.java
+Vector.java    euclidean      partitioning
+
+./src/main/java/org/apache/commons/math4/geometry/enclosing:
+Encloser.java        SupportBallGenerator.java  package-info.java
+EnclosingBall.java      WelzlEncloser.java
+
+./src/main/java/org/apache/commons/math4/geometry/euclidean:
+oned  threed   twod
+
+./src/main/java/org/apache/commons/math4/geometry/euclidean/oned:
+Euclidean1D.java  IntervalsSet.java SubOrientedPoint.java   Vector1DFormat.java
+Interval.java     OrientedPoint.java   Vector1D.java     package-info.java
+
+./src/main/java/org/apache/commons/math4/geometry/euclidean/threed:
+CardanEulerSingularityException.java   RotationConvention.java
+Euclidean3D.java        RotationOrder.java
+FieldRotation.java         Segment.java
+FieldVector3D.java         SphereGenerator.java
+Line.java            SphericalCoordinates.java
+NotARotationMatrixException.java SubLine.java
+OutlineExtractor.java         SubPlane.java
+Plane.java           Vector3D.java
+PolyhedronsSet.java        Vector3DFormat.java
+Rotation.java           package-info.java
+
+./src/main/java/org/apache/commons/math4/geometry/euclidean/twod:
+DiskGenerator.java   NestedLoops.java  SubLine.java      hull
+Euclidean2D.java  PolygonsSet.java  Vector2D.java     package-info.java
+Line.java      Segment.java      Vector2DFormat.java
+
+./src/main/java/org/apache/commons/math4/geometry/euclidean/twod/hull:
+AbstractConvexHullGenerator2D.java  ConvexHullGenerator2D.java
+AklToussaintHeuristic.java    MonotoneChain.java
+ConvexHull2D.java       package-info.java
+
+./src/main/java/org/apache/commons/math4/geometry/hull:
+ConvexHull.java         ConvexHullGenerator.java   package-info.java
+
+./src/main/java/org/apache/commons/math4/geometry/partitioning:
+AbstractRegion.java     BoundaryProjector.java     Region.java
+AbstractSubHyperplane.java BoundarySizeVisitor.java   RegionFactory.java
+BSPTree.java         Characterization.java      Side.java
+BSPTreeVisitor.java     Embedding.java       SubHyperplane.java
+BoundaryAttribute.java     Hyperplane.java         Transform.java
+BoundaryBuilder.java    InsideFinder.java    package-info.java
+BoundaryProjection.java    NodesSet.java
+
+./src/main/java/org/apache/commons/math4/geometry/spherical:
+oned  twod
+
+./src/main/java/org/apache/commons/math4/geometry/spherical/oned:
+Arc.java    LimitAngle.java      Sphere1D.java     package-info.java
+ArcsSet.java      S1Point.java      SubLimitAngle.java
+
+./src/main/java/org/apache/commons/math4/geometry/spherical/twod:
+Circle.java       S2Point.java         Vertex.java
+Edge.java         Sphere2D.java        package-info.java
+EdgesBuilder.java    SphericalPolygonsSet.java
+PropertiesComputer.java    SubCircle.java
+
+./src/main/java/org/apache/commons/math4/linear:
+AbstractFieldMatrix.java         MatrixDimensionMismatchException.java
+AbstractRealMatrix.java          MatrixUtils.java
+AnyMatrix.java             NonPositiveDefiniteMatrixException.java
+Array2DRowFieldMatrix.java       NonPositiveDefiniteOperatorException.java
+Array2DRowRealMatrix.java        NonSelfAdjointOperatorException.java
+ArrayFieldVector.java            NonSquareMatrixException.java
+ArrayRealVector.java          NonSquareOperatorException.java
+BiDiagonalTransformer.java       NonSymmetricMatrixException.java
+BlockFieldMatrix.java            OpenMapRealMatrix.java
+BlockRealMatrix.java          OpenMapRealVector.java
+CholeskyDecomposition.java       PreconditionedIterativeLinearSolver.java
+ConjugateGradient.java           QRDecomposition.java
+DecompositionSolver.java         RRQRDecomposition.java
+DefaultFieldMatrixChangingVisitor.java    RealLinearOperator.java
+DefaultFieldMatrixPreservingVisitor.java  RealMatrix.java
+DefaultIterativeLinearSolverEvent.java    RealMatrixChangingVisitor.java
+DefaultRealMatrixChangingVisitor.java     RealMatrixFormat.java
+DefaultRealMatrixPreservingVisitor.java      RealMatrixPreservingVisitor.java
+DiagonalMatrix.java           RealVector.java
+EigenDecomposition.java          RealVectorChangingVisitor.java
+FieldDecompositionSolver.java       RealVectorFormat.java
+FieldLUDecomposition.java        RealVectorPreservingVisitor.java
+FieldMatrix.java           RectangularCholeskyDecomposition.java
+FieldMatrixChangingVisitor.java        SchurTransformer.java
+FieldMatrixPreservingVisitor.java      SingularMatrixException.java
+FieldVector.java           SingularOperatorException.java
+FieldVectorChangingVisitor.java        SingularValueDecomposition.java
+FieldVectorPreservingVisitor.java      SparseFieldMatrix.java
+HessenbergTransformer.java       SparseFieldVector.java
+IllConditionedOperatorException.java      SparseRealMatrix.java
+IterativeLinearSolver.java       SparseRealVector.java
+IterativeLinearSolverEvent.java        SymmLQ.java
+JacobiPreconditioner.java        TriDiagonalTransformer.java
+LUDecomposition.java          package-info.java
+
+./src/main/java/org/apache/commons/math4/ml:
+clustering     distance    neuralnet      package-info.java
+
+./src/main/java/org/apache/commons/math4/ml/clustering:
+CentroidCluster.java       FuzzyKMeansClusterer.java
+Cluster.java            KMeansPlusPlusClusterer.java
+Clusterable.java        MultiKMeansPlusPlusClusterer.java
+Clusterer.java          evaluation
+DBSCANClusterer.java       package-info.java
+DoublePoint.java
+
+./src/main/java/org/apache/commons/math4/ml/clustering/evaluation:
+ClusterEvaluator.java      SumOfClusterVariances.java package-info.java
+
+./src/main/java/org/apache/commons/math4/ml/distance:
+CanberraDistance.java      EarthMoversDistance.java   package-info.java
+ChebyshevDistance.java     EuclideanDistance.java
+DistanceMeasure.java    ManhattanDistance.java
+
+./src/main/java/org/apache/commons/math4/ml/neuralnet:
+FeatureInitializer.java    Neuron.java       package-info.java
+FeatureInitializerFactory.java   SquareNeighbourhood.java   sofm
+MapUtils.java        UpdateAction.java    twod
+Network.java         oned
+
+./src/main/java/org/apache/commons/math4/ml/neuralnet/oned:
+NeuronString.java package-info.java
+
+./src/main/java/org/apache/commons/math4/ml/neuralnet/sofm:
+KohonenTrainingTask.java      NeighbourhoodSizeFunction.java
+KohonenUpdateAction.java      NeighbourhoodSizeFunctionFactory.java
+LearningFactorFunction.java      package-info.java
+LearningFactorFunctionFactory.java  util
+
+./src/main/java/org/apache/commons/math4/ml/neuralnet/sofm/util:
+ExponentialDecayFunction.java QuasiSigmoidDecayFunction.java   package-info.java
+
+./src/main/java/org/apache/commons/math4/ml/neuralnet/twod:
+NeuronSquareMesh2D.java package-info.java util
+
+./src/main/java/org/apache/commons/math4/ml/neuralnet/twod/util:
+HitHistogram.java    MapVisualization.java      TopographicErrorHistogram.java
+LocationFinder.java     QuantizationError.java     UnifiedDistanceMatrix.java
+MapDataVisualization.java  SmoothedDataHistogram.java package-info.java
+
+./src/main/java/org/apache/commons/math4/ode:
+AbstractFieldIntegrator.java        MainStateJacobianProvider.java
+AbstractIntegrator.java          MultistepFieldIntegrator.java
+AbstractParameterizable.java        MultistepIntegrator.java
+ContinuousOutputFieldModel.java        ODEIntegrator.java
+ContinuousOutputModel.java       ParameterConfiguration.java
+EquationsMapper.java          ParameterJacobianProvider.java
+ExpandableStatefulODE.java       ParameterJacobianWrapper.java
+FieldEquationsMapper.java        Parameterizable.java
+FieldExpandableODE.java          ParameterizedODE.java
+FieldODEState.java            ParameterizedWrapper.java
+FieldODEStateAndDerivative.java        SecondOrderDifferentialEquations.java
+FieldSecondaryEquations.java        SecondOrderIntegrator.java
+FirstOrderConverter.java         SecondaryEquations.java
+FirstOrderDifferentialEquations.java      UnknownParameterException.java
+FirstOrderFieldDifferentialEquations.java events
+FirstOrderFieldIntegrator.java         nonstiff
+FirstOrderIntegrator.java        package-info.java
+JacobianMatrices.java            sampling
+
+./src/main/java/org/apache/commons/math4/ode/events:
+Action.java    EventState.java      FilterType.java
+EventFilter.java  FieldEventHandler.java  Transformer.java
+EventHandler.java FieldEventState.java package-info.java
+
+./src/main/java/org/apache/commons/math4/ode/nonstiff:
+AdamsBashforthFieldIntegrator.java     FieldButcherArrayProvider.java
+AdamsBashforthIntegrator.java       GillFieldIntegrator.java
+AdamsFieldIntegrator.java        GillFieldStepInterpolator.java
+AdamsFieldStepInterpolator.java        GillIntegrator.java
+AdamsIntegrator.java          GillStepInterpolator.java
+AdamsMoultonFieldIntegrator.java    GraggBulirschStoerIntegrator.java
+AdamsMoultonIntegrator.java         GraggBulirschStoerStepInterpolator.java
+AdamsNordsieckFieldTransformer.java    HighamHall54FieldIntegrator.java
+AdamsNordsieckTransformer.java         HighamHall54FieldStepInterpolator.java
+AdaptiveStepsizeFieldIntegrator.java      HighamHall54Integrator.java
+AdaptiveStepsizeIntegrator.java        HighamHall54StepInterpolator.java
+ClassicalRungeKuttaFieldIntegrator.java      LutherFieldIntegrator.java
+ClassicalRungeKuttaFieldStepInterpolator.java   LutherFieldStepInterpolator.java
+ClassicalRungeKuttaIntegrator.java     LutherIntegrator.java
+ClassicalRungeKuttaStepInterpolator.java  LutherStepInterpolator.java
+DormandPrince54FieldIntegrator.java    MidpointFieldIntegrator.java
+DormandPrince54FieldStepInterpolator.java MidpointFieldStepInterpolator.java
+DormandPrince54Integrator.java         MidpointIntegrator.java
+DormandPrince54StepInterpolator.java      MidpointStepInterpolator.java
+DormandPrince853FieldIntegrator.java      RungeKuttaFieldIntegrator.java
+DormandPrince853FieldStepInterpolator.java   RungeKuttaFieldStepInterpolator.java
+DormandPrince853Integrator.java        RungeKuttaIntegrator.java
+DormandPrince853StepInterpolator.java     RungeKuttaStepInterpolator.java
+EmbeddedRungeKuttaFieldIntegrator.java    ThreeEighthesFieldIntegrator.java
+EmbeddedRungeKuttaIntegrator.java      ThreeEighthesFieldStepInterpolator.java
+EulerFieldIntegrator.java        ThreeEighthesIntegrator.java
+EulerFieldStepInterpolator.java        ThreeEighthesStepInterpolator.java
+EulerIntegrator.java          package-info.java
+EulerStepInterpolator.java
+
+./src/main/java/org/apache/commons/math4/ode/sampling:
+AbstractFieldStepInterpolator.java  NordsieckStepInterpolator.java
+AbstractStepInterpolator.java    StepHandler.java
+DummyStepHandler.java         StepInterpolator.java
+FieldFixedStepHandler.java    StepNormalizer.java
+FieldStepHandler.java         StepNormalizerBounds.java
+FieldStepInterpolator.java    StepNormalizerMode.java
+FieldStepNormalizer.java      package-info.java
+FixedStepHandler.java
+
+./src/main/java/org/apache/commons/math4/optim:
+AbstractConvergenceChecker.java        PointValuePair.java
+AbstractOptimizationProblem.java    PointVectorValuePair.java
+BaseMultiStartMultivariateOptimizer.java  SimpleBounds.java
+BaseMultivariateOptimizer.java         SimplePointChecker.java
+BaseOptimizer.java            SimpleValueChecker.java
+ConvergenceChecker.java          SimpleVectorValueChecker.java
+InitialGuess.java          linear
+MaxEval.java               nonlinear
+MaxIter.java               package-info.java
+OptimizationData.java            univariate
+OptimizationProblem.java
+
+./src/main/java/org/apache/commons/math4/optim/linear:
+LinearConstraint.java         Relationship.java
+LinearConstraintSet.java      SimplexSolver.java
+LinearObjectiveFunction.java     SimplexTableau.java
+LinearOptimizer.java       SolutionCallback.java
+NoFeasibleSolutionException.java UnboundedSolutionException.java
+NonNegativeConstraint.java    package-info.java
+PivotSelectionRule.java
+
+./src/main/java/org/apache/commons/math4/optim/nonlinear:
+scalar
+
+./src/main/java/org/apache/commons/math4/optim/nonlinear/scalar:
+GoalType.java           MultivariateOptimizer.java
+GradientMultivariateOptimizer.java  ObjectiveFunction.java
+LeastSquaresConverter.java    ObjectiveFunctionGradient.java
+LineSearch.java            gradient
+MultiStartMultivariateOptimizer.java   noderiv
+MultivariateFunctionMappingAdapter.java   package-info.java
+MultivariateFunctionPenaltyAdapter.java
+
+./src/main/java/org/apache/commons/math4/optim/nonlinear/scalar/gradient:
+NonLinearConjugateGradientOptimizer.java  package-info.java
+Preconditioner.java
+
+./src/main/java/org/apache/commons/math4/optim/nonlinear/scalar/noderiv:
+AbstractSimplex.java    MultiDirectionalSimplex.java  SimplexOptimizer.java
+BOBYQAOptimizer.java    NelderMeadSimplex.java     package-info.java
+CMAESOptimizer.java     PowellOptimizer.java
+
+./src/main/java/org/apache/commons/math4/optim/univariate:
+BracketFinder.java         UnivariateObjectiveFunction.java
+BrentOptimizer.java        UnivariateOptimizer.java
+MultiStartUnivariateOptimizer.java  UnivariatePointValuePair.java
+SearchInterval.java        package-info.java
+SimpleUnivariateValueChecker.java
+
+./src/main/java/org/apache/commons/math4/primes:
+Primes.java    SmallPrimes.java  package-info.java
+
+./src/main/java/org/apache/commons/math4/random:
+AbstractRandomGenerator.java     RandomVectorGenerator.java
+AbstractWell.java       SobolSequenceGenerator.java
+BitsStreamGenerator.java      StableRandomGenerator.java
+CorrelatedRandomVectorGenerator.java   SynchronizedRandomGenerator.java
+EmpiricalDistribution.java    UncorrelatedRandomVectorGenerator.java
+GaussianRandomGenerator.java     UniformRandomGenerator.java
+HaltonSequenceGenerator.java     UnitSphereRandomVectorGenerator.java
+ISAACRandom.java        ValueServer.java
+JDKRandomGenerator.java       Well1024a.java
+MersenneTwister.java       Well19937a.java
+NormalizedRandomGenerator.java      Well19937c.java
+RandomAdaptor.java         Well44497a.java
+RandomDataGenerator.java      Well44497b.java
+RandomGenerator.java       Well512a.java
+RandomGeneratorFactory.java      package-info.java
+
+./src/main/java/org/apache/commons/math4/special:
+BesselJ.java      Erf.java    package-info.java
+Beta.java      Gamma.java
+
+./src/main/java/org/apache/commons/math4/stat:
+Frequency.java    descriptive    package-info.java
+StatUtils.java    inference      ranking
+correlation    interval    regression
+
+./src/main/java/org/apache/commons/math4/stat/correlation:
+Covariance.java            StorelessBivariateCovariance.java
+KendallsCorrelation.java      StorelessCovariance.java
+PearsonsCorrelation.java      package-info.java
+SpearmansCorrelation.java
+
+./src/main/java/org/apache/commons/math4/stat/descriptive:
+AbstractStorelessUnivariateStatistic.java SynchronizedDescriptiveStatistics.java
+AbstractUnivariateStatistic.java    SynchronizedMultivariateSummaryStatistics.java
+AggregateSummaryStatistics.java        SynchronizedSummaryStatistics.java
+DescriptiveStatistics.java       UnivariateStatistic.java
+MultivariateSummaryStatistics.java     WeightedEvaluation.java
+StatisticalMultivariateSummary.java    moment
+StatisticalSummary.java          package-info.java
+StatisticalSummaryValues.java       rank
+StorelessUnivariateStatistic.java      summary
+SummaryStatistics.java
+
+./src/main/java/org/apache/commons/math4/stat/descriptive/moment:
+FirstMoment.java     SecondMoment.java    Variance.java
+FourthMoment.java    SemiVariance.java    VectorialCovariance.java
+GeometricMean.java      Skewness.java        VectorialMean.java
+Kurtosis.java        StandardDeviation.java     package-info.java
+Mean.java         ThirdMoment.java
+
+./src/main/java/org/apache/commons/math4/stat/descriptive/rank:
+Max.java    Min.java    Percentile.java
+Median.java    PSquarePercentile.java  package-info.java
+
+./src/main/java/org/apache/commons/math4/stat/descriptive/summary:
+Product.java      SumOfLogs.java    package-info.java
+Sum.java    SumOfSquares.java
+
+./src/main/java/org/apache/commons/math4/stat/inference:
+AlternativeHypothesis.java KolmogorovSmirnovTest.java TestUtils.java
+BinomialTest.java    MannWhitneyUTest.java      WilcoxonSignedRankTest.java
+ChiSquareTest.java      OneWayAnova.java     package-info.java
+GTest.java        TTest.java
+
+./src/main/java/org/apache/commons/math4/stat/interval:
+AgrestiCoullInterval.java     IntervalUtils.java
+BinomialConfidenceInterval.java     NormalApproximationInterval.java
+ClopperPearsonInterval.java      WilsonScoreInterval.java
+ConfidenceInterval.java       package-info.java
+
+./src/main/java/org/apache/commons/math4/stat/ranking:
+NaNStrategy.java  RankingAlgorithm.java   package-info.java
+NaturalRanking.java  TiesStrategy.java
+
+./src/main/java/org/apache/commons/math4/stat/regression:
+AbstractMultipleLinearRegression.java  OLSMultipleLinearRegression.java
+GLSMultipleLinearRegression.java RegressionResults.java
+MillerUpdatingRegression.java    SimpleRegression.java
+ModelSpecificationException.java UpdatingMultipleLinearRegression.java
+MultipleLinearRegression.java    package-info.java
+
+./src/main/java/org/apache/commons/math4/transform:
+DctNormalization.java      FastFourierTransformer.java   TransformType.java
+DftNormalization.java      FastHadamardTransformer.java  TransformUtils.java
+DstNormalization.java      FastSineTransformer.java   package-info.java
+FastCosineTransformer.java RealTransformer.java
+
+./src/main/java/org/apache/commons/math4/util:
+ArithmeticUtils.java    FastMath.java        MultidimensionalCounter.java
+BigReal.java         FastMathCalc.java    NumberTransformer.java
+BigRealField.java    FastMathLiteralArrays.java OpenIntToDoubleHashMap.java
+CentralPivotingStrategy.java  Incrementor.java     OpenIntToFieldHashMap.java
+Combinations.java    IntegerSequence.java    Pair.java
+CombinatoricsUtils.java    IterationEvent.java     PivotingStrategyInterface.java
+CompositeFormat.java    IterationListener.java     Precision.java
+ContinuedFraction.java     IterationManager.java      RandomPivotingStrategy.java
+Decimal64.java       KthSelector.java     ResizableDoubleArray.java
+Decimal64Field.java     MathArrays.java         TransformerMap.java
+DefaultTransformer.java    MathUtils.java       package-info.java
+DoubleArray.java     MedianOf3PivotingStrategy.java

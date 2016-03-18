@@ -1,0 +1,1553 @@
+|-benchmarks
+|---benchmarks
+|-----go_benchmark_functions
+|-doc
+|---release
+|---scipy-sphinx-theme
+|---source
+|-----_static
+|-----_templates
+|-------autosummary
+|-----dev
+|-----tutorial
+|-------examples
+|-------stats
+|---------plots
+|---sphinxext
+|-scipy
+|---_build_utils
+|-----src
+|---_lib
+|-----tests
+|---cluster
+|-----doc
+|-----tests
+|---constants
+|-----tests
+|---fftpack
+|-----src
+|-------dfftpack
+|-------fftpack
+|-----tests
+|---integrate
+|-----dop
+|-----mach
+|-----odepack
+|-----quadpack
+|-----tests
+|---interpolate
+|-----fitpack
+|-----src
+|-----tests
+|-------data
+|---io
+|-----arff
+|-------tests
+|---------data
+|-----harwell_boeing
+|-------tests
+|-----matlab
+|-------tests
+|---------data
+|-----tests
+|-------data
+|---linalg
+|-----src
+|-------id_dist
+|---------doc
+|---------src
+|-------lapack_deprecations
+|-----tests
+|---misc
+|-----tests
+|-------data
+|---ndimage
+|-----src
+|-----tests
+|-------data
+|-----utils
+|---odr
+|-----odrpack
+|-----tests
+|---optimize
+|-----Zeros
+|-----_lsq
+|-----cobyla
+|-----lbfgsb
+|-----minpack
+|-----minpack2
+|-----nnls
+|-----slsqp
+|-----tests
+|-----tnc
+|---signal
+|-----docs
+|-----tests
+|---sparse
+|-----csgraph
+|-------tests
+|-----linalg
+|-------dsolve
+|---------SuperLU
+|-----------SRC
+|---------tests
+|-------eigen
+|---------arpack
+|-----------ARPACK
+|-------------SRC
+|-------------UTIL
+|-----------tests
+|---------lobpcg
+|-----------tests
+|-------isolve
+|---------iterative
+|---------tests
+|-------tests
+|-----sparsetools
+|-----tests
+|---spatial
+|-----ckdtree
+|-------src
+|-----qhull
+|-------src
+|-----src
+|-----tests
+|-------data
+|---special
+|-----amos
+|-----c_misc
+|-----cdflib
+|-----cephes
+|-----mach
+|-----specfun
+|-----tests
+|-------data
+|---------boost
+|-----------acosh_data_ipp
+|-----------asinh_data_ipp
+|-----------assoc_legendre_p_ipp
+|-----------atanh_data_ipp
+|-----------bessel_i_data_ipp
+|-----------bessel_i_int_data_ipp
+|-----------bessel_j_data_ipp
+|-----------bessel_j_int_data_ipp
+|-----------bessel_j_large_data_ipp
+|-----------bessel_k_data_ipp
+|-----------bessel_k_int_data_ipp
+|-----------bessel_y01_data_ipp
+|-----------bessel_yn_data_ipp
+|-----------bessel_yv_data_ipp
+|-----------beta_exp_data_ipp
+|-----------beta_med_data_ipp
+|-----------beta_small_data_ipp
+|-----------binomial_data_ipp
+|-----------binomial_large_data_ipp
+|-----------binomial_quantile_ipp
+|-----------cbrt_data_ipp
+|-----------digamma_data_ipp
+|-----------digamma_neg_data_ipp
+|-----------digamma_root_data_ipp
+|-----------digamma_small_data_ipp
+|-----------ellint_e2_data_ipp
+|-----------ellint_e_data_ipp
+|-----------ellint_f_data_ipp
+|-----------ellint_k_data_ipp
+|-----------ellint_pi2_data_ipp
+|-----------ellint_pi3_data_ipp
+|-----------ellint_pi3_large_data_ipp
+|-----------ellint_rc_data_ipp
+|-----------ellint_rd_data_ipp
+|-----------ellint_rf_data_ipp
+|-----------ellint_rj_data_ipp
+|-----------erf_data_ipp
+|-----------erf_inv_data_ipp
+|-----------erf_large_data_ipp
+|-----------erf_small_data_ipp
+|-----------erfc_inv_big_data_ipp
+|-----------erfc_inv_data_ipp
+|-----------expint_1_data_ipp
+|-----------expint_data_ipp
+|-----------expint_small_data_ipp
+|-----------expinti_data_double_ipp
+|-----------expinti_data_ipp
+|-----------gamma_inv_big_data_ipp
+|-----------gamma_inv_data_ipp
+|-----------gamma_inv_small_data_ipp
+|-----------hermite_ipp
+|-----------ibeta_data_ipp
+|-----------ibeta_int_data_ipp
+|-----------ibeta_inv_data_ipp
+|-----------ibeta_inva_data_ipp
+|-----------ibeta_large_data_ipp
+|-----------ibeta_small_data_ipp
+|-----------igamma_big_data_ipp
+|-----------igamma_int_data_ipp
+|-----------igamma_inva_data_ipp
+|-----------igamma_med_data_ipp
+|-----------igamma_small_data_ipp
+|-----------laguerre2_ipp
+|-----------laguerre3_ipp
+|-----------legendre_p_ipp
+|-----------legendre_p_large_ipp
+|-----------log1p_expm1_data_ipp
+|-----------ncbeta_big_ipp
+|-----------ncbeta_ipp
+|-----------nccs_big_ipp
+|-----------nccs_ipp
+|-----------negative_binomial_quantile_ipp
+|-----------poisson_quantile_ipp
+|-----------powm1_sqrtp1m1_test_cpp
+|-----------sph_bessel_data_ipp
+|-----------sph_neumann_data_ipp
+|-----------spherical_harmonic_ipp
+|-----------test_gamma_data_ipp
+|-----------tgamma_delta_ratio_data_ipp
+|-----------tgamma_delta_ratio_int2_ipp
+|-----------tgamma_delta_ratio_int_ipp
+|-----------tgamma_ratio_data_ipp
+|-----------zeta_1_below_data_ipp
+|-----------zeta_1_up_data_ipp
+|-----------zeta_data_ipp
+|-----------zeta_neg_data_ipp
+|---------gsl
+|---------local
+|-----utils
+|---stats
+|-----statlib
+|-----tests
+|-------data
+|---------nist_anova
+|---------nist_linregress
+|---weave
+|-----blitz
+|-------blitz
+|---------array
+|---------generate
+|---------gnu
+|---------meta
+|-----doc
+|-----examples
+|-----scxx
+|-----tests
+|-tools
+|---ci
+|---osx
+|---scipy-macosx-installer
+|-----art
+|---win32
+|-----build_scripts
+|-------nsis_scripts
+
+
+
+BENTO_BUILD.txt      README.rst     doc         setupegg.py
+HACKING.rst.txt      THANKS.txt     pavement.py    site.cfg.example
+INSTALL.rst.txt      benchmarks     runtests.py    tools
+LICENSE.txt    bento.info     scipy       tox.ini
+MANIFEST.in    bscript        setup.py
+
+./benchmarks:
+README.rst  asv.conf.json  benchmarks  run.py
+
+./benchmarks/benchmarks:
+__init__.py       linalg_solve_toeplitz.py   sparse_linalg_lobpcg.py
+cluster.py        linalg_sqrtm.py         sparse_linalg_onenormest.py
+common.py         lsq_problems.py         sparse_linalg_solve.py
+fftpack_basic.py     optimize.py       spatial.py
+fftpack_pseudo_diffs.py    optimize_zeros.py    special.py
+go_benchmark_functions     signal.py         stats.py
+interpolate.py       signal_filtering.py     test_functions.py
+io_matlab.py         sparse.py         test_go_benchmark_functions.py
+linalg.py         sparse_linalg_expm.py
+
+./benchmarks/benchmarks/go_benchmark_functions:
+__init__.py    go_funcs_G.py     go_funcs_O.py     go_funcs_W.py
+go_benchmark.py      go_funcs_H.py     go_funcs_P.py     go_funcs_X.py
+go_funcs_A.py     go_funcs_I.py     go_funcs_Q.py     go_funcs_Y.py
+go_funcs_B.py     go_funcs_J.py     go_funcs_R.py     go_funcs_Z.py
+go_funcs_C.py     go_funcs_K.py     go_funcs_S.py     go_funcs_univariate.py
+go_funcs_D.py     go_funcs_L.py     go_funcs_T.py
+go_funcs_E.py     go_funcs_M.py     go_funcs_U.py
+go_funcs_F.py     go_funcs_N.py     go_funcs_V.py
+
+./doc:
+API.rst.txt    README.txt     release        source
+Makefile    postprocess.py    scipy-sphinx-theme   sphinxext
+
+./doc/release:
+0.10.0-notes.rst  0.13.1-notes.rst  0.16.0-notes.rst  0.7.2-notes.rst
+0.10.1-notes.rst  0.13.2-notes.rst  0.16.1-notes.rst  0.8.0-notes.rst
+0.11.0-notes.rst  0.14.0-notes.rst  0.17.0-notes.rst  0.9.0-notes.rst
+0.12.0-notes.rst  0.14.1-notes.rst  0.18.0-notes.rst
+0.12.1-notes.rst  0.15.0-notes.rst  0.7.0-notes.rst
+0.13.0-notes.rst  0.15.1-notes.rst  0.7.1-notes.rst
+
+./doc/scipy-sphinx-theme:
+
+./doc/source:
+_static              optimize.root-broyden2.rst
+_templates           optimize.root-dfsane.rst
+api.rst              optimize.root-diagbroyden.rst
+cluster.hierarchy.rst         optimize.root-excitingmixing.rst
+cluster.rst          optimize.root-hybr.rst
+cluster.vq.rst          optimize.root-krylov.rst
+conf.py              optimize.root-linearmixing.rst
+constants.rst           optimize.root-lm.rst
+dev               optimize.rst
+fftpack.rst          release.0.10.0.rst
+hacking.rst          release.0.10.1.rst
+index.rst            release.0.11.0.rst
+integrate.rst           release.0.12.0.rst
+interpolate.rst            release.0.12.1.rst
+io.arff.rst          release.0.13.0.rst
+io.rst               release.0.13.1.rst
+linalg.blas.rst            release.0.13.2.rst
+linalg.cython_blas.rst        release.0.14.0.rst
+linalg.cython_lapack.rst      release.0.14.1.rst
+linalg.interpolative.rst      release.0.15.0.rst
+linalg.lapack.rst       release.0.15.1.rst
+linalg.rst           release.0.16.0.rst
+misc.rst          release.0.16.1.rst
+ndimage.rst          release.0.17.0.rst
+odr.rst              release.0.18.0.rst
+optimize.linprog-simplex.rst     release.0.7.0.rst
+optimize.minimize-bfgs.rst    release.0.7.1.rst
+optimize.minimize-cg.rst      release.0.7.2.rst
+optimize.minimize-cobyla.rst     release.0.8.0.rst
+optimize.minimize-dogleg.rst     release.0.9.0.rst
+optimize.minimize-lbfgsb.rst     release.rst
+optimize.minimize-neldermead.rst scipyoptdoc.py
+optimize.minimize-newtoncg.rst      signal.rst
+optimize.minimize-powell.rst     sparse.csgraph.rst
+optimize.minimize-slsqp.rst      sparse.linalg.rst
+optimize.minimize-tnc.rst     sparse.rst
+optimize.minimize-trustncg.rst      spatial.distance.rst
+optimize.minimize_scalar-bounded.rst   spatial.rst
+optimize.minimize_scalar-brent.rst  special.rst
+optimize.minimize_scalar-golden.rst stats.mstats.rst
+optimize.nonlin.rst        stats.rst
+optimize.root-anderson.rst    tutorial
+optimize.root-broyden1.rst    weave.rst
+
+./doc/source/_static:
+scipy_fallback.css   scipyshiny_small.png
+
+./doc/source/_templates:
+autosummary    indexsidebar.html layout.html
+
+./doc/source/_templates/autosummary:
+class.rst
+
+./doc/source/dev:
+decisions.rst     distributing.rst  index.rst      releasing.rst
+deprecations.rst  github.rst     licensing.rst     versioning.rst
+
+./doc/source/tutorial:
+arpack.rst     index.rst      octave_a.mat      special.rst
+basic.rst      integrate.rst     octave_cells.mat  stats
+csgraph.rst    interpolate.rst      octave_struct.mat stats.rst
+examples    io.rst         optimize.rst      weave.rst
+fftpack.rst    linalg.rst     signal.rst
+general.rst    ndimage.rst    spatial.rst
+
+./doc/source/tutorial/examples:
+1-1               newton_krylov_preconditioning.py
+4-1               normdiscr_plot1.py
+5-1               normdiscr_plot2.py
+
+./doc/source/tutorial/stats:
+continuous.rst       continuous_genpareto.rst   continuous_powerlaw.rst
+continuous_alpha.rst    continuous_gilbrat.rst     continuous_powerlognorm.rst
+continuous_anglit.rst      continuous_gompertz.rst    continuous_powernorm.rst
+continuous_arcsine.rst     continuous_gumbel_l.rst    continuous_rayleigh.rst
+continuous_beta.rst     continuous_gumbel_r.rst    continuous_rdist.rst
+continuous_betaprime.rst   continuous_halfcauchy.rst  continuous_recipinvgauss.rst
+continuous_bradford.rst    continuous_halflogistic.rst   continuous_reciprocal.rst
+continuous_burr.rst     continuous_halfnorm.rst    continuous_rice.rst
+continuous_cauchy.rst      continuous_hypsecant.rst   continuous_semicircular.rst
+continuous_chi.rst      continuous_invgamma.rst    continuous_t.rst
+continuous_chi2.rst     continuous_invgauss.rst    continuous_triang.rst
+continuous_cosine.rst      continuous_invweibull.rst  continuous_truncexpon.rst
+continuous_dgamma.rst      continuous_johnsonsb.rst   continuous_truncnorm.rst
+continuous_dweibull.rst    continuous_johnsonsu.rst   continuous_tukeylambda.rst
+continuous_erlang.rst      continuous_ksone.rst    continuous_uniform.rst
+continuous_expon.rst    continuous_kstwobign.rst   continuous_vonmises.rst
+continuous_exponpow.rst    continuous_laplace.rst     continuous_wald.rst
+continuous_exponweib.rst   continuous_levy.rst     continuous_wrapcauchy.rst
+continuous_f.rst     continuous_levy_l.rst      discrete.rst
+continuous_fatiguelife.rst continuous_loggamma.rst    discrete_bernoulli.rst
+continuous_fisk.rst     continuous_logistic.rst    discrete_binom.rst
+continuous_foldcauchy.rst  continuous_loglaplace.rst  discrete_boltzmann.rst
+continuous_foldnorm.rst    continuous_lognorm.rst     discrete_dlaplace.rst
+continuous_frechet_l.rst   continuous_lomax.rst    discrete_geom.rst
+continuous_frechet_r.rst   continuous_maxwell.rst     discrete_hypergeom.rst
+continuous_gamma.rst    continuous_mielke.rst      discrete_logser.rst
+continuous_gausshyper.rst  continuous_nakagami.rst    discrete_nbinom.rst
+continuous_genexpon.rst    continuous_ncf.rst      discrete_planck.rst
+continuous_genextreme.rst  continuous_nct.rst      discrete_poisson.rst
+continuous_gengamma.rst    continuous_ncx2.rst     discrete_randint.rst
+continuous_genhalflogistic.rst   continuous_norm.rst     discrete_zipf.rst
+continuous_genlogistic.rst continuous_pareto.rst      plots
+
+./doc/source/tutorial/stats/plots:
+kde_plot2.py   kde_plot3.py   kde_plot4.py   kde_plot5.py
+
+./doc/sphinxext:
+
+./scipy:
+__init__.py cluster     interpolate misc     setup.py special
+_build_utils   constants   io    ndimage     signal      stats
+_lib     fftpack     linalg      odr      sparse      weave
+bento.info  integrate   linalg.pxd  optimize spatial
+
+./scipy/_build_utils:
+__init__.py _fortran.py src
+
+./scipy/_build_utils/src:
+apple_sgemv_fix.c wrap_accelerate_c.c  wrap_dummy_accelerate.f wrap_g77_abi_c.c
+cblas.h        wrap_accelerate_f.f  wrap_dummy_g77_abi.f wrap_g77_abi_f.f
+
+./scipy/_lib:
+__init__.py    _testutils.py     _util.py    setup.py
+_gcutils.py    _threadsafety.py  _version.py    six.py
+_numpy_compat.py  _tmpdirs.py    decorator.py      tests
+
+./scipy/_lib/tests:
+test__gcutils.py  test__util.py     test_tmpdirs.py
+test__threadsafety.py   test__version.py
+
+./scipy/cluster:
+__init__.py       bscript           setup.py
+_hierarchy.pyx       cluster_blas.h       tests
+_hierarchy_distance_update.pxi   cluster_blas.pxd     vq.py
+_vq.pyx           doc
+bento.info        hierarchy.py
+
+./scipy/cluster/doc:
+README.txt  ex1.py
+
+./scipy/cluster/tests:
+hierarchy_test_data.py  test_hierarchy.py test_vq.py
+
+./scipy/constants:
+__init__.py codata.py   constants.py   setup.py tests
+
+./scipy/constants/tests:
+test_codata.py    test_constants.py
+
+./scipy/fftpack:
+MANIFEST.in    bento.info     fftpack_version.py   setup.py
+NOTES.txt      bscript        helper.py      src
+__init__.py    convolve.pyf      pseudo_diffs.py      tests
+basic.py    fftpack.pyf    realtransforms.py
+
+./scipy/fftpack/src:
+convolve.c  dfftpack dst.c.src   fftpack.h   zfftnd.c
+dct.c.src   drfft.c     fftpack     zfft.c      zrfft.c
+
+./scipy/fftpack/src/dfftpack:
+CHANGES     dcost.f     dfftf1.f dsinqi.f zfftb1.f
+README      dcosti.f dffti.f     dsint.f     zfftf.f
+dcosqb.f dfftb.f     dffti1.f dsint1.f zfftf1.f
+dcosqf.f dfftb1.f dsinqb.f dsinti.f zffti.f
+dcosqi.f dfftf.f     dsinqf.f zfftb.f     zffti1.f
+
+./scipy/fftpack/src/fftpack:
+README      cfftf1.f cosqf.f     rfftb.f     rffti.f     sinqi.f
+cfftb.f     cffti.f     cosqi.f     rfftb1.f rffti1.f sint.f
+cfftb1.f cffti1.f cost.f      rfftf.f     sinqb.f     sint1.f
+cfftf.f     cosqb.f     costi.f     rfftf1.f sinqf.f     sinti.f
+
+./scipy/fftpack/tests:
+Makefile    gen_fftw_ref.py      test_basic.py     test_real_transforms.py
+fftw_dct.c     gendata.m      test_helper.py
+fftw_double_ref.npz  gendata.py     test_import.py
+fftw_single_ref.npz  test.npz    test_pseudo_diffs.py
+
+./scipy/integrate:
+__init__.py    bento.info     mach        quadpack.py
+__quadpack.h      bscript        odepack        quadrature.py
+_ode.py        dop         odepack.py     setup.py
+_odepackmodule.c  dop.pyf        quadpack    tests
+_quadpackmodule.c lsoda.pyf      quadpack.h     vode.pyf
+
+./scipy/integrate/dop:
+dop853.f dopri5.f
+
+./scipy/integrate/mach:
+d1mach.f xerror.f
+
+./scipy/integrate/odepack:
+blkdta000.f ewset.f     lsoda.f     solsy.f     vmnorm.f xsetf.f
+bnorm.f     fnorm.f     prja.f      srcma.f     vode.f      xsetun.f
+cfode.f     intdy.f     readme      stoda.f     xerrwv.f zvode.f
+
+./scipy/integrate/quadpack:
+changes     dqagp.f     dqawfe.f dqc25s.f dqk31.f     dqwgtc.f
+disclaimer  dqagpe.f dqawo.f     dqcheb.f dqk41.f     dqwgtf.f
+doc      dqags.f     dqawoe.f dqelg.f     dqk51.f     dqwgts.f
+dqag.f      dqagse.f dqaws.f     dqk15.f     dqk61.f     index
+dqage.f     dqawc.f     dqawse.f dqk15i.f dqmomo.f permission
+dqagi.f     dqawce.f dqc25c.f dqk15w.f dqng.f      readme
+dqagie.f dqawf.f     dqc25f.f dqk21.f     dqpsrt.f
+
+./scipy/integrate/tests:
+_test_multivariate.c    test_integrate.py    test_quadrature.py
+banded5x5.f       test_odeint_jac.py
+test_banded_ode_solvers.py test_quadpack.py
+
+./scipy/interpolate:
+README         blas_defs.h    interpnd.pyx      polyint.py
+__init__.py    bscript        interpnd_info.py  rbf.py
+_cubic.py      fitpack        interpolate.py    setup.py
+_ppoly.pyx     fitpack.py     interpolate_wrapper.py  src
+bento.info     fitpack2.py    ndgriddata.py     tests
+
+./scipy/interpolate/fitpack:
+Makefile fpadno.f fpcurf.f fpopdi.f fpseno.f polar.f
+README      fpadpo.f fpcuro.f fpopsp.f fpspgr.f profil.f
+bispeu.f fpback.f fpcyt1.f fporde.f fpsphe.f regrid.f
+bispev.f fpbacp.f fpcyt2.f fppara.f fpsuev.f spalde.f
+clocur.f fpbfout.f   fpdeno.f fppasu.f fpsurf.f spgrid.f
+cocosp.f fpbisp.f fpdisc.f fpperi.f fpsysy.f sphere.f
+concon.f fpbspl.f fpfrno.f fppocu.f fptrnp.f splder.f
+concur.f fpchec.f fpgivs.f fppogr.f fptrpe.f splev.f
+cualde.f fpched.f fpgrdi.f fppola.f insert.f splint.f
+curev.f     fpchep.f fpgrpa.f fprank.f parcur.f sproot.f
+curfit.f fpclos.f fpgrre.f fprati.f parder.f surev.f
+dblint.f fpcoco.f fpgrsp.f fpregr.f pardeu.f surfit.f
+evapol.f fpcons.f fpinst.f fprota.f parsur.f
+fourco.f fpcosp.f fpintb.f fprppo.f percur.f
+fpader.f fpcsin.f fpknot.f fprpsp.f pogrid.f
+
+./scipy/interpolate/src:
+__fitpack.h    _interpolate.cpp  interpolate.h
+_fitpackmodule.c  fitpack.pyf    multipack.h
+
+./scipy/interpolate/tests:
+data           test_interpnd.py     test_polyint.py
+test_fitpack.py         test_interpolate.py     test_rbf.py
+test_fitpack2.py     test_interpolate_wrapper.py   test_regression.py
+test_gil.py       test_ndgriddata.py
+
+./scipy/interpolate/tests/data:
+bug-1310.npz         estimate_gradients_hang.npy
+
+./scipy/io:
+__init__.py arff     harwell_boeing matlab      netcdf.py   tests
+_fortran.py bento.info  idl.py      mmio.py     setup.py wavfile.py
+
+./scipy/io/arff:
+__init__.py arffread.py setup.py tests
+
+./scipy/io/arff/tests:
+data        test_arffread.py
+
+./scipy/io/arff/tests/data:
+iris.arff   nodata.arff test2.arff  test4.arff  test6.arff  test8.arff
+missing.arff   test1.arff  test3.arff  test5.arff  test7.arff
+
+./scipy/io/harwell_boeing:
+__init__.py       hb.py          tests
+_fortran_format_parser.py  setup.py
+
+./scipy/io/harwell_boeing/tests:
+test_fortran_format.py  test_hb.py
+
+./scipy/io/matlab:
+__init__.py    mio5.py        miobase.py     streams.pxd
+bento.info     mio5_params.py    numpy_rephrasing.h   streams.pyx
+byteordercodes.py mio5_utils.pyx    py3k.h         tests
+mio.py         mio_utils.pxd     pyalloc.pxd
+mio4.py        mio_utils.pyx     setup.py
+
+./scipy/io/matlab/tests:
+afunc.m        save_matfile.m    test_mio_funcs.py test_streams.py
+data        test_byteordercodes.py  test_mio_utils.py
+gen_mat4files.m      test_mio.py    test_miobase.py
+gen_mat5files.m      test_mio5_utils.py   test_pathological.py
+
+./scipy/io/matlab/tests/data:
+bad_miuint32.mat        testminus_4.2c_SOL2.mat
+bad_miutf8_array_name.mat     testminus_6.1_SOL2.mat
+big_endian.mat          testminus_6.5.1_GLNX86.mat
+broken_utf8.mat            testminus_7.1_GLNX86.mat
+corrupted_zlib_checksum.mat      testminus_7.4_GLNX86.mat
+corrupted_zlib_data.mat       testmulti_4.2c_SOL2.mat
+japanese_utf8.txt       testmulti_7.1_GLNX86.mat
+little_endian.mat       testmulti_7.4_GLNX86.mat
+logical_sparse.mat         testobject_6.1_SOL2.mat
+miuint32_for_miint32.mat      testobject_6.5.1_GLNX86.mat
+miutf8_array_name.mat         testobject_7.1_GLNX86.mat
+nasty_duplicate_fieldnames.mat      testobject_7.4_GLNX86.mat
+one_by_zero_char.mat       testonechar_4.2c_SOL2.mat
+parabola.mat            testonechar_6.1_SOL2.mat
+single_empty_string.mat       testonechar_6.5.1_GLNX86.mat
+some_functions.mat         testonechar_7.1_GLNX86.mat
+sqr.mat              testonechar_7.4_GLNX86.mat
+test3dmatrix_6.1_SOL2.mat     testscalarcell_7.4_GLNX86.mat
+test3dmatrix_6.5.1_GLNX86.mat    testsparse_4.2c_SOL2.mat
+test3dmatrix_7.1_GLNX86.mat      testsparse_6.1_SOL2.mat
+test3dmatrix_7.4_GLNX86.mat      testsparse_6.5.1_GLNX86.mat
+test_empty_struct.mat         testsparse_7.1_GLNX86.mat
+test_mat4_le_floats.mat       testsparse_7.4_GLNX86.mat
+test_skip_variable.mat        testsparsecomplex_4.2c_SOL2.mat
+testbool_8_WIN64.mat       testsparsecomplex_6.1_SOL2.mat
+testcell_6.1_SOL2.mat         testsparsecomplex_6.5.1_GLNX86.mat
+testcell_6.5.1_GLNX86.mat     testsparsecomplex_7.1_GLNX86.mat
+testcell_7.1_GLNX86.mat       testsparsecomplex_7.4_GLNX86.mat
+testcell_7.4_GLNX86.mat       testsparsefloat_7.4_GLNX86.mat
+testcellnest_6.1_SOL2.mat     teststring_4.2c_SOL2.mat
+testcellnest_6.5.1_GLNX86.mat    teststring_6.1_SOL2.mat
+testcellnest_7.1_GLNX86.mat      teststring_6.5.1_GLNX86.mat
+testcellnest_7.4_GLNX86.mat      teststring_7.1_GLNX86.mat
+testcomplex_4.2c_SOL2.mat     teststring_7.4_GLNX86.mat
+testcomplex_6.1_SOL2.mat      teststringarray_4.2c_SOL2.mat
+testcomplex_6.5.1_GLNX86.mat     teststringarray_6.1_SOL2.mat
+testcomplex_7.1_GLNX86.mat    teststringarray_6.5.1_GLNX86.mat
+testcomplex_7.4_GLNX86.mat    teststringarray_7.1_GLNX86.mat
+testdouble_4.2c_SOL2.mat      teststringarray_7.4_GLNX86.mat
+testdouble_6.1_SOL2.mat       teststruct_6.1_SOL2.mat
+testdouble_6.5.1_GLNX86.mat      teststruct_6.5.1_GLNX86.mat
+testdouble_7.1_GLNX86.mat     teststruct_7.1_GLNX86.mat
+testdouble_7.4_GLNX86.mat     teststruct_7.4_GLNX86.mat
+testemptycell_5.3_SOL2.mat    teststructarr_6.1_SOL2.mat
+testemptycell_6.5.1_GLNX86.mat      teststructarr_6.5.1_GLNX86.mat
+testemptycell_7.1_GLNX86.mat     teststructarr_7.1_GLNX86.mat
+testemptycell_7.4_GLNX86.mat     teststructarr_7.4_GLNX86.mat
+testfunc_7.4_GLNX86.mat       teststructnest_6.1_SOL2.mat
+testhdf5_7.4_GLNX86.mat       teststructnest_6.5.1_GLNX86.mat
+testmatrix_4.2c_SOL2.mat      teststructnest_7.1_GLNX86.mat
+testmatrix_6.1_SOL2.mat       teststructnest_7.4_GLNX86.mat
+testmatrix_6.5.1_GLNX86.mat      testunicode_7.1_GLNX86.mat
+testmatrix_7.1_GLNX86.mat     testunicode_7.4_GLNX86.mat
+testmatrix_7.4_GLNX86.mat     testvec_4_GLNX86.mat
+
+./scipy/io/tests:
+data     test_fortran.py   test_idl.py test_mmio.py   test_netcdf.py test_wavfile.py
+
+./scipy/io/tests/data:
+array_float32_1d.sav          scalar_byte.sav
+array_float32_2d.sav          scalar_byte_descr.sav
+array_float32_3d.sav          scalar_complex32.sav
+array_float32_4d.sav          scalar_complex64.sav
+array_float32_5d.sav          scalar_float32.sav
+array_float32_6d.sav          scalar_float64.sav
+array_float32_7d.sav          scalar_heap_pointer.sav
+array_float32_8d.sav          scalar_int16.sav
+array_float32_pointer_1d.sav        scalar_int32.sav
+array_float32_pointer_2d.sav        scalar_int64.sav
+array_float32_pointer_3d.sav        scalar_string.sav
+array_float32_pointer_4d.sav        scalar_uint16.sav
+array_float32_pointer_5d.sav        scalar_uint32.sav
+array_float32_pointer_6d.sav        scalar_uint64.sav
+array_float32_pointer_7d.sav        struct_arrays.sav
+array_float32_pointer_8d.sav        struct_arrays_byte_idl80.sav
+example_1.nc               struct_arrays_replicated.sav
+example_2.nc               struct_arrays_replicated_3d.sav
+example_3_maskedvals.nc          struct_inherit.sav
+fortran-mixed.dat          struct_pointer_arrays.sav
+fortran-sf8-10x1x11.dat          struct_pointer_arrays_replicated.sav
+fortran-sf8-1x1x1.dat            struct_pointer_arrays_replicated_3d.sav
+fortran-sf8-22x10x15.dat         struct_pointers.sav
+fortran-sf8-5x1x1.dat            struct_pointers_replicated.sav
+fortran-sf8-5x3x1.dat            struct_pointers_replicated_3d.sav
+fortran-sf8-7x1x1.dat            struct_scalars.sav
+fortran-si4-10x1x11.dat          struct_scalars_replicated.sav
+fortran-si4-1x1x1.dat            struct_scalars_replicated_3d.sav
+fortran-si4-22x10x15.dat         test-44100Hz-2ch-32bit-float-be.wav
+fortran-si4-5x1x1.dat            test-44100Hz-2ch-32bit-float-le.wav
+fortran-si4-5x3x1.dat            test-44100Hz-le-1ch-4bytes.wav
+fortran-si4-7x1x1.dat            test-48000Hz-2ch-64bit-float-le-wavex.wav
+invalid_pointer.sav           test-8000Hz-le-2ch-1byteu.wav
+null_pointer.sav           various_compressed.sav
+
+./scipy/linalg:
+__init__.py       bento.info        fblas.pyf.src
+_blas_subroutine_wrappers.f   blas.py           fblas_l1.pyf.src
+_blas_subroutines.h     bscript           fblas_l2.pyf.src
+_cython_signature_generator.py   calc_lwork.py        fblas_l3.pyf.src
+_cython_wrapper_generators.py cblas.pyf.src        flapack.pyf.src
+_decomp_polar.py     cblas_l1.pyf.src     flapack_user.pyf.src
+_decomp_qz.py        clapack.pyf.src         flinalg.py
+_decomp_update.pyx.in      cython_blas.pxd         fortran_defs.h
+_expm_frechet.py     cython_blas.pyx         interpolative.py
+_interpolative_backend.py  cython_blas_signatures.txt interpolative.pyf
+_lapack_subroutine_wrappers.f cython_lapack.pxd    lapack.py
+_lapack_subroutines.h      cython_lapack.pyx    linalg_version.py
+_matfuncs_inv_ssq.py    cython_lapack_signatures.txt  matfuncs.py
+_matfuncs_sqrtm.py      decomp.py         misc.py
+_procrustes.py       decomp_cholesky.py      setup.py
+_solve_toeplitz.pyx     decomp_lu.py         special_matrices.py
+_solvers.py       decomp_qr.py         src
+_testutils.py        decomp_schur.py         tests
+basic.py       decomp_svd.py
+
+./scipy/linalg/src:
+calc_lwork.f      id_dist        lu.f
+det.f       lapack_deprecations
+
+./scipy/linalg/src/id_dist:
+README.txt  doc      src
+
+./scipy/linalg/src/id_dist/doc:
+doc.bib        doc.tex        supertabular.sty
+
+./scipy/linalg/src/id_dist/src:
+dfft.f      idd_id2svd.f   iddp_asvd.f iddr_rsvd.f idz_sfft.f  idzp_rsvd.f
+id_rand.f   idd_qrpiv.f iddp_rid.f  idz_frm.f   idz_snorm.f idzr_aid.f
+id_rtrans.f idd_sfft.f  iddp_rsvd.f idz_house.f idz_svd.f   idzr_asvd.f
+idd_frm.f   idd_snorm.f iddr_aid.f  idz_id.f idzp_aid.f  idzr_rid.f
+idd_house.f idd_svd.f   iddr_asvd.f idz_id2svd.f   idzp_asvd.f idzr_rsvd.f
+idd_id.f iddp_aid.f  iddr_rid.f  idz_qrpiv.f idzp_rid.f  prini.f
+
+./scipy/linalg/src/lapack_deprecations:
+LICENSE  cgegv.f  dgegv.f  sgegv.f  zgegv.f
+
+./scipy/linalg/tests:
+test_basic.py        test_decomp_cholesky.py    test_matfuncs.py
+test_blas.py         test_decomp_polar.py    test_procrustes.py
+test_build.py        test_decomp_update.py      test_solve_toeplitz.py
+test_cython_blas.py     test_fblas.py        test_solvers.py
+test_cython_lapack.py      test_interpolative.py      test_special_matrices.py
+test_decomp.py       test_lapack.py
+
+./scipy/misc:
+__init__.py common.py   face.dat setup.py
+ascent.dat  doccer.py   pilutil.py  tests
+
+./scipy/misc/tests:
+data     test_common.py test_doccer.py test_pilutil.py
+
+./scipy/misc/tests/data:
+3x3x3.png      4x3x4.png      5x4x3.png      icon.png
+3x3x4.png      4x4x3.png      5x4x4.png      icon_mono.png
+3x4x3.png      4x4x4.png      5x5x3.png      icon_mono_flat.png
+3x4x4.png      4x5x3.png      5x5x4.png      pattern4bit.png
+3x5x3.png      4x5x4.png      blocks2bit.png
+3x5x4.png      5x3x3.png      box1.png
+4x3x3.png      5x3x4.png      foo3x5x4indexed.png
+
+./scipy/ndimage:
+LICENSE.txt    filters.py     measurements.py      tests
+__init__.py    fourier.py     morphology.py     utils
+_ni_support.py    interpolation.py  setup.py
+bento.info     io.py       src
+
+./scipy/ndimage/src:
+_ni_label.pyx     ni_filters.h      ni_interpolation.h   ni_morphology.h
+nd_image.c     ni_fourier.c      ni_measure.c      ni_support.c
+nd_image.h     ni_fourier.h      ni_measure.h      ni_support.h
+ni_filters.c      ni_interpolation.c   ni_morphology.c
+
+./scipy/ndimage/tests:
+data        test_datatypes.py test_io.py     test_ndimage.py
+dots.png    test_filters.py      test_measurements.py test_regression.py
+
+./scipy/ndimage/tests/data:
+README.txt     label_inputs.txt  label_results.txt label_strels.txt
+
+./scipy/ndimage/utils:
+generate_label_testvectors.py
+
+./scipy/odr:
+__init__.py add_newdocs.py bscript     odrpack     odrpack.py  tests
+__odrpack.c bento.info  models.py   odrpack.h   setup.py
+
+./scipy/odr/odrpack:
+Makefile d_lpkbls.f  d_odr.f     dlunoc.f
+d_lpk.f     d_mprec.f   d_test.f
+
+./scipy/odr/tests:
+test_odr.py
+
+./scipy/optimize:
+Zeros          _trustregion.py         minpack2
+__init__.py       _trustregion_dogleg.py     nnls
+__minpack.h       _trustregion_ncg.py     nnls.py
+_basinhopping.py     _tstutils.py         nonlin.py
+_differentialevolution.py  bento.info        optimize.py
+_group_columns.pyx      bscript           setup.py
+_hungarian.py        cobyla            slsqp
+_linprog.py       cobyla.py         slsqp.py
+_lsq           lbfgsb            tests
+_minimize.py         lbfgsb.py         tnc
+_minpackmodule.c     linesearch.py        tnc.py
+_numdiff.py       minpack           zeros.c
+_root.py       minpack.h         zeros.py
+_spectral.py         minpack.py
+
+./scipy/optimize/Zeros:
+bisect.c brenth.c brentq.c ridder.c zeros.h
+
+./scipy/optimize/_lsq:
+__init__.py    common.py      least_squares.py  trf.py
+bento.info     dogbox.py      lsq_linear.py     trf_linear.py
+bvls.py        givens_elimination.pyx  setup.py
+
+./scipy/optimize/cobyla:
+cobyla.pyf  cobyla2.f   trstlp.f
+
+./scipy/optimize/lbfgsb:
+README      lbfgsb.f lbfgsb.pyf  linpack.f   timer.f
+
+./scipy/optimize/minpack:
+chkder.f fdjac1.f hybrj.f     lmdif.f     lmstr1.f qrsolv.f
+dogleg.f fdjac2.f hybrj1.f lmdif1.f minpack.txt r1mpyq.f
+dpmpar.f hybrd.f     lmder.f     lmpar.f     qform.f     r1updt.f
+enorm.f     hybrd1.f lmder1.f lmstr.f     qrfac.f     rwupdt.f
+
+./scipy/optimize/minpack2:
+dcsrch.f dcstep.f minpack2.pyf
+
+./scipy/optimize/nnls:
+nnls.f      nnls.pyf
+
+./scipy/optimize/slsqp:
+slsqp.pyf   slsqp_optmz.f
+
+./scipy/optimize/tests:
+test__basinhopping.py      test_least_squares.py      test_optimize.py
+test__differential_evolution.py  test_linesearch.py      test_regression.py
+test__numdiff.py     test_linprog.py         test_slsqp.py
+test__root.py        test_lsq_common.py      test_tnc.py
+test__spectral.py    test_lsq_linear.py      test_trustregion.py
+test_cobyla.py       test_minpack.py         test_zeros.py
+test_hungarian.py    test_nnls.py
+test_lbfgsb_hessinv.py     test_nonlin.py
+
+./scipy/optimize/tnc:
+HISTORY     README      example.py  tnc.c
+LICENSE     example.c   moduleTNC.c tnc.h
+
+./scipy/signal:
+C_bspline_util.c  _spectral.pyx     docs        sigtoolsmodule.c
+D_bspline_util.c  _upfirdn.py    filter_design.py  spectral.py
+S_bspline_util.c  _upfirdn_apply.pyx   fir_filter_design.py splinemodule.c
+Z_bspline_util.c  bento.info     firfilter.c    tests
+__init__.py    bscript        lfilter.c.src     waveforms.py
+_arraytools.py    bspline_util.c    ltisys.py      wavelets.py
+_max_len_seq.py      bsplines.py    medianfilter.c    windows.py
+_max_len_seq_inner.pyx  cont2discrete.py  setup.py
+_peak_finding.py  correlate_nd.c.src   signaltools.py
+_savitzky_golay.py   dltisys.py     sigtools.h
+
+./scipy/signal/docs:
+signaltools.README
+
+./scipy/signal/tests:
+test_array_tools.py     test_ltisys.py       test_spectral.py
+test_cont2discrete.py      test_max_len_seq.py     test_upfirdn.py
+test_dltisys.py         test_peak_finding.py    test_waveforms.py
+test_filter_design.py      test_savitzky_golay.py     test_wavelets.py
+test_fir_filter_design.py  test_signaltools.py     test_windows.py
+
+./scipy/sparse:
+__init__.py    construct.py      dok.py         sparsetools.py
+_csparsetools.pyx.in coo.py         extract.py     spfuncs.py
+base.py        csc.py         generate_sparsetools.py sputils.py
+bento.info     csgraph        lil.py         tests
+bscript        csr.py         linalg
+bsr.py         data.py        setup.py
+compressed.py     dia.py         sparsetools
+
+./scipy/sparse/csgraph:
+__init__.py    _reordering.pyx      _validation.py    tests
+_components.py    _shortest_path.pyx   bento.info
+_laplacian.py     _tools.pyx     parameters.pxi
+_min_spanning_tree.pyx  _traversal.pyx    setup.py
+
+./scipy/sparse/csgraph/tests:
+test_connected_components.py  test_graph_laplacian.py    test_spanning_tree.py
+test_conversions.py     test_reordering.py      test_traversal.py
+test_graph_components.py   test_shortest_path.py
+
+./scipy/sparse/linalg:
+__init__.py    _onenormest.py    eigen       matfuncs.py
+_expm_multiply.py bento.info     interface.py      setup.py
+_norm.py    dsolve         isolve         tests
+
+./scipy/sparse/linalg/dsolve:
+SuperLU        _superlu_utils.c  _superluobject.h  linsolve.py
+__init__.py    _superlumodule.c  bento.info     setup.py
+_add_newdocs.py      _superluobject.c  bscript        tests
+
+./scipy/sparse/linalg/dsolve/SuperLU:
+README         SRC         scipychanges.patch
+
+./scipy/sparse/linalg/dsolve/SuperLU/SRC:
+ccolumn_bmod.c    dgstrs.c    ilu_zcopy_to_ucol.c  spivotL.c
+ccolumn_dfs.c     dlacon2.c      ilu_zdrop_row.c      spivotgrowth.c
+ccopy_to_ucol.c      dlangs.c    ilu_zpanel_dfs.c  spruneL.c
+cdiagonal.c    dlaqgs.c    ilu_zpivotL.c     sreadhb.c
+cgscon.c    dldperm.c      ilu_zsnode_dfs.c  sreadrb.c
+cgsequ.c    dmach.c        izmax1.c    sreadtriple.c
+cgsisx.c    dmemory.c      mark_relax.c      ssnode_bmod.c
+cgsitrf.c      dmyblas2.c     memory.c    ssnode_dfs.c
+cgsrfs.c    dpanel_bmod.c     mmd.c       ssp_blas2.c
+cgssv.c        dpanel_dfs.c      qselect.c      ssp_blas3.c
+cgssvx.c    dpivotL.c      relax_snode.c     superlu_enum_consts.h
+cgstrf.c    dpivotgrowth.c    scipy_slu_config.h   superlu_timer.c
+cgstrs.c    dpruneL.c      scolumn_bmod.c    supermatrix.h
+clacon2.c      dreadhb.c      scolumn_dfs.c     sutil.c
+clangs.c    dreadrb.c      scomplex.c     util.c
+claqgs.c    dreadtriple.c     scopy_to_ucol.c      zcolumn_bmod.c
+cldperm.c      dsnode_bmod.c     scsum1.c    zcolumn_dfs.c
+cmemory.c      dsnode_dfs.c      sdiagonal.c    zcopy_to_ucol.c
+cmyblas2.c     dsp_blas2.c    sgscon.c    zdiagonal.c
+colamd.c    dsp_blas3.c    sgsequ.c    zgscon.c
+colamd.h    dutil.c        sgsisx.c    zgsequ.c
+cpanel_bmod.c     dzsum1.c    sgsitrf.c      zgsisx.c
+cpanel_dfs.c      get_perm_c.c      sgsrfs.c    zgsitrf.c
+cpivotL.c      heap_relax_snode.c   sgssv.c        zgsrfs.c
+cpivotgrowth.c    html_mainpage.h      sgssvx.c    zgssv.c
+cpruneL.c      icmax1.c    sgstrf.c    zgssvx.c
+creadhb.c      ilu_ccolumn_dfs.c sgstrs.c    zgstrf.c
+creadrb.c      ilu_ccopy_to_ucol.c  slacon2.c      zgstrs.c
+creadtriple.c     ilu_cdrop_row.c      slangs.c    zlacon2.c
+csnode_bmod.c     ilu_cpanel_dfs.c  slaqgs.c    zlangs.c
+csnode_dfs.c      ilu_cpivotL.c     sldperm.c      zlaqgs.c
+csp_blas2.c    ilu_csnode_dfs.c  slu_Cnames.h      zldperm.c
+csp_blas3.c    ilu_dcolumn_dfs.c slu_cdefs.h    zmemory.c
+cutil.c        ilu_dcopy_to_ucol.c  slu_dcomplex.h    zmyblas2.c
+dcolumn_bmod.c    ilu_ddrop_row.c      slu_ddefs.h    zpanel_bmod.c
+dcolumn_dfs.c     ilu_dpanel_dfs.c  slu_scomplex.h    zpanel_dfs.c
+dcomplex.c     ilu_dpivotL.c     slu_sdefs.h    zpivotL.c
+dcopy_to_ucol.c      ilu_dsnode_dfs.c  slu_util.h     zpivotgrowth.c
+ddiagonal.c    ilu_heap_relax_snode.c  slu_zdefs.h    zpruneL.c
+dgscon.c    ilu_relax_snode.c smach.c        zreadhb.c
+dgsequ.c    ilu_scolumn_dfs.c smemory.c      zreadrb.c
+dgsisx.c    ilu_scopy_to_ucol.c  smyblas2.c     zreadtriple.c
+dgsitrf.c      ilu_sdrop_row.c      sp_coletree.c     zsnode_bmod.c
+dgsrfs.c    ilu_spanel_dfs.c  sp_ienv.c      zsnode_dfs.c
+dgssv.c        ilu_spivotL.c     sp_preorder.c     zsp_blas2.c
+dgssvx.c    ilu_ssnode_dfs.c  spanel_bmod.c     zsp_blas3.c
+dgstrf.c    ilu_zcolumn_dfs.c spanel_dfs.c      zutil.c
+
+./scipy/sparse/linalg/dsolve/tests:
+test_linsolve.py
+
+./scipy/sparse/linalg/eigen:
+__init__.py arpack      bento.info  lobpcg      setup.py
+
+./scipy/sparse/linalg/eigen/arpack:
+ARPACK      __init__.py arpack.pyf.src bscript     tests
+README      arpack.py   bento.info  setup.py
+
+./scipy/sparse/linalg/eigen/arpack/ARPACK:
+CHANGES     COPYING     README      README.scipy   SRC      UTIL
+
+./scipy/sparse/linalg/eigen/arpack/ARPACK/SRC:
+cgetv0.f dnaitr.f dsconv.f snapps.f sseigt.f znaitr.f
+cnaitr.f dnapps.f dseigt.f snaup2.f ssesrt.f znapps.f
+cnapps.f dnaup2.f dsesrt.f snaupd.f sseupd.f znaup2.f
+cnaup2.f dnaupd.f dseupd.f snconv.f ssgets.f znaupd.f
+cnaupd.f dnconv.f dsgets.f sneigh.f ssortc.f zneigh.f
+cneigh.f dneigh.f dsortc.f sneupd.f ssortr.f zneupd.f
+cneupd.f dneupd.f dsortr.f sngets.f sstatn.f zngets.f
+cngets.f dngets.f dstatn.f ssaitr.f sstats.f zsortc.f
+csortc.f dsaitr.f dstats.f ssapps.f sstqrb.f zstatn.f
+cstatn.f dsapps.f dstqrb.f ssaup2.f stat.h
+debug.h     dsaup2.f sgetv0.f ssaupd.f version.h
+dgetv0.f dsaupd.f snaitr.f ssconv.f zgetv0.f
+
+./scipy/sparse/linalg/eigen/arpack/ARPACK/UTIL:
+cmout.f     dvout.f     iset.f      second_NONE.f  zmout.f
+cvout.f     icnteq.f iswap.f     smout.f     zvout.f
+dmout.f     icopy.f     ivout.f     svout.f
+
+./scipy/sparse/linalg/eigen/arpack/tests:
+test_arpack.py
+
+./scipy/sparse/linalg/eigen/lobpcg:
+__init__.py lobpcg.py   setup.py tests
+
+./scipy/sparse/linalg/eigen/lobpcg/tests:
+test_lobpcg.py
+
+./scipy/sparse/linalg/isolve:
+__init__.py bscript     iterative.py   lsmr.py     minres.py   tests
+bento.info  iterative   lgmres.py   lsqr.py     setup.py utils.py
+
+./scipy/sparse/linalg/isolve/iterative:
+BiCGREVCOM.f.src  CGSREVCOM.f.src      STOPTEST2.f.src      test.py
+BiCGSTABREVCOM.f.src GMRESREVCOM.f.src _iterative.pyf.src
+CGREVCOM.f.src    QMRREVCOM.f.src      getbreak.f.src
+
+./scipy/sparse/linalg/isolve/tests:
+demo_lgmres.py    test_lgmres.py    test_lsqr.py
+test_iterative.py test_lsmr.py      test_utils.py
+
+./scipy/sparse/linalg/tests:
+test_expm_multiply.py   test_matfuncs.py  test_onenormest.py
+test_interface.py test_norm.py
+
+./scipy/sparse/sparsetools:
+bool_ops.h  complex_ops.h  csc.h    csr.h    other.cxx   sparsetools.h
+bsr.cxx     coo.h    csgraph.h   dense.h     py3k.h      util.h
+bsr.h    csc.cxx     csr.cxx     dia.h    sparsetools.cxx
+
+./scipy/sparse/tests:
+test_base.py      test_csc.py    test_extract.py      test_spfuncs.py
+test_construct.py test_csr.py    test_sparsetools.py  test_sputils.py
+
+./scipy/spatial:
+__init__.py    bscript        qhull       setup.py
+_plotutils.py     ckdtree        qhull.pxd      src
+_procrustes.py    ckdtree.pyx    qhull.pyx      tests
+_spherical_voronoi.py   distance.py    qhull_blas.h
+bento.info     kdtree.py      setlist.pxd
+
+./scipy/spatial/ckdtree:
+src
+
+./scipy/spatial/ckdtree/src:
+build.cxx      cpp_exc.cxx    globals.cxx    query_ball_tree.cxx
+ckdtree_decl.h    cpp_exc.h      ordered_pair.h    query_pairs.cxx
+ckdtree_methods.h cpp_utils.h    partial_sort.h    rectangle.h
+coo_entries.h     distance.h     query.cxx      sparse_distances.cxx
+count_neighbors.cxx  distance_box.h    query_ball_point.cxx
+
+./scipy/spatial/qhull:
+Announce.txt   COPYING.txt README.txt  src
+
+./scipy/spatial/qhull/src:
+geom.c         libqhull.h     poly2.c        stat.c
+geom.h         mem.c       qhull_a.h      stat.h
+geom2.c        mem.h       qset.c         user.c
+global.c    merge.c        qset.h         user.h
+io.c        merge.h        random.c    usermem.c
+io.h        poly.c         random.h    userprintf.c
+libqhull.c     poly.h         rboxlib.c      userprintf_rbox.c
+
+./scipy/spatial/src:
+distance_impl.h   distance_wrap.c
+
+./scipy/spatial/tests:
+data           test_distance.py     test_spherical_voronoi.py
+test__plotutils.py      test_kdtree.py
+test__procrustes.py     test_qhull.py
+
+./scipy/spatial/tests/data:
+cdist-X1.txt         pdist-correlation-ml-iris.txt pdist-minkowski-3.2-ml-iris.txt
+cdist-X2.txt         pdist-correlation-ml.txt   pdist-minkowski-3.2-ml.txt
+degenerate_pointset.npz    pdist-cosine-ml-iris.txt   pdist-minkowski-5.8-ml-iris.txt
+iris.txt       pdist-cosine-ml.txt     pdist-seuclidean-ml-iris.txt
+pdist-boolean-inp.txt      pdist-double-inp.txt    pdist-seuclidean-ml.txt
+pdist-chebychev-ml-iris.txt   pdist-euclidean-ml-iris.txt   pdist-spearman-ml.txt
+pdist-chebychev-ml.txt     pdist-euclidean-ml.txt     random-bool-data.txt
+pdist-cityblock-ml-iris.txt   pdist-hamming-ml.txt
+pdist-cityblock-ml.txt     pdist-jaccard-ml.txt
+
+./scipy/special:
+Faddeeva.cc    _hyp0f1.pxd    amos_wrappers.c      mach
+Faddeeva.hh    _legacy.pxd    amos_wrappers.h      orthogonal.py
+README         _logit.c.src      basic.py    orthogonal_eval.pxd
+__init__.py    _logit.h    bento.info     setup.py
+_boxcox.pxd    _spherical_bessel.pxd   bscript        sf_error.c
+_complexstuff.h      _spherical_bessel.py c_misc         sf_error.h
+_complexstuff.pxd _testutils.py     cdf_wrappers.c    sf_error.pxd
+_convex_analysis.pxd _ufuncs.pyx    cdf_wrappers.h    specfun
+_cunity.pxd    _ufuncs_cxx.pxd      cdflib         specfun.pyf
+_ellip_harm.pxd      _ufuncs_cxx.pyx      cephes         specfun_wrappers.c
+_ellip_harm.py    _ufuncs_cxx_defs.h   cephes.h    specfun_wrappers.h
+_ellip_harm_2.pyx _ufuncs_defs.h    generate_ufuncs.py   spfun_stats.py
+_exprel.pxd    _xlogy.pxd     lambertw.pxd      sph_harm.pxd
+_faddeeva.cxx     add_newdocs.py    lambertw.py    tests
+_faddeeva.h    amos        lapack_defs.h     utils
+
+./scipy/special/amos:
+cephesREADME   readme      zbesj.f     zdiv.f      zseri.f     zunk1.f
+dgamln.f zabs.f      zbesk.f     zexp.f      zshch.f     zunk2.f
+diffs    zacai.f     zbesy.f     zkscl.f     zsqrt.f     zuoik.f
+disclaimer  zacon.f     zbinu.f     zlog.f      zuchk.f     zwrsk.f
+dsclmr.f zairy.f     zbiry.f     zmlri.f     zunhj.f
+fdump.f     zasyi.f     zbknu.f     zmlt.f      zuni1.f
+index    zbesh.f     zbuni.f     zrati.f     zuni2.f
+permission  zbesi.f     zbunk.f     zs1s2.f     zunik.f
+
+./scipy/special/c_misc:
+besselpoly.c      gammaincinv.c     poch.c
+double2.h      gammasgn.c     struve.c
+fsolve.c    misc.h         struve_convergence.py
+
+./scipy/special/cdflib:
+algdiv.f brcmp1.f cdfnor.f cumnbn.f erfc1.f     gsumln.f
+alngam.f brcomp.f cdfpoi.f cumnor.f esum.f      ipmpar.f
+alnrel.f bup.f    cdft.f      cumpoi.f exparg.f psi_fort.f
+apser.f     cdfbet.f cdftnc.f cumt.f      fpser.f     rcomp.f
+basym.f     cdfbin.f cumbet.f cumtnc.f gam1.f      rexp.f
+bcorr.f     cdfchi.f cumbin.f devlpl.f gaminv.f rlog.f
+betaln.f cdfchn.f cumchi.f dinvnr.f gamln.f     rlog1.f
+bfrac.f     cdff.f      cumchn.f dinvr.f     gamln1.f spmpar.f
+bgrat.f     cdffnc.f cumf.f      dt1.f    gamma_fort.f   stvaln.f
+bpser.f     cdfgam.f cumfnc.f dzror.f     grat1.f
+bratio.f cdfnbn.f cumgam.f erf.f    gratio.f
+
+./scipy/special/cephes:
+airy.c      ellik.c     gels.c      jv.c     polevl.h stdtr.c
+bdtr.c      ellpe.c     hyp2f1.c k0.c     protos.h struve.c
+beta.c      ellpj.c     hyperg.c k1.c     psi.c    tandg.c
+btdtr.c     ellpk.c     i0.c     kn.c     rgamma.c tukey.c
+cbrt.c      exp10.c     i1.c     kolmogorov.c   round.c     unity.c
+cephes_names.h exp2.c      igam.c      mconf.h     scipy_iv.c  yn.c
+chbevl.c expn.c      igami.c     mtherr.c shichi.c zeta.c
+chdtr.c     fdtr.c      incbet.c nbdtr.c     sici.c      zetac.c
+const.c     fresnl.c incbi.c     ndtr.c      sincos.c
+dawsn.c     gamma.c     j0.c     ndtri.c     sindg.c
+ellie.c     gdtr.c      j1.c     pdtr.c      spence.c
+
+./scipy/special/mach:
+d1mach.f i1mach.f xerror.f
+
+./scipy/special/specfun:
+specfun.f
+
+./scipy/special/tests:
+data           test_ellip_harm.py      test_orthogonal.py
+test_basic.py        test_lambertw.py     test_orthogonal_eval.py
+test_boxcox.py       test_logit.py        test_spfun_stats.py
+test_data.py         test_mpmath.py       test_spherical_bessel.py
+
+./scipy/special/tests/data:
+README      boost.npz   gsl.npz     local.npz
+boost    gsl      local
+
+./scipy/special/tests/data/boost:
+acosh_data_ipp       ellint_pi2_data_ipp     igamma_int_data_ipp
+asinh_data_ipp       ellint_pi3_data_ipp     igamma_inva_data_ipp
+assoc_legendre_p_ipp    ellint_pi3_large_data_ipp  igamma_med_data_ipp
+atanh_data_ipp       ellint_rc_data_ipp      igamma_small_data_ipp
+bessel_i_data_ipp    ellint_rd_data_ipp      laguerre2_ipp
+bessel_i_int_data_ipp      ellint_rf_data_ipp      laguerre3_ipp
+bessel_j_data_ipp    ellint_rj_data_ipp      legendre_p_ipp
+bessel_j_int_data_ipp      erf_data_ipp         legendre_p_large_ipp
+bessel_j_large_data_ipp    erf_inv_data_ipp     log1p_expm1_data_ipp
+bessel_k_data_ipp    erf_large_data_ipp      ncbeta_big_ipp
+bessel_k_int_data_ipp      erf_small_data_ipp      ncbeta_ipp
+bessel_y01_data_ipp     erfc_inv_big_data_ipp      nccs_big_ipp
+bessel_yn_data_ipp      erfc_inv_data_ipp    nccs_ipp
+bessel_yv_data_ipp      expint_1_data_ipp    negative_binomial_quantile_ipp
+beta_exp_data_ipp    expint_data_ipp         poisson_quantile_ipp
+beta_med_data_ipp    expint_small_data_ipp      powm1_sqrtp1m1_test_cpp
+beta_small_data_ipp     expinti_data_double_ipp    sph_bessel_data_ipp
+binomial_data_ipp    expinti_data_ipp     sph_neumann_data_ipp
+binomial_large_data_ipp    gamma_inv_big_data_ipp     spherical_harmonic_ipp
+binomial_quantile_ipp      gamma_inv_data_ipp      test_gamma_data_ipp
+cbrt_data_ipp        gamma_inv_small_data_ipp   tgamma_delta_ratio_data_ipp
+digamma_data_ipp     hermite_ipp       tgamma_delta_ratio_int2_ipp
+digamma_neg_data_ipp    ibeta_data_ipp       tgamma_delta_ratio_int_ipp
+digamma_root_data_ipp      ibeta_int_data_ipp      tgamma_ratio_data_ipp
+digamma_small_data_ipp     ibeta_inv_data_ipp      zeta_1_below_data_ipp
+ellint_e2_data_ipp      ibeta_inva_data_ipp     zeta_1_up_data_ipp
+ellint_e_data_ipp    ibeta_large_data_ipp    zeta_data_ipp
+ellint_f_data_ipp    ibeta_small_data_ipp    zeta_neg_data_ipp
+ellint_k_data_ipp    igamma_big_data_ipp
+
+./scipy/special/tests/data/boost/acosh_data_ipp:
+acosh_data.txt
+
+./scipy/special/tests/data/boost/asinh_data_ipp:
+asinh_data.txt
+
+./scipy/special/tests/data/boost/assoc_legendre_p_ipp:
+assoc_legendre_p.txt
+
+./scipy/special/tests/data/boost/atanh_data_ipp:
+atanh_data.txt
+
+./scipy/special/tests/data/boost/bessel_i_data_ipp:
+bessel_i_data.txt
+
+./scipy/special/tests/data/boost/bessel_i_int_data_ipp:
+bessel_i_int_data.txt
+
+./scipy/special/tests/data/boost/bessel_j_data_ipp:
+bessel_j_data.txt
+
+./scipy/special/tests/data/boost/bessel_j_int_data_ipp:
+bessel_j_int_data.txt
+
+./scipy/special/tests/data/boost/bessel_j_large_data_ipp:
+bessel_j_large_data.txt
+
+./scipy/special/tests/data/boost/bessel_k_data_ipp:
+bessel_k_data.txt
+
+./scipy/special/tests/data/boost/bessel_k_int_data_ipp:
+bessel_k_int_data.txt
+
+./scipy/special/tests/data/boost/bessel_y01_data_ipp:
+bessel_y01_data.txt
+
+./scipy/special/tests/data/boost/bessel_yn_data_ipp:
+bessel_yn_data.txt
+
+./scipy/special/tests/data/boost/bessel_yv_data_ipp:
+bessel_yv_data.txt
+
+./scipy/special/tests/data/boost/beta_exp_data_ipp:
+beta_exp_data.txt
+
+./scipy/special/tests/data/boost/beta_med_data_ipp:
+beta_med_data.txt
+
+./scipy/special/tests/data/boost/beta_small_data_ipp:
+beta_small_data.txt
+
+./scipy/special/tests/data/boost/binomial_data_ipp:
+binomial_data.txt
+
+./scipy/special/tests/data/boost/binomial_large_data_ipp:
+binomial_large_data.txt
+
+./scipy/special/tests/data/boost/binomial_quantile_ipp:
+binomial_quantile_data.txt
+
+./scipy/special/tests/data/boost/cbrt_data_ipp:
+cbrt_data.txt
+
+./scipy/special/tests/data/boost/digamma_data_ipp:
+digamma_data.txt
+
+./scipy/special/tests/data/boost/digamma_neg_data_ipp:
+digamma_neg_data.txt
+
+./scipy/special/tests/data/boost/digamma_root_data_ipp:
+digamma_root_data.txt
+
+./scipy/special/tests/data/boost/digamma_small_data_ipp:
+digamma_small_data.txt
+
+./scipy/special/tests/data/boost/ellint_e2_data_ipp:
+ellint_e2_data.txt
+
+./scipy/special/tests/data/boost/ellint_e_data_ipp:
+ellint_e_data.txt
+
+./scipy/special/tests/data/boost/ellint_f_data_ipp:
+ellint_f_data.txt
+
+./scipy/special/tests/data/boost/ellint_k_data_ipp:
+ellint_k_data.txt
+
+./scipy/special/tests/data/boost/ellint_pi2_data_ipp:
+ellint_pi2_data.txt
+
+./scipy/special/tests/data/boost/ellint_pi3_data_ipp:
+ellint_pi3_data.txt
+
+./scipy/special/tests/data/boost/ellint_pi3_large_data_ipp:
+ellint_pi3_large_data.txt
+
+./scipy/special/tests/data/boost/ellint_rc_data_ipp:
+ellint_rc_data.txt
+
+./scipy/special/tests/data/boost/ellint_rd_data_ipp:
+ellint_rd_data.txt
+
+./scipy/special/tests/data/boost/ellint_rf_data_ipp:
+ellint_rf_data.txt
+
+./scipy/special/tests/data/boost/ellint_rj_data_ipp:
+ellint_rj_data.txt
+
+./scipy/special/tests/data/boost/erf_data_ipp:
+erf_data.txt
+
+./scipy/special/tests/data/boost/erf_inv_data_ipp:
+erf_inv_data.txt
+
+./scipy/special/tests/data/boost/erf_large_data_ipp:
+erf_large_data.txt
+
+./scipy/special/tests/data/boost/erf_small_data_ipp:
+erf_small_data.txt
+
+./scipy/special/tests/data/boost/erfc_inv_big_data_ipp:
+erfc_inv_big_data1.txt  erfc_inv_big_data2.txt
+
+./scipy/special/tests/data/boost/erfc_inv_data_ipp:
+erfc_inv_data.txt
+
+./scipy/special/tests/data/boost/expint_1_data_ipp:
+expint_1_data.txt
+
+./scipy/special/tests/data/boost/expint_data_ipp:
+expint_data.txt
+
+./scipy/special/tests/data/boost/expint_small_data_ipp:
+expint_small_data.txt
+
+./scipy/special/tests/data/boost/expinti_data_double_ipp:
+expinti_data_double.txt
+
+./scipy/special/tests/data/boost/expinti_data_ipp:
+expinti_data.txt
+
+./scipy/special/tests/data/boost/gamma_inv_big_data_ipp:
+gamma_inv_big_data.txt
+
+./scipy/special/tests/data/boost/gamma_inv_data_ipp:
+gamma_inv_data.txt
+
+./scipy/special/tests/data/boost/gamma_inv_small_data_ipp:
+gamma_inv_small_data.txt
+
+./scipy/special/tests/data/boost/hermite_ipp:
+hermite.txt
+
+./scipy/special/tests/data/boost/ibeta_data_ipp:
+ibeta_data.txt
+
+./scipy/special/tests/data/boost/ibeta_int_data_ipp:
+ibeta_int_data.txt
+
+./scipy/special/tests/data/boost/ibeta_inv_data_ipp:
+ibeta_inv_data.txt
+
+./scipy/special/tests/data/boost/ibeta_inva_data_ipp:
+ibeta_inva_data.txt
+
+./scipy/special/tests/data/boost/ibeta_large_data_ipp:
+ibeta_large_data.txt
+
+./scipy/special/tests/data/boost/ibeta_small_data_ipp:
+ibeta_small_data.txt
+
+./scipy/special/tests/data/boost/igamma_big_data_ipp:
+igamma_big_data.txt
+
+./scipy/special/tests/data/boost/igamma_int_data_ipp:
+igamma_int_data.txt
+
+./scipy/special/tests/data/boost/igamma_inva_data_ipp:
+igamma_inva_data.txt
+
+./scipy/special/tests/data/boost/igamma_med_data_ipp:
+igamma_med_data.txt
+
+./scipy/special/tests/data/boost/igamma_small_data_ipp:
+igamma_small_data.txt
+
+./scipy/special/tests/data/boost/laguerre2_ipp:
+laguerre2.txt
+
+./scipy/special/tests/data/boost/laguerre3_ipp:
+laguerre3.txt
+
+./scipy/special/tests/data/boost/legendre_p_ipp:
+legendre_p.txt
+
+./scipy/special/tests/data/boost/legendre_p_large_ipp:
+legendre_p_large.txt
+
+./scipy/special/tests/data/boost/log1p_expm1_data_ipp:
+log1p_expm1_data.txt
+
+./scipy/special/tests/data/boost/ncbeta_big_ipp:
+ncbeta_big.txt
+
+./scipy/special/tests/data/boost/ncbeta_ipp:
+ncbeta.txt
+
+./scipy/special/tests/data/boost/nccs_big_ipp:
+nccs_big.txt
+
+./scipy/special/tests/data/boost/nccs_ipp:
+nccs.txt
+
+./scipy/special/tests/data/boost/negative_binomial_quantile_ipp:
+negative_binomial_quantile_data.txt
+
+./scipy/special/tests/data/boost/poisson_quantile_ipp:
+poisson_quantile_data.txt
+
+./scipy/special/tests/data/boost/powm1_sqrtp1m1_test_cpp:
+powm1_data.txt    sqrtp1m1_data.txt
+
+./scipy/special/tests/data/boost/sph_bessel_data_ipp:
+sph_bessel_data.txt
+
+./scipy/special/tests/data/boost/sph_neumann_data_ipp:
+sph_neumann_data.txt
+
+./scipy/special/tests/data/boost/spherical_harmonic_ipp:
+spherical_harmonic.txt
+
+./scipy/special/tests/data/boost/test_gamma_data_ipp:
+factorials.txt    near_0.txt     near_2.txt     near_m55.txt
+gammap1m1_data.txt   near_1.txt     near_m10.txt
+
+./scipy/special/tests/data/boost/tgamma_delta_ratio_data_ipp:
+tgamma_delta_ratio_data.txt
+
+./scipy/special/tests/data/boost/tgamma_delta_ratio_int2_ipp:
+tgamma_delta_ratio_int2.txt
+
+./scipy/special/tests/data/boost/tgamma_delta_ratio_int_ipp:
+tgamma_delta_ratio_int.txt
+
+./scipy/special/tests/data/boost/tgamma_ratio_data_ipp:
+tgamma_ratio_data.txt
+
+./scipy/special/tests/data/boost/zeta_1_below_data_ipp:
+zeta_1_below_data.txt
+
+./scipy/special/tests/data/boost/zeta_1_up_data_ipp:
+zeta_1_up_data.txt
+
+./scipy/special/tests/data/boost/zeta_data_ipp:
+zeta_data.txt
+
+./scipy/special/tests/data/boost/zeta_neg_data_ipp:
+zeta_neg_data.txt
+
+./scipy/special/tests/data/gsl:
+mathieu_ab.txt    mathieu_ce_se.txt mathieu_mc_ms.txt
+
+./scipy/special/tests/data/local:
+ellip.txt      ellipkinc_neg_m.txt  log1p_expm1_complex.txt
+ellipeinc_neg_m.txt  ellipkm1.txt
+
+./scipy/special/utils:
+README      convert.py  datafunc.py makenpz.py
+
+./scipy/stats:
+__init__.py       bento.info        mvndst.f
+_binned_statistic.py    bscript           setup.py
+_constants.py        contingency.py       statlib
+_continuous_distns.py      distributions.py     statlib.pyf
+_discrete_distns.py     kde.py            stats.py
+_distn_infrastructure.py   morestats.py         tests
+_distr_params.py     mstats.py         vonmises.py
+_multivariate.py     mstats_basic.py         vonmises_cython.pyx
+_stats_mstats_common.py    mstats_extras.py
+_tukeylambda_stats.py      mvn.pyf
+
+./scipy/stats/statlib:
+ansari.f spearman.f  swilk.f
+
+./scipy/stats/tests:
+common_tests.py         test_distributions.py      test_multivariate.py
+data           test_fit.py       test_rank.py
+test_binned_statistic.py   test_kdeoth.py       test_stats.py
+test_contingency.py     test_morestats.py    test_tukeylambda_stats.py
+test_continuous_basic.py   test_mstats_basic.py
+test_discrete_basic.py     test_mstats_extras.py
+
+./scipy/stats/tests/data:
+nist_anova  nist_linregress
+
+./scipy/stats/tests/data/nist_anova:
+AtmWtAg.dat SmLs01.dat  SmLs03.dat  SmLs05.dat  SmLs07.dat  SmLs09.dat
+SiRstv.dat  SmLs02.dat  SmLs04.dat  SmLs06.dat  SmLs08.dat
+
+./scipy/stats/tests/data/nist_linregress:
+Norris.dat
+
+./scipy/weave:
+LICENSE.txt    blitz       cpp_namespace_spec.py   size_check.py
+README.txt     blitz_spec.py     doc         slice_handler.py
+__init__.py    blitz_tools.py    examples    standard_array_spec.py
+_dumb_shelve.py      build_tools.py    ext_tools.py      swig2_spec.py
+_dumbdbm_patched.py  bytecodecompiler.py  inline_tools.py      swigptr.py
+accelerate_tools.py  c_spec.py      numpy_scalar_spec.py swigptr2.py
+ast_tools.py      catalog.py     platform_info.py  tests
+base_info.py      common_info.py    scxx        vtk_spec.py
+base_spec.py      converters.py     setup.py    weave_version.py
+
+./scipy/weave/blitz:
+blitz
+
+./scipy/weave/blitz/blitz:
+Makefile.am extremum.h  mattoep.h   random.h tuning.h vecmax.cc
+Makefile.in funcs.h     matuops.h   randref.h   tvcross.h   vecmin.cc
+README      generate matutri.h   range.h     tvecglobs.h vecnorm.cc
+applics.h   gnu      memblock.cc reduce.h update.h vecnorm1.cc
+array    indexexpr.h memblock.h  shapecheck.h   vecaccum.cc vecpick.cc
+array-impl.h   limits-hack.h  meta     tau.h    vecall.cc   vecpick.h
+array-old.h listinit.h  minmax.h timer.h     vecany.cc   vecpickio.cc
+array.h     matbops.h   mstruct.h   tiny.h      vecbfn.cc   vecpickiter.h
+bench.cc matdiag.h   numinquire.h   tinymat.h   vecbops.cc  vecsum.cc
+bench.h     matexpr.h   numtrait.h  tinymatexpr.h  veccount.cc vector-et.h
+benchext.cc matgen.h ops.h    tinymatio.cc   vecdelta.cc vector.cc
+benchext.h  mathf2.h prettyprint.h  tinyvec-et.h   vecdot.cc   vector.h
+blitz.h     mathfunc.h  promote-old.h  tinyvec.cc  vecexpr.h   vecuops.cc
+bzconfig.h  matltri.h   promote.h   tinyvec.h   vecexprwrap.h  vecwhere.cc
+bzdebug.h   matref.h rand-dunif.h   tinyvecio.cc   vecglobs.cc vecwhere.h
+compiler.h  matrix.cc   rand-normal.h  tinyveciter.h  vecglobs.h  wrap-climits.h
+config.h.in matrix.h rand-tt800.h   traversal.cc   vecio.cc zero.cc
+etbase.h matsymm.h   rand-uniform.h traversal.h veciter.h   zero.h
+
+./scipy/weave/blitz/blitz/array:
+Makefile.am convolve.h  functorExpr.h  misc.cc     reduce.h stencilops.h
+Makefile.in cycle.cc geometry.h  multi.h     resize.cc   stencils.cc
+asexpr.h domain.h indirect.h  newbops.cc  shape.h     stencils.h
+bops.cc     et.h     interlace.cc   newet-macros.h slice.h     storage.h
+cartesian.h eval.cc     io.cc    newet.h     slicing.cc  uops.cc
+cgsolve.h   expr.h      iter.h      ops.cc      stencil-et.h   where.h
+complex.cc  fastiter.h  map.h    ops.h    stencil.cc  zip.h
+convolve.cc funcs.h     methods.cc  reduce.cc   stencil.h
+
+./scipy/weave/blitz/blitz/generate:
+Makefile.am bzfstream.h genmathfunc.cpp   genvecbops.cpp operands2.h
+Makefile.in genarrbops.cpp genmatuops.cpp genvecuops.cpp optuple.h
+arroperands.h  genarruops.cpp genpromote.cpp genvecwhere.cpp   optuple2.h
+arroptuple.h   genmatbops.cpp genvecbfn.cpp  operands.h
+
+./scipy/weave/blitz/blitz/gnu:
+bzconfig.h
+
+./scipy/weave/blitz/blitz/meta:
+Makefile.am dot.h    matmat.h metaprog.h  sum.h
+Makefile.in matassign.h matvec.h product.h   vecassign.h
+
+./scipy/weave/doc:
+tutorial.txt      tutorial_original.html
+
+./scipy/weave/examples:
+array3d.py     increment_example.py ramp.py        tuple_return.py
+binary_search.py  md5_speed.py      ramp2.py    vq.py
+cast_copy_transpose.py  object.py      support_code_example.py vtk_example.py
+dict_sort.py      print_example.py  swig2_example.py  wx_example.py
+fibonacci.py      py_none.py     swig2_ext.h    wx_speed.py
+functional.py     ramp.c         swig2_ext.i
+
+./scipy/weave/scxx:
+README.txt  list.h      number.h scxx.h      str.h    weave_imp.cpp
+dict.h      notes.txt   object.h sequence.h  tuple.h
+
+./scipy/weave/tests:
+scxx_timings.py         test_ext_tools.py    test_size_check.py
+test_ast_tools.py    test_inline_tools.py    test_slice_handler.py
+test_blitz_tools.py     test_numpy_scalar_spec.py  test_standard_array_spec.py
+test_build_tools.py     test_scxx_dict.py    weave_test_utils.py
+test_c_spec.py       test_scxx_object.py
+test_catalog.py         test_scxx_sequence.py
+
+./tools:
+authors.py        gh_lists.py       scipy-macosx-installer
+ci          osx            validate_runtests_log.py
+cythonize.py         refguide_check.py    win32
+
+./tools/ci:
+README.txt     devdocs-deploy.key.enc  devdocs-deploy.key.pub
+
+./tools/osx:
+README.txt     build.py    install_and_test.py
+
+./tools/scipy-macosx-installer:
+README.txt  art      new-create-dmg
+
+./tools/scipy-macosx-installer/art:
+dmgbackground.png dmgbackground.svg
+
+./tools/win32:
+build_scripts        detect_cpu_extensions_wine.py
+
+./tools/win32/build_scripts:
+lib.py      nsis_scripts   pavement.py
+
+./tools/win32/build_scripts/nsis_scripts:
+scipy-superinstaller.nsi.in

@@ -1,0 +1,171 @@
+|-128bit
+|-bessel
+|-c9x-complex
+|-cmath
+|-cprob
+|-ellf
+|-html
+|-ieee
+|-ldouble
+|-linalg
+|-misc
+|-ode
+|-polyn
+|-qfloat
+|-remes
+|-single 
+
+128bit      cephes.txt  ellf     ldouble     ode      readme
+bessel      cmath    html     linalg      polyn    remes
+c9x-complex cprob    ieee     misc     qfloat      single
+
+./128bit:
+128bdoc.html   drand.c     flrtstl.c   log10ll.c   mtstl.c     sqrtll.qll
+acoshll.c   econst.c ieee.c      log1pll.c   ndtrll.c sqrtll.spa
+asinhll.c   ehead.h     isnanll.c   log2ll.c polevll.c   tanhll.c
+asinll.c exp10ll.c   j0ll.c      logll.c     powill.c tanll.c
+atanhll.c   exp2ll.c j1ll.c      lparanoi.c  powl.c      testvectl.c
+atanll.c expll.c     jnll.c      makefile powll.c     x-logll.c
+cbrtll.c expm1ll.c   lcalc.c     mconf.h     sinhll.c x-powll.c
+constll.c   expx2ll.c   lcalc.h     monotll.c   sinll.c
+coshll.c floorll.c   lgammall.c  mtherr.c sqrtll.c
+
+./bessel:
+airy.c      i0.c     j0.c     jv.c     kn.c     yn.c
+hyp2f1.c i1.c     j1.c     k0.c     psi.c
+hyperg.c iv.c     jn.c     k1.c     struve.c
+
+./c9x-complex:
+alpha.pat   cgamma.c cmplxf.c dccalc.h protos.h tcpow.c
+assign.pat  cgammaf.c   cmplxl.c gcc2r95.pat read.me     tcsin.c
+calc100.doc cgammal.c   complex.doc makefile stubs.c     tcsqrt.c
+celefund.h  clog.c      complex.h   mconf.h     tablat.c whitebx.c
+celefunf.h  clogf.c     cpolylog.c  mtst.c      tcabs.c     whitebxf.c
+celefunt.h  clogl.c     cvect.c     mtstf.c     tcexp.c
+celefunt.mak   cmplx.c     dccalc.c mtstl.c     tclog.c
+
+./cmath:
+README      cmplx.c     fabs.c      mod2pi.c round.c     sindg.c
+acosh.c     const.c     floor.c     mtherr.c setprbor.asm   sinh.c
+asin.c      cosh.c      ftilib.mak  mtst.c      setprec.387 sqrt.c
+asinh.c     descrip.mms ftilib.rsp  mtst.opt setprec.688 tan.c
+atan.c      drand.c     isnan.c     polevl.asm  setprec.87  tandg.c
+atanh.c     dtestvec.c  log.c    polevl.c setprec.c   tanh.c
+cbrt.c      exp.c    log10.c     pow.c    setprelf.387   unity.c
+chbevl.c exp10.c     log2.c      powi.c      sin.c    unix.mak
+clog.c      exp2.c      mconf.h     protos.h sincos.c
+
+./cprob:
+bdtr.c      drand.c     igam.c      mconf.h     ndtr.c      unity.c
+btdtr.c     expx2.c     igami.c     msc.mak     ndtri.c
+chdtr.c     fdtr.c      incbet.c msc.rsp     pdtr.c
+const.c     gamma.c     incbi.c     mtherr.c polevl.c
+cprob.mak   gdtr.c      kolmogorov.c   nbdtr.c     stdtr.c
+
+./ellf:
+borland.mak ellf.ans ellf.opt ellik.c     mconf.h     test.bat
+cmplx.c     ellf.c      ellf.que ellpe.c     mtherr.c
+const.c     ellf.doc ellfu.mak   ellpj.c     polevl.c
+descrip.mms ellf.mak ellie.c     ellpk.c     protos.h
+
+./html:
+128bdoc.html   doubldoc.html  ldoubdoc.html  qlibdoc.html   singldoc.html
+
+./ieee:
+descrip.mms eexp.c      epow.c      ieee.c      ieetst.mak  mconf.h
+drand.c     ehead.h     etanh.c     ieetst.c ieetst.opt  mtherr.c
+econst.c elog.c      etodec.c ieetst.doc  makefile
+
+./ldouble:
+acoshl.c ellikl.c fltestl.c   ldoubdoc.html  nbdtrl.c sqrtl.87
+arcdotl.c   ellpel.c gammal.c ldrand.c ndtril.c sqrtl.c
+asinhl.c ellpjl.c gdtrl.c     log10l.c ndtrl.c     sqrtl.mot
+asinl.c     ellpkl.c gelsl.c     log1pl.c pdtrl.c     sqrtl.sun
+atanhl.c exp10l.c hypergl.c   log2l.c     polevll.c   sqrtlelf.387
+atanl.c     exp2l.c     ieee.c      logl.c      powil.c     stdtrl.c
+bc45l.mak   expl.c      igamil.c longlib.mak powl.c      tanhl.c
+bdtrl.c     expm1l.c igaml.c     longlib.rsp protos.h tanl.c
+btdtrl.c expx2l.c incbetl.c   lparanoi.c  setprec.387 testvect.c
+cbrtl.c     fdtrl.c     incbil.c makefile setprec.688 unityl.c
+chdtrl.c floorl.387  isnanl.c mconf.h     setprec.87  unix.mak
+coshl.c     floorl.c j0l.c    monot2dl.c  setprec.mot wronkl.c
+cygwin.mak  floorl.mot  j1l.c    monotl.c setprelf.387   ynl.c
+econst.c floorl.sun  jnl.c    mtherr.c sinhl.c
+ehead.h     floorlelf.387  lcalc.c     mtstl.c     sinl.c
+elliel.c flrtstl.c   lcalc.h     nantst.c sqrtl.387
+
+./linalg:
+blas.c      eigasm.bat  eigens.c eigtst.c lmdif.c     simq.c
+
+./misc:
+beta.c      expn.c      mtherr.c psi.c    sici.c      zetac.c
+chbevl.c fac.c    planck.c revers.c simpsn.c
+dawsn.c     fresnl.c polevl.c rgamma.c spence.c
+ei.c     mconf.h     polylog.c   shichi.c zeta.c
+
+./ode:
+adams3.c makefile rungek.c ssystem.mak
+int.h    note.doc ssystem.c
+
+./polyn:
+euclid.c polmisc.c   polrt.c     polyn.c     polyr.c     revers.c
+
+./qfloat:
+bc45.zip makefile qccalcu.mak qfltbelf.386   qlibdoc.html   qsqrta.c
+bcb5.zip mconf.h     qcerf.c     qfltbi.386  qlibu.mak   qstudt.c
+calc100.doc misclib.rsp qcgamma.c   qfltbi.c qlog.c      qtan.c
+cmplx.c     msc.mak     qchyp1f1.c  qfltd.asm   qlog1.c     qtanh.c
+const.c     msc2.mak qcmplx.c qflti.c     qlog10.c qtens.h
+cplus.mak   msvc.mak qconst.c qfresf.c qmtst.c     qtst.mak
+ctest.tak   mtherr.c qcos.c      qgamma.c qmtst.exp   qtst1.c
+descrip.mms mulr.asm qcosh.c     qhead.asm   qmtst.opt   qtst1.mak
+divn.asm mulrl.asm   qcpolylog.c qhead.h     qndtr.c     qtst1.opt
+divnl.asm   ndtri.c     qctst1.mak  qhead12.asm qndtri.c qtst1u.mak
+dqlasm.rsp  notes    qcwhitebx.c qhead12.h   qparanoi.c  qtstl.c
+dqlink.rsp  polevl.c qdawsn.c qhead16.h   qparanoi.exp   qtstl.mak
+dqplink.rsp pow.c    qei.c    qhead24.asm qparanoi.mak   qtstq.cc
+dqtasm.mak  powi.c      qellie.c qhead32.h   qparanoi.opt   qtstq.exp
+drand.c     protos.h qellik.c qheadl.asm  qparanol.mak   qtstq.mak
+euler.tak   q100asm.rsp qellpe.c qheadl12.asm   qparanou.mak   qyn.c
+exp.c    qacosh.c qellpj.c qheadl24.asm   qplanck.c   qzetac.c
+floor.c     qairy.c     qellpk.c qhy2f1.c qpolylog.c  sin.c
+flrtstq.c   qasin.c     qerf.c      qhyp.c      qpolyr.c sqrt.c
+gamcof.tak  qasinh.c qerfc.c     qigam.c     qpow.c      stirling.tak
+gamma.c     qatanh.c qeuclid.c   qigami.c qprob.c     subm.asm
+gnuwin.mak  qatn.c      qexp.c      qin.c    qprotos.h   subml.asm
+hello.cc qbeta.c     qexp10.c qincb.c     qpsi.c      test1.cc
+hello.exp   qc9tst.c qexp2.c     qincbi.c qrand.c     test1.exp
+hexfloat.doc   qc9tstl.c   qexpm1.c qine.c      qremain.c   test2.cc
+igam.c      qcalc.c     qexpn.c     qjn.c    qremquo.c   test2.exp
+igami.c     qcalc.h     qf68k.a     qjypn.c     qshici.c test3.cc
+incbet.c qcalc.mak   qf68ks.s qjyqn.c     qsici.c     test3.exp
+incbi.c     qcalc.opt   qfac.c      qk0.c    qsimq.c     test4.cc
+lc9tstd.c   qcalcl.mak  qfloat.h qkn.c    qsin.c      test4.exp
+lc9tstf.c   qcalcu.mak  qfloor.c qkne.c      qsindg.c time-it.c
+log.c    qcbrt.c     qflt.c      qlib.doc qsinh.c     zeta.tak
+ltstd.c     qccalc.c qflta.c     qlibasm.rsp qspenc.c
+ltstd.mak   qccalc.mak  qfltb.c     qlibasml.rsp   qsqrt.c
+
+./remes:
+note.doc remes.mak   remesf.c remess.c unix.mak
+remes.c     remesa.c remesg.c remesw.c
+remes.h     remese.c remesp.c simq.c
+
+./single:
+acoshf.c drand.c     floatlib.rsp   j0tst.doc   nbdtrf.c shichif.c
+airyf.c     ellief.c floorf.c j0tst.mak   ndtrf.c     sicif.c
+asinf.c     ellikf.c fresnlf.c   j1f.c    ndtrif.c sindgf.c
+asinhf.c ellpef.c gammaf.c jnf.c    pdtrf.c     sinf.c
+atanf.c     ellpjf.c gdtrf.c     jvf.c    polevlf.c   singledoc.html
+atanhf.c ellpkf.c hyp2f1f.c   k0f.c    polynf.c sinhf.c
+bdtrf.c     exp10f.c hypergf.c   k1f.c    powf.c      spencef.c
+betaf.c     exp2f.c     i0f.c    knf.c    powif.c     sqrtf.c
+cbrtf.c     expf.c      i1f.c    libmf.rf powtst.c stdtrf.c
+chbevlf.c   expnf.c     igamf.c     log10f.c protos.h struvef.c
+chdtrf.c expx2f.c igamif.c log2f.c     psif.c      tandgf.c
+clogf.c     f.bat    incbet.c logf.c      rgammaf.c   tanf.c
+cmplxf.c f.rsp    incbetf.c   makefile setprec.387 tanhf.c
+constf.c facf.c      incbif.c mconf.h     setprec.688 ynf.c
+coshf.c     fdtrf.c     ivf.c    mtherr.c setprec.87  zetacf.c
+dawsnf.c floatlib.h  j0f.c    mtstf.c     setprec.c   zetaf.c
+djgcc.mak   floatlib.mak   j0tst.c     nantst.c setprelf.387

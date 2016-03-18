@@ -1,0 +1,698 @@
+|-bin
+|-dist
+|-docs
+|---core
+|---datatypes
+|---expressions
+|---reference
+|-----classes
+|-----functions
+|-examples
+|---advanced
+|-----add_new_datatypes
+|-----web_server
+|---browser
+|-----webworkers
+|-img
+|-lib
+|---core
+|-----function
+|---error
+|---expression
+|-----docs
+|-------constants
+|-------construction
+|-------core
+|-------function
+|---------algebra
+|---------arithmetic
+|---------bitwise
+|---------combinatorics
+|---------complex
+|---------expression
+|---------geometry
+|---------logical
+|---------matrix
+|---------probability
+|---------relational
+|---------statistics
+|---------trigonometry
+|---------units
+|---------utils
+|-----function
+|-----node
+|-------utils
+|-----transform
+|---function
+|-----algebra
+|-------decomposition
+|-------solver
+|---------utils
+|-------sparse
+|-----arithmetic
+|-----bitwise
+|-----combinatorics
+|-----complex
+|-----geometry
+|-----logical
+|-----matrix
+|-----probability
+|-----relational
+|-----statistics
+|-----string
+|-----trigonometry
+|-----unit
+|-----utils
+|---json
+|---type
+|-----bignumber
+|-------function
+|-----chain
+|-------function
+|-----complex
+|-------function
+|-----fraction
+|-------function
+|-----matrix
+|-------function
+|-------utils
+|-----resultset
+|-----unit
+|-------function
+|---utils
+|-----bignumber
+|-----collection
+|-misc
+|-test
+|---core
+|---error
+|---expression
+|-----function
+|-----node
+|---function
+|-----algebra
+|-------decomposition
+|-------solver
+|-------sparse
+|-----arithmetic
+|-----bitwise
+|-----combinatorics
+|-----complex
+|-----geometry
+|-----logical
+|-----matrix
+|-----probability
+|-----relational
+|-----statistics
+|-----string
+|-----trigonometry
+|-----unit
+|-----utils
+|---json
+|---type
+|-----bignumber
+|-------function
+|-----chain
+|-------function
+|-----complex
+|-------function
+|-----fraction
+|-------function
+|-----matrix
+|-------function
+|-------utils
+|-----resultset
+|-----unit
+|-------function
+|---utils
+|-----bignumber
+|-tools
+|---matrices
+
+
+
+CONTRIBUTING.md   README.md   component.json docs     index.js test
+HISTORY.md  ROADMAP.md  composer.json  examples lib      tools
+LICENSE     bin      core.js     gulpfile.js misc
+NOTICE      bower.json  dist     img      package.json
+
+./bin:
+cli.js   repl.js
+
+./dist:
+math.js     math.map math.min.js
+
+./docs:
+chaining.md       custom_bundling.md      getting_started.md
+command_line_interface.md  datatypes         index.md
+configuration.md     expressions       reference
+core           expressions.md       serialization.md
+core.md           extension.md
+
+./docs/core:
+chaining.md    extension.md      serialization.md
+configuration.md  index.md
+
+./docs/datatypes:
+bignumbers.md     fractions.md      matrices.md    units.md
+complex_numbers.md   index.md    numbers.md
+
+./docs/expressions:
+customization.md  index.md    syntax.md
+expression_trees.md  parsing.md
+
+./docs/reference:
+classes     constants.md   functions.md   units.md
+classes.md  functions   index.md
+
+./docs/reference/classes:
+densematrix.md    matrixindex.md    resultset.md      unit.md
+fibonacciheap.md  matrixrange.md    sparsematrix.md
+
+./docs/reference/functions:
+abs.md         coth.md        kldivergence.md      rightArithShift.md
+acos.md        cross.md    larger.md      rightLogShift.md
+acosh.md    csc.md         largerEq.md    round.md
+acot.md        csch.md        lcm.md         sec.md
+acoth.md    cube.md        leftShift.md      sech.md
+acsc.md        deepEqual.md      log.md         sign.md
+acsch.md    det.md         log10.md    sin.md
+add.md         diag.md        lsolve.md      sinh.md
+and.md         distance.md    lup.md         size.md
+arg.md         divide.md      lusolve.md     slu.md
+asec.md        dot.md         map.md         smaller.md
+asech.md    dotDivide.md      matrix.md      smallerEq.md
+asin.md        dotMultiply.md    max.md         sort.md
+asinh.md    dotPow.md      mean.md        sparse.md
+atan.md        equal.md    median.md      sqrt.md
+atan2.md    eval.md        min.md         square.md
+atanh.md    exp.md         mod.md         squeeze.md
+bellNumbers.md    eye.md         mode.md        std.md
+bignumber.md      factorial.md      multinomial.md    stirlingS2.md
+bitAnd.md      filter.md      multiply.md    string.md
+bitNot.md      fix.md         norm.md        subset.md
+bitOr.md    flatten.md     not.md         subtract.md
+bitXor.md      floor.md    nthRoot.md     sum.md
+boolean.md     forEach.md     number.md      tan.md
+catalan.md     format.md      ones.md        tanh.md
+cbrt.md        fraction.md    or.md       to.md
+ceil.md        gamma.md    parse.md    trace.md
+chain.md    gcd.md         parser.md      transpose.md
+clone.md    help.md        partitionSelect.md   typed.md
+combinations.md      hypot.md    permutations.md      typeof.md
+compare.md     im.md       pickRandom.md     unaryMinus.md
+compile.md     import.md      pow.md         unaryPlus.md
+complex.md     index.md    print.md    unequal.md
+composition.md    intersect.md      prod.md        unit.md
+concat.md      inv.md         quantileSeq.md    usolve.md
+config.md      isInteger.md      random.md      var.md
+conj.md        isNegative.md     randomInt.md      xgcd.md
+cos.md         isNumeric.md      range.md    xor.md
+cosh.md        isPositive.md     re.md       zeros.md
+cot.md         isZero.md      resize.md
+
+./examples:
+advanced    chaining.js    import.js      sparse_matrices.js
+basic_usage.js    complex_numbers.js   matrices.js    units.js
+bignumbers.js     expressions.js    objects.js
+browser        fractions.js      serialization.js
+
+./examples/advanced:
+add_new_datatypes       expression_trees.js
+convert_fraction_to_bignumber.js function_transform.js
+custom_argument_parsing.js    web_server
+custom_loading.js
+
+./examples/advanced/add_new_datatypes:
+MyType.js   index.js myAdd.js
+
+./examples/advanced/web_server:
+math_worker.js server.js
+
+./examples/browser:
+angle_configuration.html      plot.html
+basic_usage.html        pretty_printing_with_mathjax.html
+custom_separators.html        requirejs_loading.html
+old_browsers.html       webworkers
+
+./examples/browser/webworkers:
+webworkers.html   worker.js
+
+./img:
+favicon.ico    favicon_256x256.png  mathjs.svg     mathjs_165x50.png
+favicon.png    favicon_75x75.png mathjs.txt     mathjs_330x100.png
+favicon_16x16.png mathjs.png     mathjs_100x30.png mathjs_favicon.svg
+
+./lib:
+constants.js   error    function index.js type     version.js
+core     expression  header.js   json     utils
+
+./lib/core:
+core.js     function typed.js
+
+./lib/core/function:
+config.js   import.js   typed.js
+
+./lib/error:
+ArgumentsError.js DimensionError.js IndexError.js     index.js
+
+./lib/expression:
+Help.js     docs     index.js node     parse.js
+Parser.js   function keywords.js operators.js   transform
+
+./lib/expression/docs:
+constants   construction   core     function index.js
+
+./lib/expression/docs/constants:
+Infinity.js LOG10E.js   SQRT1_2.js  false.js phi.js      true.js
+LN10.js     LOG2E.js SQRT2.js i.js     pi.js    version.js
+LN2.js      NaN.js      e.js     null.js     tau.js
+
+./lib/expression/docs/construction:
+bignumber.js   complex.js  index.js number.js   string.js
+boolean.js  fraction.js matrix.js   sparse.js   unit.js
+
+./lib/expression/docs/core:
+config.js   import.js   typed.js
+
+./lib/expression/docs/function:
+algebra     combinatorics  geometry probability trigonometry
+arithmetic  complex     logical     relational  units
+bitwise     expression  matrix      statistics  utils
+
+./lib/expression/docs/function/algebra:
+lsolve.js   lup.js      lusolve.js  slu.js      usolve.js
+
+./lib/expression/docs/function/arithmetic:
+abs.js      divide.js   fix.js      log.js      nthRoot.js  square.js
+add.js      dotDivide.js   floor.js log10.js pow.js      subtract.js
+cbrt.js     dotMultiply.js gcd.js      mod.js      round.js unaryMinus.js
+ceil.js     dotPow.js   hypot.js multiply.js sign.js     unaryPlus.js
+cube.js     exp.js      lcm.js      norm.js     sqrt.js     xgcd.js
+
+./lib/expression/docs/function/bitwise:
+bitAnd.js      bitOr.js    leftShift.js      rightLogShift.js
+bitNot.js      bitXor.js      rightArithShift.js
+
+./lib/expression/docs/function/combinatorics:
+bellNumbers.js catalan.js  composition.js stirlingS2.js
+
+./lib/expression/docs/function/complex:
+arg.js   conj.js  im.js re.js
+
+./lib/expression/docs/function/expression:
+eval.js  help.js
+
+./lib/expression/docs/function/geometry:
+distance.js intersect.js
+
+./lib/expression/docs/function/logical:
+and.js   not.js   or.js xor.js
+
+./lib/expression/docs/function/matrix:
+concat.js      filter.js      partitionSelect.js   subset.js
+cross.js    flatten.js     range.js    trace.js
+det.js         forEach.js     resize.js      transpose.js
+diag.js        inv.js         size.js        zeros.js
+dot.js         map.js         sort.js
+eye.js         ones.js        squeeze.js
+
+./lib/expression/docs/function/probability:
+combinations.js   factorial.js   kldivergence.js   permutations.js   random.js
+distribution.js   gamma.js multinomial.js pickRandom.js  randomInt.js
+
+./lib/expression/docs/function/relational:
+compare.js  equal.js largerEq.js smallerEq.js
+deepEqual.js   larger.js   smaller.js  unequal.js
+
+./lib/expression/docs/function/statistics:
+max.js      median.js   mode.js     quantileSeq.js sum.js
+mean.js     min.js      prod.js     std.js      var.js
+
+./lib/expression/docs/function/trigonometry:
+acos.js     acsch.js atan.js     cot.js      sech.js
+acosh.js asec.js     atan2.js coth.js     sin.js
+acot.js     asech.js atanh.js csc.js      sinh.js
+acoth.js asin.js     cos.js      csch.js     tan.js
+acsc.js     asinh.js cosh.js     sec.js      tanh.js
+
+./lib/expression/docs/function/units:
+to.js
+
+./lib/expression/docs/function/utils:
+clone.js isInteger.js   isNumeric.js   isZero.js   typeof.js
+format.js   isNegative.js  isPositive.js  print.js
+
+./lib/expression/function:
+compile.js  eval.js     help.js     index.js parse.js parser.js
+
+./lib/expression/node:
+AccessorNode.js         FunctionAssignmentNode.js  ParenthesisNode.js
+ArrayNode.js         FunctionNode.js         RangeNode.js
+AssignmentNode.js    IndexNode.js         SymbolNode.js
+BlockNode.js         Node.js           UpdateNode.js
+ConditionalNode.js      ObjectNode.js        index.js
+ConstantNode.js         OperatorNode.js         utils
+
+./lib/expression/node/utils:
+access.js   assign.js
+
+./lib/expression/transform:
+concat.transform.js  forEach.transform.js map.transform.js  min.transform.js
+error.transform.js   index.js    max.transform.js  range.transform.js
+filter.transform.js  index.transform.js   mean.transform.js subset.transform.js
+
+./lib/function:
+algebra     combinatorics  index.js probability string      utils
+arithmetic  complex     logical     relational  trigonometry
+bitwise     geometry matrix      statistics  unit
+
+./lib/function/algebra:
+decomposition  index.js solver      sparse
+
+./lib/function/algebra/decomposition:
+lup.js   slu.js
+
+./lib/function/algebra/solver:
+lsolve.js   lusolve.js  usolve.js   utils
+
+./lib/function/algebra/solver/utils:
+solveValidation.js
+
+./lib/function/algebra/sparse:
+cs_amd.js   cs_dfs.js   cs_flip.js  cs_mark.js  cs_reach.js cs_tdfs.js
+cs_chol.js  cs_ereach.js   cs_ipvec.js cs_marked.js   cs_spsolve.js  cs_unflip.js
+cs_counts.js   cs_etree.js cs_leaf.js  cs_permute.js  cs_sqr.js
+cs_cumsum.js   cs_fkeep.js cs_lu.js cs_post.js  cs_symperm.js
+
+./lib/function/arithmetic:
+abs.js         dotMultiply.js    log.js         sign.js
+add.js         dotPow.js      log10.js    sqrt.js
+addScalar.js      exp.js         mod.js         square.js
+cbrt.js        fix.js         multiply.js    subtract.js
+ceil.js        floor.js    multiplyScalar.js unaryMinus.js
+cube.js        gcd.js         norm.js        unaryPlus.js
+divide.js      hypot.js    nthRoot.js     xgcd.js
+divideScalar.js      index.js    pow.js
+dotDivide.js      lcm.js         round.js
+
+./lib/function/bitwise:
+bitAnd.js      bitOr.js    index.js    rightArithShift.js
+bitNot.js      bitXor.js      leftShift.js      rightLogShift.js
+
+./lib/function/combinatorics:
+bellNumbers.js catalan.js  composition.js index.js stirlingS2.js
+
+./lib/function/complex:
+arg.js      conj.js     im.js    index.js re.js
+
+./lib/function/geometry:
+distance.js index.js intersect.js
+
+./lib/function/logical:
+and.js      index.js not.js      or.js    xor.js
+
+./lib/function/matrix:
+concat.js      filter.js      ones.js        squeeze.js
+cross.js    flatten.js     partitionSelect.js   subset.js
+det.js         forEach.js     range.js    trace.js
+diag.js        index.js    resize.js      transpose.js
+dot.js         inv.js         size.js        zeros.js
+eye.js         map.js         sort.js
+
+./lib/function/probability:
+combinations.js   factorial.js   index.js multinomial.js pickRandom.js  randomInt.js
+distribution.js   gamma.js kldivergence.js   permutations.js   random.js
+
+./lib/function/relational:
+compare.js  equal.js index.js largerEq.js smallerEq.js
+deepEqual.js   equalScalar.js larger.js   smaller.js  unequal.js
+
+./lib/function/statistics:
+index.js mean.js     min.js      prod.js     std.js      var.js
+max.js      median.js   mode.js     quantileSeq.js sum.js
+
+./lib/function/string:
+format.js   index.js print.js
+
+./lib/function/trigonometry:
+acos.js     acsch.js atan.js     cot.js      sec.js      tanh.js
+acosh.js asec.js     atan2.js coth.js     sech.js
+acot.js     asech.js atanh.js csc.js      sin.js
+acoth.js asin.js     cos.js      csch.js     sinh.js
+acsc.js     asinh.js cosh.js     index.js tan.js
+
+./lib/function/unit:
+index.js to.js
+
+./lib/function/utils:
+clone.js isInteger.js   isNumeric.js   isZero.js
+index.js isNegative.js  isPositive.js  typeof.js
+
+./lib/json:
+index.js reviver.js
+
+./lib/type:
+bignumber   chain    fraction matrix      resultset   unit
+boolean.js  complex     index.js number.js   string.js
+
+./lib/type/bignumber:
+BigNumber.js   function index.js
+
+./lib/type/bignumber/function:
+bignumber.js
+
+./lib/type/chain:
+Chain.js function index.js
+
+./lib/type/chain/function:
+chain.js
+
+./lib/type/complex:
+Complex.js  function index.js
+
+./lib/type/complex/function:
+complex.js
+
+./lib/type/fraction:
+Fraction.js function index.js
+
+./lib/type/fraction/function:
+fraction.js
+
+./lib/type/matrix:
+DenseMatrix.js    Matrix.js      Spa.js         index.js
+FibonacciHeap.js  MatrixIndex.js    SparseMatrix.js      utils
+ImmutableDenseMatrix.js Range.js    function
+
+./lib/type/matrix/function:
+index.js matrix.js   sparse.js
+
+./lib/type/matrix/utils:
+README.md   algorithm03.js algorithm06.js algorithm09.js algorithm12.js
+algorithm01.js algorithm04.js algorithm07.js algorithm10.js algorithm13.js
+algorithm02.js algorithm05.js algorithm08.js algorithm11.js algorithm14.js
+
+./lib/type/resultset:
+ResultSet.js   index.js
+
+./lib/type/unit:
+Unit.js        function    index.js    physicalConstants.js
+
+./lib/type/unit/function:
+unit.js
+
+./lib/utils:
+NumberFormatter.js   collection     latex.js    types.js
+array.js    emitter.js     number.js
+bignumber      function.js    object.js
+boolean.js     index.js    string.js
+
+./lib/utils/bignumber:
+bitAnd.js      bitXor.js      formatter.js      rightArithShift.js
+bitNot.js      bitwise.js     leftShift.js
+bitOr.js    constants.js      nearlyEqual.js
+
+./lib/utils/collection:
+deepForEach.js deepMap.js  isCollection.js   reduce.js   scatter.js
+
+./misc:
+how_to_publish.md registrations.md
+
+./test:
+README.md         expression        test.html
+approx.test.js       function       test.min.html
+constants.test.js    index.test.js        test_bignumber.html
+core           json           type
+deprecated.test.js      pi_bailey-borwein-plouffe.html   utils
+error          pi_machin.html
+
+./test/core:
+config.test.js import.test.js index.test.js
+
+./test/error:
+ArgumentsError.test.js  DimensionError.test.js  IndexError.test.js   index.test.js
+
+./test/expression:
+Help.test.js      function    node        parse.test.js
+Parser.test.js    keywords.test.js  operators.test.js
+
+./test/expression/function:
+compile.test.js   eval.test.js   help.test.js   parse.test.js  parser.test.js
+
+./test/expression/node:
+AccessorNode.test.js    FunctionAssignmentNode.test.js   ParenthesisNode.test.js
+ArrayNode.test.js    FunctionNode.test.js    RangeNode.test.js
+AssignmentNode.test.js     IndexNode.test.js    SymbolNode.test.js
+BlockNode.test.js    Node.test.js         index.test.js
+ConditionalNode.test.js    ObjectNode.test.js
+ConstantNode.test.js    OperatorNode.test.js
+
+./test/function:
+algebra     combinatorics  logical     relational  trigonometry
+arithmetic  complex     matrix      statistics  unit
+bitwise     geometry probability string      utils
+
+./test/function/algebra:
+decomposition  solver      sparse
+
+./test/function/algebra/decomposition:
+lup.test.js slu.test.js
+
+./test/function/algebra/solver:
+lsolve.test.js lusolve.test.js   usolve.test.js
+
+./test/function/algebra/sparse:
+cs_amd.test.js cs_lu.test.js
+
+./test/function/arithmetic:
+abs.test.js    dotMultiply.test.js  log.test.js    sign.test.js
+add.test.js    dotPow.test.js    log10.test.js     sqrt.test.js
+addScalar.test.js exp.test.js    mod.test.js    square.test.js
+cbrt.test.js      fix.test.js    multiply.test.js  subtract.test.js
+ceil.test.js      floor.test.js     norm.test.js      unaryMinus.test.js
+cube.test.js      gcd.test.js    nthRoot.test.js      unaryPlus.test.js
+divide.test.js    hypot.test.js     pow.test.js    xgcd.test.js
+dotDivide.test.js lcm.test.js    round.test.js
+
+./test/function/bitwise:
+bitAnd.test.js    bitOr.test.js     leftShift.test.js rightLogShift.test.js
+bitNot.test.js    bitXor.test.js    rightArithShift.test.js
+
+./test/function/combinatorics:
+bellNumbers.test.js  catalan.test.js      composition.test.js  stirlingS2.test.js
+
+./test/function/complex:
+arg.test.js conj.test.js   im.test.js  re.test.js
+
+./test/function/geometry:
+distance.test.js  intersect.test.js
+
+./test/function/logical:
+and.test.js not.test.js or.test.js  xor.test.js
+
+./test/function/matrix:
+concat.test.js    filter.test.js    partitionSelect.test.js subset.test.js
+cross.test.js     flatten.test.js      range.test.js     trace.test.js
+det.test.js    forEach.test.js      resize.test.js    transpose.test.js
+diag.test.js      inv.test.js    size.test.js      zeros.test.js
+dot.test.js    map.test.js    sort.test.js
+eye.test.js    ones.test.js      squeeze.test.js
+
+./test/function/probability:
+combinations.test.js gamma.test.js     permutations.test.js randomInt.test.js
+distribution.test.js kldivergence.test.js pickRandom.test.js
+factorial.test.js multinomial.test.js  random.test.js
+
+./test/function/relational:
+compare.test.js      equal.test.js     largerEq.test.js  smallerEq.test.js
+deepEqual.test.js larger.test.js    smaller.test.js      unequal.test.js
+
+./test/function/statistics:
+max.test.js    min.test.js    quantileSeq.test.js  var.test.js
+mean.test.js      mode.test.js      std.test.js
+median.test.js    prod.test.js      sum.test.js
+
+./test/function/string:
+format.test.js print.test.js
+
+./test/function/trigonometry:
+acos.test.js   acsch.test.js  atan.test.js   cot.test.js sech.test.js
+acosh.test.js  asec.test.js   atan2.test.js  coth.test.js   sin.test.js
+acot.test.js   asech.test.js  atanh.test.js  csc.test.js sinh.test.js
+acoth.test.js  asin.test.js   cos.test.js csch.test.js   tan.test.js
+acsc.test.js   asinh.test.js  cosh.test.js   sec.test.js tanh.test.js
+
+./test/function/unit:
+to.test.js
+
+./test/function/utils:
+clone.test.js     isNegative.test.js   isPositive.test.js   typeof.test.js
+isInteger.test.js isNumeric.test.js isZero.test.js
+
+./test/json:
+replacer.test.js  reviver.test.js
+
+./test/type:
+bignumber   chain    fraction number.test.js string.test.js
+boolean.test.js   complex     matrix      resultset   unit
+
+./test/type/bignumber:
+BigNumber.test.js function
+
+./test/type/bignumber/function:
+bignumber.test.js
+
+./test/type/chain:
+Chain.test.js  function
+
+./test/type/chain/function:
+chain.test.js
+
+./test/type/complex:
+Complex.test.js   function
+
+./test/type/complex/function:
+complex.test.js
+
+./test/type/fraction:
+Fraction.test.js  function
+
+./test/type/fraction/function:
+fraction.test.js
+
+./test/type/matrix:
+DenseMatrix.test.js     Matrix.test.js       collection.test.js
+FibonacciHeap.test.js      Range.test.js        function
+ImmutableDenseMatrix.test.js  Spa.test.js       utils
+Index.test.js        SparseMatrix.test.js
+
+./test/type/matrix/function:
+index.test.js  matrix.test.js sparse.test.js
+
+./test/type/matrix/utils:
+deepForEach.test.js  deepMap.test.js      isCollection.test.js reduce.test.js
+
+./test/type/resultset:
+ResultSet.test.js
+
+./test/type/unit:
+Unit.test.js         function       physicalConstants.test.js
+
+./test/type/unit/function:
+unit.test.js
+
+./test/utils:
+NumberFormatter.test.js boolean.test.js      number.test.js    types.test.js
+array.test.js     function.test.js  object.test.js
+bignumber      latex.test.js     string.test.js
+
+./test/utils/bignumber:
+constants.test.js formatter.test.js nearlyEqual.test.js
+
+./tools:
+approx.js   docgenerator.js   matrices matrixmarket.js   validate.js
+
+./tools/matrices:
+arc130.tar.gz     bfwb62.tar.gz     fpga_dcop_01.tar.gz
+bcsstk01.tar.gz      can_24.tar.gz

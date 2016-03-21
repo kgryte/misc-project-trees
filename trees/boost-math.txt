@@ -1,0 +1,1682 @@
+|-build
+|-config
+|-doc
+|---background
+|---complex
+|---concepts
+|---constants
+|---cstdfloat
+|---distexplorer
+|-----html
+|---distributions
+|---equations
+|---fp_utilities
+|---gcd
+|---graphs
+|---html
+|-----indexes
+|-----math_toolkit
+|-------airy
+|-------bessel
+|-------dist_ref
+|---------dists
+|-------ellint
+|-------expint
+|-------factorials
+|-------float128
+|-------fp_facets
+|-------hankel
+|-------high_precision
+|-------internals
+|-------inv_hyper
+|-------jacobi
+|-------logs_and_tables
+|-------next_float
+|-------number_series
+|-------pol_ref
+|-------pol_tutorial
+|-------powers
+|-------roots
+|---------root_comparison
+|---------root_finding_examples
+|---------roots_noderiv
+|-------rounding
+|-------sf_beta
+|-------sf_erf
+|-------sf_gamma
+|-------sf_poly
+|-------sinc
+|-------special_tut
+|-------stat_tut
+|---------overview
+|---------weg
+|-----------binom_eg
+|-----------cs_eg
+|-----------find_eg
+|-----------nccs_eg
+|-----------neg_binom_eg
+|-----------normal_example
+|-----------st_eg
+|-------tutorial
+|-------zetas
+|---images
+|---internals
+|---octonion
+|-----graphics
+|---overview
+|---performance
+|---policies
+|---quaternion
+|-----graphics
+|---roots
+|---sf
+|---tr1
+|-dot_net_example
+|---Setupdistex
+|-----Release
+|---boost_math
+|---distribution_explorer
+|-----Properties
+|-example
+|-include
+|---boost
+|-----math
+|-------bindings
+|---------detail
+|-------complex
+|-------concepts
+|-------constants
+|-------cstdfloat
+|-------distributions
+|---------detail
+|-------policies
+|-------special_functions
+|---------detail
+|-------tools
+|---------detail
+|-include_private
+|---boost
+|-----math
+|-------constants
+|-------tools
+|-meta
+|-minimax
+|-reporting
+|---accuracy
+|-----doc
+|-----html
+|-----third_party
+|-------cephes_double
+|---performance
+|-----doc
+|-----html
+|-----third_party
+|-------dcdflib
+|-src
+|---tr1
+|-test
+|---compile_test
+|---float128
+|---test_instances
+|---test_rational_instances
+|-tools
+|---doc
+|-vc71_fix
+
+
+
+build    dot_net_example   include_private   minimax     test
+config      example     index.html  reporting   tools
+doc      include     meta     src      vc71_fix
+
+./build:
+Jamfile.v2
+
+./config:
+Jamfile.v2        has_gcc_visibility.cpp     has_mpfr_class.cpp
+has_128bit_floatmax_t.cpp  has_gmpxx.cpp        has_mpreal.cpp
+has_e_float.cpp         has_intel_quad.cpp      has_ntl_rr.cpp
+has_float128.cpp     has_long_double_support.cpp
+
+./doc:
+Jamfile.v2     equations      index.idx      plot_owens_3d_xyp.png
+background     fp_utilities      internals      plot_owens_t.png
+complex        gcd         math.css    policies
+concepts    graphs         math.pdf    quaternion
+constants      html        math.qbk    roots
+cstdfloat      html4_symbols.qbk octonion    sf
+distexplorer      images         overview    tr1
+distributions     index.html     performance    win32_nmake.mak
+
+./doc/background:
+error.qbk      lanczos.qbk    remez.qbk
+implementation.qbk   references.qbk    special_tut.qbk
+
+./doc/complex:
+complex-tr1.qbk
+
+./doc/concepts:
+concepts.qbk
+
+./doc/constants:
+constants.qbk  pp_pi.hpp
+
+./doc/cstdfloat:
+cstdfloat.qbk     cstdfloat_header.qbk jamfile.v2
+
+./doc/distexplorer:
+Jamfile.v2     distexplorer.qbk  html
+
+./doc/distexplorer/html:
+index.html
+
+./doc/distributions:
+arcsine.qbk       find_location_and_scale.qbk   nc_chi_squared_example.qbk
+background.qbk       fisher.qbk        nc_f.qbk
+bernoulli.qbk        gamma.qbk         nc_t.qbk
+beta.qbk       geometric.qbk        negative_binomial.qbk
+binomial.qbk         geometric_example.qbk      negative_binomial_example.qbk
+binomial_example.qbk    hyperexponential.qbk    non_members.qbk
+c_sharp.qbk       hypergeometric.qbk      normal.qbk
+cauchy.qbk        inverse_chi_squared.qbk    normal_example.qbk
+chi_squared.qbk         inverse_chi_squared_eg.qbk pareto.qbk
+chi_squared_examples.qbk   inverse_gamma.qbk    poisson.qbk
+dist_algorithms.qbk     inverse_gamma_example.qbk  rayleigh.qbk
+dist_reference.qbk      inverse_gaussian.qbk    skew_normal.qbk
+dist_tutorial.qbk    laplace.qbk       students_t.qbk
+distribution_construction.qbk logistic.qbk         students_t_examples.qbk
+error_handling_example.qbk lognormal.qbk        triangular.qbk
+exponential.qbk         nag_library.qbk         uniform.qbk
+extreme_value.qbk    nc_beta.qbk       weibull.qbk
+f_dist_example.qbk      nc_chi_squared.qbk
+
+./doc/equations:
+acosh1.mml        expint_i_4.png       legendre_3.mml
+acosh1.png        expint_i_4.svg       legendre_3.png
+acosh1.svg        expint_n_1.mml       legendre_3.svg
+acosh2.mml        expint_n_1.png       legendre_4.mml
+acosh2.png        expint_n_1.svg       legendre_4.png
+acosh2.svg        expint_n_2.mml       legendre_4.svg
+acosh3.mml        expint_n_2.png       legendre_5.mml
+acosh3.png        expint_n_2.svg       legendre_5.png
+acosh3.svg        expint_n_3.mml       legendre_5.svg
+acosh4.mml        expint_n_3.png       lgamm1.mml
+acosh4.png        expint_n_3.svg       lgamm1.png
+acosh4.svg        expint_n_4.mml       lgamm1.svg
+airy.mml       expint_n_4.png       lgamm2.mml
+airy.png       expint_n_4.svg       lgamm2.png
+airy.svg       expint_n_5.mml       lgamm2.svg
+airy_ai.mml       expint_n_5.png       lgamm3.mml
+airy_ai.png       expint_n_5.svg       lgamm3.png
+airy_ai.svg       exponential_dist_ref1.mml  lgamm3.svg
+airy_aip.mml         exponential_dist_ref1.png  lgamm4.mml
+airy_aip.png         exponential_dist_ref1.svg  lgamm4.png
+airy_aip.svg         fisher_pdf.mml       lgamm4.svg
+airy_bi.mml       fisher_pdf.png       lgamm5.mml
+airy_bi.png       fisher_pdf.svg       lgamm5.png
+airy_bi.svg       fraction1.mml        lgamm5.svg
+airy_bip.mml         fraction1.png        lgamm6.mml
+airy_bip.png         fraction1.svg        lgamm6.png
+airy_bip.svg         fraction2.mml        lgamm6.svg
+airy_zero_1.mml         fraction2.png        log1pseries.mml
+airy_zero_1.svg         fraction2.svg        log1pseries.png
+airy_zero_2.mml         fraction3.mml        log1pseries.svg
+airy_zero_2.svg         fraction3.png        lognormal_ref.mml
+airy_zero_3.mml         fraction3.svg        lognormal_ref.png
+airy_zero_3.svg         fraction4.mml        lognormal_ref.svg
+asinh1.mml        fraction4.png        mbessel1.mml
+asinh1.png        fraction4.svg        mbessel1.png
+asinh1.svg        gamm1.mml         mbessel1.svg
+asinh2.mml        gamm1.png         mbessel10.mml
+asinh2.png        gamm1.svg         mbessel10.png
+asinh2.svg        gamm2.mml         mbessel10.svg
+asinh3.mml        gamm2.png         mbessel11.mml
+asinh3.png        gamm2.svg         mbessel11.png
+asinh3.svg        gamm3.mml         mbessel11.svg
+asinh4.mml        gamm3.png         mbessel12.mml
+asinh4.png        gamm3.svg         mbessel12.png
+asinh4.svg        gamm4.mml         mbessel12.svg
+atanh1.mml        gamm4.png         mbessel13.mml
+atanh1.png        gamm4.svg         mbessel13.png
+atanh1.svg        gamm5.mml         mbessel13.svg
+atanh2.mml        gamm5.png         mbessel14.mml
+atanh2.png        gamm5.svg         mbessel14.png
+atanh2.svg        gamma6.mml        mbessel14.svg
+atanh3.mml        gamma6.png        mbessel15.mml
+atanh3.png        gamma6.svg        mbessel15.png
+atanh3.svg        gamma_dist_ref1.mml     mbessel15.svg
+bernoulli_numbers.mml      gamma_dist_ref1.png     mbessel16.mml
+bernoulli_numbers.png      gamma_dist_ref1.svg     mbessel16.png
+bernoulli_numbers.svg      gamma_dist_ref2.mml     mbessel16.svg
+bernoulli_numbers2.mml     gamma_dist_ref2.png     mbessel17.mml
+bernoulli_numbers2.png     gamma_dist_ref2.svg     mbessel17.png
+bernoulli_numbers2.svg     gamma_ratio0.mml     mbessel17.svg
+bessel1.mml       gamma_ratio0.png     mbessel2.mml
+bessel1.png       gamma_ratio0.svg     mbessel2.png
+bessel1.svg       gamma_ratio1.mml     mbessel2.svg
+bessel10.mml         gamma_ratio1.png     mbessel3.mml
+bessel10.png         gamma_ratio1.svg     mbessel3.png
+bessel10.svg         generate.sh       mbessel3.svg
+bessel11.mml         hankel1.mml       mbessel4.mml
+bessel11.png         hankel1.png       mbessel4.png
+bessel11.svg         hankel1.svg       mbessel4.svg
+bessel12.mml         hankel2.mml       mbessel5.mml
+bessel12.png         hankel2.png       mbessel5.png
+bessel12.svg         hankel2.svg       mbessel5.svg
+bessel13.mml         hankel3.mml       mbessel6.mml
+bessel13.png         hankel3.png       mbessel6.png
+bessel13.svg         hankel3.svg       mbessel6.svg
+bessel14.mml         hankel4.mml       mbessel7.mml
+bessel14.png         hankel4.png       mbessel7.png
+bessel14.svg         hankel4.svg       mbessel7.svg
+bessel15.mml         hankel5.mml       mbessel8.mml
+bessel15.png         hankel5.png       mbessel8.png
+bessel15.svg         hankel5.svg       mbessel8.svg
+bessel16.mml         hazard.mml        mbessel9.mml
+bessel16.png         hazard.png        mbessel9.png
+bessel16.svg         hazard.svg        mbessel9.svg
+bessel2.mml       hermite_0.mml        nc_beta_ref1.mml
+bessel2.png       hermite_0.png        nc_beta_ref1.png
+bessel2.svg       hermite_0.svg        nc_beta_ref1.svg
+bessel3.mml       hermite_1.mml        nc_beta_ref2.mml
+bessel3.png       hermite_1.png        nc_beta_ref2.png
+bessel3.svg       hermite_1.svg        nc_beta_ref2.svg
+bessel4.mml       heuman_lambda.mml    nc_beta_ref3.mml
+bessel4.png       heuman_lambda.png    nc_beta_ref3.png
+bessel4.svg       heuman_lambda.svg    nc_beta_ref3.svg
+bessel5.mml       hyperexponential_ccdf.mml  nc_beta_ref4.mml
+bessel5.png       hyperexponential_ccdf.png  nc_beta_ref4.png
+bessel5.svg       hyperexponential_ccdf.svg  nc_beta_ref4.svg
+bessel6.mml       hyperexponential_cdf.mml   nc_chi_squ_ref1.mml
+bessel6.png       hyperexponential_cdf.png   nc_chi_squ_ref1.png
+bessel6.svg       hyperexponential_cdf.svg   nc_chi_squ_ref1.svg
+bessel7.mml       hyperexponential_kurtosis.mml nc_chi_squ_ref2.mml
+bessel7.png       hyperexponential_kurtosis.png nc_chi_squ_ref2.png
+bessel7.svg       hyperexponential_kurtosis.svg nc_chi_squ_ref2.svg
+bessel8.mml       hyperexponential_mean.mml  nc_chi_squ_ref3.mml
+bessel8.png       hyperexponential_mean.png  nc_chi_squ_ref3.png
+bessel8.svg       hyperexponential_mean.svg  nc_chi_squ_ref3.svg
+bessel9.mml       hyperexponential_pdf.mml   nc_chi_squ_ref4.mml
+bessel9.png       hyperexponential_pdf.png   nc_chi_squ_ref4.png
+bessel9.svg       hyperexponential_pdf.svg   nc_chi_squ_ref4.svg
+bessel_derivatives1.mml    hyperexponential_skewness.mml nc_chi_squ_ref5.mml
+bessel_derivatives1.png    hyperexponential_skewness.png nc_chi_squ_ref5.png
+bessel_derivatives1.svg    hyperexponential_skewness.svg nc_chi_squ_ref5.svg
+bessel_derivatives2.mml    hyperexponential_variance.mml nc_chi_squ_ref6.mml
+bessel_derivatives2.png    hyperexponential_variance.png nc_chi_squ_ref6.png
+bessel_derivatives2.svg    hyperexponential_variance.svg nc_chi_squ_ref6.svg
+bessel_derivatives3.mml    hypergeometric1.mml     nc_chi_squ_ref7.mml
+bessel_derivatives3.png    hypergeometric1.png     nc_chi_squ_ref7.png
+bessel_derivatives3.svg    hypergeometric1.svg     nc_chi_squ_ref7.svg
+bessel_derivatives4.mml    hypergeometric2.mml     nc_f_ref1.mml
+bessel_derivatives4.png    hypergeometric2.png     nc_f_ref1.png
+bessel_derivatives4.svg    hypergeometric2.svg     nc_f_ref1.svg
+bessel_derivatives5.mml    hypergeometric3.mml     nc_f_ref2.mml
+bessel_derivatives5.png    hypergeometric3.png     nc_f_ref2.png
+bessel_derivatives5.svg    hypergeometric3.svg     nc_f_ref2.svg
+bessel_y0_small_z.mml      hypergeometric4.mml     nc_t_ref1.mml
+bessel_y0_small_z.png      hypergeometric4.png     nc_t_ref1.png
+bessel_y0_small_z.svg      hypergeometric4.svg     nc_t_ref1.svg
+bessel_y1_small_z.mml      hypergeometric5.mml     nc_t_ref2.mml
+bessel_y1_small_z.png      hypergeometric5.png     nc_t_ref2.png
+bessel_y1_small_z.svg      hypergeometric5.svg     nc_t_ref2.svg
+bessel_y2_small_z.mml      hypergeometric6.mml     nc_t_ref3.mml
+bessel_y2_small_z.png      hypergeometric6.png     nc_t_ref3.png
+bessel_y2_small_z.svg      hypergeometric6.svg     nc_t_ref3.svg
+bessel_yn_small_z.mml      hypot.mml         nc_t_ref4.mml
+bessel_yn_small_z.png      hypot.png         nc_t_ref4.png
+bessel_yn_small_z.svg      hypot.svg         nc_t_ref4.svg
+bessel_yv_small_z.mml      hypot2.mml        nc_t_ref5.mml
+bessel_yv_small_z.png      hypot2.png        nc_t_ref5.png
+bessel_yv_small_z.svg      hypot2.svg        nc_t_ref5.svg
+beta1.mml         ibeta1.mml        neg_binomial_ref.mml
+beta1.png         ibeta1.png        neg_binomial_ref.png
+beta1.svg         ibeta1.svg        neg_binomial_ref.svg
+beta1.svg.svg        ibeta10.mml       normal01_cdf.mml
+beta2.mml         ibeta10.png       normal01_cdf.png
+beta2.png         ibeta10.svg       normal01_cdf.svg
+beta2.svg         ibeta11.mml       normal01_pdf.mml
+beta3.mml         ibeta11.png       normal01_pdf.png
+beta3.png         ibeta11.svg       normal01_pdf.svg
+beta3.svg         ibeta12.mml       normal_cdf.mml
+beta4.mml         ibeta12.png       normal_cdf.png
+beta4.png         ibeta12.svg       normal_cdf.svg
+beta4.svg         ibeta2.mml        normal_ref1.mml
+beta5.mml         ibeta2.png        normal_ref1.png
+beta5.png         ibeta2.svg        normal_ref1.svg
+beta5.svg         ibeta3.mml        owens_t.mml
+beta6.mml         ibeta3.png        owens_t.png
+beta6.png         ibeta3.svg        owens_t.svg
+beta6.svg         ibeta4.mml        poisson_ref1.mml
+beta7.mml         ibeta4.png        poisson_ref1.png
+beta7.png         ibeta4.svg        poisson_ref1.svg
+beta7.svg         ibeta5.mml        polygamma1.mml
+beta8.mml         ibeta5.png        polygamma1.png
+beta8.png         ibeta5.svg        polygamma1.svg
+beta8.svg         ibeta6.mml        polygamma2.mml
+beta_dist_kurtosis.mml     ibeta6.png        polygamma2.png
+beta_dist_kurtosis.png     ibeta6.svg        polygamma2.svg
+beta_dist_kurtosis.svg     ibeta7.mml        polygamma3.mml
+binomial_ref1.mml    ibeta7.png        polygamma3.png
+binomial_ref1.png    ibeta7.svg        polygamma3.svg
+binomial_ref1.svg    ibeta8.mml        polygamma4.mml
+binomial_ref2.mml    ibeta8.png        polygamma4.png
+binomial_ref2.png    ibeta8.svg        polygamma4.svg
+binomial_ref2.svg    ibeta9.mml        polygamma5.mml
+cauchy_ref1.mml         ibeta9.png        polygamma5.png
+cauchy_ref1.png         ibeta9.svg        polygamma5.svg
+cauchy_ref1.svg         ibeta_inv1.mml       polygamma6.mml
+chf.mml           ibeta_inv1.png       polygamma6.png
+chf.png           ibeta_inv1.svg       polygamma6.svg
+chf.svg           ibeta_inv2.mml       polygamma7.mml
+chi_squ_ref1.mml     ibeta_inv2.png       polygamma7.png
+chi_squ_ref1.png     ibeta_inv2.svg       polygamma7.svg
+chi_squ_ref1.svg     ibeta_inv3.mml       polygamma8.mml
+chi_squ_tut1.mml     ibeta_inv3.png       polygamma8.png
+chi_squ_tut1.png     ibeta_inv3.svg       polygamma8.svg
+chi_squ_tut1.svg     ibeta_inv4.mml       polygamma9.mml
+chi_squ_tut2.mml     ibeta_inv4.png       polygamma9.png
+chi_squ_tut2.png     ibeta_inv4.svg       polygamma9.svg
+chi_squ_tut2.svg     ibeta_inv5.mml       roots1.mml
+chi_squ_tut3.mml     ibeta_inv5.png       roots1.png
+chi_squ_tut3.png     ibeta_inv5.svg       roots1.svg
+chi_squ_tut3.svg     ibeta_inv6.mml       roots2.mml
+derivative1.mml         ibeta_inv6.png       roots2.png
+derivative1.png         ibeta_inv6.svg       roots2.svg
+derivative1.svg         ibeta_inv7.mml       roots3.mml
+derivative2.mml         ibeta_inv7.png       roots3.png
+derivative2.png         ibeta_inv7.svg       roots3.svg
+derivative2.svg         ibeta_inv8.mml       roots4.mml
+digamma1.mml         ibeta_inv8.png       roots4.png
+digamma1.png         ibeta_inv8.svg       roots4.svg
+digamma1.svg         igamma1.mml       sbessel1.mml
+digamma2.mml         igamma1.png       sbessel1.png
+digamma2.png         igamma1.svg       sbessel1.svg
+digamma2.svg         igamma10.mml         sbessel2.mml
+digamma3.mml         igamma10.png         sbessel2.png
+digamma3.png         igamma10.svg         sbessel2.svg
+digamma3.svg         igamma11.mml         sbessel3.mml
+digamma4.mml         igamma11.png         sbessel3.png
+digamma4.png         igamma11.svg         sbessel3.svg
+digamma4.svg         igamma11b.mml        sbessel4.mml
+digamma5.mml         igamma11b.png        sbessel4.png
+digamma5.png         igamma11b.svg        sbessel4.svg
+digamma5.svg         igamma12.mml         sbessel5.mml
+dist_tutorial1.mml      igamma12.png         sbessel5.png
+dist_tutorial1.png      igamma12.svg         sbessel5.svg
+dist_tutorial1.svg      igamma13.mml         skew_normal_cdf.mml
+dist_tutorial2.mml      igamma13.png         skew_normal_cdf.png
+dist_tutorial2.png      igamma13.svg         skew_normal_cdf.svg
+dist_tutorial2.svg      igamma16.mml         skew_normal_kurt_ex.mml
+dist_tutorial3.mml      igamma16.png         skew_normal_kurt_ex.png
+dist_tutorial3.png      igamma16.svg         skew_normal_kurt_ex.svg
+dist_tutorial3.svg      igamma17.mml         skew_normal_mean.mml
+dist_tutorial4.mml      igamma17.png         skew_normal_mean.png
+dist_tutorial4.png      igamma17.svg         skew_normal_mean.svg
+dist_tutorial4.svg      igamma18.mml         skew_normal_pdf.mml
+ellint1.mml       igamma18.png         skew_normal_pdf.png
+ellint1.png       igamma18.svg         skew_normal_pdf.svg
+ellint1.svg       igamma19.mml         skew_normal_pdf0.mml
+ellint10.mml         igamma19.png         skew_normal_pdf0.png
+ellint10.png         igamma19.svg         skew_normal_pdf0.svg
+ellint10.svg         igamma1f.mml         skew_normal_skewness.mml
+ellint11.mml         igamma1f.png         skew_normal_skewness.png
+ellint11.png         igamma1f.svg         skew_normal_skewness.svg
+ellint11.svg         igamma2.mml       skew_normal_variance.mml
+ellint12.mml         igamma2.png       skew_normal_variance.png
+ellint12.png         igamma2.svg       skew_normal_variance.svg
+ellint12.svg         igamma2f.mml         special_functions_blurb1.mml
+ellint13.mml         igamma2f.png         special_functions_blurb1.png
+ellint13.png         igamma2f.svg         special_functions_blurb1.svg
+ellint13.svg         igamma3.mml       special_functions_blurb15.mml
+ellint14.mml         igamma3.png       special_functions_blurb15.png
+ellint14.png         igamma3.svg       special_functions_blurb15.svg
+ellint14.svg         igamma4.mml       special_functions_blurb17.mml
+ellint15.mml         igamma4.png       special_functions_blurb17.png
+ellint15.png         igamma4.svg       special_functions_blurb17.svg
+ellint15.svg         igamma5.mml       special_functions_blurb18.mml
+ellint16.mml         igamma5.png       special_functions_blurb18.png
+ellint16.png         igamma5.svg       special_functions_blurb18.svg
+ellint16.svg         igamma6.mml       special_functions_blurb20.mml
+ellint17.mml         igamma6.png       special_functions_blurb20.png
+ellint17.png         igamma6.svg       special_functions_blurb20.svg
+ellint17.svg         igamma7.mml       special_functions_blurb22.mml
+ellint18.mml         igamma7.png       special_functions_blurb22.png
+ellint18.png         igamma7.svg       special_functions_blurb22.svg
+ellint18.svg         igamma8.mml       special_functions_blurb5.mml
+ellint19.mml         igamma8.png       special_functions_blurb5.png
+ellint19.png         igamma8.svg       special_functions_blurb5.svg
+ellint19.svg         igamma9.mml       special_functions_blurb6.mml
+ellint2.mml       igamma9.png       special_functions_blurb6.png
+ellint2.png       igamma9.svg       special_functions_blurb6.svg
+ellint2.svg       jacobi1.mml       special_functions_blurb7.mml
+ellint20.mml         jacobi1.png       special_functions_blurb7.png
+ellint20.png         jacobi1.svg       special_functions_blurb7.svg
+ellint20.svg         jacobi2.mml       spherical_0.mml
+ellint21.mml         jacobi2.png       spherical_0.png
+ellint21.png         jacobi2.svg       spherical_0.svg
+ellint21.svg         jacobi3.mml       spherical_1.mml
+ellint22.mml         jacobi3.png       spherical_1.png
+ellint22.png         jacobi3.svg       spherical_1.svg
+ellint22.svg         jacobi4.mml       spherical_2.mml
+ellint23.mml         jacobi4.png       spherical_2.png
+ellint23.png         jacobi4.svg       spherical_2.svg
+ellint23.svg         jacobi_zeta.mml         spherical_3.mml
+ellint24.mml         jacobi_zeta.png         spherical_3.png
+ellint24.png         jacobi_zeta.svg         spherical_3.svg
+ellint24.svg         laguerre_0.mml       students_t_dist.mml
+ellint25.mml         laguerre_0.png       students_t_dist.png
+ellint25.png         laguerre_0.svg       students_t_dist.svg
+ellint25.svg         laguerre_1.mml       students_t_ref1.mml
+ellint26.mml         laguerre_1.png       students_t_ref1.png
+ellint26.png         laguerre_1.svg       students_t_ref1.svg
+ellint26.svg         laguerre_2.mml       tangent_number_def.mml
+ellint27.mml         laguerre_2.png       tangent_number_def.png
+ellint27.png         laguerre_2.svg       tangent_number_def.svg
+ellint27.svg         laguerre_3.mml       tangent_number_def2.mml
+ellint3.mml       laguerre_3.png       tangent_number_def2.png
+ellint3.png       laguerre_3.svg       tangent_number_def2.svg
+ellint3.svg       lanczos0.mml         tangent_numbers.mml
+ellint4.mml       lanczos0.png         tangent_numbers.png
+ellint4.png       lanczos0.svg         tangent_numbers.svg
+ellint4.svg       lanczos0a.mml        trigamma1.mml
+ellint5.mml       lanczos0a.png        trigamma1.png
+ellint5.png       lanczos0a.svg        trigamma1.svg
+ellint5.svg       lanczos0b.mml        trigamma2.mml
+ellint6.mml       lanczos0b.png        trigamma2.png
+ellint6.png       lanczos0b.svg        trigamma2.svg
+ellint6.svg       lanczos1.mml         trigamma3.mml
+ellint7.mml       lanczos1.png         trigamma3.png
+ellint7.png       lanczos1.svg         trigamma3.svg
+ellint7.svg       lanczos2.mml         trigamma4.mml
+ellint8.mml       lanczos2.png         trigamma4.png
+ellint8.png       lanczos2.svg         trigamma4.svg
+ellint8.svg       lanczos3.mml         trigamma5.mml
+ellint9.mml       lanczos3.png         trigamma5.png
+ellint9.png       lanczos3.svg         trigamma5.svg
+ellint9.svg       lanczos4.mml         zeta1.mml
+ellint_d.mml         lanczos4.png         zeta1.png
+ellint_d.png         lanczos4.svg         zeta1.svg
+ellint_d.svg         lanczos5.mml         zeta2.mml
+ellint_rg.svg        lanczos5.png         zeta2.png
+erf1.mml       lanczos5.svg         zeta2.svg
+erf1.png       lanczos6.mml         zeta3.mml
+erf1.svg       lanczos6.png         zeta3.png
+erf2.mml       lanczos6.svg         zeta3.svg
+erf2.png       lanczos7.mml         zeta4.mml
+erf2.svg       lanczos7.png         zeta4.png
+error1.mml        lanczos7.svg         zeta4.svg
+error1.png        laplace_pdf.mml         zeta5.mml
+error1.svg        laplace_pdf.png         zeta5.png
+error2.mml        laplace_pdf.svg         zeta5.svg
+error2.png        legendre_0.mml       zeta6.mml
+error2.svg        legendre_0.png       zeta6.png
+expint_i_1.mml       legendre_0.svg       zeta6.svg
+expint_i_1.png       legendre_1.mml       zeta7.mml
+expint_i_1.svg       legendre_1.png       zeta7.png
+expint_i_2.mml       legendre_1.svg       zeta7.svg
+expint_i_2.png       legendre_1b.mml         zeta8.mml
+expint_i_2.svg       legendre_1b.png         zeta8.png
+expint_i_3.mml       legendre_1b.svg         zeta8.svg
+expint_i_3.png       legendre_2.mml       zeta9.mml
+expint_i_3.svg       legendre_2.png       zeta9.png
+expint_i_4.mml       legendre_2.svg       zeta9.svg
+
+./doc/fp_utilities:
+float_comparison.qbk fp_facets.qbk     rounding_func.qbk
+float_next.qbk    fpclassify.qbk    sign.qbk
+
+./doc/gcd:
+math-gcd.qbk
+
+./doc/graphs:
+Jamfile.v2           inverse_gaussian_pdf.svg
+acosh.png            jacobi_cd.png
+acosh.svg            jacobi_cd.svg
+airy_ai.png          jacobi_cn.png
+airy_ai.svg          jacobi_cn.svg
+airy_aip.png            jacobi_cs.png
+airy_aip.svg            jacobi_cs.svg
+airy_bi.png          jacobi_dc.png
+airy_bi.svg          jacobi_dc.svg
+airy_bip.png            jacobi_dn.png
+airy_bip.svg            jacobi_dn.svg
+airy_zeros.png          jacobi_ds.png
+airy_zeros.svg          jacobi_ds.svg
+arcsine01_cdf.png       jacobi_nc.png
+arcsine01_cdf.svg       jacobi_nc.svg
+arcsine01_pdf.png       jacobi_nd.png
+arcsine01_pdf.svg       jacobi_nd.svg
+arcsine_cdf.png            jacobi_ns.png
+arcsine_cdf.svg            jacobi_ns.svg
+arcsine_pdf.png            jacobi_sc.png
+arcsine_pdf.svg            jacobi_sc.svg
+asinh.png            jacobi_sd.png
+asinh.svg            jacobi_sd.svg
+atanh.png            jacobi_sn.png
+atanh.svg            jacobi_sn.svg
+bernoulli_cdf.png       laguerre.png
+bernoulli_cdf.svg       laguerre.svg
+bernoulli_pdf.png       laplace_pdf.png
+bernoulli_pdf.svg       laplace_pdf.svg
+bessel_j_zeros.png         legendre_p.png
+bessel_j_zeros.svg         legendre_p.svg
+beta.png          legendre_q.png
+beta.svg          legendre_q.svg
+beta_pdf.png            lgamma.png
+beta_pdf.svg            lgamma.svg
+binomial_pdf.png        log1p.png
+binomial_pdf_1.png         log1p.svg
+binomial_pdf_1.svg         logistic_pdf.png
+binomial_pdf_2.png         logistic_pdf.svg
+binomial_pdf_2.svg         lognormal_pdf1.png
+binomial_pdf_3.png         lognormal_pdf1.svg
+binomial_quantile_1.png       lognormal_pdf2.png
+brent_test_function_1.png     lognormal_pdf2.svg
+brent_test_function_1.svg     nc_beta_pdf.png
+cauchy_pdf1.png            nc_beta_pdf.svg
+cauchy_pdf1.svg            nc_f_pdf.png
+cauchy_pdf2.png            nc_f_pdf.svg
+cauchy_pdf2.svg            nc_t_cdf.png
+cbrt.png          nc_t_cdf.svg
+cbrt.svg          nc_t_pdf.png
+cdf.png              nc_t_pdf.svg
+chi_squared_pdf.png        nccs_pdf.png
+chi_squared_pdf.svg        nccs_pdf.svg
+cyl_bessel_i.png        negative_binomial_pdf_1.png
+cyl_bessel_i.svg        negative_binomial_pdf_1.svg
+cyl_bessel_j.png        negative_binomial_pdf_2.png
+cyl_bessel_j.svg        negative_binomial_pdf_2.svg
+cyl_bessel_k.png        neumann_y_zeros.png
+cyl_bessel_k.svg        neumann_y_zeros.svg
+cyl_neumann.png            normal01_cdf.png
+cyl_neumann.svg            normal01_cdf.svg
+digamma.png          normal01_pdf.png
+digamma.svg          normal01_pdf.svg
+dist_graphs.cpp            normal_cdf.png
+ellint_1.png            normal_cdf.svg
+ellint_1.svg            normal_pdf.png
+ellint_2.png            normal_pdf.svg
+ellint_2.svg            owens_integration_area.png
+ellint_3.png            owens_integration_area.svg
+ellint_3.svg            pareto_pdf1.png
+ellint_carlson.png         pareto_pdf1.svg
+ellint_carlson.svg         pareto_pdf2.png
+erf.png              pareto_pdf2.svg
+erf.svg              pdf.png
+erf_inv.png          plot_owens_3d_xyp.png
+erf_inv.svg          plot_owens_t.png
+erfc.png          poisson_pdf_1.png
+erfc.svg          poisson_pdf_1.svg
+erfc_inv.png            polygamma2.png
+erfc_inv.svg            polygamma2.svg
+exp_on_r.png            polygamma3.png
+expint2.png          polygamma3.svg
+expint2.svg          powm1.png
+expint_i.png            powm1.svg
+expint_i.svg            prior_posterior_plot.png
+expm1.png            prior_posterior_plot.svg
+expm1.svg            quantile.png
+exponential_pdf.png        rayleigh_cdf.png
+exponential_pdf.svg        rayleigh_cdf.svg
+extreme_value_pdf1.png        rayleigh_pdf.png
+extreme_value_pdf1.svg        rayleigh_pdf.svg
+extreme_value_pdf2.png        remez-2.png
+extreme_value_pdf2.svg        remez-3.png
+fisher_f_pdf.png        remez-4.png
+fisher_f_pdf.svg        remez-5.png
+gamma1_pdf.png          sf_graphs.cpp
+gamma1_pdf.svg          sinc_pi.png
+gamma2_pdf.png          sinc_pi.svg
+gamma2_pdf.svg          sinc_pi_and_sinhc_pi_on_r.png
+gamma_p.png          sinhc_pi.png
+gamma_p.svg          sinhc_pi.svg
+gamma_q.png          skew_normal_cdf.png
+gamma_q.svg          skew_normal_cdf.svg
+generate.sh          skew_normal_pdf.png
+geometric_cdf_2.png        skew_normal_pdf.svg
+geometric_cdf_2.svg        sph_bessel.png
+geometric_cdf_discrete.png    sph_bessel.svg
+geometric_cdf_discrete.svg    sph_neumann.png
+geometric_pdf_2.png        sph_neumann.svg
+geometric_pdf_2.svg        sqrt1pm1.png
+geometric_pdf_discrete.png    sqrt1pm1.svg
+geometric_pdf_discrete.svg    students_t_pdf.png
+hermite.png          students_t_pdf.svg
+hermite.svg          survival.png
+hyperbolic.png          survival_inv.png
+hyperexponential_pdf.png      tgamma.png
+hyperexponential_pdf.svg      tgamma.svg
+hyperexponential_pdf_samemean.png   tgamma_delta_ratio.png
+hyperexponential_pdf_samemean.svg   tgamma_delta_ratio.svg
+hyperexponential_pdf_samerate.png   triangular_cdf.png
+hyperexponential_pdf_samerate.svg   triangular_cdf.svg
+hypergeometric_pdf_1.png      triangular_pdf.png
+hypergeometric_pdf_1.svg      triangular_pdf.svg
+hypergeometric_pdf_2.png      trigamma.png
+hypergeometric_pdf_2.svg      trigamma.svg
+ibeta.png            trigonometric.png
+ibeta.svg            uniform_cdf.png
+im_exp_on_c.png            uniform_cdf.svg
+inverse_chi_squared_cdf.png      uniform_pdf.png
+inverse_chi_squared_cdf.svg      uniform_pdf.svg
+inverse_chi_squared_pdf.png      weibull_pdf1.png
+inverse_chi_squared_pdf.svg      weibull_pdf1.svg
+inverse_gamma_cdf.png         weibull_pdf2.png
+inverse_gamma_cdf.svg         weibull_pdf2.svg
+inverse_gamma_pdf.png         zeta1.png
+inverse_gamma_pdf.svg         zeta1.svg
+inverse_gaussian_cdf.png      zeta2.png
+inverse_gaussian_cdf.svg      zeta2.svg
+inverse_gaussian_pdf.png
+
+./doc/html:
+backgrounders.html      indexes.html         policy.html
+constants.html       internals.html       quaternions.html
+cstdfloat.html       inverse_complex.html    rooting.html
+dist.html         math.css       special.html
+extern_c.html        math_toolkit         standalone_HTML.manifest
+gcd_lcm.html         octonions.html       status.html
+index.html        overview.html        using_udt.html
+indexes           perf.html         utils.html
+
+./doc/html/indexes:
+s01.html s02.html s03.html s04.html s05.html
+
+./doc/html/math_toolkit:
+acknowledgement.html    greatest_typdefs.html      pol_overview.html
+acknowledgements.html      hankel            pol_ref
+acos.html         hankel.html       pol_ref.html
+acosh.html        high_precision       pol_tutorial
+airy           high_precision.html     pol_tutorial.html
+airy.html         hints.html        powers
+archetypes.html         history1.html        powers.html
+asin.html         history2.html        quat.html
+asinh.html        internals         quat_header.html
+atan.html         internals.html       quat_history.html
+atanh.html        internals_overview.html    quat_mem_fun.html
+bessel            interp.html       quat_non_mem.html
+bessel.html       intro_pol_overview.html    quat_overview.html
+building.html        introduction.html    quat_synopsis.html
+c99.html       inv_hyper         quat_tests.html
+comp_compilers.html     inv_hyper.html       quat_todo.html
+comparisons.html     issues.html       rationale.html
+compile_time.html    jacobi            rationale0.html
+compilers_overview.html    jacobi.html       real_concepts.html
+complex_history.html    lanczos.html         refs.html
+complex_implementation.html   lcm_function_object.html   relative_error.html
+config_macros.html      logs_and_tables         remez.html
+constants.html       logs_and_tables.html    result_type.html
+constants_faq.html      macros.html       roots
+constants_intro.html    main_faq.html        roots.html
+contact.html         main_intro.html         rounding
+conventions.html     main_tr1.html        rounding.html
+create.html       mem_typedef.html     run_time.html
+credits.html         minimum_typdefs.html    sf_beta
+demo.html         multiprecision.html     sf_beta.html
+directories.html     namespaces.html         sf_erf
+dist_concept.html    navigation.html         sf_erf.html
+dist_ref       new_const.html       sf_gamma
+dist_ref.html        next_float        sf_gamma.html
+ellint            next_float.html         sf_implementation.html
+ellint.html       number_series        sf_poly
+error_handling.html     number_series.html      sf_poly.html
+exact_typdefs.html      oct_create.html         sign_functions.html
+examples.html        oct_header.html         sinc
+exp.html       oct_history.html     sinc.html
+expint            oct_mem_fun.html     spec.html
+expint.html       oct_non_mem.html     special_tut
+factorials        oct_overview.html    special_tut.html
+factorials.html         oct_specialization.html    stat_tut
+fastest_typdefs.html    oct_synopsis.html    stat_tut.html
+float128       oct_tests.html       synopsis.html
+float128.html        oct_todo.html        threads.html
+float_comparison.html      oct_trans.html       tr1_ref.html
+fp_facets         oct_typedefs.html    tradoffs.html
+fp_facets.html       oct_value_ops.html      trans.html
+fpclass.html         octonion.html        tuning.html
+future.html       overview.html        tutorial
+gcd_credits.html     overview_tr1.html    tutorial.html
+gcd_function_object.html   owens_t.html         value_op.html
+gcd_header.html         perf_over1.html         zetas
+gcd_history.html     perf_over2.html         zetas.html
+getting_best.html    perf_test_app.html
+
+./doc/html/math_toolkit/airy:
+ai.html     aip.html airy_root.html bi.html     bip.html
+
+./doc/html/math_toolkit/bessel:
+bessel_derivatives.html bessel_over.html  mbessel.html
+bessel_first.html bessel_root.html  sph_bessel.html
+
+./doc/html/math_toolkit/dist_ref:
+dist_algorithms.html dists       dists.html     nmp.html
+
+./doc/html/math_toolkit/dist_ref/dists:
+arcine_dist.html     hyperexponential_dist.html nc_t_dist.html
+bernoulli_dist.html     hypergeometric_dist.html   negative_binomial_dist.html
+beta_dist.html       inverse_chi_squared_dist.html normal_dist.html
+binomial_dist.html      inverse_gamma_dist.html    pareto.html
+cauchy_dist.html     inverse_gaussian_dist.html poisson_dist.html
+chi_squared_dist.html      laplace_dist.html    rayleigh.html
+exp_dist.html        logistic_dist.html      skew_normal_dist.html
+extreme_dist.html    lognormal_dist.html     students_t_dist.html
+f_dist.html       nc_beta_dist.html    triangular_dist.html
+gamma_dist.html         nc_chi_squared_dist.html   uniform_dist.html
+geometric_dist.html     nc_f_dist.html       weibull_dist.html
+
+./doc/html/math_toolkit/ellint:
+ellint_1.html     ellint_3.html     ellint_d.html     heuman_lambda.html
+ellint_2.html     ellint_carlson.html  ellint_intro.html jacobi_zeta.html
+
+./doc/html/math_toolkit/expint:
+expint_i.html  expint_n.html
+
+./doc/html/math_toolkit/factorials:
+sf_binomial.html     sf_factorial.html    sf_rising_factorial.html
+sf_double_factorial.html   sf_falling_factorial.html
+
+./doc/html/math_toolkit/float128:
+exp_function.html       typeinfo.html
+overloading_template_functions_w.html
+
+./doc/html/math_toolkit/fp_facets:
+examples.html     portability.html  reference.html
+facets_intro.html rationale.html
+
+./doc/html/math_toolkit/hankel:
+cyl_hankel.html   sph_hankel.html
+
+./doc/html/math_toolkit/high_precision:
+e_float.html      use_mpfr.html     use_ntl.html      why_high_precision.html
+float128.html     use_multiprecision.html using_test.html
+
+./doc/html/math_toolkit/internals:
+cf.html        minimax.html      rational.html     test_data.html
+error_test.html      polynomials.html  series_evaluation.html  tuples.html
+
+./doc/html/math_toolkit/inv_hyper:
+acosh.html     asinh.html     atanh.html     inv_hyper_over.html
+
+./doc/html/math_toolkit/jacobi:
+jac_over.html     jacobi_dc.html    jacobi_nc.html    jacobi_sd.html
+jacobi_cd.html    jacobi_dn.html    jacobi_nd.html    jacobi_sn.html
+jacobi_cn.html    jacobi_ds.html    jacobi_ns.html
+jacobi_cs.html    jacobi_elliptic.html jacobi_sc.html
+
+./doc/html/math_toolkit/logs_and_tables:
+all_table.html logs.html
+
+./doc/html/math_toolkit/next_float:
+float_advance.html   float_next.html      nextafter.html
+float_distance.html  float_prior.html  ulp.html
+
+./doc/html/math_toolkit/number_series:
+bernoulli_numbers.html  primes.html    tangent_numbers.html
+
+./doc/html/math_toolkit/pol_ref:
+assert_undefined.html      internal_promotion.html    pol_ref_ref.html
+discrete_quant_ref.html    iteration_pol.html      policy_defaults.html
+error_handling_policies.html  namespace_pol.html      precision_pol.html
+
+./doc/html/math_toolkit/pol_tutorial:
+ad_hoc_dist_policies.html  namespace_policies.html    understand_dis_quant.html
+ad_hoc_sf_policies.html    policy_tut_defaults.html   user_def_err_pol.html
+changing_policy_defaults.html policy_usage.html    what_is_a_policy.html
+
+./doc/html/math_toolkit/powers:
+cbrt.html   ct_pow.html hypot.html  powm1.html  sqrt1pm1.html
+cos_pi.html expm1.html  log1p.html  sin_pi.html
+
+./doc/html/math_toolkit/roots:
+bad_guess.html       rational.html        root_finding_examples.html
+bad_roots.html       root_comparison         roots_deriv.html
+brent_minima.html    root_comparison.html    roots_noderiv
+polynomials.html     root_finding_examples      roots_noderiv.html
+
+./doc/html/math_toolkit/roots/root_comparison:
+cbrt_comparison.html    elliptic_comparison.html   root_n_comparison.html
+
+./doc/html/math_toolkit/roots/root_finding_examples:
+5th_root_eg.html     elliptic_eg.html     multiprecision_root.html
+cbrt_eg.html         lambda.html       nth_root.html
+
+./doc/html/math_toolkit/roots/roots_noderiv:
+TOMS748.html      bracket_solve.html   implementation.html
+bisect.html    brent.html     root_termination.html
+
+./doc/html/math_toolkit/rounding:
+modf.html   round.html  trunc.html
+
+./doc/html/math_toolkit/sf_beta:
+beta_derivative.html beta_function.html   ibeta_function.html  ibeta_inv_function.html
+
+./doc/html/math_toolkit/sf_erf:
+error_function.html  error_inv.html
+
+./doc/html/math_toolkit/sf_gamma:
+digamma.html      igamma.html    polygamma.html
+gamma_derivatives.html  igamma_inv.html      tgamma.html
+gamma_ratios.html lgamma.html    trigamma.html
+
+./doc/html/math_toolkit/sf_poly:
+hermite.html   laguerre.html  legendre.html  sph_harm.html
+
+./doc/html/math_toolkit/sinc:
+sinc_overview.html   sinc_pi.html      sinhc_pi.html
+
+./doc/html/math_toolkit/special_tut:
+special_tut_impl.html   special_tut_test.html
+
+./doc/html/math_toolkit/stat_tut:
+dist_params.html  overview.html     weg
+overview    variates.html     weg.html
+
+./doc/html/math_toolkit/stat_tut/overview:
+complements.html  headers.html      parameters.html
+generic.html      objects.html      summary.html
+
+./doc/html/math_toolkit/stat_tut/weg:
+binom_eg       f_eg.html         nccs_eg.html
+binom_eg.html        find_eg           neg_binom_eg
+c_sharp.html         find_eg.html         neg_binom_eg.html
+cs_eg          geometric_eg.html    normal_example
+cs_eg.html        inverse_chi_squared_eg.html   normal_example.html
+dist_construct_eg.html     nag_library.html     st_eg
+error_eg.html        nccs_eg           st_eg.html
+
+./doc/html/math_toolkit/stat_tut/weg/binom_eg:
+binom_conf.html         binomial_coinflip_example.html
+binom_size_eg.html      binomial_quiz_example.html
+
+./doc/html/math_toolkit/stat_tut/weg/cs_eg:
+chi_sq_intervals.html   chi_sq_size.html  chi_sq_test.html
+
+./doc/html/math_toolkit/stat_tut/weg/find_eg:
+find_location_eg.html      find_mean_and_sd_eg.html   find_scale_eg.html
+
+./doc/html/math_toolkit/stat_tut/weg/nccs_eg:
+nccs_power_eg.html
+
+./doc/html/math_toolkit/stat_tut/weg/neg_binom_eg:
+neg_binom_conf.html     negative_binomial_example1.html
+neg_binom_size_eg.html     negative_binomial_example2.html
+
+./doc/html/math_toolkit/stat_tut/weg/normal_example:
+normal_misc.html
+
+./doc/html/math_toolkit/stat_tut/weg/st_eg:
+paired_st.html       tut_mean_size.html      two_sample_students_t.html
+tut_mean_intervals.html    tut_mean_test.html
+
+./doc/html/math_toolkit/tutorial:
+non_templ.html templ.html  user_def.html
+
+./doc/html/math_toolkit/zetas:
+zeta.html
+
+./doc/images:
+acos.png asin.png atan.png hypot.png
+acosh.png   asinh.png   atanh.png   hypot2.png
+
+./doc/internals:
+fraction.qbk      polynomial.qbk    series.qbk
+internals_overview.qbk  rational.qbk      test_data.qbk
+minimax.qbk    relative_error.qbk   tuple.qbk
+
+./doc/octonion:
+graphics    math-octonion.qbk output.txt     output_more.txt
+
+./doc/octonion/graphics:
+octonion_blurb1.jpeg octonion_blurb15.jpeg   octonion_blurb20.jpeg   octonion_blurb7.jpeg
+octonion_blurb10.jpeg   octonion_blurb16.jpeg   octonion_blurb21.jpeg   octonion_blurb8.jpeg
+octonion_blurb11.jpeg   octonion_blurb17.jpeg   octonion_blurb3.jpeg octonion_blurb9.jpeg
+octonion_blurb12.jpeg   octonion_blurb18.jpeg   octonion_blurb4.jpeg
+octonion_blurb13.jpeg   octonion_blurb19.jpeg   octonion_blurb5.jpeg
+octonion_blurb14.jpeg   octonion_blurb2.jpeg octonion_blurb6.jpeg
+
+./doc/overview:
+building.qbk      credits.qbk    overview.qbk      thread_safety.qbk
+common_overviews.qbk error_handling.qbk   result_type_calc.qbk tr1.qbk
+config_macros.qbk faq.qbk        roadmap.qbk
+contact_info.qbk  issues.qbk     structure.qbk
+
+./doc/performance:
+performance.qbk
+
+./doc/policies:
+policy.qbk     policy_tutorial.qbk
+
+./doc/quaternion:
+TQE.pdf        graphics    output.txt
+TQE_EA.pdf     math-quaternion.qbk  output_more.txt
+
+./doc/quaternion/graphics:
+quaternion_blurb1.jpeg  quaternion_blurb15.jpeg quaternion_blurb20.jpeg quaternion_blurb5.jpeg
+quaternion_blurb10.jpeg quaternion_blurb16.jpeg quaternion_blurb21.jpeg quaternion_blurb6.jpeg
+quaternion_blurb11.jpeg quaternion_blurb17.jpeg quaternion_blurb22.jpeg quaternion_blurb7.jpeg
+quaternion_blurb12.jpeg quaternion_blurb18.jpeg quaternion_blurb23.jpeg quaternion_blurb8.jpeg
+quaternion_blurb13.jpeg quaternion_blurb19.jpeg quaternion_blurb3.jpeg  quaternion_blurb9.jpeg
+quaternion_blurb14.jpeg quaternion_blurb2.jpeg  quaternion_blurb4.jpeg
+
+./doc/roots:
+bad_root_1.svg          roots_overview.qbk
+bad_root_2.svg          roots_table_100_gcc_SEE_SEE2_X64.qbk
+bad_root_3.svg          roots_table_100_gcc_X64_SSE2.qbk
+bad_root_4.svg          roots_table_100_msvc.qbk
+elliptic_table_100_gcc_X64_SSE2.qbk roots_table_100_msvc_AVX.qbk
+elliptic_table_100_msvc_X64_AVX.qbk roots_table_100_msvc_X64_AVX.qbk
+elliptic_table_100_msvc_X86_AVX.qbk roots_table_100_msvc_X86.qbk
+elliptic_table_100_msvc_X86_SSE2.qbk   roots_table_100_msvc_X86_SSE2.qbk
+minima.qbk           roots_table_75_gcc_SEE_SEE2_X64.qbk
+root_comparison.qbk        roots_table_75_gcc_X64_SSE2.qbk
+root_comparison_tables_gcc.qbk      roots_table_75_msvc.qbk
+root_comparison_tables_gcc_075.qbk  roots_table_75_msvc_AVX.qbk
+root_comparison_tables_msvc.qbk     roots_table_75_msvc_X86.qbk
+root_comparison_tables_msvc_075.qbk roots_table_75_msvc_X86_SSE2.qbk
+root_finding_examples.qbk     roots_without_derivatives.qbk
+root_n_comparison_tables.qbk     type_info_table_100_msvc.qbk
+roots.qbk            type_info_table_75_msvc.qbk
+
+./doc/sf:
+airy.qbk       expint.qbk        lgamma.qbk
+bernoulli_numbers.qbk      factorials.qbk       license.qbk
+bessel_ik.qbk        gamma_derivatives.qbk      number_series.qbk
+bessel_introduction.qbk    gamma_ratios.qbk     owens_t.qbk
+bessel_jy.qbk        hankel.qbk        poisson_optimisation.qbk
+bessel_prime.qbk     hermite.qbk       polygamma.qbk
+bessel_spherical.qbk    ibeta.qbk         pow.qbk
+beta.qbk       ibeta_inv.qbk        powers.qbk
+beta_derivative.qbk     igamma.qbk        sinc.qbk
+digamma.qbk       igamma_inv.qbk       spherical_harmonic.qbk
+ellint_carlson.qbk      inv_hyper.qbk        test_html4_symbols.qbk
+ellint_introduction.qbk    jacobi_elliptic.qbk     tgamma.qbk
+ellint_legendre.qbk     laguerre.qbk         trigamma.qbk
+erf.qbk           latin1_symbols.qbk      zeta.qbk
+erf_inv.qbk       legendre.qbk
+
+./doc/tr1:
+c99_ref.qbk tr1_ref.qbk
+
+./dot_net_example:
+Setupdistex    boost_math     distribution_explorer
+
+./dot_net_example/Setupdistex:
+Release        Setupdistex.vdproj
+
+./dot_net_example/Setupdistex/Release:
+Setupdistex.msi   setup.exe
+
+./dot_net_example/boost_math:
+AssemblyInfo.cpp  Stdafx.h    boost_math.cpp    boost_math.sln.lnk
+ReadMe.txt     app.ico        boost_math.h      boost_math.vcproj
+Stdafx.cpp     app.rc         boost_math.sln    resource.h
+
+./dot_net_example/distribution_explorer:
+AboutDistEx.resx        Properties
+AboutDistributionExplorer.Designer.cs  Settings.cs
+AboutDistributionExplorer.cs     ToolkitLogo.bmp
+AboutDistributionExplorer.resx      boost.png
+ClassDiagram1.cd        distexAboutBox.Designer.cs
+ClassDiagram2.cd        distexAboutBox.cs
+DistexForm.Designer.cs        distexAboutBox.resx
+DistexForm.cs           distribution.txt
+DistexForm.resx            distribution_explorer.csproj
+DistexSplash.Designer.cs      distribution_explorer.csproj.user
+DistexSplash.cs            distribution_explorer.sln
+DistexSplash.resx       distribution_explorer.sln.lnk
+IconToolkit.ico            distribution_explorer.suo
+Program.cs           readme.txt
+
+./dot_net_example/distribution_explorer/Properties:
+AssemblyInfo.cs      Resources.resx    Settings.settings
+Resources.Designer.cs   Settings.Designer.cs app.manifest
+
+./example:
+HSO3.hpp          nonfinite_facet_sstream.cpp
+HSO3SO4.cpp          nonfinite_legacy.cpp
+HSO4.hpp          nonfinite_loopback_ok.cpp
+Jamfile.v2           nonfinite_num_facet.cpp
+airy_zeros_example.cpp        nonfinite_num_facet_serialization.cpp
+arcsine_example.cpp        nonfinite_num_facet_trap.cpp
+bernoulli_example.cpp         nonfinite_serialization_archives.cpp
+bessel_errors_example.cpp     nonfinite_signaling_NaN.cpp
+bessel_zeros_example.cpp      normal_misc_examples.cpp
+bessel_zeros_example_1.cpp    normal_tables.cpp
+bessel_zeros_interator_example.cpp  numerical_derivative_example.cpp
+big_seventh.cpp            owens_t_example.cpp
+binomial_coinflip_example.cpp    policy_eg_1.cpp
+binomial_confidence_limits.cpp      policy_eg_10.cpp
+binomial_example_nag.cpp      policy_eg_2.cpp
+binomial_quiz_example.cpp     policy_eg_3.cpp
+binomial_sample_sizes.cpp     policy_eg_4.cpp
+brent_minimise_example.cpp    policy_eg_5.cpp
+c_error_policy_example.cpp    policy_eg_6.cpp
+chi_square_std_dev_test.cpp      policy_eg_7.cpp
+constants_eg1.cpp       policy_eg_8.cpp
+cstdfloat_example.cpp         policy_eg_9.cpp
+distribution_construction.cpp    policy_ref_snip1.cpp
+error_handling_example.cpp    policy_ref_snip10.cpp
+error_policies_example.cpp    policy_ref_snip11.cpp
+error_policy_example.cpp      policy_ref_snip12.cpp
+f_test.cpp           policy_ref_snip13.cpp
+factorial_example.cpp         policy_ref_snip2.cpp
+fft_sines_table.cpp        policy_ref_snip3.cpp
+find_location_example.cpp     policy_ref_snip4.cpp
+find_mean_and_sd_normal.cpp      policy_ref_snip5.cpp
+find_root_example.cpp         policy_ref_snip6.cpp
+find_scale_example.cpp        policy_ref_snip7.cpp
+float_comparison_example.cpp     policy_ref_snip8.cpp
+geometric_examples.cpp        policy_ref_snip9.cpp
+handle_test_result.hpp        polynomial_arithmetic.cpp
+hyperexponential_more_snips.cpp     root_elliptic_finding.cpp
+hyperexponential_snips.cpp    root_finding_algorithms.cpp
+inspect_fp.cpp          root_finding_example.cpp
+inverse_chi_squared_bayes_eg.cpp root_finding_fifth.cpp
+inverse_chi_squared_example.cpp     root_finding_multiprecision_example.cpp
+inverse_chi_squared_find_df_example.cpp   root_finding_n_example.cpp
+inverse_gamma_distribution_example.cpp root_finding_start_locations.cpp
+inverse_gamma_example.cpp     root_n_finding_algorithms.cpp
+inverse_gaussian_example.cpp     sines.hpp
+laplace_example.cpp        skew_normal_example.cpp
+lexical_cast_native.cpp       special_data.cpp
+lexical_cast_nonfinite_facets.cpp   students_t_example1.cpp
+nc_chi_sq_example.cpp         students_t_example2.cpp
+neg_binom_confidence_limits.cpp     students_t_example3.cpp
+neg_binomial_sample_sizes.cpp    students_t_single_sample.cpp
+negative_binomial_example1.cpp      students_t_two_samples.cpp
+negative_binomial_example2.cpp      table_type.hpp
+neumann_zeros_example_1.cpp      test_cpp_float_close_fraction.cpp
+nonfinite_facet_simple.cpp    test_nonfinite_loopback.cpp
+
+./include:
+boost
+
+./include/boost:
+cstdfloat.hpp  math     math_fwd.hpp
+
+./include/boost/math:
+bindings    complex.hpp    distributions.hpp special_functions.hpp
+common_factor.hpp concepts    octonion.hpp      tools
+common_factor_ct.hpp constants      policies    tr1.hpp
+common_factor_rt.hpp cstdfloat      quaternion.hpp    tr1_c_macros.ipp
+complex        distributions     special_functions
+
+./include/boost/math/bindings:
+detail      e_float.hpp mpfr.hpp mpreal.hpp  rr.hpp
+
+./include/boost/math/bindings/detail:
+big_digamma.hpp   big_lanczos.hpp
+
+./include/boost/math/complex:
+acos.hpp asin.hpp atan.hpp details.hpp
+acosh.hpp   asinh.hpp   atanh.hpp   fabs.hpp
+
+./include/boost/math/concepts:
+distributions.hpp real_concept.hpp  real_type_concept.hpp   std_real_concept.hpp
+
+./include/boost/math/constants:
+calculate_constants.hpp constants.hpp     info.hpp
+
+./include/boost/math/cstdfloat:
+cstdfloat_cmath.hpp     cstdfloat_complex_std.hpp  cstdfloat_limits.hpp
+cstdfloat_complex.hpp      cstdfloat_iostream.hpp     cstdfloat_types.hpp
+
+./include/boost/math/distributions:
+arcsine.hpp       fwd.hpp           non_central_chi_squared.hpp
+bernoulli.hpp        gamma.hpp         non_central_f.hpp
+beta.hpp       geometric.hpp        non_central_t.hpp
+binomial.hpp         hyperexponential.hpp    normal.hpp
+cauchy.hpp        hypergeometric.hpp      pareto.hpp
+chi_squared.hpp         inverse_chi_squared.hpp    poisson.hpp
+complement.hpp       inverse_gamma.hpp    rayleigh.hpp
+detail            inverse_gaussian.hpp    skew_normal.hpp
+exponential.hpp         laplace.hpp       students_t.hpp
+extreme_value.hpp    logistic.hpp         triangular.hpp
+find_location.hpp    lognormal.hpp        uniform.hpp
+find_scale.hpp       negative_binomial.hpp      weibull.hpp
+fisher_f.hpp         non_central_beta.hpp
+
+./include/boost/math/distributions/detail:
+common_error_handling.hpp  generic_quantile.hpp    hypergeometric_quantile.hpp
+derived_accessors.hpp      hypergeometric_cdf.hpp     inv_discrete_quantile.hpp
+generic_mode.hpp     hypergeometric_pdf.hpp
+
+./include/boost/math/policies:
+error_handling.hpp   policy.hpp
+
+./include/boost/math/special_functions:
+acosh.hpp         ellint_rg.hpp        next.hpp
+airy.hpp       ellint_rj.hpp        nonfinite_num_facets.hpp
+asinh.hpp         erf.hpp           owens_t.hpp
+atanh.hpp         expint.hpp        polygamma.hpp
+bernoulli.hpp        expm1.hpp         pow.hpp
+bessel.hpp        factorials.hpp       powm1.hpp
+bessel_prime.hpp     fpclassify.hpp       prime.hpp
+beta.hpp       gamma.hpp         relative_difference.hpp
+binomial.hpp         hankel.hpp        round.hpp
+cbrt.hpp       hermite.hpp       sign.hpp
+cos_pi.hpp        heuman_lambda.hpp    sin_pi.hpp
+detail            hypot.hpp         sinc.hpp
+digamma.hpp       jacobi_elliptic.hpp     sinhc.hpp
+ellint_1.hpp         jacobi_zeta.hpp         spherical_harmonic.hpp
+ellint_2.hpp         laguerre.hpp         sqrt1pm1.hpp
+ellint_3.hpp         lanczos.hpp       trigamma.hpp
+ellint_d.hpp         legendre.hpp         trunc.hpp
+ellint_rc.hpp        log1p.hpp         ulp.hpp
+ellint_rd.hpp        math_fwd.hpp         zeta.hpp
+ellint_rf.hpp        modf.hpp
+
+./include/boost/math/special_functions/detail:
+airy_ai_bi_zero.hpp        bessel_y0.hpp
+bernoulli_details.hpp         bessel_y1.hpp
+bessel_derivatives_linear.hpp    bessel_yn.hpp
+bessel_i0.hpp           erf_inv.hpp
+bessel_i1.hpp           fp_traits.hpp
+bessel_ik.hpp           gamma_inva.hpp
+bessel_j0.hpp           ibeta_inv_ab.hpp
+bessel_j1.hpp           ibeta_inverse.hpp
+bessel_jn.hpp           iconv.hpp
+bessel_jy.hpp           igamma_inverse.hpp
+bessel_jy_asym.hpp         igamma_large.hpp
+bessel_jy_derivatives_asym.hpp      lanczos_sse2.hpp
+bessel_jy_derivatives_series.hpp lgamma_small.hpp
+bessel_jy_series.hpp       polygamma.hpp
+bessel_jy_zero.hpp         round_fwd.hpp
+bessel_k0.hpp           t_distribution_inv.hpp
+bessel_k1.hpp           unchecked_bernoulli.hpp
+bessel_kn.hpp           unchecked_factorial.hpp
+
+./include/boost/math/tools:
+big_constant.hpp  polynomial.hpp    roots.hpp      tuple.hpp
+config.hpp     precision.hpp     series.hpp     user.hpp
+detail         promotion.hpp     stats.hpp      workaround.hpp
+fraction.hpp      rational.hpp      toms748_solve.hpp
+minima.hpp     real_cast.hpp     traits.hpp
+
+./include/boost/math/tools/detail:
+polynomial_horner1_10.hpp  polynomial_horner3_10.hpp  rational_horner2_10.hpp
+polynomial_horner1_11.hpp  polynomial_horner3_11.hpp  rational_horner2_11.hpp
+polynomial_horner1_12.hpp  polynomial_horner3_12.hpp  rational_horner2_12.hpp
+polynomial_horner1_13.hpp  polynomial_horner3_13.hpp  rational_horner2_13.hpp
+polynomial_horner1_14.hpp  polynomial_horner3_14.hpp  rational_horner2_14.hpp
+polynomial_horner1_15.hpp  polynomial_horner3_15.hpp  rational_horner2_15.hpp
+polynomial_horner1_16.hpp  polynomial_horner3_16.hpp  rational_horner2_16.hpp
+polynomial_horner1_17.hpp  polynomial_horner3_17.hpp  rational_horner2_17.hpp
+polynomial_horner1_18.hpp  polynomial_horner3_18.hpp  rational_horner2_18.hpp
+polynomial_horner1_19.hpp  polynomial_horner3_19.hpp  rational_horner2_19.hpp
+polynomial_horner1_2.hpp   polynomial_horner3_2.hpp   rational_horner2_2.hpp
+polynomial_horner1_20.hpp  polynomial_horner3_20.hpp  rational_horner2_20.hpp
+polynomial_horner1_3.hpp   polynomial_horner3_3.hpp   rational_horner2_3.hpp
+polynomial_horner1_4.hpp   polynomial_horner3_4.hpp   rational_horner2_4.hpp
+polynomial_horner1_5.hpp   polynomial_horner3_5.hpp   rational_horner2_5.hpp
+polynomial_horner1_6.hpp   polynomial_horner3_6.hpp   rational_horner2_6.hpp
+polynomial_horner1_7.hpp   polynomial_horner3_7.hpp   rational_horner2_7.hpp
+polynomial_horner1_8.hpp   polynomial_horner3_8.hpp   rational_horner2_8.hpp
+polynomial_horner1_9.hpp   polynomial_horner3_9.hpp   rational_horner2_9.hpp
+polynomial_horner2_10.hpp  rational_horner1_10.hpp    rational_horner3_10.hpp
+polynomial_horner2_11.hpp  rational_horner1_11.hpp    rational_horner3_11.hpp
+polynomial_horner2_12.hpp  rational_horner1_12.hpp    rational_horner3_12.hpp
+polynomial_horner2_13.hpp  rational_horner1_13.hpp    rational_horner3_13.hpp
+polynomial_horner2_14.hpp  rational_horner1_14.hpp    rational_horner3_14.hpp
+polynomial_horner2_15.hpp  rational_horner1_15.hpp    rational_horner3_15.hpp
+polynomial_horner2_16.hpp  rational_horner1_16.hpp    rational_horner3_16.hpp
+polynomial_horner2_17.hpp  rational_horner1_17.hpp    rational_horner3_17.hpp
+polynomial_horner2_18.hpp  rational_horner1_18.hpp    rational_horner3_18.hpp
+polynomial_horner2_19.hpp  rational_horner1_19.hpp    rational_horner3_19.hpp
+polynomial_horner2_2.hpp   rational_horner1_2.hpp     rational_horner3_2.hpp
+polynomial_horner2_20.hpp  rational_horner1_20.hpp    rational_horner3_20.hpp
+polynomial_horner2_3.hpp   rational_horner1_3.hpp     rational_horner3_3.hpp
+polynomial_horner2_4.hpp   rational_horner1_4.hpp     rational_horner3_4.hpp
+polynomial_horner2_5.hpp   rational_horner1_5.hpp     rational_horner3_5.hpp
+polynomial_horner2_6.hpp   rational_horner1_6.hpp     rational_horner3_6.hpp
+polynomial_horner2_7.hpp   rational_horner1_7.hpp     rational_horner3_7.hpp
+polynomial_horner2_8.hpp   rational_horner1_8.hpp     rational_horner3_8.hpp
+polynomial_horner2_9.hpp   rational_horner1_9.hpp     rational_horner3_9.hpp
+
+./include_private:
+boost
+
+./include_private/boost:
+math
+
+./include_private/boost/math:
+constants   tools
+
+./include_private/boost/math/constants:
+generate.hpp
+
+./include_private/boost/math/tools:
+iteration_logger.hpp solve.hpp      test_data.hpp
+remez.hpp      test.hpp
+
+./meta:
+libraries.json
+
+./minimax:
+Jamfile.v2     f.cpp       main.cpp    multiprecision.hpp
+
+./reporting:
+accuracy performance
+
+./reporting/accuracy:
+Jamfile.v2        test_binomial_coeff.cpp    test_igamma_inva.cpp
+bindings.hpp         test_carlson.cpp     test_jacobi.cpp
+doc            test_cbrt.cpp        test_jacobi_zeta.cpp
+handle_test_result.hpp     test_digamma.cpp     test_laguerre.cpp
+has_c99_cmath.cpp    test_ellint_1.cpp    test_legendre.cpp
+has_gsl.cpp       test_ellint_2.cpp    test_log1p_expm1.cpp
+has_libstdcxx_tr1.cpp      test_ellint_3.cpp    test_nc_beta.cpp
+has_rmath.cpp        test_ellint_d.cpp    test_nc_chi_squared.cpp
+html           test_erf.cpp         test_nc_t.cpp
+test_bessel_i.cpp    test_expint.cpp         test_owens_t.cpp
+test_bessel_i_prime.cpp    test_gamma.cpp       test_polygamma.cpp
+test_bessel_j.cpp    test_hermite.cpp     test_powm1.cpp
+test_bessel_j_prime.cpp    test_heuman_lambda.cpp     test_spherical_harmonic.cpp
+test_bessel_k.cpp    test_ibeta.cpp       test_tgamma_ratio.cpp
+test_bessel_k_prime.cpp    test_ibeta_inv.cpp      test_trig.cpp
+test_bessel_y.cpp    test_ibeta_inva.cpp     test_trigamma.cpp
+test_bessel_y_prime.cpp    test_igamma.cpp         test_zeta.cpp
+test_beta.cpp        test_igamma_inv.cpp     third_party
+
+./reporting/accuracy/doc:
+accuracy_tables.qbk  report.qbk
+
+./reporting/accuracy/html:
+index.html
+
+./reporting/accuracy/third_party:
+cephes_double
+
+./reporting/accuracy/third_party/cephes_double:
+readme.txt
+
+./reporting/performance:
+Jamfile.v2     test_ellint_1.cpp test_gamma_p_inv.cpp test_laguerre.cpp
+doc         test_ellint_1c.cpp   test_gamma_q.cpp  test_legendre.cpp
+html        test_ellint_2.cpp test_gamma_q_inv.cpp test_legendre_q.cpp
+is_intel_win.cpp  test_ellint_2c.cpp   test_gcd.cpp      test_lgamma.cpp
+performance.hpp      test_ellint_3.cpp test_ibeta.cpp    test_log1p.cpp
+table_helper.cpp  test_ellint_3c.cpp   test_ibeta_inv.cpp   test_poly_method.cpp
+table_helper.hpp  test_ellint_rc.cpp   test_ibetac.cpp      test_polygamma.cpp
+test_assoc_laguerre.cpp test_ellint_rd.cpp   test_ibetac_inv.cpp  test_sn.cpp
+test_assoc_legendre.cpp test_ellint_rf.cpp   test_igamma.cpp      test_tgamma.cpp
+test_beta.cpp     test_ellint_rj.cpp   test_in.cpp    test_trigamma.cpp
+test_beta_inc.cpp test_erf.cpp      test_iv.cpp    test_yn.cpp
+test_cbrt.cpp     test_erfc.cpp     test_jn.cpp    test_ys.cpp
+test_cn.cpp    test_expint.cpp      test_js.cpp    test_yv.cpp
+test_digamma.cpp  test_expint_n.cpp test_jv.cpp    test_zeta.cpp
+test_distributions.cpp  test_expm1.cpp    test_kn.cpp    third_party
+test_dn.cpp    test_gamma_p.cpp  test_kv.cpp
+
+./reporting/performance/doc:
+performance_tables.qbk  report.qbk
+
+./reporting/performance/html:
+boostbook.css  index.html
+
+./reporting/performance/third_party:
+dcdflib
+
+./reporting/performance/third_party/dcdflib:
+readme.txt
+
+./src:
+tr1
+
+./src/tr1:
+acosh.cpp      copysignf.cpp     expm1.cpp      log1pl.cpp
+acoshf.cpp     copysignl.cpp     expm1f.cpp     lround.cpp
+acoshl.cpp     cyl_bessel_i.cpp  expm1l.cpp     lroundf.cpp
+asinh.cpp      cyl_bessel_if.cpp fmax.cpp    lroundl.cpp
+asinhf.cpp     cyl_bessel_il.cpp fmaxf.cpp      nextafter.cpp
+asinhl.cpp     cyl_bessel_j.cpp  fmaxl.cpp      nextafterf.cpp
+assoc_laguerre.cpp   cyl_bessel_jf.cpp fmin.cpp    nextafterl.cpp
+assoc_laguerref.cpp  cyl_bessel_jl.cpp fminf.cpp      nexttoward.cpp
+assoc_laguerrel.cpp  cyl_bessel_k.cpp  fminl.cpp      nexttowardf.cpp
+assoc_legendre.cpp   cyl_bessel_kf.cpp fpclassify.cpp    nexttowardl.cpp
+assoc_legendref.cpp  cyl_bessel_kl.cpp fpclassifyf.cpp      pch.hpp
+assoc_legendrel.cpp  cyl_neumann.cpp      fpclassifyl.cpp      riemann_zeta.cpp
+atanh.cpp      cyl_neumannf.cpp  hermite.cpp    riemann_zetaf.cpp
+atanhf.cpp     cyl_neumannl.cpp  hermitef.cpp      riemann_zetal.cpp
+atanhl.cpp     ellint_1.cpp      hermitel.cpp      round.cpp
+beta.cpp    ellint_1f.cpp     hypot.cpp      roundf.cpp
+betaf.cpp      ellint_1l.cpp     hypotf.cpp     roundl.cpp
+betal.cpp      ellint_2.cpp      hypotl.cpp     sph_bessel.cpp
+c_policy.hpp      ellint_2f.cpp     laguerre.cpp      sph_besself.cpp
+cbrt.cpp    ellint_2l.cpp     laguerref.cpp     sph_bessell.cpp
+cbrtf.cpp      ellint_3.cpp      laguerrel.cpp     sph_legendre.cpp
+cbrtl.cpp      ellint_3f.cpp     legendre.cpp      sph_legendref.cpp
+comp_ellint_1.cpp ellint_3l.cpp     legendref.cpp     sph_legendrel.cpp
+comp_ellint_1f.cpp   erf.cpp        legendrel.cpp     sph_neumann.cpp
+comp_ellint_1l.cpp   erfc.cpp    lgamma.cpp     sph_neumannf.cpp
+comp_ellint_2.cpp erfcf.cpp      lgammaf.cpp    sph_neumannl.cpp
+comp_ellint_2f.cpp   erfcl.cpp      lgammal.cpp    tgamma.cpp
+comp_ellint_2l.cpp   erff.cpp    llround.cpp    tgammaf.cpp
+comp_ellint_3.cpp erfl.cpp    llroundf.cpp      tgammal.cpp
+comp_ellint_3f.cpp   expint.cpp     llroundl.cpp      trunc.cpp
+comp_ellint_3l.cpp   expintf.cpp    log1p.cpp      truncf.cpp
+copysign.cpp      expintl.cpp    log1pf.cpp     truncl.cpp
+
+./test:
+Jamfile.v2              test_bessel_j.hpp
+acosh_data.ipp             test_bessel_j_prime.cpp
+acosh_test.hpp             test_bessel_j_prime.hpp
+almost_equal.ipp           test_bessel_k.cpp
+asinh_data.ipp             test_bessel_k.hpp
+asinh_test.hpp             test_bessel_k_prime.cpp
+assoc_legendre_p.ipp          test_bessel_k_prime.hpp
+atanh_data.ipp             test_bessel_y.cpp
+atanh_test.hpp             test_bessel_y.hpp
+bessel_i_data.ipp          test_bessel_y_prime.cpp
+bessel_i_int_data.ipp            test_bessel_y_prime.hpp
+bessel_i_prime_data.ipp          test_beta.cpp
+bessel_i_prime_int_data.ipp         test_beta.hpp
+bessel_j_data.ipp          test_beta_dist.cpp
+bessel_j_int_data.ipp            test_beta_hooks.hpp
+bessel_j_large_data.ipp          test_binomial.cpp
+bessel_j_prime_data.ipp          test_binomial_coeff.cpp
+bessel_j_prime_int_data.ipp         test_binomial_coeff.hpp
+bessel_j_prime_large_data.ipp       test_carlson.cpp
+bessel_k_data.ipp          test_carlson.hpp
+bessel_k_int_data.ipp            test_cauchy.cpp
+bessel_k_prime_data.ipp          test_cbrt.cpp
+bessel_k_prime_int_data.ipp         test_cbrt.hpp
+bessel_y01_data.ipp           test_chi_squared.cpp
+bessel_y01_prime_data.ipp        test_classify.cpp
+bessel_yn_data.ipp            test_common_factor_gmpxx.cpp
+bessel_yn_prime_data.ipp         test_constant_generate.cpp
+bessel_yv_data.ipp            test_constants.cpp
+bessel_yv_prime_data.ipp         test_cstdfloat.cpp
+beta_exp_data.ipp          test_difference.cpp
+beta_med_data.ipp          test_digamma.cpp
+beta_small_data.ipp           test_digamma.hpp
+binomial_data.ipp          test_dist_overloads.cpp
+binomial_large_data.ipp          test_ellint_1.cpp
+binomial_quantile.ipp            test_ellint_1.hpp
+cbrt_data.ipp              test_ellint_2.cpp
+common_factor_test.cpp           test_ellint_2.hpp
+compile_test               test_ellint_3.cpp
+complex_test.cpp           test_ellint_3.hpp
+digamma_data.ipp           test_ellint_d.cpp
+digamma_neg_data.ipp          test_ellint_d.hpp
+digamma_root_data.ipp            test_erf.cpp
+digamma_small_data.ipp           test_erf.hpp
+e_float_concept_check.cpp        test_erf_hooks.hpp
+ellint_d2_data.ipp            test_error_handling.cpp
+ellint_d_data.ipp          test_expint.cpp
+ellint_e2_data.ipp            test_expint.hpp
+ellint_e_data.ipp          test_expint_hooks.hpp
+ellint_f_data.ipp          test_exponential_dist.cpp
+ellint_k_data.ipp          test_extreme_value.cpp
+ellint_pi2_data.ipp           test_factorials.cpp
+ellint_pi3_data.ipp           test_find_location.cpp
+ellint_pi3_large_data.ipp        test_find_scale.cpp
+ellint_rc_data.ipp            test_fisher_f.cpp
+ellint_rd_0xy.ipp          test_gamma.cpp
+ellint_rd_0yy.ipp          test_gamma.hpp
+ellint_rd_data.ipp            test_gamma_data.ipp
+ellint_rd_xxx.ipp          test_gamma_dist.cpp
+ellint_rd_xxz.ipp          test_gamma_hooks.hpp
+ellint_rd_xyy.ipp          test_gcd.cpp
+ellint_rf_0yy.ipp          test_geometric.cpp
+ellint_rf_data.ipp            test_hankel.cpp
+ellint_rf_xxx.ipp          test_hermite.cpp
+ellint_rf_xy0.ipp          test_hermite.hpp
+ellint_rf_xyy.ipp          test_heuman_lambda.cpp
+ellint_rg.ipp              test_heuman_lambda.hpp
+ellint_rg_00x.ipp          test_hyperexponential_dist.cpp
+ellint_rg_xxx.ipp          test_hypergeometric_dist.cpp
+ellint_rg_xy0.ipp          test_ibeta.cpp
+ellint_rg_xyy.ipp          test_ibeta.hpp
+ellint_rj_data.ipp            test_ibeta_derivative.cpp
+ellint_rj_e2.ipp           test_ibeta_derivative.hpp
+ellint_rj_e3.ipp           test_ibeta_inv.cpp
+ellint_rj_e4.ipp           test_ibeta_inv.hpp
+ellint_rj_zp.ipp           test_ibeta_inv_ab.cpp
+erf_data.ipp               test_ibeta_inv_ab.hpp
+erf_inv_data.ipp           test_igamma.cpp
+erf_large_data.ipp            test_igamma.hpp
+erf_small_data.ipp            test_igamma_inv.cpp
+erfc_inv_big_data.ipp            test_igamma_inv.hpp
+erfc_inv_data.ipp          test_igamma_inva.cpp
+expint_1_data.ipp          test_igamma_inva.hpp
+expint_data.ipp               test_instances
+expint_small_data.ipp            test_instantiate1.cpp
+expinti_data.ipp           test_instantiate2.cpp
+expinti_data_double.ipp          test_inv_hyp.cpp
+expinti_data_long.ipp            test_inverse_chi_squared_distribution.cpp
+float128             test_inverse_gamma_distribution.cpp
+functor.hpp             test_inverse_gaussian.cpp
+gamma_inv_big_data.ipp           test_jacobi.cpp
+gamma_inv_data.ipp            test_jacobi.hpp
+gamma_inv_small_data.ipp         test_jacobi_zeta.cpp
+handle_test_result.hpp           test_jacobi_zeta.hpp
+hermite.ipp             test_laguerre.cpp
+heuman_lambda_data.ipp           test_laguerre.hpp
+hypergeometric_dist_data2.ipp       test_laplace.cpp
+hypergeometric_test_data.ipp        test_ldouble_simple.cpp
+hypot_test.cpp             test_legacy_nonfinite.cpp
+ibeta_data.ipp             test_legendre.cpp
+ibeta_derivative_data.ipp        test_legendre.hpp
+ibeta_derivative_int_data.ipp       test_legendre_hooks.hpp
+ibeta_derivative_large_data.ipp        test_lexical_cast.cpp
+ibeta_derivative_small_data.ipp        test_logistic_dist.cpp
+ibeta_int_data.ipp            test_lognormal.cpp
+ibeta_inv_data.ipp            test_long_double_support.cpp
+ibeta_inva_data.ipp           test_math_fwd.cpp
+ibeta_large_data.ipp          test_minima.cpp
+ibeta_small_data.ipp          test_nc_beta.cpp
+igamma_big_data.ipp           test_nc_beta.hpp
+igamma_int_data.ipp           test_nc_chi_squared.cpp
+igamma_inva_data.ipp          test_nc_chi_squared.hpp
+igamma_med_data.ipp           test_nc_f.cpp
+igamma_small_data.ipp            test_nc_t.cpp
+jacobi_elliptic.ipp           test_nc_t.hpp
+jacobi_elliptic_small.ipp        test_ncbeta_hooks.hpp
+jacobi_large_phi.ipp          test_nccs_hooks.hpp
+jacobi_near_1.ipp          test_negative_binomial.cpp
+jacobi_zeta_big_phi.ipp          test_next.cpp
+jacobi_zeta_data.ipp          test_nonfinite_io.cpp
+laguerre2.ipp              test_nonfinite_trap.cpp
+laguerre3.ipp              test_normal.cpp
+legendre_p.ipp             test_out_of_range.hpp
+legendre_p_large.ipp          test_owens_t.cpp
+log1p_expm1_data.ipp          test_owens_t.hpp
+log1p_expm1_test.cpp          test_pareto.cpp
+log1p_expm1_test.hpp          test_poisson.cpp
+mpfr_concept_check.cpp           test_policy.cpp
+mpreal_concept_check.cpp         test_policy_2.cpp
+multiprc_concept_check_1.cpp        test_policy_3.cpp
+multiprc_concept_check_2.cpp        test_policy_4.cpp
+multiprc_concept_check_3.cpp        test_policy_5.cpp
+multiprc_concept_check_4.cpp        test_policy_6.cpp
+ncbeta.ipp              test_policy_7.cpp
+ncbeta_big.ipp             test_policy_8.cpp
+nccs.ipp             test_policy_9.cpp
+nccs_big.ipp               test_policy_sf.cpp
+nct.ipp                 test_polygamma.cpp
+nct_asym.ipp               test_polygamma.hpp
+nct_small_delta.ipp           test_polynomial.cpp
+negative_binomial_quantile.ipp         test_print_info_on_type.cpp
+noeh_support.cpp           test_rational_instances
+ntl_concept_check.cpp            test_rationals.cpp
+octonion_test.cpp          test_rayleigh.cpp
+owens_t.ipp             test_real_concept.cpp
+owens_t_T7.hpp             test_real_concept_neg_bin.cpp
+owens_t_large_data.ipp           test_remez.cpp
+pch.hpp                 test_root_finding_concepts.cpp
+pch_light.hpp              test_root_iterations.cpp
+poisson_quantile.ipp          test_roots.cpp
+pow_test.cpp               test_round.cpp
+powm1_data.ipp             test_sign.cpp
+powm1_sqrtp1m1_test.cpp          test_signed_zero.cpp
+powm1_sqrtp1m1_test.hpp          test_skew_normal.cpp
+quaternion_mi1.cpp            test_spherical_harmonic.cpp
+quaternion_mi1.h           test_spherical_harmonic.hpp
+quaternion_mi2.cpp            test_students_t.cpp
+quaternion_mi2.h           test_tgamma_ratio.cpp
+quaternion_mult_incl_test.cpp       test_tgamma_ratio.hpp
+quaternion_test.cpp           test_toms748_solve.cpp
+s_.ipp                  test_tr1.c
+sinc_test.hpp              test_tr1.cpp
+sinhc_test.hpp             test_triangular.cpp
+special_functions_test.cpp       test_trig.cpp
+sph_bessel_data.ipp           test_trig.hpp
+sph_bessel_prime_data.ipp        test_trigamma.cpp
+sph_neumann_data.ipp          test_trigamma.hpp
+sph_neumann_prime_data.ipp       test_uniform.cpp
+spherical_harmonic.ipp           test_weibull.cpp
+std_real_concept_check.cpp       test_zeta.cpp
+table_type.hpp             test_zeta.hpp
+test_airy.cpp              test_zeta_hooks.hpp
+test_archive.cpp           tgamma_delta_ratio_data.ipp
+test_arcsine.cpp           tgamma_delta_ratio_int.ipp
+test_basic_nonfinite.cpp         tgamma_delta_ratio_int2.ipp
+test_bernoulli.cpp            tgamma_ratio_data.ipp
+test_bernoulli_constants.cpp        trig_data.ipp
+test_bessel_airy_zeros.cpp       trig_data2.ipp
+test_bessel_hooks.hpp            zeta_1_below_data.ipp
+test_bessel_i.cpp          zeta_1_up_data.ipp
+test_bessel_i.hpp          zeta_data.ipp
+test_bessel_i_prime.cpp          zeta_neg_data.ipp
+test_bessel_i_prime.hpp          ztest_max_digits10.cpp
+test_bessel_j.cpp          zztest_max_digits10.cpp
+
+./test/compile_test:
+compl_abs_incl_test.cpp       sf_ellint_3_incl_test.cpp
+compl_acos_incl_test.cpp      sf_ellint_d_incl_test.cpp
+compl_acosh_incl_test.cpp     sf_ellint_rc_incl_test.cpp
+compl_asin_incl_test.cpp      sf_ellint_rd_incl_test.cpp
+compl_asinh_incl_test.cpp     sf_ellint_rf_incl_test.cpp
+compl_atan_incl_test.cpp      sf_ellint_rg_incl_test.cpp
+compl_atanh_incl_test.cpp     sf_ellint_rj_incl_test.cpp
+constants_incl_test.cpp       sf_erf_incl_test.cpp
+cstdfloat_concept_check_1.cpp    sf_expint_incl_test.cpp
+cstdfloat_concept_check_2.cpp    sf_expm1_incl_test.cpp
+cstdfloat_concept_check_3.cpp    sf_factorials_incl_test.cpp
+cstdfloat_concept_check_4.cpp    sf_fpclassify_incl_test.cpp
+dist_bernoulli_incl_test.cpp     sf_gamma_incl_test.cpp
+dist_beta_incl_test.cpp       sf_hankel_incl_test.cpp
+dist_binomial_incl_test.cpp      sf_hermite_incl_test.cpp
+dist_cauchy_incl_test.cpp     sf_heuman_lambda_incl_test.cpp
+dist_chi_squared_incl_test.cpp      sf_hypot_incl_test.cpp
+dist_complement_incl_test.cpp    sf_jacobi_incl_test.cpp
+dist_exponential_incl_test.cpp      sf_jacobi_zeta_incl_test.cpp
+dist_extreme_val_incl_test.cpp      sf_laguerre_incl_test.cpp
+dist_find_location_incl_test.cpp sf_lanczos_incl_test.cpp
+dist_find_scale_incl_test.cpp    sf_legendre_incl_test.cpp
+dist_fisher_f_incl_test.cpp      sf_log1p_incl_test.cpp
+dist_gamma_incl_test.cpp      sf_math_fwd_incl_test.cpp
+dist_hyperexponential_incl_test.cpp sf_modf_incl_test.cpp
+dist_hypergeo_incl_test.cpp      sf_next_incl_test.cpp
+dist_inv_chi_sq_incl_test.cpp    sf_owens_t_incl_test.cpp
+dist_inv_gamma_incl_test.cpp     sf_polygamma_incl_test.cpp
+dist_laplace_incl_test.cpp    sf_powm1_incl_test.cpp
+dist_logistic_incl_test.cpp      sf_relative_distance_incl_test.cpp
+dist_lognormal_incl_test.cpp     sf_round_incl_test.cpp
+dist_nc_beta_incl_test.cpp    sf_sign_incl_test.cpp
+dist_nc_chi_squ_incl_test.cpp    sf_sin_pi_incl_test.cpp
+dist_nc_f_incl_test.cpp       sf_sinc_incl_test.cpp
+dist_nc_t_incl_test.cpp       sf_sinhc_incl_test.cpp
+dist_neg_binom_incl_test.cpp     sf_sph_harm_incl_test.cpp
+dist_normal_incl_test.cpp     sf_sqrt1pm1_incl_test.cpp
+dist_pareto_incl_test.cpp     sf_trunc_incl_test.cpp
+dist_poisson_incl_test.cpp    sf_ulp_incl_test.cpp
+dist_skew_norm_incl_test.cpp     sf_zeta_incl_test.cpp
+dist_students_t_incl_test.cpp    std_real_concept_check.cpp
+dist_triangular_incl_test.cpp    test_compile_result.hpp
+dist_uniform_incl_test.cpp    test_traits.cpp
+dist_weibull_incl_test.cpp    tools_config_inc_test.cpp
+distribution_concept_check.cpp      tools_fraction_inc_test.cpp
+generate.sh          tools_minima_inc_test.cpp
+instantiate.hpp            tools_polynomial_inc_test.cpp
+main.cpp          tools_precision_inc_test.cpp
+poison.hpp           tools_rational_inc_test.cpp
+sf_airy_incl_test.cpp         tools_real_cast_inc_test.cpp
+sf_bernoulli_incl_test.cpp    tools_remez_inc_test.cpp
+sf_bessel_deriv_incl_test.cpp    tools_roots_inc_test.cpp
+sf_bessel_incl_test.cpp       tools_series_inc_test.cpp
+sf_beta_incl_test.cpp         tools_solve_inc_test.cpp
+sf_binomial_incl_test.cpp     tools_stats_inc_test.cpp
+sf_cbrt_incl_test.cpp         tools_test_data_inc_test.cpp
+sf_cos_pi_incl_test.cpp       tools_test_inc_test.cpp
+sf_digamma_incl_test.cpp      tools_toms748_inc_test.cpp
+sf_ellint_1_incl_test.cpp     tr1_incl_test.cpp
+sf_ellint_2_incl_test.cpp
+
+./test/float128:
+log1p_expm1_test.cpp test_binomial_coeff.cpp test_factorials.cpp  test_laguerre.cpp
+powm1_sqrtp1m1_test.cpp test_carlson.cpp  test_gamma.cpp    test_legendre.cpp
+setup.hpp      test_cbrt.cpp     test_hermite.cpp  test_polygamma.cpp
+table_type.hpp    test_digamma.cpp  test_ibeta.cpp    test_std_lib.cpp
+test_bessel_i.cpp test_ellint_1.cpp test_ibeta_inv_1.cpp test_tgamma_ratio.cpp
+test_bessel_j.cpp test_ellint_2.cpp test_ibeta_inv_ab_4.cpp test_trigamma.cpp
+test_bessel_k.cpp test_ellint_3.cpp test_igamma.cpp      test_zeta.cpp
+test_bessel_y.cpp test_erf.cpp      test_igamma_inv.cpp
+test_beta.cpp     test_expint.cpp      test_igamma_inva.cpp
+
+./test/test_instances:
+Jamfile.v2           ldouble_test_instances_2.cpp
+double_test_instances_1.cpp      ldouble_test_instances_3.cpp
+double_test_instances_10.cpp     ldouble_test_instances_4.cpp
+double_test_instances_2.cpp      ldouble_test_instances_5.cpp
+double_test_instances_3.cpp      ldouble_test_instances_6.cpp
+double_test_instances_4.cpp      ldouble_test_instances_7.cpp
+double_test_instances_5.cpp      ldouble_test_instances_8.cpp
+double_test_instances_6.cpp      ldouble_test_instances_9.cpp
+double_test_instances_7.cpp      long_double_test_instances_1.cpp
+double_test_instances_8.cpp      pch.hpp
+double_test_instances_9.cpp      real_concept_test_instances_1.cpp
+float_test_instances_1.cpp    real_concept_test_instances_10.cpp
+float_test_instances_10.cpp      real_concept_test_instances_2.cpp
+float_test_instances_2.cpp    real_concept_test_instances_3.cpp
+float_test_instances_3.cpp    real_concept_test_instances_4.cpp
+float_test_instances_4.cpp    real_concept_test_instances_5.cpp
+float_test_instances_5.cpp    real_concept_test_instances_6.cpp
+float_test_instances_6.cpp    real_concept_test_instances_7.cpp
+float_test_instances_7.cpp    real_concept_test_instances_8.cpp
+float_test_instances_8.cpp    real_concept_test_instances_9.cpp
+float_test_instances_9.cpp    test_instances.hpp
+ldouble_test_instances_10.cpp
+
+./test/test_rational_instances:
+test_rational.hpp    test_rational_float2.cpp   test_rational_ldouble5.cpp
+test_rational_double1.cpp  test_rational_float3.cpp   test_rational_real_concept1.cpp
+test_rational_double2.cpp  test_rational_float4.cpp   test_rational_real_concept2.cpp
+test_rational_double3.cpp  test_rational_ldouble1.cpp test_rational_real_concept3.cpp
+test_rational_double4.cpp  test_rational_ldouble2.cpp test_rational_real_concept4.cpp
+test_rational_double5.cpp  test_rational_ldouble3.cpp test_rational_real_concept5.cpp
+test_rational_float1.cpp   test_rational_ldouble4.cpp
+
+./tools:
+Jamfile.v2              generate_test_values.cpp
+bessel_data.cpp               hermite_data.cpp
+bessel_derivative_append_negative.cpp     heuman_lambda_data.cpp
+bessel_derivative_data.cpp       hypergeometric_dist_data.cpp
+bessel_derivative_data_from_bessel_ipps.cpp  ibeta_data.cpp
+beta_data.cpp              ibeta_derivative_data.cpp
+carlson_ellint_data.cpp          ibeta_inv_data.cpp
+cbrt_data.cpp              ibeta_invab_data.cpp
+digamma_data.cpp           igamma_data.cpp
+doc                  igamma_temme_large_coef.cpp
+ellint_d2_data.cpp            inv_hyp_data.cpp
+ellint_d_data.cpp          jacobi_zeta_data.cpp
+ellint_e_data.cpp          laguerre_data.cpp
+ellint_f_data.cpp          lanczos_generator.cpp
+ellint_k_data.cpp          legendre_data.cpp
+ellint_pi2_data.cpp           log1p_expm1_data.cpp
+ellint_pi3_data.cpp           mp_t.hpp
+erf_data.cpp               process_perf_results.cpp
+expint_data.cpp               rational_tests.cpp
+expint_i_data.cpp          spherical_harmonic_data.cpp
+factorial_tables.cpp          tgamma_large_data.cpp
+gamma_P_inva_data.cpp            tgamma_ratio_data.cpp
+generate_rational_code.cpp       trig_data.cpp
+generate_rational_test.cpp       zeta_data.cpp
+
+./tools/doc:
+cstdfloat.qbk
+
+./vc71_fix:
+Jamfile.v2     instantiate_all.cpp

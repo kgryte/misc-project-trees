@@ -1,0 +1,3607 @@
+|-api
+|-doc
+|---articles
+|-----wiki
+|---codewalk
+|---devel
+|---gopher
+|-----pencil
+|---play
+|---progs
+|-lib
+|---time
+|-misc
+|---android
+|---arm
+|---cgo
+|-----errors
+|-----fortran
+|-------helloworld
+|-----gmp
+|-----life
+|-----nocgo
+|-----stdio
+|-----test
+|-------gcc68255
+|-------issue8828
+|-------issue9026
+|-------issue9400
+|-------issue9510a
+|-------issue9510b
+|-----testasan
+|-----testcarchive
+|-------src
+|---------libgo
+|---------libgo2
+|---------libgo3
+|---------libgo4
+|---------p
+|-----testcshared
+|-------src
+|---------libgo
+|---------libgo2
+|---------libgo4
+|---------libgo5
+|---------p
+|-----testgodefs
+|-----testsanitizers
+|-----testshared
+|-------src
+|---------dep
+|---------dep2
+|---------exe
+|---------exe2
+|---------execgo
+|---------explicit
+|---------implicit
+|---------implicitcmd
+|---------trivial
+|-----testsigfwd
+|-----testso
+|-----testsovar
+|-----testtls
+|---chrome
+|-----gophertool
+|---git
+|---ios
+|---linkcheck
+|---nacl
+|-----testdata
+|-------bin
+|---sortac
+|---swig
+|-----callback
+|-----stdio
+|---trace
+|-src
+|---archive
+|-----tar
+|-------testdata
+|-----zip
+|-------testdata
+|---bufio
+|---builtin
+|---bytes
+|---cmd
+|-----addr2line
+|-----api
+|-------testdata
+|---------src
+|-----------pkg
+|-------------p1
+|-------------p2
+|-------------p3
+|-----asm
+|-------internal
+|---------arch
+|---------asm
+|-----------testdata
+|---------flags
+|---------lex
+|-----cgo
+|-----compile
+|-------internal
+|---------amd64
+|---------arm
+|---------arm64
+|---------big
+|---------gc
+|-----------builtin
+|-----------testdata
+|-------------gen
+|---------mips64
+|---------ppc64
+|---------ssa
+|-----------gen
+|---------x86
+|-----cover
+|-------testdata
+|-----dist
+|-----doc
+|-------testdata
+|-----fix
+|-----go
+|-------testdata
+|---------cgocover
+|---------failssh
+|---------generate
+|---------importcom
+|-----------src
+|-------------bad
+|-------------conflict
+|-------------works
+|---------------x
+|-------------wrongplace
+|---------local
+|-----------easysub
+|-----------sub
+|-------------sub
+|---------norunexample
+|---------rundir
+|-----------sub
+|---------shadow
+|-----------root1
+|-------------src
+|---------------foo
+|---------------math
+|-----------root2
+|-------------src
+|---------------foo
+|---------src
+|-----------badc
+|-----------badpkg
+|-----------badtest
+|-------------badexec
+|-------------badsyntax
+|-------------badvar
+|-----------benchfatal
+|-----------cgotest
+|-----------go-cmd-test
+|-----------main_test
+|-----------notest
+|-----------run
+|-------------internal
+|-------------subdir
+|---------------internal
+|-----------------private
+|-----------syntaxerror
+|-----------testcycle
+|-------------p1
+|-------------p2
+|-------------p3
+|-------------q1
+|-----------testdep
+|-------------p1
+|-------------p2
+|-------------p3
+|-----------vend
+|-------------dir1
+|-------------hello
+|-------------subdir
+|-------------vendor
+|---------------p
+|---------------q
+|---------------strings
+|---------------vend
+|-----------------dir1
+|-------------------dir2
+|-------------x
+|---------------invalid
+|---------------vendor
+|-----------------p
+|-------------------p
+|-----------------r
+|-----------vetpkg
+|-----------xtestonly
+|---------testimport
+|-----------p1
+|-----------p2
+|---------testinternal
+|---------testinternal2
+|-----------x
+|-------------y
+|---------------z
+|-----------------internal
+|-------------------w
+|---------testinternal3
+|---------testinternal4
+|-----------src
+|-------------p
+|-------------q
+|---------------internal
+|-----------------x
+|---------------j
+|---------testonly
+|---------testvendor
+|-----------src
+|-------------p
+|-------------q
+|---------------vendor
+|-----------------x
+|---------------y
+|---------------z
+|---------testvendor2
+|-----------src
+|-------------p
+|-----------vendor
+|-------------x
+|-----gofmt
+|-------testdata
+|-----internal
+|-------gcprog
+|-------goobj
+|-------obj
+|---------arm
+|---------arm64
+|---------mips
+|---------ppc64
+|---------x86
+|-------objfile
+|-------unvendor
+|---------golang.org
+|-----------x
+|-------------arch
+|---------------arm
+|-----------------armasm
+|-------------------testdata
+|---------------x86
+|-----------------x86asm
+|-------------------testdata
+|-----link
+|-------internal
+|---------amd64
+|---------arm
+|---------arm64
+|---------ld
+|---------mips64
+|---------ppc64
+|---------x86
+|-----nm
+|-----objdump
+|-------testdata
+|-----pack
+|-----pprof
+|-------internal
+|---------commands
+|---------driver
+|---------fetch
+|---------plugin
+|---------profile
+|---------report
+|---------svg
+|---------symbolizer
+|---------symbolz
+|---------tempfile
+|-----trace
+|-----vet
+|-------internal
+|---------whitelist
+|-------testdata
+|---------divergent
+|---------incomplete
+|---------tagtest
+|-----yacc
+|-------testdata
+|---------expr
+|---compress
+|-----bzip2
+|-------testdata
+|-----flate
+|-------testdata
+|-----gzip
+|-------testdata
+|-----lzw
+|-----testdata
+|-----zlib
+|---container
+|-----heap
+|-----list
+|-----ring
+|---crypto
+|-----aes
+|-----cipher
+|-----des
+|-----dsa
+|-----ecdsa
+|-------testdata
+|-----elliptic
+|-----hmac
+|-----md5
+|-----rand
+|-----rc4
+|-----rsa
+|-------testdata
+|-----sha1
+|-----sha256
+|-----sha512
+|-----subtle
+|-----tls
+|-------testdata
+|-----x509
+|-------pkix
+|---database
+|-----sql
+|-------driver
+|---debug
+|-----dwarf
+|-------testdata
+|-----elf
+|-------testdata
+|-----gosym
+|-----macho
+|-------testdata
+|-----pe
+|-------testdata
+|-----plan9obj
+|-------testdata
+|---encoding
+|-----ascii85
+|-----asn1
+|-----base32
+|-----base64
+|-----binary
+|-----csv
+|-----gob
+|-----hex
+|-----json
+|-------testdata
+|-----pem
+|-----xml
+|---errors
+|---expvar
+|---flag
+|---fmt
+|---go
+|-----ast
+|-----build
+|-------testdata
+|---------empty
+|---------multi
+|---------other
+|-----------file
+|-----constant
+|-----doc
+|-------testdata
+|-----format
+|-----importer
+|-----internal
+|-------gccgoimporter
+|---------testdata
+|-------gcimporter
+|---------testdata
+|-----parser
+|-------testdata
+|-----printer
+|-------testdata
+|-----scanner
+|-----token
+|-----types
+|-------testdata
+|---hash
+|-----adler32
+|-----crc32
+|-----crc64
+|-----fnv
+|---html
+|-----template
+|---image
+|-----color
+|-------palette
+|-----draw
+|-----gif
+|-----internal
+|-------imageutil
+|-----jpeg
+|-----png
+|-------testdata
+|---------pngsuite
+|-----testdata
+|---index
+|-----suffixarray
+|---internal
+|-----golang.org
+|-------x
+|---------net
+|-----------http2
+|-------------hpack
+|-----race
+|-----singleflight
+|-----syscall
+|-------unix
+|-------windows
+|---------registry
+|-----testenv
+|-----trace
+|---io
+|-----ioutil
+|---log
+|-----syslog
+|---math
+|-----big
+|-----cmplx
+|-----rand
+|---mime
+|-----multipart
+|-------testdata
+|-----quotedprintable
+|-----testdata
+|---net
+|-----http
+|-------cgi
+|---------testdata
+|-------cookiejar
+|-------fcgi
+|-------httptest
+|-------httputil
+|-------internal
+|-------pprof
+|-------testdata
+|-----internal
+|-------socktest
+|-----mail
+|-----rpc
+|-------jsonrpc
+|-----smtp
+|-----testdata
+|-----textproto
+|-----url
+|---os
+|-----exec
+|-----signal
+|-----user
+|---path
+|-----filepath
+|---reflect
+|---regexp
+|-----syntax
+|-----testdata
+|---runtime
+|-----cgo
+|-----debug
+|-----internal
+|-------atomic
+|-------sys
+|-----msan
+|-----pprof
+|-----race
+|-------testdata
+|-----testdata
+|-------testprog
+|-------testprogcgo
+|---------windows
+|-------testprognet
+|-----trace
+|---sort
+|---strconv
+|-----testdata
+|---strings
+|---sync
+|-----atomic
+|---syscall
+|---testing
+|-----iotest
+|-----quick
+|---text
+|-----scanner
+|-----tabwriter
+|-----template
+|-------parse
+|-------testdata
+|---time
+|---unicode
+|-----utf16
+|-----utf8
+|---unsafe
+|---vendor
+|-test
+|---bench
+|-----garbage
+|-----go1
+|---bugs
+|---chan
+|---ddd2.dir
+|---dwarf
+|-----dwarf.dir
+|---fixedbugs
+|-----bug083.dir
+|-----bug088.dir
+|-----bug106.dir
+|-----bug133.dir
+|-----bug160.dir
+|-----bug191.dir
+|-----bug222.dir
+|-----bug248.dir
+|-----bug282.dir
+|-----bug302.dir
+|-----bug306.dir
+|-----bug313.dir
+|-----bug322.dir
+|-----bug324.dir
+|-----bug335.dir
+|-----bug345.dir
+|-----bug367.dir
+|-----bug369.dir
+|-----bug377.dir
+|-----bug382.dir
+|-----bug392.dir
+|-----bug396.dir
+|-----bug404.dir
+|-----bug407.dir
+|-----bug414.dir
+|-----bug415.dir
+|-----bug424.dir
+|-----bug437.dir
+|-----bug448.dir
+|-----bug460.dir
+|-----bug465.dir
+|-----bug466.dir
+|-----bug467.dir
+|-----bug468.dir
+|-----bug472.dir
+|-----bug478.dir
+|-----bug479.dir
+|-----bug480.dir
+|-----bug488.dir
+|-----bug492.dir
+|-----gcc67968.dir
+|-----issue10066.dir
+|-----issue10219.dir
+|-----issue10700.dir
+|-----issue11053.dir
+|-----issue12677.dir
+|-----issue13777.dir
+|-----issue14164.dir
+|-----issue14331.dir
+|-----issue3552.dir
+|-----issue4252.dir
+|-----issue4326.dir
+|-----issue4370.dir
+|-----issue4510.dir
+|-----issue4590.dir
+|-----issue4879.dir
+|-----issue4932.dir
+|-----issue4964.dir
+|-----issue5105.dir
+|-----issue5125.dir
+|-----issue5259.dir
+|-----issue5260.dir
+|-----issue5291.dir
+|-----issue5470.dir
+|-----issue5614.dir
+|-----issue5755.dir
+|-----issue5910.dir
+|-----issue5957.dir
+|-----issue6295.dir
+|-----issue6513.dir
+|-----issue6789.dir
+|-----issue7023.dir
+|-----issue7648.dir
+|-----issue7995b.dir
+|-----issue8060.dir
+|-----issue8280.dir
+|-----issue9355.dir
+|-----issue9537.dir
+|-----issue9608.dir
+|---import2.dir
+|---import4.dir
+|---interface
+|-----embed1.dir
+|-----private.dir
+|-----recursive1.dir
+|---ken
+|---method4.dir
+|---safe
+|---stress
+|---syntax
+
+
+AUTHORS     LICENSE     api      lib      src
+CONTRIBUTING.md   PATENTS     doc      misc     test
+CONTRIBUTORS   README.md   favicon.ico robots.txt
+
+./api:
+README      go1.1.txt   go1.3.txt   go1.5.txt   go1.txt
+except.txt  go1.2.txt   go1.4.txt   go1.6.txt   next.txt
+
+./doc:
+articles    docs.html      go1.4.html     help.html
+asm.html    effective_go.html go1.5.html     ie.css
+cmd.html    gccgo_contribute.html   go1.6.html     install-source.html
+code.html      gccgo_install.html   go1.7.txt      install.html
+codewalk    go-logo-black.png go1.html    play
+conduct.html      go-logo-blue.png  go1compat.html    progs
+contrib.html      go-logo-white.png go_faq.html    root.html
+contribute.html      go1.1.html     go_mem.html    security.html
+debugging_with_gdb.html go1.2.html     go_spec.html      share.png
+devel       go1.3.html     gopher         tos.html
+
+./doc/articles:
+go_command.html      index.html     race_detector.html   wiki
+
+./doc/articles/wiki:
+edit.html      final.go    part1.go    test_edit.good
+final-noclosure.go   get.go         part2.go    test_view.good
+final-noerror.go  http-sample.go    part3-errorhandling.go  view.html
+final-parsetemplate.go  index.html     part3.go
+final-template.go notemplate.go     test.bash
+final-test.patch  part1-noerror.go  test_Test.txt.good
+
+./doc/codewalk:
+codewalk.css   codewalk.xml   markov.go   pig.go      run      urlpoll.go
+codewalk.js functions.xml  markov.xml  popout.png  sharemem.xml
+
+./doc/devel:
+pre_go1.html   release.html   weekly.html
+
+./doc/gopher:
+README            bumper480x270.png    help.png
+appenginegopher.jpg     bumper640x360.png    pencil
+appenginegophercolor.jpg   doc.png           pkg.png
+appenginelogo.gif    fiveyears.jpg        project.png
+biplane.jpg       frontpage.png        ref.png
+bumper.png        gopherbw.png         run.png
+bumper192x108.png    gophercolor.png         talks.png
+bumper320x180.png    gophercolor16x16.png
+
+./doc/gopher/pencil:
+gopherhat.jpg     gophermega.jpg    gopherswim.jpg
+gopherhelmet.jpg  gopherrunning.jpg gopherswrench.jpg
+
+./doc/play:
+fib.go      life.go     pi.go    solitaire.go
+hello.go peano.go sieve.go tree.go
+
+./doc/progs:
+cgo1.go        eff_unused1.go    image_draw.go     json1.go
+cgo2.go        eff_unused2.go    image_package1.go json2.go
+cgo3.go        error.go    image_package2.go json3.go
+cgo4.go        error2.go      image_package3.go json4.go
+defer.go    error3.go      image_package4.go json5.go
+defer2.go      error4.go      image_package5.go run.go
+eff_bytesize.go      go1.go         image_package6.go slices.go
+eff_qr.go      gobs1.go    interface.go      timeout1.go
+eff_sequence.go      gobs2.go    interface2.go     timeout2.go
+
+./lib:
+time
+
+./lib/time:
+README      update.bash zoneinfo.zip
+
+./misc:
+android     cgo      git      nacl     trace
+arm      chrome      ios      sortac
+benchcmp editors     linkcheck   swig
+
+./misc/android:
+README         cleaner.go     go_android_exec.go
+
+./misc/arm:
+a
+
+./misc/cgo:
+errors      life     test     testcshared testshared  testsovar
+fortran     nocgo    testasan testgodefs  testsigfwd  testtls
+gmp      stdio    testcarchive   testsanitizers testso
+
+./misc/cgo/errors:
+err1.go     err3.go     issue11097b.go issue13423.go  issue7757.go   ptr.go
+err2.go     issue11097a.go issue13129.go  issue13635.go  issue8442.go   test.bash
+
+./misc/cgo/fortran:
+answer.f90  fortran.go  fortran_test.go   helloworld  test.bash
+
+./misc/cgo/fortran/helloworld:
+helloworld.f90
+
+./misc/cgo/gmp:
+fib.go   gmp.go   pi.go
+
+./misc/cgo/life:
+c-life.c life.go     life.h      main.go     main.out
+
+./misc/cgo/nocgo:
+nocgo.go nocgo_test.go
+
+./misc/cgo/stdio:
+chain.go fib.go      file.go     hello.out   stdio.go
+chain.out   fib.out     hello.go run.out
+
+./misc/cgo/test:
+align.go    issue1328.go      issue5227.go      issue8331.h
+api.go         issue13402.go     issue5242.go      issue8331a.go
+backdoor.go    issue13930.go     issue5337.go      issue8331b.go
+basic.go    issue14838.go     issue5337w.go     issue8428.go
+buildid_linux.go  issue1560.go      issue5548.go      issue8441.go
+callback.go    issue1635.go      issue5548_c.c     issue8517.go
+callback_c.c      issue2462.go      issue5603.go      issue8517_windows.c
+callback_c_gc.c      issue3250.go      issue5740.go      issue8517_windows.go
+callback_c_gccgo.c   issue3250w.go     issue5740a.c      issue8694.go
+cflags.go      issue3261.go      issue5740b.c      issue8811.c
+cgo_linux_test.go issue3729.go      issue5986.go      issue8811.go
+cgo_test.go    issue3729w.go     issue6128.go      issue8828
+cgo_unix_test.go  issue3741.go      issue6390.go      issue8828.go
+cthread.go     issue3775.go      issue6472.go      issue8945.go
+cthread_unix.c    issue3945.go      issue6506.go      issue9026
+cthread_windows.c issue4029.c    issue6612.go      issue9026.go
+duplicate_symbol.go  issue4029.go      issue6833.go      issue9400
+env.go         issue4029w.go     issue6833_c.c     issue9400_linux.go
+exports.go     issue4054a.go     issue6997_linux.c issue9510.go
+fpvar.go    issue4054b.go     issue6997_linux.go   issue9510a
+gcc68255    issue4273.c    issue7234_test.go issue9510b
+gcc68255.go    issue4273b.c      issue7560.go      issue9557.go
+helpers.go     issue4339.c    issue7665.go      setgid_linux.go
+issue10303.go     issue4339.go      issue7786.go      sigaltstack.go
+issue11925.go     issue4339.h    issue7978.go      sigprocmask_linux.c
+issue12030.go     issue4417.go      issue8092.go      sigprocmask_linux.go
+issue1222.go      issue4857.go      issue8148.go
+
+./misc/cgo/test/gcc68255:
+a.go  c.c   c.h
+
+./misc/cgo/test/issue8828:
+issue8828.c trivial.go
+
+./misc/cgo/test/issue9026:
+issue9026.go
+
+./misc/cgo/test/issue9400:
+asm_386.s   asm_arm.s   asm_ppc64x.s   stubs.go
+asm_amd64x.s   asm_arm64.s gccgo.go
+
+./misc/cgo/test/issue9510a:
+a.go
+
+./misc/cgo/test/issue9510b:
+b.go
+
+./misc/cgo/testasan:
+main.go
+
+./misc/cgo/testcarchive:
+main.c      main2.c     main3.c     main4.c     src      test.bash
+
+./misc/cgo/testcarchive/src:
+libgo libgo2   libgo3   libgo4   p
+
+./misc/cgo/testcarchive/src/libgo:
+libgo.go
+
+./misc/cgo/testcarchive/src/libgo2:
+libgo2.go
+
+./misc/cgo/testcarchive/src/libgo3:
+libgo3.go
+
+./misc/cgo/testcarchive/src/libgo4:
+libgo4.go
+
+./misc/cgo/testcarchive/src/p:
+p.go
+
+./misc/cgo/testcshared:
+main0.c     main2.c     main4.c     src
+main1.c     main3.c     main5.c     test.bash
+
+./misc/cgo/testcshared/src:
+libgo libgo2   libgo4   libgo5   p
+
+./misc/cgo/testcshared/src/libgo:
+libgo.go
+
+./misc/cgo/testcshared/src/libgo2:
+dup2.go     dup3.go     libgo2.go
+
+./misc/cgo/testcshared/src/libgo4:
+libgo4.go
+
+./misc/cgo/testcshared/src/libgo5:
+libgo5.go
+
+./misc/cgo/testcshared/src/p:
+p.go
+
+./misc/cgo/testgodefs:
+anonunion.go   issue8478.go   main.go     test.bash
+
+./misc/cgo/testsanitizers:
+msan.go     msan3.go msan_fail.go   tsan.go
+msan2.go msan4.go test.bash   tsan2.go
+
+./misc/cgo/testshared:
+shared_test.go src
+
+./misc/cgo/testshared/src:
+dep      exe      execgo      implicit trivial
+dep2     exe2     explicit implicitcmd
+
+./misc/cgo/testshared/src/dep:
+asm.s    dep.go      gccgo.go stubs.go
+
+./misc/cgo/testshared/src/dep2:
+dep2.go
+
+./misc/cgo/testshared/src/exe:
+exe.go
+
+./misc/cgo/testshared/src/exe2:
+exe2.go
+
+./misc/cgo/testshared/src/execgo:
+exe.go
+
+./misc/cgo/testshared/src/explicit:
+explicit.go
+
+./misc/cgo/testshared/src/implicit:
+implicit.go
+
+./misc/cgo/testshared/src/implicitcmd:
+implicitcmd.go
+
+./misc/cgo/testshared/src/trivial:
+trivial.go
+
+./misc/cgo/testsigfwd:
+main.go
+
+./misc/cgo/testso:
+cgoso.c     cgoso.go cgoso_c.c   cgoso_unix.go  main.go
+
+./misc/cgo/testsovar:
+cgoso.go cgoso_c.c   cgoso_c.h   main.go
+
+./misc/cgo/testtls:
+tls.go      tls_test.go tls_unix.c
+
+./misc/chrome:
+gophertool
+
+./misc/chrome/gophertool:
+README.txt  background.js  gopher.png  popup.html
+background.html   gopher.js   manifest.json  popup.js
+
+./misc/git:
+pre-commit
+
+./misc/ios:
+README         clangwrap.sh      detect.go      go_darwin_arm_exec.go
+
+./misc/linkcheck:
+linkcheck.go
+
+./misc/nacl:
+README         go_nacl_amd64p32_exec   mkzip.go    testzip.proto
+go_nacl_386_exec  go_nacl_arm_exec  testdata
+
+./misc/nacl/testdata:
+bin      empty    group    hosts    mime.types
+
+./misc/nacl/testdata/bin:
+placeholder
+
+./misc/sortac:
+sortac.go
+
+./misc/swig:
+callback stdio
+
+./misc/swig/callback:
+callback.cc    callback.h     callback_test.go
+callback.go    callback.swigcxx
+
+./misc/swig/stdio:
+file.swig   file_test.go
+
+./misc/trace:
+README.md      trace_viewer_lean.html
+
+./src:
+Make.dist      container      iostest.bash      run.bat
+all.bash    crypto         log         run.rc
+all.bat        database    make.bash      runtime
+all.rc         debug       make.bat    sort
+androidtest.bash  encoding    make.rc        strconv
+archive        errors         math        strings
+bootstrap.bash    expvar         mime        sync
+bufio       flag        nacltest.bash     syscall
+buildall.bash     fmt         net         testing
+builtin        go       os       text
+bytes       hash        path        time
+clean.bash     html        race.bash      unicode
+clean.bat      image       race.bat    unsafe
+clean.rc    index       reflect        vendor
+cmd         internal    regexp
+compress    io       run.bash
+
+./src/archive:
+tar   zip
+
+./src/archive/tar:
+common.go      reader_test.go    stat_unix.go      writer.go
+example_test.go      stat_atim.go      tar_test.go    writer_test.go
+reader.go      stat_atimespec.go testdata
+
+./src/archive/tar/testdata:
+gnu-multi-hdrs.tar   issue12435.tar    small.txt      v7.tar
+gnu.tar        neg-size.tar      small2.txt     writer-big-long.tar
+hardlink.tar      nil-uid.tar    sparse-formats.tar   writer-big.tar
+hdr-only.tar      pax-multi-hdrs.tar   star.tar    writer.tar
+issue10968.tar    pax-path-hdr.tar  ustar-file-reg.tar   xattrs.tar
+issue11169.tar    pax.tar        ustar.tar
+
+./src/archive/zip:
+example_test.go   reader_test.go struct.go   writer.go   zip_test.go
+reader.go   register.go testdata writer_test.go
+
+./src/archive/zip/testdata:
+crc32-not-streamed.zip     readme.notzip        unix.zip
+dd.zip            readme.zip        winxp.zip
+go-no-datadesc-sig.zip     symlink.zip       zip64-2.zip
+go-with-datadesc-sig.zip   test-trailing-junk.zip     zip64.zip
+gophercolor16x16.png    test.zip
+
+./src/bufio:
+bufio.go bufio_test.go  example_test.go   export_test.go scan.go     scan_test.go
+
+./src/builtin:
+builtin.go
+
+./src/bytes:
+buffer.go   bytes.go bytes_test.go  equal_test.go  export_test.go reader_test.go
+buffer_test.go bytes_decl.go  compare_test.go   example_test.go   reader.go
+
+./src/cmd:
+addr2line   compile     fix      link     pprof
+api      cover    go    nm    trace
+asm      dist     gofmt    objdump     vet
+cgo      doc      internal pack     yacc
+
+./src/cmd/addr2line:
+addr2line_test.go main.go
+
+./src/cmd/api:
+goapi.go goapi_test.go  run.go      testdata
+
+./src/cmd/api/testdata:
+src
+
+./src/cmd/api/testdata/src:
+pkg
+
+./src/cmd/api/testdata/src/pkg:
+p1 p2 p3
+
+./src/cmd/api/testdata/src/pkg/p1:
+golden.txt  p1.go
+
+./src/cmd/api/testdata/src/pkg/p2:
+golden.txt  p2.go
+
+./src/cmd/api/testdata/src/pkg/p3:
+golden.txt  p3.go
+
+./src/cmd/asm:
+doc.go      internal main.go
+
+./src/cmd/asm/internal:
+arch  asm   flags lex
+
+./src/cmd/asm/internal/arch:
+arch.go     arm.go      arm64.go mips64.go   ppc64.go
+
+./src/cmd/asm/internal/asm:
+asm.go         expr_test.go      parse.go    testdata
+endtoend_test.go  operand_test.go      pseudo_test.go
+
+./src/cmd/asm/internal/asm/testdata:
+386.s    amd64enc.s  arm.s    mips64.s
+amd64.s     amd64error.s   arm64.s     ppc64.s
+
+./src/cmd/asm/internal/flags:
+flags.go
+
+./src/cmd/asm/internal/lex:
+input.go lex.go      lex_test.go slice.go stack.go tokenizer.go
+
+./src/cmd/cgo:
+ast.go      gcc.go      main.go     util.go
+doc.go      godefs.go   out.go
+
+./src/cmd/compile:
+doc.go      internal main.go
+
+./src/cmd/compile/internal:
+amd64 arm   arm64 big   gc mips64   ppc64 ssa   x86
+
+./src/cmd/compile/internal/amd64:
+cgen.go     ggen.go     peep.go     reg.go
+galign.go   gsubr.go prog.go     ssa.go
+
+./src/cmd/compile/internal/arm:
+cgen.go     galign.go   gsubr.go prog.go
+cgen64.go   ggen.go     peep.go     reg.go
+
+./src/cmd/compile/internal/arm64:
+cgen.go     ggen.go     peep.go     reg.go
+galign.go   gsubr.go prog.go
+
+./src/cmd/compile/internal/big:
+accuracy_string.go   float.go    int.go         rat.go
+arith.go    float_test.go     int_test.go    rat_test.go
+arith_decl.go     floatconv.go      intconv.go     ratconv.go
+arith_test.go     floatconv_test.go intconv_test.go      ratconv_test.go
+bits_test.go      floatexample_test.go intmarsh.go    ratmarsh.go
+calibrate_test.go floatmarsh.go     intmarsh_test.go  ratmarsh_test.go
+decimal.go     floatmarsh_test.go   nat.go         roundingmode_string.go
+decimal_test.go      ftoa.go        nat_test.go    vendor.bash
+example_rat_test.go  gcd_test.go    natconv.go
+example_test.go      hilbert_test.go      natconv_test.go
+
+./src/cmd/compile/internal/gc:
+alg.go      const.go gsubr.go opnames.go  reflect_test.go   syntax.go
+align.go cplx.go     init.go     order.go reg.go      testdata
+bexport.go  dcl.go      inl.go      parser.go   select.go   type.go
+bimport.go  esc.go      lex.go      pgen.go     sinit.go typecheck.go
+builtin     export.go   magic.go pgen_test.go   sizeof_test.go universe.go
+builtin.go  float_test.go  main.go     plive.go ssa.go      unsafe.go
+builtin_test.go   fmt.go      mkbuiltin.go   popt.go     ssa_test.go util.go
+bv.go    gen.go      mpfloat.go  racewalk.go subr.go     walk.go
+cgen.go     global_test.go mpint.go range.go swt.go
+closure.go  go.go    obj.go      reflect.go  swt_test.go
+
+./src/cmd/compile/internal/gc/builtin:
+runtime.go  unsafe.go
+
+./src/cmd/compile/internal/gc/testdata:
+addressed_ssa.go  break_ssa.go      deferNoReturn_ssa.go short_ssa.go
+append_ssa.go     chan_ssa.go    fp_ssa.go      string_ssa.go
+arithBoundary_ssa.go closure_ssa.go    gen         unsafe_ssa.go
+arithConst_ssa.go cmp_ssa.go     loadstore_ssa.go  zero_ssa.go
+arith_ssa.go      compound_ssa.go      map_ssa.go
+array_ssa.go      copy_ssa.go    phi_ssa.go
+assert_ssa.go     ctl_ssa.go     regalloc_ssa.go
+
+./src/cmd/compile/internal/gc/testdata/gen:
+arithBoundaryGen.go  arithConstGen.go  copyGen.go     zeroGen.go
+
+./src/cmd/compile/internal/mips64:
+cgen.go     ggen.go     peep.go     reg.go
+galign.go   gsubr.go prog.go
+
+./src/cmd/compile/internal/ppc64:
+cgen.go     ggen.go     opt.go      prog.go
+galign.go   gsubr.go peep.go     reg.go
+
+./src/cmd/compile/internal/ssa:
+TODO        export_test.go    op.go       schedule_test.go
+block.go    flagalloc.go      opGen.go    shift_test.go
+check.go    func.go        opt.go         shortcircuit.go
+compile.go     func_test.go      passbm_test.go    shortcircuit_test.go
+config.go      fuse.go        phielim.go     sizeof_test.go
+copyelim.go    fuse_test.go      phiopt.go      sparsemap.go
+critical.go    gen         print.go    sparseset.go
+cse.go         html.go        prove.go    sparsetree.go
+cse_test.go    id.go       regalloc.go    stackalloc.go
+deadcode.go    layout.go      regalloc_test.go  tighten.go
+deadcode_test.go  likelyadjust.go      rewrite.go     trim.go
+deadstore.go      location.go    rewriteAMD64.go      type.go
+deadstore_test.go lower.go    rewrite_test.go      type_test.go
+decompose.go      magic.go    rewritedec.go     value.go
+dom.go         nilcheck.go    rewritegeneric.go zcse.go
+dom_test.go    nilcheck_test.go  schedule.go
+
+./src/cmd/compile/internal/ssa/gen:
+AMD64.rules README      decOps.go   genericOps.go  rulegen.go
+AMD64Ops.go dec.rules   generic.rules  main.go
+
+./src/cmd/compile/internal/x86:
+cgen.go     galign.go   gsubr.go prog.go
+cgen64.go   ggen.go     peep.go     reg.go
+
+./src/cmd/cover:
+cover.go doc.go      html.go     testdata
+cover_test.go  func.go     profile.go
+
+./src/cmd/cover/testdata:
+main.go  test.go
+
+./src/cmd/dist:
+README      buildtool.go   deps.go     sys_windows.go util_gccgo.go
+build.go cpuid_386.s main.go     test.go     vfp_arm.s
+buildgo.go  cpuid_amd64.s  mkdeps.bash util.go     vfp_default.s
+buildruntime.go   cpuid_default.s   sys_default.go util_gc.go
+
+./src/cmd/doc:
+dirs.go     doc_test.go main.go     pkg.go      testdata
+
+./src/cmd/doc/testdata:
+pkg.go
+
+./src/cmd/fix:
+doc.go         gotypes_test.go      main_test.go      printerconfig.go
+fix.go         import_test.go    netipv6zone.go    printerconfig_test.go
+gotypes.go     main.go        netipv6zone_test.go  typecheck.go
+
+./src/cmd/go:
+alldocs.go     generate_test.go  mkalldocs.sh      testdata
+bootstrap.go      get.go         note.go        testflag.go
+build.go    go11.go        note_test.go      testgo.go
+clean.go    go_test.go     pkg.go         tool.go
+context.go     go_unix_test.go      pkg_test.go    vcs.go
+discovery.go      go_windows_test.go   run.go         vcs_test.go
+doc.go         help.go        signal.go      vendor_test.go
+env.go         http.go        signal_notunix.go version.go
+fix.go         list.go        signal_unix.go    vet.go
+fmt.go         main.go        tag_test.go
+generate.go    match_test.go     test.go
+
+./src/cmd/go/testdata:
+cgocover    generate    src         testinternal4
+dep_test.go    importcom      standalone_test.go   testonly
+example1_test.go  local       testimport     testvendor
+example2_test.go  norunexample      testinternal      testvendor2
+failssh        rundir         testinternal2
+flag_test.go      shadow         testinternal3
+
+./src/cmd/go/testdata/cgocover:
+p.go     p_test.go
+
+./src/cmd/go/testdata/failssh:
+ssh
+
+./src/cmd/go/testdata/generate:
+test1.go test2.go test3.go test4.go
+
+./src/cmd/go/testdata/importcom:
+bad.go      conflict.go src      works.go wrongplace.go
+
+./src/cmd/go/testdata/importcom/src:
+bad      conflict works    wrongplace
+
+./src/cmd/go/testdata/importcom/src/bad:
+bad.go
+
+./src/cmd/go/testdata/importcom/src/conflict:
+a.go  b.go
+
+./src/cmd/go/testdata/importcom/src/works:
+x
+
+./src/cmd/go/testdata/importcom/src/works/x:
+x.go  x1.go
+
+./src/cmd/go/testdata/importcom/src/wrongplace:
+x.go
+
+./src/cmd/go/testdata/local:
+easy.go  easysub  hard.go  sub
+
+./src/cmd/go/testdata/local/easysub:
+easysub.go  main.go
+
+./src/cmd/go/testdata/local/sub:
+sub   sub.go
+
+./src/cmd/go/testdata/local/sub/sub:
+subsub.go
+
+./src/cmd/go/testdata/norunexample:
+example_test.go   test_test.go
+
+./src/cmd/go/testdata/rundir:
+sub   x.go
+
+./src/cmd/go/testdata/rundir/sub:
+sub.go
+
+./src/cmd/go/testdata/shadow:
+root1 root2
+
+./src/cmd/go/testdata/shadow/root1:
+src
+
+./src/cmd/go/testdata/shadow/root1/src:
+foo   math
+
+./src/cmd/go/testdata/shadow/root1/src/foo:
+foo.go
+
+./src/cmd/go/testdata/shadow/root1/src/math:
+math.go
+
+./src/cmd/go/testdata/shadow/root2:
+src
+
+./src/cmd/go/testdata/shadow/root2/src:
+foo
+
+./src/cmd/go/testdata/shadow/root2/src/foo:
+foo.go
+
+./src/cmd/go/testdata/src:
+badc     benchfatal  main_test   syntaxerror vend
+badpkg      cgotest     notest      testcycle   vetpkg
+badtest     go-cmd-test run      testdep     xtestonly
+
+./src/cmd/go/testdata/src/badc:
+x.c   x.go
+
+./src/cmd/go/testdata/src/badpkg:
+x.go
+
+./src/cmd/go/testdata/src/badtest:
+badexec     badsyntax   badvar
+
+./src/cmd/go/testdata/src/badtest/badexec:
+x_test.go
+
+./src/cmd/go/testdata/src/badtest/badsyntax:
+x.go     x_test.go
+
+./src/cmd/go/testdata/src/badtest/badvar:
+x.go     x_test.go
+
+./src/cmd/go/testdata/src/benchfatal:
+x_test.go
+
+./src/cmd/go/testdata/src/cgotest:
+m.go
+
+./src/cmd/go/testdata/src/go-cmd-test:
+helloworld.go
+
+./src/cmd/go/testdata/src/main_test:
+m.go     m_test.go
+
+./src/cmd/go/testdata/src/notest:
+hello.go
+
+./src/cmd/go/testdata/src/run:
+bad.go      good.go     internal subdir
+
+./src/cmd/go/testdata/src/run/internal:
+internal.go
+
+./src/cmd/go/testdata/src/run/subdir:
+internal
+
+./src/cmd/go/testdata/src/run/subdir/internal:
+private
+
+./src/cmd/go/testdata/src/run/subdir/internal/private:
+private.go
+
+./src/cmd/go/testdata/src/syntaxerror:
+x.go     x_test.go
+
+./src/cmd/go/testdata/src/testcycle:
+p1 p2 p3 q1
+
+./src/cmd/go/testdata/src/testcycle/p1:
+p1.go    p1_test.go
+
+./src/cmd/go/testdata/src/testcycle/p2:
+p2.go
+
+./src/cmd/go/testdata/src/testcycle/p3:
+p3.go    p3_test.go
+
+./src/cmd/go/testdata/src/testcycle/q1:
+q1.go    q1_test.go
+
+./src/cmd/go/testdata/src/testdep:
+p1 p2 p3
+
+./src/cmd/go/testdata/src/testdep/p1:
+p1.go    p1_test.go
+
+./src/cmd/go/testdata/src/testdep/p2:
+p2.go
+
+./src/cmd/go/testdata/src/testdep/p3:
+p3.go
+
+./src/cmd/go/testdata/src/vend:
+bad.go   dir1  good.go  hello subdir   vendor   x
+
+./src/cmd/go/testdata/src/vend/dir1:
+dir1.go
+
+./src/cmd/go/testdata/src/vend/hello:
+hello.go hello_test.go  hellox_test.go
+
+./src/cmd/go/testdata/src/vend/subdir:
+bad.go   good.go
+
+./src/cmd/go/testdata/src/vend/vendor:
+p  q  strings  vend
+
+./src/cmd/go/testdata/src/vend/vendor/p:
+p.go
+
+./src/cmd/go/testdata/src/vend/vendor/q:
+q.go
+
+./src/cmd/go/testdata/src/vend/vendor/strings:
+msg.go
+
+./src/cmd/go/testdata/src/vend/vendor/vend:
+dir1
+
+./src/cmd/go/testdata/src/vend/vendor/vend/dir1:
+dir2
+
+./src/cmd/go/testdata/src/vend/vendor/vend/dir1/dir2:
+dir2.go
+
+./src/cmd/go/testdata/src/vend/x:
+invalid  vendor   x.go
+
+./src/cmd/go/testdata/src/vend/x/invalid:
+invalid.go
+
+./src/cmd/go/testdata/src/vend/x/vendor:
+p  r
+
+./src/cmd/go/testdata/src/vend/x/vendor/p:
+p  p.go
+
+./src/cmd/go/testdata/src/vend/x/vendor/p/p:
+p.go
+
+./src/cmd/go/testdata/src/vend/x/vendor/r:
+r.go
+
+./src/cmd/go/testdata/src/vetpkg:
+a_test.go   b.go     c.go
+
+./src/cmd/go/testdata/src/xtestonly:
+f.go     f_test.go
+
+./src/cmd/go/testdata/testimport:
+p.go     p1    p2    p_test.go   x_test.go
+
+./src/cmd/go/testdata/testimport/p1:
+p1.go
+
+./src/cmd/go/testdata/testimport/p2:
+p2.go
+
+./src/cmd/go/testdata/testinternal:
+p.go
+
+./src/cmd/go/testdata/testinternal2:
+p.go  x
+
+./src/cmd/go/testdata/testinternal2/x:
+y
+
+./src/cmd/go/testdata/testinternal2/x/y:
+z
+
+./src/cmd/go/testdata/testinternal2/x/y/z:
+internal
+
+./src/cmd/go/testdata/testinternal2/x/y/z/internal:
+w
+
+./src/cmd/go/testdata/testinternal2/x/y/z/internal/w:
+w.go
+
+./src/cmd/go/testdata/testinternal3:
+t.go
+
+./src/cmd/go/testdata/testinternal4:
+src
+
+./src/cmd/go/testdata/testinternal4/src:
+p  q
+
+./src/cmd/go/testdata/testinternal4/src/p:
+p.go
+
+./src/cmd/go/testdata/testinternal4/src/q:
+internal j
+
+./src/cmd/go/testdata/testinternal4/src/q/internal:
+x
+
+./src/cmd/go/testdata/testinternal4/src/q/internal/x:
+x.go
+
+./src/cmd/go/testdata/testinternal4/src/q/j:
+j.go
+
+./src/cmd/go/testdata/testonly:
+p_test.go
+
+./src/cmd/go/testdata/testvendor:
+src
+
+./src/cmd/go/testdata/testvendor/src:
+p  q
+
+./src/cmd/go/testdata/testvendor/src/p:
+p.go
+
+./src/cmd/go/testdata/testvendor/src/q:
+vendor   y  z
+
+./src/cmd/go/testdata/testvendor/src/q/vendor:
+x
+
+./src/cmd/go/testdata/testvendor/src/q/vendor/x:
+x.go
+
+./src/cmd/go/testdata/testvendor/src/q/y:
+y.go
+
+./src/cmd/go/testdata/testvendor/src/q/z:
+z.go
+
+./src/cmd/go/testdata/testvendor2:
+src   vendor
+
+./src/cmd/go/testdata/testvendor2/src:
+p
+
+./src/cmd/go/testdata/testvendor2/src/p:
+p.go
+
+./src/cmd/go/testdata/testvendor2/vendor:
+x
+
+./src/cmd/go/testdata/testvendor2/vendor/x:
+x.go
+
+./src/cmd/gofmt:
+doc.go      gofmt_test.go  long_test.go   simplify.go
+gofmt.go internal.go rewrite.go  testdata
+
+./src/cmd/gofmt/testdata:
+comments.golden      rewrite1.golden      rewrite7.golden      stdin3.golden
+comments.input    rewrite1.input    rewrite7.input    stdin3.input
+composites.golden rewrite2.golden      rewrite8.golden      stdin4.golden
+composites.input  rewrite2.input    rewrite8.input    stdin4.input
+crlf.golden    rewrite3.golden      slices1.golden    stdin5.golden
+crlf.input     rewrite3.input    slices1.input     stdin5.input
+emptydecl.golden  rewrite4.golden      slices2.golden    stdin6.golden
+emptydecl.input      rewrite4.input    slices2.input     stdin6.input
+import.golden     rewrite5.golden      stdin1.golden     stdin7.golden
+import.input      rewrite5.input    stdin1.input      stdin7.input
+ranges.golden     rewrite6.golden      stdin2.golden     typeswitch.golden
+ranges.input      rewrite6.input    stdin2.input      typeswitch.input
+
+./src/cmd/internal:
+gcprog      goobj    obj      objfile     unvendor
+
+./src/cmd/internal/gcprog:
+gcprog.go
+
+./src/cmd/internal/goobj:
+read.go     read_test.go
+
+./src/cmd/internal/obj:
+arm      funcdata.go link.go     pass.go     stack.go typekind.go
+arm64    go.go    mips     pcln.go     stringer.go util.go
+data.go     ld.go    obj.go      ppc64    sym.go      x86
+flag.go     line_test.go   objfile.go  sizeof_test.go textflag.go
+
+./src/cmd/internal/obj/arm:
+a.out.go anames.go   anames5.go  asm5.go     list5.go obj5.go
+
+./src/cmd/internal/obj/arm64:
+a.out.go anames.go   anames7.go  asm7.go     list7.go obj7.go
+
+./src/cmd/internal/obj/mips:
+a.out.go anames.go   anames0.go  asm0.go     list0.go obj0.go
+
+./src/cmd/internal/obj/ppc64:
+a.out.go anames.go   anames9.go  asm9.go     list9.go obj9.go
+
+./src/cmd/internal/obj/x86:
+a.out.go anames.go   asm6.go     list6.go obj6.go     obj6_test.go
+
+./src/cmd/internal/objfile:
+disasm.go   goobj.go objfile.go  plan9obj.go
+elf.go      macho.go pe.go
+
+./src/cmd/internal/unvendor:
+golang.org  vendor.json
+
+./src/cmd/internal/unvendor/golang.org:
+x
+
+./src/cmd/internal/unvendor/golang.org/x:
+arch
+
+./src/cmd/internal/unvendor/golang.org/x/arch:
+arm   x86
+
+./src/cmd/internal/unvendor/golang.org/x/arch/arm:
+armasm
+
+./src/cmd/internal/unvendor/golang.org/x/arch/arm/armasm:
+Makefile    ext_test.go    objdump_test.go      tables.go
+decode.go      gnu.go         objdumpext_test.go   testdata
+decode_test.go    inst.go        plan9x.go
+
+./src/cmd/internal/unvendor/golang.org/x/arch/arm/armasm/testdata:
+Makefile decode.txt
+
+./src/cmd/internal/unvendor/golang.org/x/arch/x86:
+x86asm
+
+./src/cmd/internal/unvendor/golang.org/x/arch/x86/x86asm:
+Makefile    inst.go        plan9ext_test.go  xed_test.go
+decode.go      inst_test.go      plan9x.go      xedext_test.go
+decode_test.go    intel.go    plan9x_test.go
+ext_test.go    objdump_test.go      tables.go
+gnu.go         objdumpext_test.go   testdata
+
+./src/cmd/internal/unvendor/golang.org/x/arch/x86/x86asm/testdata:
+Makefile decode.txt  libmach8db.c
+
+./src/cmd/link:
+doc.go      internal main.go
+
+./src/cmd/link/internal:
+amd64 arm   arm64 ld mips64   ppc64 x86
+
+./src/cmd/link/internal/amd64:
+asm.go   l.go  obj.go   z.go
+
+./src/cmd/link/internal/arm:
+asm.go   l.go  obj.go
+
+./src/cmd/link/internal/arm64:
+asm.go   l.go  obj.go
+
+./src/cmd/link/internal/ld:
+ar.go       dwarf_defs.go     ldpe.go        pcln.go
+arch.go        elf.go         lib.go         pe.go
+data.go        go.go       link.go        pobj.go
+deadcode.go    ld.go       macho.go    sym.go
+decodesym.go      ldelf.go    macho_combine_dwarf.go  symtab.go
+dwarf.go    ldmacho.go     objfile.go     util.go
+
+./src/cmd/link/internal/mips64:
+asm.go   l.go  obj.go
+
+./src/cmd/link/internal/ppc64:
+asm.go   l.go  obj.go
+
+./src/cmd/link/internal/x86:
+asm.go   l.go  obj.go
+
+./src/cmd/nm:
+doc.go      nm.go    nm_test.go
+
+./src/cmd/objdump:
+main.go     objdump_test.go   testdata
+
+./src/cmd/objdump/testdata:
+fmthello.go
+
+./src/cmd/pack:
+doc.go      pack.go     pack_test.go
+
+./src/cmd/pprof:
+README      doc.go      internal pprof.go
+
+./src/cmd/pprof/internal:
+commands fetch    profile     svg      symbolz
+driver      plugin      report      symbolizer  tempfile
+
+./src/cmd/pprof/internal/commands:
+commands.go
+
+./src/cmd/pprof/internal/driver:
+driver.go   interactive.go
+
+./src/cmd/pprof/internal/fetch:
+fetch.go
+
+./src/cmd/pprof/internal/plugin:
+plugin.go
+
+./src/cmd/pprof/internal/profile:
+encode.go      legacy_profile.go profile_test.go      prune.go
+filter.go      profile.go     proto.go
+
+./src/cmd/pprof/internal/report:
+report.go   source.go   source_html.go
+
+./src/cmd/pprof/internal/svg:
+svg.go      svgpan.go
+
+./src/cmd/pprof/internal/symbolizer:
+symbolizer.go
+
+./src/cmd/pprof/internal/symbolz:
+symbolz.go
+
+./src/cmd/pprof/internal/tempfile:
+tempfile.go
+
+./src/cmd/trace:
+goroutines.go  main.go     pprof.go trace.go
+
+./src/cmd/vet:
+README      buildtag.go doc.go      print.go testdata vet_test.go
+asmdecl.go  cgo.go      internal rangeloop.go   tests.go
+assign.go   composite.go   main.go     shadow.go   types.go
+atomic.go   copylock.go method.go   shift.go unsafeptr.go
+bool.go     deadcode.go nilfunc.go  structtag.go   unused.go
+
+./src/cmd/vet/internal:
+whitelist
+
+./src/cmd/vet/internal/whitelist:
+whitelist.go
+
+./src/cmd/vet/testdata:
+asm.go         buildtag.go    deadcode.go    shift.go
+asm1.s         buildtag_bad.go      divergent      structtag.go
+asm2.s         cgo.go         incomplete     tagtest
+asm3.s         cgo2.go        method.go      tests_test.go
+asm4.s         composite.go      nilfunc.go     unsafeptr.go
+assign.go      copylock.go    print.go    unused.go
+atomic.go      copylock_func.go  rangeloop.go
+bool.go        copylock_range.go shadow.go
+
+./src/cmd/vet/testdata/divergent:
+buf.go      buf_test.go
+
+./src/cmd/vet/testdata/incomplete:
+examples_test.go
+
+./src/cmd/vet/testdata/tagtest:
+file1.go file2.go
+
+./src/cmd/yacc:
+doc.go      testdata yacc.go
+
+./src/cmd/yacc/testdata:
+expr
+
+./src/cmd/yacc/testdata/expr:
+README   expr.y   main.go
+
+./src/compress:
+bzip2    flate    gzip     lzw      testdata zlib
+
+./src/compress/bzip2:
+bit_reader.go     bzip2_test.go     move_to_front.go
+bzip2.go    huffman.go     testdata
+
+./src/compress/bzip2/testdata:
+Mark.Twain-Tom.Sawyer.txt.bz2 pass-random1.bin     pass-random2.bz2
+e.txt.bz2         pass-random1.bz2     pass-sawtooth.bz2
+fail-issue5747.bz2      pass-random2.bin     random.data.bz2
+
+./src/compress/flate:
+deflate.go        huffman_bit_writer.go      reader_test.go
+deflate_test.go         huffman_bit_writer_test.go reverse_bits.go
+dict_decoder.go         huffman_code.go         testdata
+dict_decoder_test.go    inflate.go        token.go
+flate_test.go        inflate_test.go         writer_test.go
+
+./src/compress/flate/testdata:
+huffman-null-max.dyn.expect      huffman-shifts.dyn.expect
+huffman-null-max.dyn.expect-noinput huffman-shifts.dyn.expect-noinput
+huffman-null-max.golden       huffman-shifts.golden
+huffman-null-max.in        huffman-shifts.in
+huffman-null-max.wb.expect    huffman-shifts.wb.expect
+huffman-null-max.wb.expect-noinput  huffman-shifts.wb.expect-noinput
+huffman-pi.dyn.expect         huffman-text-shift.dyn.expect
+huffman-pi.dyn.expect-noinput    huffman-text-shift.dyn.expect-noinput
+huffman-pi.golden       huffman-text-shift.golden
+huffman-pi.in           huffman-text-shift.in
+huffman-pi.wb.expect       huffman-text-shift.wb.expect
+huffman-pi.wb.expect-noinput     huffman-text-shift.wb.expect-noinput
+huffman-rand-1k.dyn.expect    huffman-text.dyn.expect
+huffman-rand-1k.dyn.expect-noinput  huffman-text.dyn.expect-noinput
+huffman-rand-1k.golden        huffman-text.golden
+huffman-rand-1k.in         huffman-text.in
+huffman-rand-1k.wb.expect     huffman-text.wb.expect
+huffman-rand-1k.wb.expect-noinput   huffman-text.wb.expect-noinput
+huffman-rand-limit.dyn.expect    huffman-zero.dyn.expect
+huffman-rand-limit.dyn.expect-noinput  huffman-zero.dyn.expect-noinput
+huffman-rand-limit.golden     huffman-zero.golden
+huffman-rand-limit.in         huffman-zero.in
+huffman-rand-limit.wb.expect     huffman-zero.wb.expect
+huffman-rand-limit.wb.expect-noinput   huffman-zero.wb.expect-noinput
+huffman-rand-max.golden       null-long-match.dyn.expect-noinput
+huffman-rand-max.in        null-long-match.wb.expect-noinput
+
+./src/compress/gzip:
+gunzip.go   gunzip_test.go gzip.go     gzip_test.go   testdata
+
+./src/compress/gzip/testdata:
+issue6550.gz
+
+./src/compress/lzw:
+reader.go   reader_test.go writer.go   writer_test.go
+
+./src/compress/testdata:
+Mark.Twain-Tom.Sawyer.txt  gettysburg.txt
+e.txt          pi.txt
+
+./src/compress/zlib:
+example_test.go   reader.go   reader_test.go writer.go   writer_test.go
+
+./src/container:
+heap  list  ring
+
+./src/container/heap:
+example_intheap_test.go example_pq_test.go   heap.go        heap_test.go
+
+./src/container/list:
+example_test.go   list.go     list_test.go
+
+./src/container/ring:
+ring.go     ring_test.go
+
+./src/crypto:
+aes      des      elliptic rand     sha1     subtle
+cipher      dsa      hmac     rc4      sha256      tls
+crypto.go   ecdsa    md5      rsa      sha512      x509
+
+./src/crypto/aes:
+aes_gcm.go     block.go    cipher_generic.go
+aes_test.go    cipher.go      const.go
+asm_amd64.s    cipher_asm.go     gcm_amd64.s
+
+./src/crypto/cipher:
+benchmark_test.go cipher.go      ctr_test.go    ofb.go
+cbc.go         cipher_test.go    example_test.go      ofb_test.go
+cbc_aes_test.go      common_test.go    gcm.go         xor.go
+cfb.go         ctr.go         gcm_test.go    xor_test.go
+cfb_test.go    ctr_aes_test.go      io.go
+
+./src/crypto/des:
+block.go cipher.go   const.go des_test.go example_test.go
+
+./src/crypto/dsa:
+dsa.go      dsa_test.go
+
+./src/crypto/ecdsa:
+ecdsa.go ecdsa_test.go  testdata
+
+./src/crypto/ecdsa/testdata:
+SigVer.rsp.bz2
+
+./src/crypto/elliptic:
+elliptic.go    p224.go        p256.go        p256_asm_amd64.s
+elliptic_test.go  p224_test.go      p256_amd64.go
+
+./src/crypto/hmac:
+hmac.go     hmac_test.go
+
+./src/crypto/md5:
+example_test.go      md5_test.go    md5block_amd64.s  md5block_decl.go
+gen.go         md5block.go    md5block_amd64p32.s  md5block_generic.go
+md5.go         md5block_386.s    md5block_arm.s
+
+./src/crypto/rand:
+eagain.go   rand.go     rand_openbsd.go   rand_unix.go   util.go
+example_test.go   rand_linux.go  rand_test.go   rand_windows.go   util_test.go
+
+./src/crypto/rc4:
+rc4.go      rc4_amd64.s rc4_arm.s   rc4_ref.go
+rc4_386.s   rc4_amd64p32.s rc4_asm.go  rc4_test.go
+
+./src/crypto/rsa:
+example_test.go      pkcs1v15_test.go  pss_test.go    rsa_test.go
+pkcs1v15.go    pss.go         rsa.go         testdata
+
+./src/crypto/rsa/testdata:
+pss-vect.txt.bz2
+
+./src/crypto/sha1:
+example_test.go      sha1block.go      sha1block_amd64p32.s sha1block_generic.go
+sha1.go        sha1block_386.s      sha1block_arm.s
+sha1_test.go      sha1block_amd64.s sha1block_decl.go
+
+./src/crypto/sha256:
+sha256.go      sha256block.go    sha256block_amd64.s
+sha256_test.go    sha256block_386.s sha256block_decl.go
+
+./src/crypto/sha512:
+sha512.go      sha512block.go    sha512block_decl.go
+sha512_test.go    sha512block_amd64.s
+
+./src/crypto/subtle:
+constant_time.go  constant_time_test.go
+
+./src/crypto/tls:
+alert.go       handshake_client.go     key_agreement.go
+cipher_suites.go     handshake_client_test.go   prf.go
+common.go         handshake_messages.go      prf_test.go
+conn.go           handshake_messages_test.go testdata
+conn_test.go         handshake_server.go     ticket.go
+example_test.go         handshake_server_test.go   tls.go
+generate_cert.go     handshake_test.go    tls_test.go
+
+./src/crypto/tls/testdata:
+Client-TLSv10-ClientCert-ECDSA-ECDSA      Server-SSLv3-RSA-RC4
+Client-TLSv10-ClientCert-ECDSA-RSA     Server-TLSv10-ECDHE-ECDSA-AES
+Client-TLSv10-ClientCert-RSA-ECDSA     Server-TLSv10-RSA-3DES
+Client-TLSv10-ClientCert-RSA-RSA    Server-TLSv10-RSA-AES
+Client-TLSv10-ECDHE-ECDSA-AES       Server-TLSv10-RSA-RC4
+Client-TLSv10-ECDHE-RSA-AES         Server-TLSv11-FallbackSCSV
+Client-TLSv10-RSA-RC4            Server-TLSv11-RSA-RC4
+Client-TLSv11-ECDHE-ECDSA-AES       Server-TLSv12-ALPN
+Client-TLSv11-ECDHE-RSA-AES         Server-TLSv12-ALPN-NoMatch
+Client-TLSv11-RSA-RC4            Server-TLSv12-CipherSuiteCertPreferenceECDSA
+Client-TLSv12-AES128-GCM-SHA256        Server-TLSv12-CipherSuiteCertPreferenceRSA
+Client-TLSv12-AES256-GCM-SHA384        Server-TLSv12-ClientAuthRequestedAndECDSAGiven
+Client-TLSv12-ALPN            Server-TLSv12-ClientAuthRequestedAndGiven
+Client-TLSv12-ALPN-NoMatch       Server-TLSv12-ClientAuthRequestedNotGiven
+Client-TLSv12-ClientCert-ECDSA-ECDSA      Server-TLSv12-ECDHE-ECDSA-AES
+Client-TLSv12-ClientCert-ECDSA-RSA     Server-TLSv12-IssueTicket
+Client-TLSv12-ClientCert-RSA-AES256-GCM-SHA384  Server-TLSv12-IssueTicketPreDisable
+Client-TLSv12-ClientCert-RSA-ECDSA     Server-TLSv12-RSA-3DES
+Client-TLSv12-ClientCert-RSA-RSA    Server-TLSv12-RSA-AES
+Client-TLSv12-ECDHE-ECDSA-AES       Server-TLSv12-RSA-AES-GCM
+Client-TLSv12-ECDHE-ECDSA-AES-GCM      Server-TLSv12-RSA-AES256-GCM-SHA384
+Client-TLSv12-ECDHE-ECDSA-AES256-GCM-SHA384  Server-TLSv12-RSA-RC4
+Client-TLSv12-ECDHE-RSA-AES         Server-TLSv12-Resume
+Client-TLSv12-RSA-RC4            Server-TLSv12-ResumeDisabled
+Client-TLSv12-SCT          Server-TLSv12-SNI
+Server-SSLv3-RSA-3DES            Server-TLSv12-SNI-GetCertificate
+Server-SSLv3-RSA-AES          Server-TLSv12-SNI-GetCertificateNotFound
+
+./src/crypto/x509:
+cert_pool.go      root.go        root_nacl.go      sha2_windows_test.go
+example_test.go      root_bsd.go    root_nocgo_darwin.go verify.go
+pem_decrypt.go    root_cgo_darwin.go   root_plan9.go     verify_test.go
+pem_decrypt_test.go  root_darwin.go    root_solaris.go      x509.go
+pkcs1.go    root_darwin_arm_gen.go  root_unix.go      x509_test.go
+pkcs8.go    root_darwin_armx.go  root_windows.go      x509_test_import.go
+pkcs8_test.go     root_darwin_test.go  sec1.go
+pkix        root_linux.go     sec1_test.go
+
+./src/crypto/x509/pkix:
+pkix.go
+
+./src/database:
+sql
+
+./src/database/sql:
+convert.go  doc.txt     example_test.go   sql.go
+convert_test.go   driver      fakedb_test.go sql_test.go
+
+./src/database/sql/driver:
+driver.go   types.go types_test.go
+
+./src/debug:
+dwarf    elf      gosym    macho    pe    plan9obj
+
+./src/debug/dwarf:
+buf.go      entry.go line_test.go   type.go     unit.go
+class_string.go   entry_test.go  open.go     type_test.go
+const.go line.go     testdata typeunit.go
+
+./src/debug/dwarf/testdata:
+cycle.c     line-gcc.elf   line2.c     typedef.c   typedef.macho
+cycle.elf   line1.c     split.c     typedef.elf
+line-clang.elf line1.h     split.elf   typedef.elf4
+
+./src/debug/elf:
+elf.go      file.go     reader.go   testdata
+elf_test.go file_test.go   symbols_test.go
+
+./src/debug/elf/testdata:
+compressed-32.obj       go-relocation-test-gcc482-aarch64.obj
+compressed-64.obj       go-relocation-test-gcc482-ppc64le.obj
+gcc-386-freebsd-exec       go-relocation-test-gcc492-arm.obj
+gcc-amd64-linux-exec       go-relocation-test-gcc492-mips64.obj
+gcc-amd64-openbsd-debug-with-rela.obj  go-relocation-test-gcc493-mips64le.obj
+go-relocation-test-clang-arm.obj go-relocation-test-gcc5-ppc.obj
+go-relocation-test-clang-x86.obj hello-world-core.gz
+go-relocation-test-gcc424-x86-64.obj   hello.c
+go-relocation-test-gcc441-x86-64.obj   zdebug-test-gcc484-x86-64.obj
+go-relocation-test-gcc441-x86.obj
+
+./src/debug/gosym:
+pclinetest.asm pclinetest.h   pclntab.go  pclntab_test.go   symtab.go
+
+./src/debug/macho:
+fat.go      file.go     file_test.go   macho.go testdata
+
+./src/debug/macho/testdata:
+fat-gcc-386-amd64-darwin-exec gcc-amd64-darwin-exec      hello.c
+gcc-386-darwin-exec     gcc-amd64-darwin-exec-debug
+
+./src/debug/pe:
+file.go     file_test.go   pe.go    testdata
+
+./src/debug/pe/testdata:
+gcc-386-mingw-exec   gcc-amd64-mingw-exec hello.c
+gcc-386-mingw-obj gcc-amd64-mingw-obj
+
+./src/debug/plan9obj:
+file.go     file_test.go   plan9obj.go testdata
+
+./src/debug/plan9obj/testdata:
+386-plan9-exec    amd64-plan9-exec  hello.c
+
+./src/encoding:
+ascii85     base32      binary      encoding.go hex      pem
+asn1     base64      csv      gob      json     xml
+
+./src/encoding/ascii85:
+ascii85.go  ascii85_test.go
+
+./src/encoding/asn1:
+asn1.go     asn1_test.go   common.go   marshal.go  marshal_test.go
+
+./src/encoding/base32:
+base32.go   base32_test.go example_test.go
+
+./src/encoding/base64:
+base64.go   base64_test.go example_test.go
+
+./src/encoding/binary:
+binary.go   binary_test.go example_test.go   varint.go   varint_test.go
+
+./src/encoding/csv:
+example_test.go   reader.go   reader_test.go writer.go   writer_test.go
+
+./src/encoding/gob:
+codec_test.go        dump.go           example_encdec_test.go
+debug.go       enc_helpers.go       example_interface_test.go
+dec_helpers.go       encgen.go         example_test.go
+decgen.go         encode.go         gobencdec_test.go
+decode.go         encoder.go        timing_test.go
+decoder.go        encoder_test.go         type.go
+doc.go            error.go       type_test.go
+
+./src/encoding/hex:
+hex.go      hex_test.go
+
+./src/encoding/json:
+bench_test.go  encode.go   fold.go     number_test.go stream.go   tags.go
+decode.go   encode_test.go fold_test.go   scanner.go  stream_test.go tags_test.go
+decode_test.go example_test.go   indent.go   scanner_test.go   tagkey_test.go testdata
+
+./src/encoding/json/testdata:
+code.json.gz
+
+./src/encoding/pem:
+pem.go      pem_test.go
+
+./src/encoding/xml:
+atom_test.go   marshal.go  read.go     typeinfo.go xml_test.go
+example_test.go   marshal_test.go   read_test.go   xml.go
+
+./src/errors:
+errors.go   errors_test.go example_test.go
+
+./src/expvar:
+expvar.go   expvar_test.go
+
+./src/flag:
+example_test.go   export_test.go flag.go     flag_test.go
+
+./src/fmt:
+doc.go         fmt_test.go    print.go    scan_test.go
+export_test.go    format.go      scan.go        stringer_test.go
+
+./src/go:
+ast      constant format      internal printer     token
+build    doc      importer parser      scanner     types
+
+./src/go/ast:
+ast.go         example_test.go      print.go    walk.go
+ast_test.go    filter.go      print_test.go
+commentmap.go     filter_test.go    resolve.go
+commentmap_test.go   import.go      scope.go
+
+./src/go/build:
+build.go deps_test.go   read.go     syslist.go  testdata
+build_test.go  doc.go      read_test.go   syslist_test.go
+
+./src/go/build/testdata:
+empty multi other
+
+./src/go/build/testdata/empty:
+dummy
+
+./src/go/build/testdata/multi:
+file.go        file_appengine.go
+
+./src/go/build/testdata/other:
+file  main.go
+
+./src/go/build/testdata/other/file:
+file.go
+
+./src/go/constant:
+value.go value_test.go
+
+./src/go/doc:
+Makefile    doc_test.go    filter.go      synopsis_test.go
+comment.go     example.go     headscan.go    testdata
+comment_test.go      example_test.go      reader.go
+doc.go         exports.go     synopsis.go
+
+./src/go/doc/testdata:
+a.0.golden     bugpara.0.golden  e.1.golden     f.2.golden
+a.1.golden     bugpara.1.golden  e.2.golden     f.go
+a.2.golden     bugpara.2.golden  e.go        issue13742.0.golden
+a0.go       bugpara.go     error1.0.golden      issue13742.1.golden
+a1.go       c.0.golden     error1.1.golden      issue13742.2.golden
+b.0.golden     c.1.golden     error1.2.golden      issue13742.go
+b.1.golden     c.2.golden     error1.go      template.txt
+b.2.golden     c.go        error2.0.golden      testing.0.golden
+b.go        d.0.golden     error2.1.golden      testing.1.golden
+benchmark.go      d.1.golden     error2.2.golden      testing.2.golden
+blank.0.golden    d.2.golden     error2.go      testing.go
+blank.1.golden    d1.go       example.go
+blank.2.golden    d2.go       f.0.golden
+blank.go    e.0.golden     f.1.golden
+
+./src/go/format:
+format.go   format_test.go internal.go
+
+./src/go/importer:
+importer.go
+
+./src/go/internal:
+gccgoimporter  gcimporter
+
+./src/go/internal/gccgoimporter:
+gccgoinstallation.go    importer_test.go     testdata
+gccgoinstallation_test.go  parser.go
+importer.go       parser_test.go
+
+./src/go/internal/gccgoimporter/testdata:
+complexnums.go complexnums.gox   imports.go  imports.gox pointer.go  pointer.gox
+
+./src/go/internal/gcimporter:
+bimport.go     gcimporter.go     testdata
+exportdata.go     gcimporter_test.go
+
+./src/go/internal/gcimporter/testdata:
+a.go     b.go     exports.go
+
+./src/go/parser:
+error_test.go     interface.go      parser_test.go    short_test.go
+example_test.go      parser.go      performance_test.go  testdata
+
+./src/go/parser/testdata:
+commas.src  issue3106.src
+
+./src/go/printer:
+example_test.go      performance_test.go  printer_test.go
+nodes.go    printer.go     testdata
+
+./src/go/printer/testdata:
+comments.golden      declarations.golden  expressions.input slow.golden
+comments.input    declarations.input   expressions.raw      slow.input
+comments.x     empty.golden      linebreaks.golden statements.golden
+comments2.golden  empty.input    linebreaks.input  statements.input
+comments2.input      expressions.golden   parser.go
+
+./src/go/scanner:
+errors.go   example_test.go   scanner.go  scanner_test.go
+
+./src/go/token:
+position.go    serialize.go      token.go
+position_test.go  serialize_test.go
+
+./src/go/types:
+api.go         eval_test.go      object.go      sizes.go
+api_test.go    example_test.go      objset.go      stdlib_test.go
+assignments.go    expr.go        operand.go     stmt.go
+builtins.go    exprstring.go     ordering.go    testdata
+builtins_test.go  exprstring_test.go   package.go     token_test.go
+call.go        gotype.go      predicates.go     type.go
+check.go    hilbert_test.go      resolver.go    typestring.go
+check_test.go     initorder.go      resolver_test.go  typestring_test.go
+conversions.go    issues_test.go    return.go      typexpr.go
+decl.go        labels.go      scope.go    universe.go
+errors.go      lookup.go      selection.go
+eval.go        methodset.go      self_test.go
+
+./src/go/types/testdata:
+blank.src      cycles4.src    expr3.src      issues.src
+builtins.src      decls0.src     gotos.src      labels.src
+const0.src     decls1.src     importC.src    methodsets.src
+const1.src     decls2a.src    importdecl0a.src  shifts.src
+constdecl.src     decls2b.src    importdecl0b.src  stmt0.src
+conversions.src      decls3.src     importdecl1a.src  stmt1.src
+cycles.src     errors.src     importdecl1b.src  vardecl.src
+cycles1.src    expr0.src      init0.src
+cycles2.src    expr1.src      init1.src
+cycles3.src    expr2.src      init2.src
+
+./src/hash:
+adler32     crc64    hash.go     test_gen.awk
+crc32    fnv      test_cases.txt
+
+./src/hash/adler32:
+adler32.go  adler32_test.go
+
+./src/hash/crc32:
+crc32.go    crc32_amd64.s     crc32_amd64p32.s  crc32_test.go
+crc32_amd64.go    crc32_amd64p32.go crc32_generic.go  example_test.go
+
+./src/hash/crc64:
+crc64.go crc64_test.go
+
+./src/hash/fnv:
+fnv.go      fnv_test.go
+
+./src/html:
+entity.go   entity_test.go escape.go   escape_test.go example_test.go   template
+
+./src/html/template:
+attr.go        css_test.go    html.go        transition.go
+clone_test.go     doc.go         html_test.go      transition_test.go
+content.go     error.go    js.go       url.go
+content_test.go      escape.go      js_test.go     url_test.go
+context.go     escape_test.go    template.go
+css.go         example_test.go      template_test.go
+
+./src/image:
+color       geom.go        internal    ycbcr.go
+decode_example_test.go  geom_test.go      jpeg        ycbcr_test.go
+decode_test.go    gif         names.go
+draw        image.go    png
+format.go      image_test.go     testdata
+
+./src/image/color:
+color.go palette     ycbcr.go ycbcr_test.go
+
+./src/image/color/palette:
+gen.go      generate.go palette.go
+
+./src/image/draw:
+bench_test.go  clip_test.go   draw.go     draw_test.go
+
+./src/image/gif:
+reader.go   reader_test.go writer.go   writer_test.go
+
+./src/image/internal:
+imageutil
+
+./src/image/internal/imageutil:
+gen.go      imageutil.go   impl.go
+
+./src/image/jpeg:
+dct_test.go huffman.go  reader.go   scan.go     writer_test.go
+fdct.go     idct.go     reader_test.go writer.go
+
+./src/image/png:
+paeth.go reader.go   testdata writer_test.go
+paeth_test.go  reader_test.go writer.go
+
+./src/image/png/testdata:
+benchGray.png        benchRGB.png         invalid-trunc.png
+benchNRGBA-gradient.png    gray-gradient.interlaced.png  invalid-zlib.png
+benchNRGBA-opaque.png      gray-gradient.png    pngsuite
+benchPaletted.png    invalid-crc32.png
+benchRGB-interlace.png     invalid-noend.png
+
+./src/image/png/testdata/pngsuite:
+README         basn0g04-31.sng      basn3p01.png      basn3p08.sng
+README.original      basn0g04.png      basn3p01.sng      basn4a08.png
+basn0g01-30.png      basn0g04.sng      basn3p02.png      basn4a08.sng
+basn0g01-30.sng      basn0g08.png      basn3p02.sng      basn4a16.png
+basn0g01.png      basn0g08.sng      basn3p04-31i.png  basn4a16.sng
+basn0g01.sng      basn0g16.png      basn3p04-31i.sng  basn6a08.png
+basn0g02-29.png      basn0g16.sng      basn3p04.png      basn6a08.sng
+basn0g02-29.sng      basn2c08.png      basn3p04.sng      basn6a16.png
+basn0g02.png      basn2c08.sng      basn3p08-trns.png basn6a16.sng
+basn0g02.sng      basn2c16.png      basn3p08-trns.sng
+basn0g04-31.png      basn2c16.sng      basn3p08.png
+
+./src/image/testdata:
+video-001.221212.jpeg
+video-001.221212.png
+video-001.5bpp.gif
+video-001.cmyk.jpeg
+video-001.cmyk.png
+video-001.gif
+video-001.interlaced.gif
+video-001.jpeg
+video-001.png
+video-001.progressive.jpeg
+video-001.q50.410.jpeg
+video-001.q50.410.progressive.jpeg
+video-001.q50.411.jpeg
+video-001.q50.411.progressive.jpeg
+video-001.q50.420.jpeg
+video-001.q50.420.progressive.jpeg
+video-001.q50.422.jpeg
+video-001.q50.422.progressive.jpeg
+video-001.q50.440.jpeg
+video-001.q50.440.progressive.jpeg
+video-001.q50.444.jpeg
+video-001.q50.444.progressive.jpeg
+video-001.rgb.jpeg
+video-001.rgb.png
+video-001.separate.dc.progression.jpeg
+video-001.separate.dc.progression.progressive.jpeg
+video-005.gray.gif
+video-005.gray.jpeg
+video-005.gray.png
+video-005.gray.q50.2x2.jpeg
+video-005.gray.q50.2x2.progressive.jpeg
+video-005.gray.q50.jpeg
+video-005.gray.q50.progressive.jpeg
+
+./src/index:
+suffixarray
+
+./src/index/suffixarray:
+qsufsort.go    suffixarray.go    suffixarray_test.go
+
+./src/internal:
+golang.org  race     singleflight   syscall     testenv     trace
+
+./src/internal/golang.org:
+x
+
+./src/internal/golang.org/x:
+net
+
+./src/internal/golang.org/x/net:
+http2
+
+./src/internal/golang.org/x/net/http2:
+hpack
+
+./src/internal/golang.org/x/net/http2/hpack:
+encode.go   encode_test.go hpack.go hpack_test.go  huffman.go  tables.go
+
+./src/internal/race:
+doc.go      norace.go   race.go
+
+./src/internal/singleflight:
+singleflight.go      singleflight_test.go
+
+./src/internal/syscall:
+unix  windows
+
+./src/internal/syscall/unix:
+getentropy_openbsd.go      getrandom_linux_amd64.go   getrandom_linux_mips64x.go
+getrandom_linux.go      getrandom_linux_arm.go     getrandom_linux_ppc64x.go
+getrandom_linux_386.go     getrandom_linux_generic.go
+
+./src/internal/syscall/windows:
+registry    syscall_windows.go   zsyscall_windows.go
+
+./src/internal/syscall/windows/registry:
+export_test.go    registry_test.go  value.go
+key.go         syscall.go     zsyscall_windows.go
+
+./src/internal/testenv:
+testenv.go
+
+./src/internal/trace:
+goroutines.go  parser.go   parser_test.go
+
+./src/io:
+example_test.go   io_test.go  multi.go pipe.go
+io.go    ioutil      multi_test.go  pipe_test.go
+
+./src/io/ioutil:
+example_test.go      ioutil_test.go    tempfile_test.go
+ioutil.go      tempfile.go
+
+./src/log:
+example_test.go   log.go      log_test.go syslog
+
+./src/log/syslog:
+doc.go      syslog.go   syslog_test.go syslog_unix.go
+
+./src/math:
+abs.go         exp2_amd64p32.s      ldexp_amd64p32.s  remainder_amd64.s
+acosh.go    exp2_arm.s     ldexp_arm.s    remainder_amd64p32.s
+all_test.go    exp_386.s      lgamma.go      remainder_arm.s
+asin.go        exp_amd64.s    log.go         signbit.go
+asin_386.s     exp_amd64p32.s    log10.go    sin.go
+asin_amd64.s      exp_arm.s      log10_386.s    sin_386.s
+asin_amd64p32.s      expm1.go    log10_amd64.s     sin_amd64.s
+asin_arm.s     expm1_386.s    log10_amd64p32.s  sin_amd64p32.s
+asinh.go    expm1_amd64.s     log10_arm.s    sin_arm.s
+atan.go        expm1_amd64p32.s  log1p.go    sincos.go
+atan2.go    expm1_arm.s    log1p_386.s    sincos_386.s
+atan2_386.s    export_test.go    log1p_amd64.s     sincos_amd64.s
+atan2_amd64.s     floor.go    log1p_amd64p32.s  sincos_amd64p32.s
+atan2_amd64p32.s  floor_386.s    log1p_arm.s    sincos_arm.s
+atan2_arm.s    floor_amd64.s     log_386.s      sinh.go
+atan_386.s     floor_amd64p32.s  log_amd64.s    sqrt.go
+atan_amd64.s      floor_arm.s    log_amd64p32.s    sqrt_386.s
+atan_amd64p32.s      floor_asm.go      log_arm.s      sqrt_amd64.s
+atan_arm.s     frexp.go    logb.go        sqrt_amd64p32.s
+atanh.go    frexp_386.s    mod.go         sqrt_arm.s
+big         frexp_amd64.s     mod_386.s      sqrt_arm64.s
+bits.go        frexp_amd64p32.s  mod_amd64.s    sqrt_ppc64x.s
+cbrt.go        frexp_arm.s    mod_amd64p32.s    stubs_arm64.s
+cmplx       gamma.go    mod_arm.s      stubs_mips64x.s
+const.go    hypot.go    modf.go        stubs_ppc64x.s
+copysign.go    hypot_386.s    modf_386.s     tan.go
+dim.go         hypot_amd64.s     modf_amd64.s      tan_386.s
+dim_386.s      hypot_amd64p32.s  modf_amd64p32.s      tan_amd64.s
+dim_amd64.s    hypot_arm.s    modf_arm.s     tan_amd64p32.s
+dim_amd64p32.s    j0.go       nextafter.go      tan_arm.s
+dim_arm.s      j1.go       pow.go         tanh.go
+erf.go         jn.go       pow10.go    unsafe.go
+exp.go         ldexp.go    rand
+exp2_386.s     ldexp_386.s    remainder.go
+exp2_amd64.s      ldexp_amd64.s     remainder_386.s
+
+./src/math/big:
+accuracy_string.go   bits_test.go      floatmarsh.go     nat_test.go
+arith.go    calibrate_test.go floatmarsh_test.go   natconv.go
+arith_386.s    decimal.go     ftoa.go        natconv_test.go
+arith_amd64.s     decimal_test.go      gcd_test.go    rat.go
+arith_amd64p32.s  doc.go         hilbert_test.go      rat_test.go
+arith_arm.s    example_rat_test.go  int.go         ratconv.go
+arith_arm64.s     example_test.go      int_test.go    ratconv_test.go
+arith_decl.go     float.go    intconv.go     ratmarsh.go
+arith_decl_pure.go   float_test.go     intconv_test.go      ratmarsh_test.go
+arith_mips64x.s      floatconv.go      intmarsh.go    roundingmode_string.go
+arith_ppc64x.s    floatconv_test.go intmarsh_test.go
+arith_test.go     floatexample_test.go nat.go
+
+./src/math/cmplx:
+abs.go      conj.go     isnan.go polar.go sin.go
+asin.go     exp.go      log.go      pow.go      sqrt.go
+cmath_test.go  isinf.go phase.go rect.go     tan.go
+
+./src/math/rand:
+example_test.go   normal.go   rand_test.go   rng.go
+exp.go      rand.go     regress_test.go   zipf.go
+
+./src/mime:
+encodedword.go    mediatype_test.go type_dragonfly.go type_unix.go
+encodedword_test.go  multipart      type_freebsd.go      type_windows.go
+example_test.go      quotedprintable      type_openbsd.go
+grammar.go     testdata       type_plan9.go
+mediatype.go      type.go        type_test.go
+
+./src/mime/multipart:
+example_test.go      formdata_test.go  multipart_test.go writer.go
+formdata.go    multipart.go      testdata    writer_test.go
+
+./src/mime/multipart/testdata:
+nested-mime
+
+./src/mime/quotedprintable:
+reader.go   reader_test.go writer.go   writer_test.go
+
+./src/mime/testdata:
+test.types     test.types.plan9
+
+./src/net:
+addrselect.go        hosts.go       pipe_test.go
+addrselect_test.go      hosts_test.go        platform_test.go
+cgo_android.go       http           port_unix.go
+cgo_bsd.go        interface.go         protoconn_test.go
+cgo_linux.go         interface_bsd.go     rpc
+cgo_netbsd.go        interface_bsd_test.go      sendfile_dragonfly.go
+cgo_openbsd.go       interface_darwin.go     sendfile_freebsd.go
+cgo_resnew.go        interface_dragonfly.go     sendfile_linux.go
+cgo_resold.go        interface_freebsd.go    sendfile_solaris.go
+cgo_socknew.go       interface_linux.go      sendfile_stub.go
+cgo_sockold.go       interface_linux_test.go    sendfile_windows.go
+cgo_solaris.go       interface_netbsd.go     server_test.go
+cgo_stub.go       interface_openbsd.go    smtp
+cgo_unix.go       interface_stub.go    sock_bsd.go
+cgo_unix_test.go     interface_test.go    sock_cloexec.go
+cgo_windows.go       interface_unix_test.go     sock_linux.go
+conf.go           interface_windows.go    sock_plan9.go
+conf_netcgo.go       interface_windows_test.go  sock_posix.go
+conf_test.go         internal       sock_stub.go
+conn_test.go         ip.go          sock_windows.go
+dial.go           ip_test.go        sockopt_bsd.go
+dial_gen.go       iprawsock.go         sockopt_linux.go
+dial_test.go         iprawsock_plan9.go      sockopt_plan9.go
+dnsclient.go         iprawsock_posix.go      sockopt_posix.go
+dnsclient_test.go    iprawsock_test.go    sockopt_solaris.go
+dnsclient_unix.go    ipsock.go         sockopt_stub.go
+dnsclient_unix_test.go     ipsock_plan9.go         sockopt_windows.go
+dnsconfig_unix.go    ipsock_posix.go         sockoptip_bsd.go
+dnsconfig_unix_test.go     ipsock_test.go       sockoptip_linux.go
+dnsmsg.go         listen_test.go       sockoptip_posix.go
+dnsmsg_test.go       lookup.go         sockoptip_stub.go
+dnsname_test.go         lookup_plan9.go         sockoptip_windows.go
+error_plan9_test.go     lookup_stub.go       sys_cloexec.go
+error_posix_test.go     lookup_test.go       tcpsock.go
+error_test.go        lookup_unix.go       tcpsock_plan9.go
+error_unix_test.go      lookup_windows.go    tcpsock_posix.go
+error_windows_test.go      lookup_windows_test.go     tcpsock_test.go
+example_test.go         mac.go            tcpsock_unix_test.go
+external_test.go     mac_test.go       tcpsockopt_darwin.go
+fd_mutex.go       mail           tcpsockopt_dragonfly.go
+fd_mutex_test.go     main_cloexec_test.go    tcpsockopt_openbsd.go
+fd_plan9.go       main_conf_test.go    tcpsockopt_plan9.go
+fd_poll_nacl.go         main_noconf_test.go     tcpsockopt_posix.go
+fd_poll_runtime.go      main_plan9_test.go      tcpsockopt_solaris.go
+fd_posix.go       main_posix_test.go      tcpsockopt_stub.go
+fd_posix_test.go     main_test.go         tcpsockopt_unix.go
+fd_unix.go        main_unix_test.go    tcpsockopt_windows.go
+fd_windows.go        main_windows_test.go    testdata
+file.go           mockserver_test.go      textproto
+file_plan9.go        net.go            timeout_test.go
+file_stub.go         net_test.go       udpsock.go
+file_test.go         net_windows_test.go     udpsock_plan9.go
+file_unix.go         netgo_unix_test.go      udpsock_posix.go
+file_windows.go         nss.go            udpsock_test.go
+hook.go           nss_test.go       unixsock.go
+hook_cloexec.go         packetconn_test.go      unixsock_plan9.go
+hook_plan9.go        parse.go       unixsock_posix.go
+hook_unix.go         parse_test.go        unixsock_test.go
+hook_windows.go         pipe.go           url
+
+./src/net/http:
+cgi         fs.go       method.go      serve_test.go
+client.go      fs_test.go     npn_test.go    server.go
+client_test.go    h2_bundle.go      pprof       sniff.go
+clientserver_test.go header.go      proxy_test.go     sniff_test.go
+cookie.go      header_test.go    race.go        status.go
+cookie_test.go    http_test.go      range_test.go     testdata
+cookiejar      httptest    readrequest_test.go  transfer.go
+doc.go         httputil    request.go     transfer_test.go
+example_test.go      internal    request_test.go      transport.go
+export_test.go    jar.go         requestwrite_test.go transport_test.go
+fcgi        lex.go         response.go    triv.go
+filetransport.go  lex_test.go    response_test.go
+filetransport_test.go   main_test.go      responsewrite_test.go
+
+./src/net/http/cgi:
+child.go    host.go        matryoshka_test.go   posix_test.go
+child_test.go     host_test.go      plan9_test.go     testdata
+
+./src/net/http/cgi/testdata:
+test.cgi
+
+./src/net/http/cookiejar:
+jar.go         jar_test.go    punycode.go    punycode_test.go
+
+./src/net/http/fcgi:
+child.go fcgi.go     fcgi_test.go
+
+./src/net/http/httptest:
+example_test.go      recorder_test.go  server_test.go
+recorder.go    server.go
+
+./src/net/http/httputil:
+dump.go        example_test.go      persist.go     reverseproxy_test.go
+dump_test.go      httputil.go    reverseproxy.go
+
+./src/net/http/internal:
+chunked.go  chunked_test.go   testcert.go
+
+./src/net/http/pprof:
+pprof.go
+
+./src/net/http/testdata:
+file     index.html  style.css
+
+./src/net/internal:
+socktest
+
+./src/net/internal/socktest:
+main_test.go      switch.go      switch_unix.go    sys_unix.go
+main_unix_test.go switch_posix.go      switch_windows.go sys_windows.go
+main_windows_test.go switch_stub.go    sys_cloexec.go
+
+./src/net/mail:
+example_test.go   message.go  message_test.go
+
+./src/net/rpc:
+client.go   client_test.go debug.go jsonrpc     server.go   server_test.go
+
+./src/net/rpc/jsonrpc:
+all_test.go client.go   server.go
+
+./src/net/smtp:
+auth.go     example_test.go   smtp.go     smtp_test.go
+
+./src/net/testdata:
+case-hosts     hosts       ipv4-hosts     resolv.conf
+domain-resolv.conf   igmp        ipv6-hosts     search-resolv.conf
+empty-resolv.conf igmp6       openbsd-resolv.conf  singleline-hosts
+
+./src/net/textproto:
+header.go   reader.go   textproto.go   writer_test.go
+pipeline.go reader_test.go writer.go
+
+./src/net/url:
+example_test.go   url.go      url_test.go
+
+./src/os:
+dir_plan9.go      exec_windows.go      pipe_bsd.go    str.go
+dir_unix.go    export_test.go    pipe_linux.go     sys_bsd.go
+dir_windows.go    file.go        pipe_test.go      sys_darwin.go
+doc.go         file_plan9.go     proc.go        sys_freebsd.go
+env.go         file_posix.go     signal         sys_linux.go
+env_test.go    file_unix.go      stat_darwin.go    sys_nacl.go
+env_unix_test.go  file_windows.go      stat_dragonfly.go sys_plan9.go
+error.go    getwd.go    stat_freebsd.go      sys_solaris.go
+error_plan9.go    getwd_darwin.go      stat_linux.go     sys_unix.go
+error_test.go     os_test.go     stat_nacl.go      sys_windows.go
+error_unix.go     os_unix_test.go      stat_netbsd.go    types.go
+error_windows.go  os_windows_test.go   stat_openbsd.go      types_plan9.go
+exec        path.go        stat_plan9.go     types_unix.go
+exec.go        path_plan9.go     stat_solaris.go      types_windows.go
+exec_plan9.go     path_test.go      stat_windows.go      user
+exec_posix.go     path_unix.go      sticky_bsd.go
+exec_unix.go      path_windows.go      sticky_notbsd.go
+
+./src/os/exec:
+example_test.go      exec_test.go      lp_test.go     lp_windows.go
+exec.go        internal_test.go  lp_unix.go     lp_windows_test.go
+exec_posix.go     lp_plan9.go    lp_unix_test.go
+
+./src/os/signal:
+doc.go         signal.go      signal_test.go
+example_test.go      signal_plan9.go      signal_unix.go
+sig.s       signal_plan9_test.go signal_windows_test.go
+
+./src/os/user:
+getgrouplist_darwin.c   listgroups_unix.go   lookup_plan9.go      lookup_windows.go
+getgrouplist_unix.c  lookup.go      lookup_stubs.go      user.go
+listgroups_solaris.go   lookup_android.go lookup_unix.go    user_test.go
+
+./src/path:
+example_test.go   filepath match.go match_test.go  path.go     path_test.go
+
+./src/path/filepath:
+example_unix_test.go path.go        path_windows.go      symlink_windows.go
+export_test.go    path_plan9.go     path_windows_test.go
+match.go    path_test.go      symlink.go
+match_test.go     path_unix.go      symlink_unix.go
+
+./src/reflect:
+all_test.go    asm_arm.s      deepequal.go      set_test.go
+asm_386.s      asm_arm64.s    example_test.go      tostring_test.go
+asm_amd64.s    asm_mips64x.s     export_test.go    type.go
+asm_amd64p32.s    asm_ppc64x.s      makefunc.go    value.go
+
+./src/regexp:
+all_test.go example_test.go   exec2_test.go  find_test.go   onepass_test.go   syntax
+backtrack.go   exec.go     exec_test.go   onepass.go  regexp.go   testdata
+
+./src/regexp/syntax:
+compile.go     parse.go    prog.go        simplify.go
+doc.go         parse_test.go     prog_test.go      simplify_test.go
+make_perl_groups.pl  perl_groups.go    regexp.go
+
+./src/regexp/testdata:
+README         nullsubexpr.dat      re2-search.txt    testregex.c
+basic.dat      re2-exhaustive.txt.bz2  repetition.dat
+
+./src/runtime:
+Makefile       memclr_arm.s         runtime.go
+alg.go            memclr_arm64.s       runtime1.go
+append_test.go       memclr_mips64x.s     runtime2.go
+asm.s          memclr_plan9_386.s      runtime_linux_test.go
+asm_386.s         memclr_plan9_amd64.s    runtime_mmap_test.go
+asm_amd64.s       memclr_ppc64x.s         runtime_test.go
+asm_amd64p32.s       memmove_386.s        runtime_unix_test.go
+asm_arm.s         memmove_amd64.s         select.go
+asm_arm64.s       memmove_arm.s        sema.go
+asm_mips64x.s        memmove_arm64.s         signal1_unix.go
+asm_ppc64x.h         memmove_linux_amd64_test.go   signal2_unix.go
+asm_ppc64x.s         memmove_mips64x.s    signal_386.go
+atomic_arm64.s       memmove_nacl_amd64p32.s    signal_amd64x.go
+atomic_mips64x.s     memmove_plan9_386.s     signal_arm.go
+atomic_pointer.go    memmove_plan9_amd64.s      signal_arm64.go
+atomic_ppc64x.s         memmove_ppc64x.s     signal_darwin.go
+callers_test.go         memmove_test.go         signal_darwin_386.go
+cgo            mfinal.go         signal_darwin_amd64.go
+cgo.go            mfinal_test.go       signal_darwin_arm.go
+cgo_mmap.go       mfixalloc.go         signal_darwin_arm64.go
+cgo_ppc64x.go        mgc.go            signal_dragonfly.go
+cgocall.go        mgcmark.go        signal_dragonfly_amd64.go
+cgocallback.go       mgcsweep.go       signal_freebsd.go
+cgocheck.go       mgcwork.go        signal_freebsd_386.go
+chan.go           mheap.go       signal_freebsd_amd64.go
+chan_test.go         mkduff.go         signal_freebsd_arm.go
+chanbarrier_test.go     mkfastlog2table.go      signal_linux_386.go
+closure_test.go         mknacl.sh         signal_linux_amd64.go
+compiler.go       mmap.go           signal_linux_arm.go
+complex.go        mprof.go       signal_linux_arm64.go
+complex_test.go         msan           signal_linux_mips64x.go
+cpuprof.go        msan.go           signal_linux_ppc64x.go
+cputicks.go       msan0.go       signal_mips64x.go
+crash_cgo_test.go    msan_amd64.s         signal_nacl.go
+crash_test.go        msize.go       signal_nacl_386.go
+crash_unix_test.go      mstats.go         signal_nacl_amd64p32.go
+debug          mstkbar.go        signal_nacl_arm.go
+debug.go       netpoll.go        signal_netbsd.go
+defs1_linux.go       netpoll_epoll.go     signal_netbsd_386.go
+defs1_netbsd_386.go     netpoll_kqueue.go    signal_netbsd_amd64.go
+defs1_netbsd_amd64.go      netpoll_nacl.go         signal_netbsd_arm.go
+defs1_netbsd_arm.go     netpoll_solaris.go      signal_openbsd.go
+defs1_solaris_amd64.go     netpoll_stub.go         signal_openbsd_386.go
+defs2_linux.go       netpoll_windows.go      signal_openbsd_amd64.go
+defs3_linux.go       noasm.go       signal_openbsd_arm.go
+defs_arm_linux.go    norace_linux_test.go    signal_plan9.go
+defs_darwin.go       norace_test.go       signal_ppc64x.go
+defs_darwin_386.go      os1_darwin.go        signal_sigtramp.go
+defs_darwin_amd64.go    os1_dragonfly.go     signal_solaris.go
+defs_darwin_arm.go      os1_freebsd.go       signal_solaris_amd64.go
+defs_darwin_arm64.go    os1_linux.go         signal_unix.go
+defs_dragonfly.go    os1_linux_generic.go    signal_windows.go
+defs_dragonfly_amd64.go    os1_linux_mips64x.go    sigpanic_unix.go
+defs_freebsd.go         os1_nacl.go       sigqueue.go
+defs_freebsd_386.go     os1_netbsd.go        sigqueue_plan9.go
+defs_freebsd_amd64.go      os1_netbsd_386.go    sigtab_linux_generic.go
+defs_freebsd_arm.go     os1_netbsd_amd64.go     sigtab_linux_mips64x.go
+defs_linux.go        os1_openbsd.go       slice.go
+defs_linux_386.go    os1_plan9.go         softfloat64.go
+defs_linux_amd64.go     os1_windows.go       softfloat64_test.go
+defs_linux_arm.go    os2_darwin.go        softfloat_arm.go
+defs_linux_arm64.go     os2_dragonfly.go     sqrt.go
+defs_linux_mips64x.go      os2_freebsd.go       sqrt_test.go
+defs_linux_ppc64.go     os2_linux_generic.go    stack.go
+defs_linux_ppc64le.go      os2_linux_mips64x.go    stack_test.go
+defs_nacl_386.go     os2_nacl.go       string.go
+defs_nacl_amd64p32.go      os2_netbsd.go        string_test.go
+defs_nacl_arm.go     os2_openbsd.go       stubs.go
+defs_netbsd.go       os2_plan9.go         stubs2.go
+defs_netbsd_386.go      os2_solaris.go       stubs32.go
+defs_netbsd_amd64.go    os2_windows.go       stubs_android.go
+defs_netbsd_arm.go      os3_plan9.go         symtab.go
+defs_openbsd.go         os3_solaris.go       symtab_test.go
+defs_openbsd_386.go     os_android.go        sys_arm.go
+defs_openbsd_amd64.go      os_darwin.go         sys_arm64.go
+defs_openbsd_arm.go     os_darwin_arm.go     sys_darwin_386.s
+defs_plan9_386.go    os_darwin_arm64.go      sys_darwin_amd64.s
+defs_plan9_amd64.go     os_dragonfly.go         sys_darwin_arm.s
+defs_plan9_arm.go    os_freebsd.go        sys_darwin_arm64.s
+defs_solaris.go         os_freebsd_arm.go    sys_dragonfly_amd64.s
+defs_solaris_amd64.go      os_linux.go       sys_freebsd_386.s
+defs_windows.go         os_linux_386.go         sys_freebsd_amd64.s
+defs_windows_386.go     os_linux_arm.go         sys_freebsd_arm.s
+defs_windows_amd64.go      os_linux_arm64.go    sys_linux_386.s
+duff_386.s        os_linux_mips64x.go     sys_linux_amd64.s
+duff_amd64.s         os_nacl.go        sys_linux_arm.s
+duff_arm.s        os_nacl_arm.go       sys_linux_arm64.s
+duff_arm64.s         os_netbsd.go         sys_linux_mips64x.s
+duff_mips64x.s       os_netbsd_arm.go     sys_linux_ppc64x.s
+duff_ppc64x.s        os_openbsd.go        sys_mips64x.go
+env_plan9.go         os_openbsd_arm.go    sys_nacl_386.s
+env_posix.go         os_plan9.go       sys_nacl_amd64p32.s
+env_test.go       os_plan9_arm.go         sys_nacl_arm.s
+error.go       os_solaris.go        sys_netbsd_386.s
+export_arm_test.go      os_windows.go        sys_netbsd_amd64.s
+export_futex_test.go    panic.go       sys_netbsd_arm.s
+export_linux_test.go    pprof          sys_nonppc64x.go
+export_mmap_test.go     print.go       sys_openbsd_386.s
+export_test.go       proc.go           sys_openbsd_amd64.s
+export_windows_test.go     proc_test.go         sys_openbsd_arm.s
+extern.go         race           sys_plan9_386.s
+fastlog2.go       race.go           sys_plan9_amd64.s
+fastlog2_test.go     race0.go       sys_plan9_arm.s
+fastlog2table.go     race_amd64.s         sys_ppc64x.go
+funcdata.h        rdebug.go         sys_solaris_amd64.s
+futex_test.go        rt0_android_386.s    sys_windows_386.s
+gc_test.go        rt0_android_amd64.s     sys_windows_amd64.s
+gcinfo_test.go       rt0_android_arm.s    sys_x86.go
+go_tls.h       rt0_android_arm64.s     syscall2_solaris.go
+hash32.go         rt0_darwin_386.s     syscall_nacl.h
+hash64.go         rt0_darwin_amd64.s      syscall_solaris.go
+hash_test.go         rt0_darwin_arm.s     syscall_windows.go
+hashmap.go        rt0_darwin_arm64.s      syscall_windows_test.go
+hashmap_fast.go         rt0_dragonfly_amd64.s      testdata
+heapdump.go       rt0_freebsd_386.s    textflag.h
+iface.go       rt0_freebsd_amd64.s     time.go
+iface_test.go        rt0_freebsd_arm.s    tls_arm.s
+internal       rt0_linux_386.s         tls_arm64.h
+lfstack.go        rt0_linux_amd64.s    tls_arm64.s
+lfstack_32bit.go     rt0_linux_arm.s         tls_mips64x.s
+lfstack_amd64.go     rt0_linux_arm64.s    tls_ppc64x.s
+lfstack_darwin_arm64.go    rt0_linux_mips64x.s     trace
+lfstack_linux_arm64.go     rt0_linux_ppc64.s    trace.go
+lfstack_linux_mips64x.go   rt0_linux_ppc64le.s     traceback.go
+lfstack_linux_ppc64x.go    rt0_nacl_386.s       type.go
+lfstack_test.go         rt0_nacl_amd64p32.s     typekind.go
+lock_futex.go        rt0_nacl_arm.s       unaligned1.go
+lock_sema.go         rt0_netbsd_386.s     unaligned2.go
+malloc.go         rt0_netbsd_amd64.s      vdso_linux_amd64.go
+malloc_test.go       rt0_netbsd_arm.s     vdso_none.go
+map_test.go       rt0_openbsd_386.s    vlop_386.s
+mapspeed_test.go     rt0_openbsd_amd64.s     vlop_arm.s
+mbarrier.go       rt0_openbsd_arm.s    vlop_arm_test.go
+mbitmap.go        rt0_plan9_386.s         vlrt.go
+mcache.go         rt0_plan9_amd64.s    wbfat.go
+mcentral.go       rt0_plan9_arm.s         wbfat_gen.go
+mem_bsd.go        rt0_solaris_amd64.s     wincallback.go
+mem_darwin.go        rt0_windows_386.s    write_err.go
+mem_linux.go         rt0_windows_amd64.s     write_err_android.go
+mem_plan9.go         rune.go           zcallback_windows.go
+mem_windows.go       runtime-gdb.py       zcallback_windows.s
+memclr_386.s         runtime-gdb_test.go
+memclr_amd64.s       runtime-lldb_test.go
+
+./src/runtime/cgo:
+asm_386.s         gcc_darwin_amd64.c      gcc_netbsd_arm.c
+asm_amd64.s       gcc_darwin_arm.c     gcc_openbsd_386.c
+asm_arm.s         gcc_darwin_arm64.c      gcc_openbsd_amd64.c
+asm_arm64.s       gcc_dragonfly_amd64.c      gcc_ppc64x.S
+asm_nacl_amd64p32.s     gcc_fatalf.c         gcc_setenv.c
+asm_ppc64x.s         gcc_freebsd_386.c    gcc_signal_darwin_armx.c
+callbacks.go         gcc_freebsd_amd64.c     gcc_signal_darwin_lldb.c
+cgo.go            gcc_freebsd_arm.c    gcc_solaris_amd64.c
+dragonfly.go         gcc_libinit.c        gcc_util.c
+freebsd.go        gcc_libinit_linux_ppc64x.c gcc_windows_386.c
+gcc_386.S         gcc_libinit_openbsd.c      gcc_windows_amd64.c
+gcc_amd64.S       gcc_libinit_windows.c      iscgo.go
+gcc_android.c        gcc_linux_386.c         libcgo.h
+gcc_android_386.c    gcc_linux_amd64.c    mmap.go
+gcc_android_amd64.c     gcc_linux_arm.c         netbsd.go
+gcc_android_arm.c    gcc_linux_arm64.c    openbsd.go
+gcc_android_arm64.c     gcc_linux_ppc64x.c      setenv.go
+gcc_arm.S         gcc_mmap.c        signal_darwin_arm.s
+gcc_arm64.S       gcc_netbsd_386.c     signal_darwin_arm64.s
+gcc_darwin_386.c     gcc_netbsd_amd64.c      signal_darwin_armx.go
+
+./src/runtime/debug:
+debug.s        garbage_test.go      stack.go    stubs.go
+garbage.go     heapdump_test.go  stack_test.go
+
+./src/runtime/internal:
+atomic   sys
+
+./src/runtime/internal/atomic:
+asm.s       asm_ppc64x.s      atomic_mips64x.s  sys_linux_arm.s
+asm_386.s      atomic_386.go     atomic_ppc64x.go  sys_nacl_arm.s
+asm_amd64.s    atomic_amd64x.go  atomic_ppc64x.s      sys_netbsd_arm.s
+asm_amd64p32.s    atomic_arm.go     atomic_test.go    sys_openbsd_arm.s
+asm_arm.s      atomic_arm64.go      stubs.go    sys_plan9_arm.s
+asm_arm64.s    atomic_arm64.s    sys_darwin_arm.s
+asm_mips64x.s     atomic_mips64x.go sys_freebsd_arm.s
+
+./src/runtime/internal/sys:
+arch_386.go    arch_s390x.go     zgoarch_mips64.go zgoos_linux.go
+arch_amd64.go     gengoos.go     zgoarch_mips64le.go  zgoos_nacl.go
+arch_amd64p32.go  stubs.go    zgoarch_ppc64.go  zgoos_netbsd.go
+arch_arm.go    sys.go         zgoarch_ppc64le.go   zgoos_openbsd.go
+arch_arm64.go     zgoarch_386.go    zgoarch_s390x.go  zgoos_plan9.go
+arch_mips64.go    zgoarch_amd64.go  zgoos_android.go  zgoos_solaris.go
+arch_mips64le.go  zgoarch_amd64p32.go  zgoos_darwin.go      zgoos_windows.go
+arch_ppc64.go     zgoarch_arm.go    zgoos_dragonfly.go
+arch_ppc64le.go      zgoarch_arm64.go  zgoos_freebsd.go
+
+./src/runtime/msan:
+msan.go
+
+./src/runtime/pprof:
+mprof_test.go  pprof.go pprof_test.go
+
+./src/runtime/race:
+README         race.go        race_linux_amd64.syso   race_windows_amd64.syso
+doc.go         race_darwin_amd64.syso  race_test.go      sched_test.go
+output_test.go    race_freebsd_amd64.syso race_unix_test.go testdata
+
+./src/runtime/race/testdata:
+atomic_test.go    finalizer_test.go map_test.go    select_test.go
+cgo_test.go    io_test.go     mop_test.go    slice_test.go
+cgo_test_main.go  issue12225_test.go   mutex_test.go     sync_test.go
+chan_test.go      issue12664_test.go   regression_test.go   waitgroup_test.go
+comp_test.go      issue13264_test.go   rwmutex_test.go
+
+./src/runtime/testdata:
+testprog testprogcgo testprognet
+
+./src/runtime/testdata/testprog:
+crash.go    gc.go       misc.go        stringconcat.go
+deadlock.go    main.go        signal.go      syscall_windows.go
+
+./src/runtime/testdata/testprogcgo:
+aprof.go    deadlock.go    exec.go        threadpanic_windows.c
+callback.go    dll_windows.go    main.go        threadprof.go
+cgo.go         dropm.go    threadpanic.go    windows
+crash.go    dropm_stub.go     threadpanic_unix.c
+
+./src/runtime/testdata/testprogcgo/windows:
+win.go
+
+./src/runtime/testdata/testprognet:
+main.go     net.go      signal.go
+
+./src/runtime/trace:
+trace.go    trace_stack_test.go  trace_test.go
+
+./src/sort:
+example_interface_test.go  example_wrapper_test.go    sort.go
+example_keys_test.go    export_test.go       sort_test.go
+example_multi_test.go      search.go
+example_test.go         search_test.go
+
+./src/strconv:
+atob.go        decimal.go     ftoa.go        makeisprint.go
+atob_test.go      decimal_test.go      ftoa_test.go      quote.go
+atof.go        doc.go         internal_test.go  quote_test.go
+atof_test.go      example_test.go      isprint.go     strconv_test.go
+atoi.go        extfloat.go    itoa.go        testdata
+atoi_test.go      fp_test.go     itoa_test.go
+
+./src/strconv/testdata:
+testfp.txt
+
+./src/strings:
+compare.go     reader.go      search.go      strings_amd64.go
+compare_test.go      reader_test.go    search_test.go    strings_decl.go
+example_test.go      replace.go     strings.go     strings_generic.go
+export_test.go    replace_test.go      strings.s      strings_test.go
+
+./src/sync:
+atomic         mutex.go    pool_test.go      waitgroup.go
+cond.go        mutex_test.go     runtime.go     waitgroup_test.go
+cond_test.go      once.go        runtime_sema_test.go
+example_test.go      once_test.go      rwmutex.go
+export_test.go    pool.go        rwmutex_test.go
+
+./src/sync/atomic:
+64bit_arm.go         asm_linux_arm.s         atomic_test.go
+asm_386.s         asm_mips64x.s        doc.go
+asm_amd64.s       asm_nacl_arm.s       export_linux_arm_test.go
+asm_amd64p32.s       asm_netbsd_arm.s     race.s
+asm_arm.s         asm_openbsd_arm.s    value.go
+asm_arm64.s       asm_plan9_arm.s         value_test.go
+asm_darwin_arm.s     asm_ppc64x.s
+asm_freebsd_arm.s    atomic_linux_arm_test.go
+
+./src/syscall:
+asm.s          sockcmsg_unix.go     zsyscall_darwin_386.go
+asm_darwin_386.s     str.go            zsyscall_darwin_amd64.go
+asm_darwin_amd64.s      syscall.go        zsyscall_darwin_arm.go
+asm_darwin_arm.s     syscall_bsd.go       zsyscall_darwin_arm64.go
+asm_darwin_arm64.s      syscall_bsd_test.go     zsyscall_dragonfly_amd64.go
+asm_dragonfly_amd64.s      syscall_darwin.go    zsyscall_freebsd_386.go
+asm_freebsd_386.s    syscall_darwin_386.go      zsyscall_freebsd_amd64.go
+asm_freebsd_amd64.s     syscall_darwin_amd64.go    zsyscall_freebsd_arm.go
+asm_freebsd_arm.s    syscall_darwin_arm.go      zsyscall_linux_386.go
+asm_linux_386.s         syscall_darwin_arm64.go    zsyscall_linux_amd64.go
+asm_linux_amd64.s    syscall_dragonfly.go    zsyscall_linux_arm.go
+asm_linux_arm.s         syscall_dragonfly_amd64.go zsyscall_linux_arm64.go
+asm_linux_arm64.s    syscall_freebsd.go      zsyscall_linux_mips64.go
+asm_linux_mips64x.s     syscall_freebsd_386.go     zsyscall_linux_mips64le.go
+asm_linux_ppc64x.s      syscall_freebsd_amd64.go   zsyscall_linux_ppc64.go
+asm_nacl_386.s       syscall_freebsd_arm.go     zsyscall_linux_ppc64le.go
+asm_nacl_amd64p32.s     syscall_linux.go     zsyscall_nacl_386.go
+asm_nacl_arm.s       syscall_linux_386.go    zsyscall_nacl_amd64p32.go
+asm_netbsd_386.s     syscall_linux_amd64.go     zsyscall_nacl_arm.go
+asm_netbsd_amd64.s      syscall_linux_arm.go    zsyscall_netbsd_386.go
+asm_netbsd_arm.s     syscall_linux_arm64.go     zsyscall_netbsd_amd64.go
+asm_openbsd_386.s    syscall_linux_mips64x.go   zsyscall_netbsd_arm.go
+asm_openbsd_amd64.s     syscall_linux_ppc64x.go    zsyscall_openbsd_386.go
+asm_openbsd_arm.s    syscall_linux_test.go      zsyscall_openbsd_amd64.go
+asm_plan9_386.s         syscall_nacl.go         zsyscall_openbsd_arm.go
+asm_plan9_amd64.s    syscall_nacl_386.go     zsyscall_plan9_386.go
+asm_plan9_arm.s         syscall_nacl_amd64p32.go   zsyscall_plan9_amd64.go
+asm_solaris_amd64.s     syscall_nacl_arm.go     zsyscall_plan9_arm.go
+bpf_bsd.go        syscall_netbsd.go    zsyscall_solaris_amd64.go
+const_plan9.go       syscall_netbsd_386.go      zsyscall_windows.go
+creds_test.go        syscall_netbsd_amd64.go    zsysctl_openbsd.go
+dir_plan9.go         syscall_netbsd_arm.go      zsysnum_darwin_386.go
+dll_windows.go       syscall_no_getwd.go     zsysnum_darwin_amd64.go
+env_plan9.go         syscall_openbsd.go      zsysnum_darwin_arm.go
+env_unix.go       syscall_openbsd_386.go     zsysnum_darwin_arm64.go
+env_windows.go       syscall_openbsd_amd64.go   zsysnum_dragonfly_amd64.go
+errors_plan9.go         syscall_openbsd_arm.go     zsysnum_freebsd_386.go
+exec_bsd.go       syscall_plan9.go     zsysnum_freebsd_amd64.go
+exec_linux.go        syscall_solaris.go      zsysnum_freebsd_arm.go
+exec_linux_test.go      syscall_solaris_amd64.go   zsysnum_linux_386.go
+exec_plan9.go        syscall_test.go         zsysnum_linux_amd64.go
+exec_solaris.go         syscall_unix.go         zsysnum_linux_arm.go
+exec_solaris_test.go    syscall_unix_test.go    zsysnum_linux_arm64.go
+exec_unix.go         syscall_windows.go      zsysnum_linux_mips64.go
+exec_unix_test.go    syscall_windows_386.go     zsysnum_linux_mips64le.go
+exec_windows.go         syscall_windows_amd64.go   zsysnum_linux_ppc64.go
+export_test.go       syscall_windows_test.go    zsysnum_linux_ppc64le.go
+export_unix_test.go     tables_nacl.go       zsysnum_netbsd_386.go
+fd_nacl.go        time_nacl_386.s         zsysnum_netbsd_amd64.go
+flock.go       time_nacl_amd64p32.s    zsysnum_netbsd_arm.go
+flock_linux_32bit.go    time_nacl_arm.s         zsysnum_openbsd_386.go
+fs_nacl.go        types_darwin.go         zsysnum_openbsd_amd64.go
+lsf_linux.go         types_dragonfly.go      zsysnum_openbsd_arm.go
+mkall.sh       types_freebsd.go     zsysnum_plan9.go
+mkerrors.sh       types_linux.go       zsysnum_solaris_amd64.go
+mksyscall.pl         types_netbsd.go         zsysnum_windows_386.go
+mksyscall_solaris.pl    types_openbsd.go     zsysnum_windows_amd64.go
+mksyscall_windows.go    types_solaris.go     ztypes_darwin_386.go
+mksysctl_openbsd.pl     unzip_nacl.go        ztypes_darwin_amd64.go
+mksysnum_darwin.pl      zerrors_darwin_386.go      ztypes_darwin_arm.go
+mksysnum_dragonfly.pl      zerrors_darwin_amd64.go    ztypes_darwin_arm64.go
+mksysnum_freebsd.pl     zerrors_darwin_arm.go      ztypes_dragonfly_amd64.go
+mksysnum_linux.pl    zerrors_darwin_arm64.go    ztypes_freebsd_386.go
+mksysnum_netbsd.pl      zerrors_dragonfly_amd64.go ztypes_freebsd_amd64.go
+mksysnum_openbsd.pl     zerrors_freebsd_386.go     ztypes_freebsd_arm.go
+mksysnum_plan9.sh    zerrors_freebsd_amd64.go   ztypes_linux_386.go
+mmap_unix_test.go    zerrors_freebsd_arm.go     ztypes_linux_amd64.go
+msan.go           zerrors_linux_386.go    ztypes_linux_arm.go
+msan0.go       zerrors_linux_amd64.go     ztypes_linux_arm64.go
+net_nacl.go       zerrors_linux_arm.go    ztypes_linux_mips64.go
+netlink_linux.go     zerrors_linux_arm64.go     ztypes_linux_mips64le.go
+pwd_plan9.go         zerrors_linux_mips64.go    ztypes_linux_ppc64.go
+route_bsd.go         zerrors_linux_mips64le.go  ztypes_linux_ppc64le.go
+route_bsd_test.go    zerrors_linux_ppc64.go     ztypes_netbsd_386.go
+route_darwin.go         zerrors_linux_ppc64le.go   ztypes_netbsd_amd64.go
+route_dragonfly.go      zerrors_netbsd_386.go      ztypes_netbsd_arm.go
+route_freebsd.go     zerrors_netbsd_amd64.go    ztypes_openbsd_386.go
+route_freebsd_32bit.go     zerrors_netbsd_arm.go      ztypes_openbsd_amd64.go
+route_freebsd_64bit.go     zerrors_openbsd_386.go     ztypes_openbsd_arm.go
+route_ifma_test.go      zerrors_openbsd_amd64.go   ztypes_solaris_amd64.go
+route_netbsd.go         zerrors_openbsd_arm.go     ztypes_windows.go
+route_noifma_test.go    zerrors_solaris_amd64.go   ztypes_windows_386.go
+route_openbsd.go     zerrors_windows.go      ztypes_windows_amd64.go
+security_windows.go     zerrors_windows_386.go
+sockcmsg_linux.go    zerrors_windows_amd64.go
+
+./src/testing:
+allocs.go      benchmark_test.go export_test.go    sub_test.go
+allocs_test.go    cover.go    iotest         testing.go
+benchmark.go      example.go     quick       testing_test.go
+
+./src/testing/iotest:
+logger.go   reader.go   writer.go
+
+./src/testing/quick:
+quick.go quick_test.go
+
+./src/text:
+scanner     tabwriter   template
+
+./src/text/scanner:
+example_test.go   scanner.go  scanner_test.go
+
+./src/text/tabwriter:
+example_test.go      tabwriter.go      tabwriter_test.go
+
+./src/text/template:
+doc.go         exec.go        multi_test.go     testdata
+example_test.go      exec_test.go      option.go
+examplefiles_test.go funcs.go    parse
+examplefunc_test.go  helper.go      template.go
+
+./src/text/template/parse:
+lex.go      lex_test.go node.go     parse.go parse_test.go
+
+./src/text/template/testdata:
+file1.tmpl  file2.tmpl  tmpl1.tmpl  tmpl2.tmpl
+
+./src/time:
+example_test.go         sys_plan9.go         zoneinfo_ios.go
+export_test.go       sys_unix.go       zoneinfo_plan9.go
+export_windows_test.go     sys_windows.go       zoneinfo_read.go
+format.go         tick.go           zoneinfo_test.go
+format_test.go       tick_test.go         zoneinfo_unix.go
+genzabbrs.go         time.go           zoneinfo_windows.go
+internal_test.go     time_test.go         zoneinfo_windows_test.go
+sleep.go       zoneinfo.go
+sleep_test.go        zoneinfo_abbrs_windows.go
+
+./src/unicode:
+casetables.go  example_test.go   letter.go   script_test.go utf8
+digit.go graphic.go  letter_test.go tables.go
+digit_test.go  graphic_test.go   maketables.go  utf16
+
+./src/unicode/utf16:
+export_test.go utf16.go utf16_test.go
+
+./src/unicode/utf8:
+example_test.go   utf8.go     utf8_test.go
+
+./src/unsafe:
+unsafe.go
+
+./src/vendor:
+README
+
+./test:
+235.go         divmod.go      import5.go     recover1.go
+64bit.go    dwarf       index.go    recover2.go
+alias.go    empty.go    index0.go      recover3.go
+alias1.go      env.go         index1.go      recover4.go
+append.go      eof.go         index2.go      reflectmethod1.go
+args.go        eof1.go        indirect.go    reflectmethod2.go
+assign.go      errchk         indirect1.go      reflectmethod3.go
+assign1.go     escape.go      init.go        reflectmethod4.go
+atomicload.go     escape2.go     init1.go    rename.go
+bench       escape2n.go    initcomma.go      rename1.go
+bigalg.go      escape3.go     initialize.go     reorder.go
+bigmap.go      escape4.go     initializerr.go      reorder2.go
+blank.go    escape5.go     initloop.go    return.go
+blank1.go      escape_array.go      inline.go      rotate.go
+bom.go         escape_because.go int_lit.go     rotate0.go
+bombad.go      escape_calls.go      intcvt.go      rotate1.go
+bounds.go      escape_closure.go interface      rotate2.go
+bugs        escape_field.go      iota.go        rotate3.go
+chan        escape_iface.go      ken         run.go
+chancap.go     escape_indir.go      label.go    rune.go
+chanlinear.go     escape_level.go      label1.go      runtime.go
+char_lit.go    escape_map.go     linkmain.go    safe
+char_lit1.go      escape_param.go      linkmain_run.go      shift1.go
+clearfat.go    escape_slice.go      linkx.go    shift2.go
+closedchan.go     escape_struct_param1.go linkx_run.go      sieve.go
+closure.go     escape_struct_param2.go literal.go     sigchld.go
+closure1.go    escape_struct_return.go live.go        sigchld.out
+closure2.go    fibo.go        live1.go    simassign.go
+cmp.go         finprofiled.go    live2.go    sinit.go
+cmp6.go        fixedbugs      live_syscall.go      sinit_run.go
+cmplx.go    float_lit.go      mallocfin.go      sizeof.go
+cmplxdivide.c     float_lit2.go     map.go         slice3.go
+cmplxdivide.go    float_lit3.go     map1.go        slice3err.go
+cmplxdivide1.go      floatcmp.go    maplinear.go      slicecap.go
+complit.go     for.go         method.go      sliceopt.go
+complit1.go    func.go        method1.go     solitaire.go
+compos.go      func1.go    method2.go     stack.go
+const.go    func2.go    method3.go     stress
+const1.go      func3.go    method4.dir    string_lit.go
+const2.go      func4.go    method4.go     stringrange.go
+const3.go      func5.go    method5.go     struct0.go
+const4.go      func6.go    named.go    switch.go
+const5.go      func7.go    named1.go      switch2.go
+const6.go      func8.go    nil.go         switch3.go
+convT2X.go     funcdup.go     nilcheck.go    switch4.go
+convert.go     funcdup2.go    nilptr.go      syntax
+convert1.go    gc.go       nilptr2.go     tinyfin.go
+convert3.go    gc1.go         nilptr3.go     torture.go
+convlit.go     gc2.go         nilptr3_ssa.go    turing.go
+convlit1.go    gcstring.go    nilptr4.go     typecheck.go
+copy.go        goprint.go     nosplit.go     typecheckloop.go
+crlf.go        goprint.out    nul1.go        typeswitch.go
+ddd.go         goto.go        opt_branchlikely.go  typeswitch1.go
+ddd1.go        heapsampling.go      parentype.go      typeswitch2.go
+ddd2.dir    helloworld.go     peano.go    typeswitch3.go
+ddd2.go        helloworld.out    phiopt.go      undef.go
+decl.go        if.go       print.go    utf.go
+declbad.go     import.go      print.out      varerr.go
+defer.go    import1.go     printbig.go    varinit.go
+deferfin.go    import2.dir    printbig.out      writebarrier.go
+deferprint.go     import2.go     prove.go    zerodivide.go
+deferprint.out    import4.dir    range.go
+divide.go      import4.go     recover.go
+
+./test/bench:
+garbage  go1
+
+./test/bench/garbage:
+Makefile parser.go   peano.go stats.go tree.go     tree2.go
+
+./test/bench/go1:
+binarytree_test.go   gob_test.go    jsondata_test.go  regexp_test.go
+fannkuch_test.go  gzip_test.go      mandel_test.go    revcomp_test.go
+fasta_test.go     http_test.go      parser_test.go    template_test.go
+fmt_test.go    json_test.go      parserdata_test.go   time_test.go
+
+./test/bugs:
+bug395.go   placeholder
+
+./test/chan:
+doubleselect.go   nonblock.go powser2.go  select3.go  select6.go  sieve1.go
+fifo.go     perm.go     select.go   select4.go  select7.go  sieve2.go
+goroutines.go  powser1.go  select2.go  select5.go  sendstmt.go zerosize.go
+
+./test/ddd2.dir:
+ddd2.go  ddd3.go
+
+./test/dwarf:
+dwarf.dir      dwarf.go    linedirectives.go
+
+./test/dwarf/dwarf.dir:
+main.go  z10.go   z12.go   z14.go   z16.go   z18.go   z2.go z3.go z5.go z7.go z9.go
+z1.go z11.go   z13.go   z15.go   z17.go   z19.go   z20.go   z4.go z6.go z8.go
+
+./test/fixedbugs:
+bug000.go      bug243.go      bug449.go      issue4614.go
+bug002.go      bug244.go      bug450.go      issue4618.go
+bug003.go      bug245.go      bug451.go      issue4620.go
+bug004.go      bug246.go      bug452.go      issue4654.go
+bug005.go      bug247.go      bug453.go      issue4663.go
+bug006.go      bug248.dir     bug454.go      issue4667.go
+bug007.go      bug248.go      bug455.go      issue4734.go
+bug008.go      bug249.go      bug456.go      issue4748.go
+bug009.go      bug250.go      bug457.go      issue4752.go
+bug010.go      bug251.go      bug458.go      issue4776.go
+bug011.go      bug252.go      bug459.go      issue4785.go
+bug012.go      bug253.go      bug460.dir     issue4813.go
+bug013.go      bug254.go      bug460.go      issue4847.go
+bug014.go      bug255.go      bug461.go      issue4879.dir
+bug015.go      bug256.go      bug462.go      issue4879.go
+bug016.go      bug257.go      bug463.go      issue4909a.go
+bug017.go      bug258.go      bug464.go      issue4909b.go
+bug020.go      bug259.go      bug465.dir     issue4932.dir
+bug021.go      bug260.go      bug465.go      issue4932.go
+bug022.go      bug261.go      bug466.dir     issue4964.dir
+bug023.go      bug262.go      bug466.go      issue4964.go
+bug024.go      bug263.go      bug467.dir     issue5002.go
+bug026.go      bug264.go      bug467.go      issue5056.go
+bug027.go      bug265.go      bug468.dir     issue5089.go
+bug028.go      bug266.go      bug468.go      issue5105.dir
+bug030.go      bug267.go      bug470.go      issue5105.go
+bug031.go      bug269.go      bug471.go      issue5125.dir
+bug035.go      bug271.go      bug472.dir     issue5125.go
+bug037.go      bug272.go      bug472.go      issue5162.go
+bug039.go      bug273.go      bug473.go      issue5172.go
+bug040.go      bug274.go      bug474.go      issue5231.go
+bug045.go      bug275.go      bug475.go      issue5244.go
+bug046.go      bug276.go      bug476.go      issue5259.dir
+bug047.go      bug277.go      bug477.go      issue5259.go
+bug048.go      bug278.go      bug478.dir     issue5260.dir
+bug049.go      bug279.go      bug478.go      issue5260.go
+bug050.go      bug280.go      bug479.dir     issue5291.dir
+bug051.go      bug281.go      bug479.go      issue5291.go
+bug052.go      bug282.dir     bug480.dir     issue5358.go
+bug053.go      bug282.go      bug480.go      issue5373.go
+bug054.go      bug283.go      bug481.go      issue5470.dir
+bug055.go      bug284.go      bug482.go      issue5470.go
+bug056.go      bug285.go      bug483.go      issue5493.go
+bug057.go      bug286.go      bug484.go      issue5515.go
+bug058.go      bug287.go      bug485.go      issue5581.go
+bug059.go      bug288.go      bug486.go      issue5607.go
+bug060.go      bug289.go      bug487.go      issue5609.go
+bug061.go      bug290.go      bug488.dir     issue5614.dir
+bug062.go      bug291.go      bug488.go      issue5614.go
+bug063.go      bug292.go      bug489.go      issue5698.go
+bug064.go      bug293.go      bug490.go      issue5704.go
+bug065.go      bug294.go      bug491.go      issue5753.go
+bug066.go      bug295.go      bug492.dir     issue5755.dir
+bug067.go      bug296.go      bug492.go      issue5755.go
+bug068.go      bug297.go      bug493.go      issue5793.go
+bug069.go      bug298.go      bug494.go      issue5809.go
+bug070.go      bug299.go      bug495.go      issue5820.go
+bug071.go      bug300.go      bug496.go      issue5841.go
+bug072.go      bug301.go      bug497.go      issue5856.go
+bug073.go      bug302.dir     gcc61204.go    issue5910.dir
+bug074.go      bug302.go      gcc61244.go    issue5910.go
+bug075.go      bug303.go      gcc61246.go    issue5957.dir
+bug076.go      bug304.go      gcc61248.go    issue5957.go
+bug077.go      bug305.go      gcc61253.go    issue5963.go
+bug078.go      bug306.dir     gcc61254.go    issue6004.go
+bug080.go      bug306.go      gcc61255.go    issue6036.go
+bug081.go      bug307.go      gcc61258.go    issue6055.go
+bug082.go      bug308.go      gcc61264.go    issue6131.go
+bug083.dir     bug309.go      gcc61265.go    issue6140.go
+bug083.go      bug311.go      gcc61273.go    issue6247.go
+bug084.go      bug312.go      gcc65755.go    issue6269.go
+bug085.go      bug313.dir     gcc67968.dir      issue6295.dir
+bug086.go      bug313.go      gcc67968.go    issue6295.go
+bug087.go      bug314.go      issue10047.go     issue6298.go
+bug088.dir     bug315.go      issue10066.dir    issue6399.go
+bug088.go      bug316.go      issue10066.go     issue6402.go
+bug089.go      bug317.go      issue10135.go     issue6403.go
+bug090.go      bug318.go      issue10219.dir    issue6405.go
+bug091.go      bug319.go      issue10219.go     issue6406.go
+bug092.go      bug320.go      issue10253.go     issue6500.go
+bug093.go      bug321.go      issue10284.go     issue6513.dir
+bug094.go      bug322.dir     issue10320.go     issue6513.go
+bug096.go      bug322.go      issue10332.go     issue6572.go
+bug097.go      bug323.go      issue10353.go     issue6671.go
+bug098.go      bug324.dir     issue10407.go     issue6703a.go
+bug099.go      bug324.go      issue10441.go     issue6703b.go
+bug101.go      bug325.go      issue10486.go     issue6703c.go
+bug102.go      bug326.go      issue10607.go     issue6703d.go
+bug103.go      bug327.go      issue10607a.go    issue6703e.go
+bug104.go      bug328.go      issue10654.go     issue6703f.go
+bug106.dir     bug328.out     issue10700.dir    issue6703g.go
+bug106.go      bug329.go      issue10700.go     issue6703h.go
+bug107.go      bug330.go      issue10925.go     issue6703i.go
+bug108.go      bug331.go      issue10975.go     issue6703j.go
+bug109.go      bug332.go      issue10977.go     issue6703k.go
+bug110.go      bug333.go      issue11053.dir    issue6703l.go
+bug111.go      bug334.go      issue11053.go     issue6703m.go
+bug112.go      bug335.dir     issue11053.out    issue6703n.go
+bug113.go      bug335.go      issue11256.go     issue6703o.go
+bug114.go      bug336.go      issue11286.go     issue6703p.go
+bug115.go      bug337.go      issue11326.go     issue6703q.go
+bug116.go      bug338.go      issue11326b.go    issue6703r.go
+bug117.go      bug339.go      issue11359.go     issue6703s.go
+bug118.go      bug340.go      issue11362.go     issue6703t.go
+bug119.go      bug341.go      issue11369.go     issue6703u.go
+bug120.go      bug342.go      issue11590.go     issue6703v.go
+bug121.go      bug343.go      issue11610.go     issue6703w.go
+bug122.go      bug344.go      issue11614.go     issue6703x.go
+bug123.go      bug345.dir     issue11656.go     issue6703y.go
+bug126.go      bug345.go      issue11699.go     issue6703z.go
+bug127.go      bug346.go      issue11737.go     issue6789.dir
+bug128.go      bug347.go      issue11750.go     issue6789.go
+bug129.go      bug348.go      issue11771.go     issue6847.go
+bug130.go      bug349.go      issue11790.go     issue6866.go
+bug131.go      bug350.go      issue11987.go     issue6889.go
+bug132.go      bug351.go      issue12006.go     issue6899.go
+bug133.dir     bug352.go      issue12108.go     issue6899.out
+bug133.go      bug353.go      issue12133.go     issue6902.go
+bug13343.go    bug354.go      issue12226.go     issue6964.go
+bug135.go      bug355.go      issue12347.go     issue7023.dir
+bug136.go      bug356.go      issue12411.go     issue7023.go
+bug137.go      bug357.go      issue12413.go     issue7044.go
+bug139.go      bug358.go      issue12525.go     issue7050.go
+bug140.go      bug361.go      issue12577.go     issue7083.go
+bug141.go      bug362.go      issue12588.go     issue7129.go
+bug142.go      bug363.go      issue12677.dir    issue7150.go
+bug143.go      bug364.go      issue12677.go     issue7153.go
+bug144.go      bug365.go      issue12686.go     issue7214.go
+bug145.go      bug366.go      issue12944.go     issue7223.go
+bug146.go      bug367.dir     issue1304.go      issue7272.go
+bug147.go      bug367.go      issue13160.go     issue7310.go
+bug148.go      bug368.go      issue13169.go     issue7316.go
+bug149.go      bug369.dir     issue13171.go     issue7346.go
+bug150.go      bug369.go      issue13248.go     issue7366.go
+bug151.go      bug370.go      issue13261.go     issue7405.go
+bug1515.go     bug371.go      issue13266.go     issue7419.go
+bug152.go      bug372.go      issue13268.go     issue7525.go
+bug154.go      bug373.go      issue13273.go     issue7538a.go
+bug155.go      bug374.go      issue13274.go     issue7538b.go
+bug156.go      bug375.go      issue13319.go     issue7547.go
+bug157.go      bug376.go      issue13337.go     issue7550.go
+bug158.go      bug377.dir     issue13365.go     issue7590.go
+bug159.go      bug377.go      issue13415.go     issue7648.dir
+bug160.dir     bug378.go      issue13471.go     issue7648.go
+bug160.go      bug379.go      issue13480.go     issue7675.go
+bug161.go      bug380.go      issue13539.go     issue7690.go
+bug163.go      bug381.go      issue13559.go     issue7740.go
+bug164.go      bug382.dir     issue13587.go     issue7742.go
+bug165.go      bug382.go      issue13684.go     issue7746.go
+bug167.go      bug383.go      issue13777.dir    issue7760.go
+bug168.go      bug384.go      issue13777.go     issue7794.go
+bug169.go      bug385_32.go      issue13799.go     issue7863.go
+bug170.go      bug385_64.go      issue13821.go     issue7867.go
+bug171.go      bug386.go      issue13821b.go    issue7884.go
+bug172.go      bug387.go      issue14006.go     issue7944.go
+bug173.go      bug388.go      issue14010.go     issue7995.go
+bug174.go      bug389.go      issue14164.dir    issue7995b.dir
+bug175.go      bug390.go      issue14164.go     issue7995b.go
+bug176.go      bug391.go      issue14331.dir    issue7996.go
+bug177.go      bug392.dir     issue14331.go     issue7997.go
+bug178.go      bug392.go      issue14405.go     issue7998.go
+bug179.go      bug393.go      issue14520.go     issue8004.go
+bug180.go      bug394.go      issue14553.go     issue8011.go
+bug181.go      bug396.dir     issue14591.go     issue8017.go
+bug182.go      bug396.go      issue14636.go     issue8028.go
+bug183.go      bug397.go      issue14646.go     issue8036.go
+bug184.go      bug398.go      issue14652.go     issue8039.go
+bug185.go      bug399.go      issue14725.go     issue8047.go
+bug186.go      bug401.go      issue2615.go      issue8047b.go
+bug187.go      bug402.go      issue3552.dir     issue8048.go
+bug188.go      bug403.go      issue3552.go      issue8060.dir
+bug189.go      bug404.dir     issue3705.go      issue8060.go
+bug190.go      bug404.go      issue3783.go      issue8073.go
+bug191.dir     bug405.go      issue3925.go      issue8074.go
+bug191.go      bug406.go      issue4066.go      issue8076.go
+bug192.go      bug407.dir     issue4085a.go     issue8079.go
+bug193.go      bug407.go      issue4085b.go     issue8132.go
+bug194.go      bug409.go      issue4097.go      issue8139.go
+bug195.go      bug409.out     issue4099.go      issue8154.go
+bug196.go      bug410.go      issue4162.go      issue8155.go
+bug197.go      bug411.go      issue4167.go      issue8158.go
+bug198.go      bug412.go      issue4232.go      issue8183.go
+bug199.go      bug413.go      issue4251.go      issue8280.dir
+bug200.go      bug414.dir     issue4252.dir     issue8280.go
+bug201.go      bug414.go      issue4252.go      issue8311.go
+bug202.go      bug415.dir     issue4264.go      issue8325.go
+bug203.go      bug415.go      issue4283.go      issue8336.go
+bug204.go      bug416.go      issue4313.go      issue8347.go
+bug205.go      bug417.go      issue4316.go      issue8385.go
+bug206.go      bug418.go      issue4323.go      issue8475.go
+bug206.out     bug419.go      issue4326.dir     issue8501.go
+bug207.go      bug420.go      issue4326.go      issue8507.go
+bug208.go      bug421.go      issue4348.go      issue8612.go
+bug209.go      bug422.go      issue4353.go      issue8620.go
+bug211.go      bug423.go      issue4359.go      issue8745.go
+bug212.go      bug424.dir     issue4365.go      issue8761.go
+bug213.go      bug424.go      issue4370.dir     issue8836.go
+bug214.go      bug425.go      issue4370.go      issue887.go
+bug215.go      bug426.go      issue4388.go      issue8947.go
+bug216.go      bug427.go      issue4396a.go     issue8961.go
+bug217.go      bug428.go      issue4396b.go     issue9006.go
+bug218.go      bug429.go      issue4399.go      issue9017.go
+bug219.go      bug429_run.go     issue4405.go      issue9036.go
+bug221.go      bug430.go      issue4429.go      issue9076.go
+bug222.dir     bug431.go      issue4448.go      issue9083.go
+bug222.go      bug432.go      issue4452.go      issue9110.go
+bug223.go      bug433.go      issue4458.go      issue9321.go
+bug224.go      bug434.go      issue4463.go      issue9355.dir
+bug225.go      bug435.go      issue4468.go      issue9355.go
+bug227.go      bug436.go      issue4470.go      issue9370.go
+bug228.go      bug437.dir     issue4495.go      issue9432.go
+bug229.go      bug437.go      issue4510.dir     issue9521.go
+bug230.go      bug438.go      issue4510.go      issue9537.dir
+bug231.go      bug439.go      issue4517a.go     issue9537.go
+bug232.go      bug440_32.go      issue4517b.go     issue9604.go
+bug233.go      bug440_64.go      issue4517c.go     issue9604b.go
+bug234.go      bug441.go      issue4517d.go     issue9608.dir
+bug235.go      bug442.go      issue4518.go      issue9608.go
+bug236.go      bug443.go      issue4529.go      issue9634.go
+bug237.go      bug444.go      issue4545.go      issue9691.go
+bug238.go      bug445.go      issue4562.go      issue9731.go
+bug239.go      bug446.go      issue4585.go      issue9738.go
+bug240.go      bug447.go      issue4590.dir     issue9862.go
+bug241.go      bug448.dir     issue4590.go      issue9862_run.go
+bug242.go      bug448.go      issue4610.go
+
+./test/fixedbugs/bug083.dir:
+bug0.go  bug1.go
+
+./test/fixedbugs/bug088.dir:
+bug0.go  bug1.go
+
+./test/fixedbugs/bug106.dir:
+bug0.go  bug1.go
+
+./test/fixedbugs/bug133.dir:
+bug0.go  bug1.go  bug2.go
+
+./test/fixedbugs/bug160.dir:
+x.go  y.go
+
+./test/fixedbugs/bug191.dir:
+a.go  b.go  main.go
+
+./test/fixedbugs/bug222.dir:
+chanbug.go  chanbug2.go
+
+./test/fixedbugs/bug248.dir:
+bug0.go  bug1.go  bug2.go  bug3.go
+
+./test/fixedbugs/bug282.dir:
+p1.go p2.go
+
+./test/fixedbugs/bug302.dir:
+main.go  p.go
+
+./test/fixedbugs/bug306.dir:
+p1.go p2.go
+
+./test/fixedbugs/bug313.dir:
+a.go  b.go
+
+./test/fixedbugs/bug322.dir:
+lib.go   main.go
+
+./test/fixedbugs/bug324.dir:
+p.go  prog.go
+
+./test/fixedbugs/bug335.dir:
+a.go  b.go
+
+./test/fixedbugs/bug345.dir:
+io.go main.go
+
+./test/fixedbugs/bug367.dir:
+p.go  prog.go
+
+./test/fixedbugs/bug369.dir:
+main.go  pkg.go
+
+./test/fixedbugs/bug377.dir:
+one.go   two.go
+
+./test/fixedbugs/bug382.dir:
+pkg.go   prog.go
+
+./test/fixedbugs/bug392.dir:
+one.go   pkg2.go  pkg3.go
+
+./test/fixedbugs/bug396.dir:
+one.go   two.go
+
+./test/fixedbugs/bug404.dir:
+one.go   two.go
+
+./test/fixedbugs/bug407.dir:
+one.go   two.go
+
+./test/fixedbugs/bug414.dir:
+p1.go prog.go
+
+./test/fixedbugs/bug415.dir:
+p.go  prog.go
+
+./test/fixedbugs/bug424.dir:
+lib.go   main.go
+
+./test/fixedbugs/bug437.dir:
+one.go   two.go   x.go
+
+./test/fixedbugs/bug448.dir:
+pkg1.go  pkg2.go
+
+./test/fixedbugs/bug460.dir:
+a.go  b.go
+
+./test/fixedbugs/bug465.dir:
+a.go  b.go
+
+./test/fixedbugs/bug466.dir:
+a.go  b.go
+
+./test/fixedbugs/bug467.dir:
+p1.go p2.go p3.go
+
+./test/fixedbugs/bug468.dir:
+p1.go p2.go
+
+./test/fixedbugs/bug472.dir:
+p1.go p2.go z.go
+
+./test/fixedbugs/bug478.dir:
+a.go  b.go
+
+./test/fixedbugs/bug479.dir:
+a.go  b.go
+
+./test/fixedbugs/bug480.dir:
+a.go  b.go
+
+./test/fixedbugs/bug488.dir:
+a.go  b.go
+
+./test/fixedbugs/bug492.dir:
+a.go  b.go
+
+./test/fixedbugs/gcc67968.dir:
+a.go  b.go
+
+./test/fixedbugs/issue10066.dir:
+a.go  b.go
+
+./test/fixedbugs/issue10219.dir:
+a.go  b.go  c.go
+
+./test/fixedbugs/issue10700.dir:
+other.go test.go
+
+./test/fixedbugs/issue11053.dir:
+p.go     p_test.go
+
+./test/fixedbugs/issue12677.dir:
+p.go  q.go
+
+./test/fixedbugs/issue13777.dir:
+burnin.go   main.go
+
+./test/fixedbugs/issue14164.dir:
+a.go  main.go
+
+./test/fixedbugs/issue14331.dir:
+a.go  b.go
+
+./test/fixedbugs/issue3552.dir:
+one.go   two.go
+
+./test/fixedbugs/issue4252.dir:
+a.go  main.go
+
+./test/fixedbugs/issue4326.dir:
+p1.go p2.go q1.go q2.go z.go
+
+./test/fixedbugs/issue4370.dir:
+p1.go p2.go p3.go
+
+./test/fixedbugs/issue4510.dir:
+f1.go f2.go
+
+./test/fixedbugs/issue4590.dir:
+pkg1.go  pkg2.go  prog.go
+
+./test/fixedbugs/issue4879.dir:
+a.go  b.go
+
+./test/fixedbugs/issue4932.dir:
+foo.go      state.go state2.go
+
+./test/fixedbugs/issue4964.dir:
+a.go  b.go
+
+./test/fixedbugs/issue5105.dir:
+a.go  b.go
+
+./test/fixedbugs/issue5125.dir:
+bug.go   main.go
+
+./test/fixedbugs/issue5259.dir:
+bug.go   main.go
+
+./test/fixedbugs/issue5260.dir:
+a.go  b.go
+
+./test/fixedbugs/issue5291.dir:
+pkg1.go  prog.go
+
+./test/fixedbugs/issue5470.dir:
+a.go  b.go
+
+./test/fixedbugs/issue5614.dir:
+rethinkgo.go   x.go     y.go
+
+./test/fixedbugs/issue5755.dir:
+a.go  main.go
+
+./test/fixedbugs/issue5910.dir:
+a.go  main.go
+
+./test/fixedbugs/issue5957.dir:
+a.go  b.go  c.go
+
+./test/fixedbugs/issue6295.dir:
+p0.go p1.go p2.go
+
+./test/fixedbugs/issue6513.dir:
+a.go  b.go  main.go
+
+./test/fixedbugs/issue6789.dir:
+a.go  b.go
+
+./test/fixedbugs/issue7023.dir:
+a.go  b.go
+
+./test/fixedbugs/issue7648.dir:
+a.go  b.go
+
+./test/fixedbugs/issue7995b.dir:
+x1.go x2.go
+
+./test/fixedbugs/issue8060.dir:
+a.go  b.go
+
+./test/fixedbugs/issue8280.dir:
+a.go  b.go
+
+./test/fixedbugs/issue9355.dir:
+a.go
+
+./test/fixedbugs/issue9537.dir:
+a.go  b.go
+
+./test/fixedbugs/issue9608.dir:
+issue9608.go
+
+./test/import2.dir:
+import2.go  import3.go
+
+./test/import4.dir:
+empty.go import4.go
+
+./test/interface:
+assertinline.go   convert2.go embed2.go   noeq.go     receiver.go recursive1.go
+bigdata.go  embed.go explicit.go pointer.go  receiver1.go   returntype.go
+convert.go  embed1.dir  fail.go     private.dir recursive.go   struct.go
+convert1.go embed1.go   fake.go     private.go  recursive1.dir
+
+./test/interface/embed1.dir:
+embed0.go   embed1.go
+
+./test/interface/private.dir:
+private1.go prog.go
+
+./test/interface/recursive1.dir:
+recursive1.go  recursive2.go
+
+./test/ken:
+array.go cplx1.go embed.go mfunc.go robfor.go   simpswitch.go
+chan.go     cplx2.go for.go      modconst.go robfunc.go  simpvar.go
+chan1.go cplx3.go interbasic.go  ptrfun.go   shift.go slicearray.go
+complit.go  cplx4.go interfun.go ptrvar.go   simparray.go   sliceslice.go
+convert.go  cplx5.go intervar.go range.go simpbool.go string.go
+cplx0.go divconst.go label.go rob1.go     simpconv.go string.out
+cplx0.out   divmod.go   litfun.go   rob2.go     simpfun.go  strvar.go
+
+./test/method4.dir:
+method4a.go prog.go
+
+./test/safe:
+main.go     nousesafe.go   pkg.go      usesafe.go
+
+./test/stress:
+maps.go     parsego.go  runstress.go
+
+./test/syntax:
+chan.go     else.go     interface.go   semi4.go topexpr.go
+chan1.go forvar.go   semi1.go semi5.go typesw.go
+composite.go   if.go    semi2.go semi6.go vareq.go
+ddd.go      import.go   semi3.go semi7.go vareq1.go
